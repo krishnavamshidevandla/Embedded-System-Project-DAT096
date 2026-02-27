@@ -79,3 +79,4 @@ begin
   new_bit  <= lfsr(LFSR_N-1);
 
 end architecture;
+-- test
