@@ -1,2 +1,0 @@
-signal_generator.vhd,vhdl,xil_defaultlib,Z:/DAT096/signal generator/project_2/project_2.srcs/sources_1/new/signal_generator.vhd,incdir="../../../project_2.gen/sources_1/bd/design_1/ipshared/3cbc"
-prbs_axis_master_32.vhd,vhdl,xil_defaultlib,Z:/DAT096/signal generator/project_2/project_2.srcs/sources_1/new/prbs_axis_master_32.vhd,incdir="../../../project_2.gen/sources_1/bd/design_1/ipshared/3cbc"
