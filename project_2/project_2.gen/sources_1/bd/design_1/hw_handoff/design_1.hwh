@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Feb 22 12:28:10 2026" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Feb 26 09:42:43 2026" VIVADOVERSION="2024.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:eclypse-z7:part0:1.1" DEVICE="7z020" NAME="design_1" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
@@ -810,6 +810,7 @@
           <CONNECTIONS>
             <CONNECTION INSTANCE="ZmodAWGController_0" PORT="aRst_n"/>
             <CONNECTION INSTANCE="ZmodAWGController_0" PORT="sDAC_EnIn"/>
+            <CONNECTION INSTANCE="prbs_axis_master_32_0" PORT="rst"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -847,6 +848,11 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="prbs_bit" SIGIS="undef"/>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="clk_wiz_0_locked">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="locked"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="prbs_axis_master_32_0_m_axis" NAME="m_axis" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">

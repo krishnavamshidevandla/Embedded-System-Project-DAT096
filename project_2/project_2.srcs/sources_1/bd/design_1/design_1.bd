@@ -170,6 +170,9 @@
           "CLKOUT2_PHASE_ERROR": {
             "value": "96.948"
           },
+          "CLKOUT2_REQUESTED_OUT_FREQ": {
+            "value": "100.000"
+          },
           "CLKOUT2_REQUESTED_PHASE": {
             "value": "90"
           },
@@ -310,6 +313,10 @@
                 "value": "m_axis",
                 "value_src": "constant"
               },
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
               "FREQ_HZ": {
                 "value": "100000000",
                 "value_src": "ip_prop"
@@ -323,6 +330,10 @@
                 "value_src": "ip_prop"
               }
             }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
           },
           "prbs_bit": {
             "direction": "O"
@@ -417,7 +428,8 @@
         "ports": [
           "clk_wiz_0/locked",
           "ZmodAWGController_0/aRst_n",
-          "ZmodAWGController_0/sDAC_EnIn"
+          "ZmodAWGController_0/sDAC_EnIn",
+          "prbs_axis_master_32_0/rst"
         ]
       },
       "sys_clk_1": {

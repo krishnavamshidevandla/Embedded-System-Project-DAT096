@@ -57,7 +57,6 @@ if {$::dispatch::connected} {
 
 OPTRACE "design_1_prbs_axis_master_32_0_0_synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 7
-set_param xicom.use_bs_reader 1
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
 set_param ips.modRefOverrideMrefDirPath {{z:/DAT096/signal generator/project_2/project_2.gen/sources_1/bd/mref}}

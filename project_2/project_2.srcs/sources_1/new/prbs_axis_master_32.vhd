@@ -11,7 +11,7 @@ entity prbs_axis_master_32 is
   );
   port (
     clk   : in  std_logic;
-    --rst   : in  std_logic;  -- synchronous, active high
+    rst   : in  std_logic;  -- synchronous, active high
 
     -- AXI4-Stream Master (to ZmodAWGController InputDataStream s_axis)
     m_axis_tdata  : out std_logic_vector(31 downto 0);
@@ -44,7 +44,7 @@ begin
     )
     port map(
       clk      => clk,
-      --rst      => rst,
+      rst      => rst,
       en       => en_s,
       dac_data => dac_data_s,
       new_bit  => bit_s
@@ -60,3 +60,4 @@ begin
 end architecture;
 
 
+-- this is a comment- Is it working?

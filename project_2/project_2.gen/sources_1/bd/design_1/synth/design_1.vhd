@@ -2,7 +2,7 @@
 --Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
---Date        : Sun Feb 22 12:28:10 2026
+--Date        : Thu Feb 26 09:42:40 2026
 --Host        : FY-6302-09 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -74,6 +74,7 @@ architecture STRUCTURE of design_1 is
   component design_1_prbs_axis_master_32_0_0 is
   port (
     clk : in STD_LOGIC;
+    rst : in STD_LOGIC;
     m_axis_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     m_axis_tvalid : out STD_LOGIC;
     m_axis_tready : in STD_LOGIC;
@@ -138,7 +139,8 @@ prbs_axis_master_32_0: component design_1_prbs_axis_master_32_0_0
       m_axis_tdata(31 downto 0) => prbs_axis_master_32_0_m_axis_TDATA(31 downto 0),
       m_axis_tready => prbs_axis_master_32_0_m_axis_TREADY,
       m_axis_tvalid => prbs_axis_master_32_0_m_axis_TVALID,
-      prbs_bit => NLW_prbs_axis_master_32_0_prbs_bit_UNCONNECTED
+      prbs_bit => NLW_prbs_axis_master_32_0_prbs_bit_UNCONNECTED,
+      rst => clk_wiz_0_locked
     );
 xlconstant_0: component design_1_xlconstant_0_0
      port map (
