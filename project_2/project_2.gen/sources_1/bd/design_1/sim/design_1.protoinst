@@ -16,6 +16,7 @@
 					"interface": "xilinx.com:interface:axis:1.0",
 					"ports": {
 						"ACLK": { "actual": "clk"},
+						"ARESETN": { "actual": "rst"},
 						"TDATA": { "actual": "m_axis_tdata[31:0]"},
 						"TREADY": { "actual": "m_axis_tready"},
 						"TVALID": { "actual": "m_axis_tvalid"}

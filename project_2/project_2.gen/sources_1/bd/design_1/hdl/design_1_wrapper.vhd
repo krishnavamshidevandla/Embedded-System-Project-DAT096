@@ -2,7 +2,7 @@
 --Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
---Date        : Sun Feb 22 12:28:10 2026
+--Date        : Thu Feb 26 09:42:40 2026
 --Host        : FY-6302-09 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
@@ -27,8 +27,6 @@ entity design_1_wrapper is
     sys_clk : in STD_LOGIC
   );
 end design_1_wrapper;
-
--- This is just a change for git hub
 
 architecture STRUCTURE of design_1_wrapper is
   component design_1 is

@@ -56,6 +56,7 @@ USE ieee.numeric_std.ALL;
 ENTITY design_1_prbs_axis_master_32_0_0 IS
   PORT (
     clk : IN STD_LOGIC;
+    rst : IN STD_LOGIC;
     m_axis_tdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     m_axis_tvalid : OUT STD_LOGIC;
     m_axis_tready : IN STD_LOGIC;
@@ -75,6 +76,7 @@ ARCHITECTURE design_1_prbs_axis_master_32_0_0_arch OF design_1_prbs_axis_master_
     );
     PORT (
       clk : IN STD_LOGIC;
+      rst : IN STD_LOGIC;
       m_axis_tdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
       m_axis_tvalid : OUT STD_LOGIC;
       m_axis_tready : IN STD_LOGIC;
@@ -86,12 +88,15 @@ ARCHITECTURE design_1_prbs_axis_master_32_0_0_arch OF design_1_prbs_axis_master_
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF clk: SIGNAL IS "xilinx.com:signal:clock:1.0 clk CLK";
   ATTRIBUTE X_INTERFACE_MODE OF clk: SIGNAL IS "slave clk";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF clk: SIGNAL IS "XIL_INTERFACENAME clk, ASSOCIATED_BUSIF m_axis, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF clk: SIGNAL IS "XIL_INTERFACENAME clk, ASSOCIATED_BUSIF m_axis, ASSOCIATED_RESET rst, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF m_axis_tdata: SIGNAL IS "xilinx.com:interface:axis:1.0 m_axis TDATA";
   ATTRIBUTE X_INTERFACE_MODE OF m_axis_tdata: SIGNAL IS "master m_axis";
   ATTRIBUTE X_INTERFACE_PARAMETER OF m_axis_tdata: SIGNAL IS "XIL_INTERFACENAME m_axis, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF m_axis_tready: SIGNAL IS "xilinx.com:interface:axis:1.0 m_axis TREADY";
   ATTRIBUTE X_INTERFACE_INFO OF m_axis_tvalid: SIGNAL IS "xilinx.com:interface:axis:1.0 m_axis TVALID";
+  ATTRIBUTE X_INTERFACE_INFO OF rst: SIGNAL IS "xilinx.com:signal:reset:1.0 rst RST";
+  ATTRIBUTE X_INTERFACE_MODE OF rst: SIGNAL IS "slave rst";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF rst: SIGNAL IS "XIL_INTERFACENAME rst, POLARITY ACTIVE_LOW, INSERT_VIP 0";
 BEGIN
   U0 : prbs_axis_master_32
     GENERIC MAP (
@@ -102,6 +107,7 @@ BEGIN
     )
     PORT MAP (
       clk => clk,
+      rst => rst,
       m_axis_tdata => m_axis_tdata,
       m_axis_tvalid => m_axis_tvalid,
       m_axis_tready => m_axis_tready,
