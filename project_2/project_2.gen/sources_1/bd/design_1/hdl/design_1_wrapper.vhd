@@ -28,6 +28,8 @@ entity design_1_wrapper is
   );
 end design_1_wrapper;
 
+-- This is just a change for git hub
+
 architecture STRUCTURE of design_1_wrapper is
   component design_1 is
   port (

@@ -58,3 +58,5 @@ begin
   prbs_bit <= bit_s;
 
 end architecture;
+
+

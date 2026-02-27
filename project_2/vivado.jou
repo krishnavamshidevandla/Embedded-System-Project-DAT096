@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Feb 27 15:38:57 2026
+# Process ID         : 8120
+# Current directory  : C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/project_2
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent13292 C:\Users\qianzha\Desktop\Embedded-System-Project-DAT096\project_2\project_2.xpr
+# Log file           : C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/project_2/vivado.log
+# Journal file       : C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/project_2\vivado.jou
+# Running On         : FY-6302-11
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-14700
+# CPU Frequency      : 2112 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 34031 MB
+# Swap memory        : 5100 MB
+# Total Virtual      : 39131 MB
+# Available Virtual  : 25584 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/project_2/project_2.xpr
+update_compile_order -fileset sources_1
+close_project
+create_project github_desktop C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/github_desktop -part xc7z020clg484-1
+set_property board_part digilentinc.com:eclypse-z7:part0:1.1 [current_project]
+add_files -fileset constrs_1 -norecurse C:/Users/qianzha/Downloads/Eclypse-Z7-Master.xdc

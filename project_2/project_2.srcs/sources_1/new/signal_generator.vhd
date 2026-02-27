@@ -20,6 +20,8 @@ entity Signal_generator is
   );
 end entity;
 
+-- testing testing!
+
 architecture rtl of Signal_generator is
   constant LFSR_N : positive := 14;
 
