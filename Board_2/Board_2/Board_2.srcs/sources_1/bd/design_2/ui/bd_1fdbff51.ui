@@ -1,15 +1,73 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.0",
-   "Default View_TopLeft":"-816,-585",
+   "Default View_ScaleFactor":"0.826608",
+   "Default View_TopLeft":"-103,-1216",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
 #  -string -flagsOSRD
-preplace port port-id_sys_clk -pg 1 -lvl 0 -x -160 -y -390 -defaultsOSRD
-preplace inst ZmodScopeController_0 -pg 1 -lvl 2 -x 330 -y -120 -defaultsOSRD
-preplace inst xlconstant_0 -pg 1 -lvl 1 -x -60 -y 70 -defaultsOSRD
-levelinfo -pg 1 -160 -60 330 500
-pagesize -pg 1 -db -bbox -sgen -260 -490 500 540
+preplace port port-id_sys_clk -pg 1 -lvl 0 -x 0 -y -640 -defaultsOSRD
+preplace port port-id_sZmodADC_SDIO_0 -pg 1 -lvl 5 -x 1960 -y -640 -defaultsOSRD
+preplace port port-id_sZmodADC_CS_0 -pg 1 -lvl 5 -x 1960 -y -620 -defaultsOSRD
+preplace port port-id_sZmodADC_Sclk_0 -pg 1 -lvl 5 -x 1960 -y -600 -defaultsOSRD
+preplace port port-id_iZmodSync_0 -pg 1 -lvl 5 -x 1960 -y -660 -defaultsOSRD
+preplace port port-id_sZmodCh1CouplingH_0 -pg 1 -lvl 5 -x 1960 -y -580 -defaultsOSRD
+preplace port port-id_sZmodCh1CouplingL_0 -pg 1 -lvl 5 -x 1960 -y -560 -defaultsOSRD
+preplace port port-id_sZmodCh1GainH_0 -pg 1 -lvl 5 -x 1960 -y -500 -defaultsOSRD
+preplace port port-id_sZmodCh1GainL_0 -pg 1 -lvl 5 -x 1960 -y -480 -defaultsOSRD
+preplace port port-id_sZmodCh2CouplingH_0 -pg 1 -lvl 5 -x 1960 -y -540 -defaultsOSRD
+preplace port port-id_sZmodCh2CouplingL_0 -pg 1 -lvl 5 -x 1960 -y -520 -defaultsOSRD
+preplace port port-id_sZmodCh2GainH_0 -pg 1 -lvl 5 -x 1960 -y -460 -defaultsOSRD
+preplace port port-id_sZmodCh2GainL_0 -pg 1 -lvl 5 -x 1960 -y -440 -defaultsOSRD
+preplace port port-id_sZmodRelayComH_0 -pg 1 -lvl 5 -x 1960 -y -420 -defaultsOSRD
+preplace port port-id_sZmodRelayComL_0 -pg 1 -lvl 5 -x 1960 -y -400 -defaultsOSRD
+preplace port port-id_adc_dco_p -pg 1 -lvl 0 -x 0 -y -410 -defaultsOSRD
+preplace port port-id_adc_dco_n -pg 1 -lvl 0 -x 0 -y -460 -defaultsOSRD
+preplace port port-id_ZmodAdcClkIn_n_0 -pg 1 -lvl 5 -x 1960 -y -680 -defaultsOSRD
+preplace port port-id_ZmodAdcClkIn_p_0 -pg 1 -lvl 5 -x 1960 -y -700 -defaultsOSRD
+preplace portBus dZmodADC_Data_0 -pg 1 -lvl 5 -x 1960 -y -380 -defaultsOSRD -right
+preplace inst ZmodScopeController_0 -pg 1 -lvl 4 -x 1570 -y -540 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 840 -y -660 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -x 840 -y -550 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 2 -x 840 -y -450 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 1 -x 460 -y -960 -defaultsOSRD
+preplace inst util_ds_buf_0 -pg 1 -lvl 1 -x 460 -y -470 -defaultsOSRD
+preplace inst axis_register_slice_0 -pg 1 -lvl 4 -x 1570 -y -990 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 3 -x 1280 -y -1210 -defaultsOSRD
+preplace netloc clk_wiz_0_clk_out1 1 0 4 290 -830 N -830 930 -670 1390
+preplace netloc xlconstant_0_dout 1 2 2 N -550 1380
+preplace netloc xlconstant_1_dout 1 2 2 N -450 1380
+preplace netloc sys_clk_1 1 0 2 N -640 610
+preplace netloc dZmodADC_Data_0_1 1 3 2 1390 -240 1940
+preplace netloc Net 1 4 1 1810 -640n
+preplace netloc ZmodScopeController_0_sZmodADC_CS 1 4 1 1820 -620n
+preplace netloc ZmodScopeController_0_sZmodADC_Sclk 1 4 1 1830 -600n
+preplace netloc ZmodScopeController_0_iZmodSync 1 4 1 1800 -660n
+preplace netloc ZmodScopeController_0_sZmodCh1CouplingH 1 4 1 1840J -580n
+preplace netloc ZmodScopeController_0_sZmodCh1CouplingL 1 4 1 1850J -560n
+preplace netloc ZmodScopeController_0_sZmodCh1GainH 1 4 1 1880J -500n
+preplace netloc ZmodScopeController_0_sZmodCh1GainL 1 4 1 1890J -480n
+preplace netloc ZmodScopeController_0_sZmodCh2CouplingH 1 4 1 1860J -540n
+preplace netloc ZmodScopeController_0_sZmodCh2CouplingL 1 4 1 1870J -520n
+preplace netloc ZmodScopeController_0_sZmodCh2GainH 1 4 1 1900J -460n
+preplace netloc ZmodScopeController_0_sZmodCh2GainL 1 4 1 1910J -440n
+preplace netloc ZmodScopeController_0_sZmodRelayComH 1 4 1 1920J -420n
+preplace netloc ZmodScopeController_0_sZmodRelayComL 1 4 1 1930 -400n
+preplace netloc ZmodScopeController_0_sInitDoneADC 1 0 5 300 -840 NJ -840 NJ -840 N -840 1750
+preplace netloc ZmodScopeController_0_sConfigError 1 0 5 310 -850 NJ -850 NJ -850 N -850 1770
+preplace netloc util_ds_buf_0_IBUF_OUT 1 1 3 610J -390 N -390 1360
+preplace netloc adc_dco_p_1 1 0 1 50 -450n
+preplace netloc adc_dco_n_1 1 0 1 50 -470n
+preplace netloc ZmodScopeController_0_ZmodAdcClkIn_n 1 4 1 1790 -680n
+preplace netloc ZmodScopeController_0_ZmodAdcClkIn_p 1 4 1 1780 -700n
+preplace netloc axis_register_slice_0_m_axis_tdata 1 0 5 300 -1100 NJ -1100 NJ -1100 N -1100 1780
+preplace netloc axis_register_slice_0_m_axis_tvalid 1 0 5 310 -1090 NJ -1090 NJ -1090 N -1090 1770
+preplace netloc Net1 1 0 5 280 -1110 NJ -1110 NJ -1110 1370 -1110 1750
+preplace netloc ZmodScopeController_0_DataStream 1 3 2 1390 -1080 1760
+levelinfo -pg 1 0 460 840 1280 1570 1960
+pagesize -pg 1 -db -bbox -sgen -220 -1340 2180 240
 "
 }
-
+{
+   "da_axi4_cnt":"4",
+   "da_ps7_cnt":"1"
+}

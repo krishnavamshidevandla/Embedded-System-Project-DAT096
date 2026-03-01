@@ -1,0 +1,368 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun Mar  1 12:03:48 2026
+# Process ID         : 15916
+# Current directory  : C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent13536 C:\Users\qianzha\Desktop\Embedded-System-Project-DAT096\Board_2\Board_2\Board_2.xpr
+# Log file           : C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/vivado.log
+# Journal file       : C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2\vivado.jou
+# Running On         : FY-6302-09
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-14700
+# CPU Frequency      : 2112 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 34031 MB
+# Swap memory        : 5100 MB
+# Total Virtual      : 39131 MB
+# Available Virtual  : 28561 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/sources_1/bd/design_2/design_2.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+endgroup
+set_property location {1 -78 -161} [get_bd_cells clk_wiz_0]
+connect_bd_net [get_bd_ports sys_clk] [get_bd_pins clk_wiz_0/clk_in1]
+set_property location {-193 -147} [get_bd_ports sys_clk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins ZmodScopeController_0/SysClk100]
+connect_bd_net [get_bd_pins ZmodScopeController_0/ADC_SamplingClk] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins ZmodScopeController_0/ADC_InClk] [get_bd_pins clk_wiz_0/clk_out1]
+set_property location {1 -11 74} [get_bd_cells xlconstant_0]
+set_property CONFIG.CONST_VAL {0} [get_bd_cells xlconstant_0]
+startgroup
+make_bd_pins_external  [get_bd_cells ZmodScopeController_0]
+make_bd_intf_pins_external  [get_bd_cells ZmodScopeController_0]
+endgroup
+undo
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins ZmodScopeController_0/sTestMode]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+set_property location {3.5 871 -404} [get_bd_cells processing_system7_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+endgroup
+set_property location {1 -35 -566} [get_bd_cells axi_dma_0]
+set_property -dict [list \
+  CONFIG.c_include_mm2s {0} \
+  CONFIG.c_include_sg {0} \
+] [get_bd_cells axi_dma_0]
+set_property location {1 -25 -482} [get_bd_cells axi_dma_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {New AXI SmartConnect} master_apm {0}}  [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
+set_property location {4 1148 -287} [get_bd_cells processing_system7_0]
+set_property location {4 1152 -570} [get_bd_cells processing_system7_0]
+set_property location {6 1863 -585} [get_bd_cells axi_smc]
+startgroup
+set_property CONFIG.PCW_USE_S_AXI_HP0 {1} [get_bd_cells processing_system7_0]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/axi_dma_0/M_AXI_S2MM} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins processing_system7_0/S_AXI_HP0]
+set_property location {4 1151 -837} [get_bd_cells axi_mem_intercon]
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1]
+delete_bd_objs [get_bd_nets xlconstant_0_dout]
+set_property location {1 356 -163} [get_bd_cells clk_wiz_0]
+set_property location {1 290 54} [get_bd_cells xlconstant_0]
+delete_bd_objs [get_bd_intf_nets axi_mem_intercon_M00_AXI] [get_bd_intf_nets processing_system7_0_M_AXI_GP0] [get_bd_nets processing_system7_0_FCLK_RESET0_N] [get_bd_cells processing_system7_0]
+delete_bd_objs [get_bd_cells rst_ps7_0_50M]
+delete_bd_objs [get_bd_intf_nets axi_dma_0_M_AXI_S2MM] [get_bd_cells axi_mem_intercon]
+delete_bd_objs [get_bd_intf_nets axi_smc_M00_AXI] [get_bd_nets processing_system7_0_FCLK_CLK0] [get_bd_nets rst_ps7_0_50M_peripheral_aresetn] [get_bd_cells axi_dma_0]
+delete_bd_objs [get_bd_cells ZmodScopeController_0]
+delete_bd_objs [get_bd_cells xlconstant_0]
+delete_bd_objs [get_bd_nets sys_clk_1] [get_bd_cells clk_wiz_0]
+delete_bd_objs [get_bd_ports sys_clk]
+delete_bd_objs [get_bd_cells axi_smc]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+endgroup
+set_property location {1 154 -697} [get_bd_cells axi_dma_0]
+set_property location {1 114 -327} [get_bd_cells axi_dma_0]
+delete_bd_objs [get_bd_cells axi_dma_0]
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+endgroup
+set_property location {1 167 -330} [get_bd_cells axi_dma_0]
+set_property -dict [list \
+  CONFIG.c_include_mm2s {0} \
+  CONFIG.c_include_sg {0} \
+] [get_bd_cells axi_dma_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {New AXI SmartConnect} master_apm {0}}  [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
+startgroup
+set_property CONFIG.PCW_USE_S_AXI_HP0 {1} [get_bd_cells processing_system7_0]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/axi_dma_0/M_AXI_S2MM} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins processing_system7_0/S_AXI_HP0]
+startgroup
+create_bd_cell -type ip -vlnv digilent.com:user:ZmodScopeController:1.0 ZmodScopeController_0
+endgroup
+set_property location {1 157 -716} [get_bd_cells ZmodScopeController_0]
+set_property location {1 167 -818} [get_bd_cells ZmodScopeController_0]
+set_property location {1 168 -836} [get_bd_cells ZmodScopeController_0]
+delete_bd_objs [get_bd_intf_nets processing_system7_0_FIXED_IO] [get_bd_intf_nets processing_system7_0_DDR] [get_bd_intf_nets axi_mem_intercon_M00_AXI] [get_bd_intf_nets processing_system7_0_M_AXI_GP0] [get_bd_nets processing_system7_0_FCLK_RESET0_N] [get_bd_cells processing_system7_0]
+delete_bd_objs [get_bd_intf_nets axi_dma_0_M_AXI_S2MM] [get_bd_intf_nets axi_smc_M00_AXI] [get_bd_cells axi_dma_0]
+delete_bd_objs [get_bd_cells axi_smc]
+delete_bd_objs [get_bd_cells rst_ps7_0_100M]
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK0] [get_bd_nets rst_ps7_0_100M_peripheral_aresetn] [get_bd_cells axi_mem_intercon]
+set_property location {3.5 1259 -670} [get_bd_cells ZmodScopeController_0]
+delete_bd_objs [get_bd_intf_ports DDR]
+delete_bd_objs [get_bd_intf_ports FIXED_IO]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+endgroup
+set_property location {1.5 721 -605} [get_bd_cells clk_wiz_0]
+set_property location {1 717 -651} [get_bd_cells clk_wiz_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+set_property location {2 733 -542} [get_bd_cells xlconstant_0]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins ZmodScopeController_0/SysClk100]
+connect_bd_net [get_bd_pins ZmodScopeController_0/ADC_SamplingClk] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins ZmodScopeController_0/ADC_InClk] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins ZmodScopeController_0/aRst_n] [get_bd_pins xlconstant_0/dout]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1
+endgroup
+set_property location {2 738 -450} [get_bd_cells xlconstant_1]
+set_property CONFIG.CONST_VAL {0} [get_bd_cells xlconstant_1]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins ZmodScopeController_0/sTestMode]
+connect_bd_net [get_bd_pins ZmodScopeController_0/sCh1CouplingConfig] [get_bd_pins xlconstant_1/dout]
+connect_bd_net [get_bd_pins ZmodScopeController_0/sCh2CouplingConfig] [get_bd_pins xlconstant_1/dout]
+connect_bd_net [get_bd_pins ZmodScopeController_0/sCh1GainConfig] [get_bd_pins xlconstant_1/dout]
+connect_bd_net [get_bd_pins ZmodScopeController_0/sCh2GainConfig] [get_bd_pins xlconstant_1/dout]
+create_bd_port -dir I -type clk -freq_hz 125000000 sys_clk
+set_property location {-19 -676} [get_bd_ports sys_clk]
+set_property location {-11 -654} [get_bd_ports sys_clk]
+set_property location {-82 -657} [get_bd_ports sys_clk]
+set_property location {-13 -659} [get_bd_ports sys_clk]
+connect_bd_net [get_bd_ports sys_clk] [get_bd_pins clk_wiz_0/clk_in1]
+startgroup
+make_bd_pins_external  [get_bd_pins ZmodScopeController_0/ZmodAdcClkIn_p]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins ZmodScopeController_0/ZmodAdcClkIn_n]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins ZmodScopeController_0/dZmodADC_Data]
+endgroup
+set_property location {1957 -377} [get_bd_ports dZmodADC_Data_0]
+startgroup
+make_bd_pins_external  [get_bd_pins ZmodScopeController_0/sZmodADC_SDIO]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins ZmodScopeController_0/sZmodADC_CS]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins ZmodScopeController_0/sZmodADC_Sclk]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axis_data_fifo:2.0 axis_data_fifo_0
+endgroup
+set_property location {3 1361 -1036} [get_bd_cells axis_data_fifo_0]
+connect_bd_intf_net [get_bd_intf_pins ZmodScopeController_0/DataStream] [get_bd_intf_pins axis_data_fifo_0/S_AXIS]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_0
+endgroup
+set_property location {1.5 349 -958} [get_bd_cells ila_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.1 system_ila_0
+endgroup
+set_property location {1 122 -976} [get_bd_cells system_ila_0]
+delete_bd_objs [get_bd_cells system_ila_0]
+set_property CONFIG.C_DATA_DEPTH {4096} [get_bd_cells ila_0]
+set_property location {-39 -644} [get_bd_ports sys_clk]
+set_property CONFIG.C_MONITOR_TYPE {Native} [get_bd_cells ila_0]
+set_property CONFIG.C_NUM_OF_PROBES {3} [get_bd_cells ila_0]
+set_property -dict [list \
+  CONFIG.C_PROBE0_WIDTH {32} \
+  CONFIG.C_PROBE1_WIDTH {32} \
+  CONFIG.C_PROBE2_WIDTH {32} \
+] [get_bd_cells ila_0]
+set_property -dict [list \
+  CONFIG.C_NUM_OF_PROBES {4} \
+  CONFIG.C_PROBE1_WIDTH {1} \
+  CONFIG.C_PROBE2_WIDTH {1} \
+] [get_bd_cells ila_0]
+startgroup
+set_property -dict [list CONFIG.TDATA_NUM_BYTES.VALUE_SRC PROPAGATED] [get_bd_cells axis_data_fifo_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.TDATA_NUM_BYTES.VALUE_SRC USER] [get_bd_cells axis_data_fifo_0]
+set_property CONFIG.TDATA_NUM_BYTES {32} [get_bd_cells axis_data_fifo_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.TDATA_NUM_BYTES.VALUE_SRC USER] [get_bd_cells axis_data_fifo_0]
+set_property CONFIG.TDATA_NUM_BYTES {4} [get_bd_cells axis_data_fifo_0]
+endgroup
+connect_bd_net [get_bd_pins axis_data_fifo_0/m_axis_tdata] [get_bd_pins ila_0/probe0]
+connect_bd_net [get_bd_pins axis_data_fifo_0/m_axis_tready] [get_bd_pins ila_0/probe1]
+connect_bd_net [get_bd_pins axis_data_fifo_0/m_axis_tvalid] [get_bd_pins ila_0/probe2]
+connect_bd_net [get_bd_pins axis_data_fifo_0/s_axis_aclk] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins ila_0/clk] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins axis_data_fifo_0/s_axis_aresetn] [get_bd_pins xlconstant_0/dout]
+startgroup
+make_bd_pins_external  [get_bd_cells ZmodScopeController_0]
+make_bd_intf_pins_external  [get_bd_cells ZmodScopeController_0]
+endgroup
+undo
+startgroup
+make_bd_pins_external  [get_bd_cells ZmodScopeController_0]
+make_bd_intf_pins_external  [get_bd_cells ZmodScopeController_0]
+endgroup
+delete_bd_objs [get_bd_intf_nets ExtCh1Calib_0_1] [get_bd_intf_ports ExtCh1Calib_0]
+delete_bd_objs [get_bd_intf_nets ExtCh2Calib_0_1] [get_bd_intf_ports ExtCh2Calib_0]
+delete_bd_objs [get_bd_nets ZmodDcoClk_0_1] [get_bd_ports ZmodDcoClk_0]
+set_property location {1687 -705} [get_bd_ports ZmodAdcClkIn_n_0]
+set_property location {1680 -634} [get_bd_ports sZmodADC_SDIO_0]
+set_property location {1675 -704} [get_bd_ports ZmodAdcClkIn_p_0]
+set_property location {1672 -624} [get_bd_ports sZmodADC_CS_0]
+set_property location {1667 -677} [get_bd_ports ZmodAdcClkIn_n_0]
+delete_bd_objs [get_bd_nets ZmodScopeController_0_sRstBusy] [get_bd_ports sRstBusy_0]
+delete_bd_objs [get_bd_nets ZmodScopeController_0_sInitDoneADC]
+delete_bd_objs [get_bd_ports sInitDoneADC_0]
+delete_bd_objs [get_bd_nets ZmodScopeController_0_sConfigError] [get_bd_ports sConfigError_0]
+delete_bd_objs [get_bd_nets ZmodScopeController_0_sInitDoneRelay] [get_bd_ports sInitDoneRelay_0]
+delete_bd_objs [get_bd_nets ZmodScopeController_0_sDataOverflow] [get_bd_ports sDataOverflow_0]
+connect_bd_net [get_bd_pins ZmodScopeController_0/sInitDoneADC] [get_bd_pins ila_0/probe3]
+startgroup
+set_property CONFIG.C_NUM_OF_PROBES {5} [get_bd_cells ila_0]
+endgroup
+connect_bd_net [get_bd_pins ZmodScopeController_0/sConfigError] [get_bd_pins ila_0/probe4]
+file mkdir C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/constrs_1
+file mkdir C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/constrs_1/new
+close [ open C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/constrs_1/new/Board_2.xdc w ]
+add_files -fileset constrs_1 C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/constrs_1/new/Board_2.xdc
+make_wrapper -files [get_files C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/sources_1/bd/design_2/design_2.bd] -top
+make_wrapper -files [get_files C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/sources_1/bd/design_2/design_2.bd] -top
+make_wrapper -files [get_files C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/sources_1/bd/design_2/design_2.bd] -top
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:util_ds_buf:2.2 util_ds_buf_0
+endgroup
+set_property location {2 344 -527} [get_bd_cells util_ds_buf_0]
+connect_bd_net [get_bd_pins util_ds_buf_0/IBUF_DS_P] [get_bd_pins ZmodScopeController_0/ZmodAdcClkIn_p]
+connect_bd_net [get_bd_pins util_ds_buf_0/IBUF_DS_N] [get_bd_pins ZmodScopeController_0/ZmodAdcClkIn_n]
+connect_bd_net [get_bd_pins util_ds_buf_0/IBUF_OUT] [get_bd_pins ZmodScopeController_0/ZmodDcoClk]
+validate_bd_design
+make_wrapper -files [get_files C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/sources_1/bd/design_2/design_2.bd] -top
+add_files -norecurse c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/hdl/design_2_wrapper.vhd
+delete_bd_objs [get_bd_ports ZmodAdcClkIn_p_0]
+delete_bd_objs [get_bd_ports ZmodAdcClkIn_n_0]
+create_bd_port -dir I -from 0 -to 0 -type data adc_dco_p
+set_property location {-26 -492} [get_bd_ports adc_dco_p]
+delete_bd_objs [get_bd_ports adc_dco_p]
+create_bd_port -dir I -type data adc_dco_p
+set_property location {-35 -486} [get_bd_ports adc_dco_p]
+delete_bd_objs [get_bd_nets ZmodScopeController_0_ZmodAdcClkIn_n]
+delete_bd_objs [get_bd_nets ZmodScopeController_0_ZmodAdcClkIn_p]
+undo
+delete_bd_objs [get_bd_nets ZmodScopeController_0_ZmodAdcClkIn_p]
+startgroup
+connect_bd_net [get_bd_ports adc_dco_p] [get_bd_pins util_ds_buf_0/IBUF_DS_P]
+connect_bd_net [get_bd_ports adc_dco_p] [get_bd_pins util_ds_buf_0/IBUF_DS_N]
+endgroup
+delete_bd_objs [get_bd_nets adc_dco_p_1]
+connect_bd_net [get_bd_ports adc_dco_p] [get_bd_pins util_ds_buf_0/IBUF_DS_P]
+create_bd_port -dir I -type data adc_dco_n
+set_property location {0 -413} [get_bd_ports adc_dco_p]
+connect_bd_net [get_bd_ports adc_dco_n] [get_bd_pins util_ds_buf_0/IBUF_DS_N]
+startgroup
+make_bd_pins_external  [get_bd_pins ZmodScopeController_0/ZmodAdcClkIn_n]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins ZmodScopeController_0/ZmodAdcClkIn_p]
+endgroup
+validate_bd_design
+make_wrapper -files [get_files C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/sources_1/bd/design_2/design_2.bd] -top
+validate_bd_design -force
+make_wrapper -files [get_files C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/sources_1/bd/design_2/design_2.bd] -top
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_bd_design {C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/sources_1/bd/design_2/design_2.bd}
+launch_runs synth_1 -jobs 28
+wait_on_run synth_1
+open_bd_design {C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/sources_1/bd/design_2/design_2.bd}
+validate_bd_design -force
+reset_run design_2_ila_0_0_synth_1
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 28
+wait_on_run synth_1
+launch_runs impl_1 -jobs 28
+wait_on_run impl_1
+startgroup
+set_property CONFIG.FIFO_DEPTH {32} [get_bd_cells axis_data_fifo_0]
+endgroup
+validate_bd_design
+save_bd_design
+make_wrapper -files [get_files C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/sources_1/bd/design_2/design_2.bd] -top
+reset_run design_2_axis_data_fifo_0_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 28
+wait_on_run synth_1
+open_bd_design {C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/sources_1/bd/design_2/design_2.bd}
+launch_runs impl_1 -jobs 28
+wait_on_run impl_1
+delete_bd_objs [get_bd_intf_nets ZmodScopeController_0_DataStream] [get_bd_nets axis_data_fifo_0_m_axis_tdata] [get_bd_nets axis_data_fifo_0_m_axis_tvalid] [get_bd_nets Net1] [get_bd_cells axis_data_fifo_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axis_register_slice:1.1 axis_register_slice_0
+endgroup
+set_property location {4 1455 -1007} [get_bd_cells axis_register_slice_0]
+set_property -dict [list CONFIG.TDATA_NUM_BYTES.VALUE_SRC USER] [get_bd_cells axis_register_slice_0]
+set_property CONFIG.TDATA_NUM_BYTES {4} [get_bd_cells axis_register_slice_0]
+connect_bd_intf_net [get_bd_intf_pins ZmodScopeController_0/DataStream] [get_bd_intf_pins axis_register_slice_0/S_AXIS]
+connect_bd_net [get_bd_pins axis_register_slice_0/aclk] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins axis_register_slice_0/aresetn] [get_bd_pins xlconstant_0/dout]
+connect_bd_net [get_bd_pins axis_register_slice_0/m_axis_tvalid] [get_bd_pins ila_0/probe0]
+delete_bd_objs [get_bd_nets axis_register_slice_0_m_axis_tvalid]
+connect_bd_net [get_bd_pins axis_register_slice_0/m_axis_tdata] [get_bd_pins ila_0/probe0]
+connect_bd_net [get_bd_pins axis_register_slice_0/m_axis_tready] [get_bd_pins ila_0/probe1]
+connect_bd_net [get_bd_pins axis_register_slice_0/m_axis_tvalid] [get_bd_pins ila_0/probe2]
+validate_bd_design
+save_bd_design
+make_wrapper -files [get_files C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/sources_1/bd/design_2/design_2.bd] -top
+reset_run synth_1
+launch_runs synth_1 -jobs 28
+wait_on_run synth_1
+launch_runs impl_1 -jobs 28
+wait_on_run impl_1
+delete_bd_objs [get_bd_nets Net1]
+delete_bd_objs [get_bd_nets axis_register_slice_0_m_axis_tvalid]
+connect_bd_net [get_bd_pins axis_register_slice_0/m_axis_tvalid] [get_bd_pins ila_0/probe1]
+connect_bd_net [get_bd_pins axis_register_slice_0/m_axis_tready] [get_bd_pins ila_0/probe2]
+connect_bd_net [get_bd_pins axis_register_slice_0/m_axis_tready] [get_bd_pins xlconstant_0/dout]
+undo
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_2
+endgroup
+set_property location {3.5 1282 -1214} [get_bd_cells xlconstant_2]
+connect_bd_net [get_bd_pins xlconstant_2/dout] [get_bd_pins axis_register_slice_0/m_axis_tready]
+validate_bd_design
+save_bd_design
+make_wrapper -files [get_files C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/sources_1/bd/design_2/design_2.bd] -top
+reset_run synth_1
+launch_runs synth_1 -jobs 28
+wait_on_run synth_1
+launch_runs impl_1 -jobs 28
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 28
+wait_on_run impl_1
+startgroup
+set_property CONFIG.C_SIZE {7} [get_bd_cells util_ds_buf_0]
+endgroup
+startgroup
+set_property CONFIG.C_SIZE {1} [get_bd_cells util_ds_buf_0]
+endgroup
+startgroup
+set_property CONFIG.C_SIZE {7} [get_bd_cells util_ds_buf_0]
+endgroup
+startgroup
+set_property CONFIG.C_SIZE {1} [get_bd_cells util_ds_buf_0]
+endgroup
+save_bd_design

@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xE84639F2435821FC",
+      "boundary_crc": "0x5886400BFBE8C7A2",
       "device": "xc7z020clg484-1",
       "gen_directory": "../../../../Board_2.gen/sources_1/bd/design_2",
       "name": "design_2",
@@ -11,7 +11,13 @@
     },
     "design_tree": {
       "ZmodScopeController_0": "",
-      "xlconstant_0": ""
+      "clk_wiz_0": "",
+      "xlconstant_0": "",
+      "xlconstant_1": "",
+      "ila_0": "",
+      "util_ds_buf_0": "",
+      "axis_register_slice_0": "",
+      "xlconstant_2": ""
     },
     "ports": {
       "sys_clk": {
@@ -22,22 +28,363 @@
             "value": "125000000"
           }
         }
+      },
+      "dZmodADC_Data_0": {
+        "direction": "I",
+        "left": "13",
+        "right": "0"
+      },
+      "sZmodADC_SDIO_0": {
+        "direction": "IO"
+      },
+      "sZmodADC_CS_0": {
+        "direction": "O"
+      },
+      "sZmodADC_Sclk_0": {
+        "direction": "O"
+      },
+      "iZmodSync_0": {
+        "direction": "O"
+      },
+      "sZmodCh1CouplingH_0": {
+        "direction": "O"
+      },
+      "sZmodCh1CouplingL_0": {
+        "direction": "O"
+      },
+      "sZmodCh1GainH_0": {
+        "direction": "O"
+      },
+      "sZmodCh1GainL_0": {
+        "direction": "O"
+      },
+      "sZmodCh2CouplingH_0": {
+        "direction": "O"
+      },
+      "sZmodCh2CouplingL_0": {
+        "direction": "O"
+      },
+      "sZmodCh2GainH_0": {
+        "direction": "O"
+      },
+      "sZmodCh2GainL_0": {
+        "direction": "O"
+      },
+      "sZmodRelayComH_0": {
+        "direction": "O"
+      },
+      "sZmodRelayComL_0": {
+        "direction": "O"
+      },
+      "adc_dco_p": {
+        "type": "data",
+        "direction": "I"
+      },
+      "adc_dco_n": {
+        "type": "data",
+        "direction": "I"
+      },
+      "ZmodAdcClkIn_n_0": {
+        "direction": "O"
+      },
+      "ZmodAdcClkIn_p_0": {
+        "direction": "O"
       }
     },
     "components": {
       "ZmodScopeController_0": {
         "vlnv": "digilent.com:user:ZmodScopeController:1.0",
         "ip_revision": "1",
-        "xci_name": "design_2_ZmodScopeController_0_0",
-        "xci_path": "ip\\design_2_ZmodScopeController_0_0\\design_2_ZmodScopeController_0_0.xci",
+        "xci_name": "design_2_ZmodScopeController_0_1",
+        "xci_path": "ip\\design_2_ZmodScopeController_0_1\\design_2_ZmodScopeController_0_1.xci",
         "inst_hier_path": "ZmodScopeController_0"
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "ip_revision": "15",
+        "xci_name": "design_2_clk_wiz_0_1",
+        "xci_path": "ip\\design_2_clk_wiz_0_1\\design_2_clk_wiz_0_1.xci",
+        "inst_hier_path": "clk_wiz_0"
       },
       "xlconstant_0": {
         "vlnv": "xilinx.com:ip:xlconstant:1.1",
         "ip_revision": "9",
-        "xci_name": "design_2_xlconstant_0_0",
-        "xci_path": "ip\\design_2_xlconstant_0_0\\design_2_xlconstant_0_0.xci",
+        "xci_name": "design_2_xlconstant_0_1",
+        "xci_path": "ip\\design_2_xlconstant_0_1\\design_2_xlconstant_0_1.xci",
         "inst_hier_path": "xlconstant_0"
+      },
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "design_2_xlconstant_1_0",
+        "xci_path": "ip\\design_2_xlconstant_1_0\\design_2_xlconstant_1_0.xci",
+        "inst_hier_path": "xlconstant_1",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          }
+        }
+      },
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "ip_revision": "16",
+        "xci_name": "design_2_ila_0_0",
+        "xci_path": "ip\\design_2_ila_0_0\\design_2_ila_0_0.xci",
+        "inst_hier_path": "ila_0",
+        "parameters": {
+          "C_DATA_DEPTH": {
+            "value": "4096"
+          },
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "5"
+          },
+          "C_PROBE0_WIDTH": {
+            "value": "32"
+          },
+          "C_PROBE1_WIDTH": {
+            "value": "1"
+          },
+          "C_PROBE2_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "util_ds_buf_0": {
+        "vlnv": "xilinx.com:ip:util_ds_buf:2.2",
+        "ip_revision": "7",
+        "xci_name": "design_2_util_ds_buf_0_0",
+        "xci_path": "ip\\design_2_util_ds_buf_0_0\\design_2_util_ds_buf_0_0.xci",
+        "inst_hier_path": "util_ds_buf_0",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "axis_register_slice_0": {
+        "vlnv": "xilinx.com:ip:axis_register_slice:1.1",
+        "ip_revision": "33",
+        "xci_name": "design_2_axis_register_slice_0_0",
+        "xci_path": "ip\\design_2_axis_register_slice_0_0\\design_2_axis_register_slice_0_0.xci",
+        "inst_hier_path": "axis_register_slice_0",
+        "parameters": {
+          "TDATA_NUM_BYTES": {
+            "value": "4"
+          }
+        },
+        "interface_ports": {
+          "S_AXIS": {
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+            "mode": "Slave",
+            "bridges": [
+              "M_AXIS"
+            ]
+          }
+        }
+      },
+      "xlconstant_2": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "design_2_xlconstant_2_0",
+        "xci_path": "ip\\design_2_xlconstant_2_0\\design_2_xlconstant_2_0.xci",
+        "inst_hier_path": "xlconstant_2"
+      }
+    },
+    "interface_nets": {
+      "ZmodScopeController_0_DataStream": {
+        "interface_ports": [
+          "ZmodScopeController_0/DataStream",
+          "axis_register_slice_0/S_AXIS"
+        ]
+      }
+    },
+    "nets": {
+      "Net": {
+        "ports": [
+          "sZmodADC_SDIO_0",
+          "ZmodScopeController_0/sZmodADC_SDIO"
+        ]
+      },
+      "Net1": {
+        "ports": [
+          "xlconstant_2/dout",
+          "axis_register_slice_0/m_axis_tready",
+          "ila_0/probe2"
+        ]
+      },
+      "ZmodScopeController_0_ZmodAdcClkIn_n": {
+        "ports": [
+          "ZmodScopeController_0/ZmodAdcClkIn_n",
+          "ZmodAdcClkIn_n_0"
+        ]
+      },
+      "ZmodScopeController_0_ZmodAdcClkIn_p": {
+        "ports": [
+          "ZmodScopeController_0/ZmodAdcClkIn_p",
+          "ZmodAdcClkIn_p_0"
+        ]
+      },
+      "ZmodScopeController_0_iZmodSync": {
+        "ports": [
+          "ZmodScopeController_0/iZmodSync",
+          "iZmodSync_0"
+        ]
+      },
+      "ZmodScopeController_0_sConfigError": {
+        "ports": [
+          "ZmodScopeController_0/sConfigError",
+          "ila_0/probe4"
+        ]
+      },
+      "ZmodScopeController_0_sInitDoneADC": {
+        "ports": [
+          "ZmodScopeController_0/sInitDoneADC",
+          "ila_0/probe3"
+        ]
+      },
+      "ZmodScopeController_0_sZmodADC_CS": {
+        "ports": [
+          "ZmodScopeController_0/sZmodADC_CS",
+          "sZmodADC_CS_0"
+        ]
+      },
+      "ZmodScopeController_0_sZmodADC_Sclk": {
+        "ports": [
+          "ZmodScopeController_0/sZmodADC_Sclk",
+          "sZmodADC_Sclk_0"
+        ]
+      },
+      "ZmodScopeController_0_sZmodCh1CouplingH": {
+        "ports": [
+          "ZmodScopeController_0/sZmodCh1CouplingH",
+          "sZmodCh1CouplingH_0"
+        ]
+      },
+      "ZmodScopeController_0_sZmodCh1CouplingL": {
+        "ports": [
+          "ZmodScopeController_0/sZmodCh1CouplingL",
+          "sZmodCh1CouplingL_0"
+        ]
+      },
+      "ZmodScopeController_0_sZmodCh1GainH": {
+        "ports": [
+          "ZmodScopeController_0/sZmodCh1GainH",
+          "sZmodCh1GainH_0"
+        ]
+      },
+      "ZmodScopeController_0_sZmodCh1GainL": {
+        "ports": [
+          "ZmodScopeController_0/sZmodCh1GainL",
+          "sZmodCh1GainL_0"
+        ]
+      },
+      "ZmodScopeController_0_sZmodCh2CouplingH": {
+        "ports": [
+          "ZmodScopeController_0/sZmodCh2CouplingH",
+          "sZmodCh2CouplingH_0"
+        ]
+      },
+      "ZmodScopeController_0_sZmodCh2CouplingL": {
+        "ports": [
+          "ZmodScopeController_0/sZmodCh2CouplingL",
+          "sZmodCh2CouplingL_0"
+        ]
+      },
+      "ZmodScopeController_0_sZmodCh2GainH": {
+        "ports": [
+          "ZmodScopeController_0/sZmodCh2GainH",
+          "sZmodCh2GainH_0"
+        ]
+      },
+      "ZmodScopeController_0_sZmodCh2GainL": {
+        "ports": [
+          "ZmodScopeController_0/sZmodCh2GainL",
+          "sZmodCh2GainL_0"
+        ]
+      },
+      "ZmodScopeController_0_sZmodRelayComH": {
+        "ports": [
+          "ZmodScopeController_0/sZmodRelayComH",
+          "sZmodRelayComH_0"
+        ]
+      },
+      "ZmodScopeController_0_sZmodRelayComL": {
+        "ports": [
+          "ZmodScopeController_0/sZmodRelayComL",
+          "sZmodRelayComL_0"
+        ]
+      },
+      "adc_dco_n_1": {
+        "ports": [
+          "adc_dco_n",
+          "util_ds_buf_0/IBUF_DS_N"
+        ]
+      },
+      "adc_dco_p_1": {
+        "ports": [
+          "adc_dco_p",
+          "util_ds_buf_0/IBUF_DS_P"
+        ]
+      },
+      "axis_register_slice_0_m_axis_tdata": {
+        "ports": [
+          "axis_register_slice_0/m_axis_tdata",
+          "ila_0/probe0"
+        ]
+      },
+      "axis_register_slice_0_m_axis_tvalid": {
+        "ports": [
+          "axis_register_slice_0/m_axis_tvalid",
+          "ila_0/probe1"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "ZmodScopeController_0/SysClk100",
+          "ZmodScopeController_0/ADC_SamplingClk",
+          "ZmodScopeController_0/ADC_InClk",
+          "ila_0/clk",
+          "axis_register_slice_0/aclk"
+        ]
+      },
+      "dZmodADC_Data_0_1": {
+        "ports": [
+          "dZmodADC_Data_0",
+          "ZmodScopeController_0/dZmodADC_Data"
+        ]
+      },
+      "sys_clk_1": {
+        "ports": [
+          "sys_clk",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "util_ds_buf_0_IBUF_OUT": {
+        "ports": [
+          "util_ds_buf_0/IBUF_OUT",
+          "ZmodScopeController_0/ZmodDcoClk"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "ZmodScopeController_0/aRst_n",
+          "axis_register_slice_0/aresetn"
+        ]
+      },
+      "xlconstant_1_dout": {
+        "ports": [
+          "xlconstant_1/dout",
+          "ZmodScopeController_0/sTestMode",
+          "ZmodScopeController_0/sCh1CouplingConfig",
+          "ZmodScopeController_0/sCh2CouplingConfig",
+          "ZmodScopeController_0/sCh1GainConfig",
+          "ZmodScopeController_0/sCh2GainConfig"
+        ]
       }
     }
   }

@@ -1,0 +1,28 @@
+{
+	"version": "1.0",
+	"modules": {
+		"design_2": {
+			"proto_instances": {
+				"/ZmodScopeController_0/DataStream": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ADC_SamplingClk"},
+						"TDATA": { "actual": "cDataAxisTdata[31:0]"},
+						"TREADY": { "actual": "cDataAxisTready"},
+						"TVALID": { "actual": "cDataAxisTvalid"}
+					}
+				},
+				"/axis_register_slice_0/S_AXIS": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "aclk"},
+						"ARESETN": { "actual": "aresetn"},
+						"TDATA": { "actual": "s_axis_tdata[31:0]"},
+						"TREADY": { "actual": "s_axis_tready"},
+						"TVALID": { "actual": "s_axis_tvalid"}
+					}
+				}
+			}
+		}
+	}
+}
