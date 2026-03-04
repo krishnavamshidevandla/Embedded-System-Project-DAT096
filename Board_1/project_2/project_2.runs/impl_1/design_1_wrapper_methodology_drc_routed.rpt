@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Thu Feb 26 09:51:10 2026
+| Date         : Wed Mar  4 14:12:44 2026
 | Host         : FY-6302-09 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
 | Design       : design_1_wrapper
@@ -224,107 +224,107 @@ Related violations: <none>
 XDCB-5#1 Warning
 Runtime inefficient way to find pin objects  
 The option '-fall_from : [get_pins -hier -filter {NAME =~ *InstDacClkReset*/SyncAsyncx/oSyncStages_reg[1]/C}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '10' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: z:/DAT096/signal generator/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 10)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 10)
 Related violations: <none>
 
 XDCB-5#2 Warning
 Runtime inefficient way to find pin objects  
 The option '-fall_from : [get_pins -hier -filter {NAME =~ *InstSamplingReset*/SyncAsyncx/oSyncStages_reg[1]/C}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '9' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: z:/DAT096/signal generator/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 9)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 9)
 Related violations: <none>
 
 XDCB-5#3 Warning
 Runtime inefficient way to find pin objects  
 The option '-fall_to : [get_pins -hier -filter {NAME=~ *InstDAC_ClkIO_ODDR*/R}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '11' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: z:/DAT096/signal generator/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 11)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 11)
 Related violations: <none>
 
 XDCB-5#4 Warning
 Runtime inefficient way to find pin objects  
 The option '-fall_to : [get_pins -hier -filter {NAME=~ *InstDAC_ClkIO_ODDR*/R}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '7' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: z:/DAT096/signal generator/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 7)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 7)
 Related violations: <none>
 
 XDCB-5#5 Warning
 Runtime inefficient way to find pin objects  
 The option '-fall_to : [get_pins -hier -filter {NAME=~ *InstDAC_ClkinODDR*/R}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '12' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: z:/DAT096/signal generator/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 12)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 12)
 Related violations: <none>
 
 XDCB-5#6 Warning
 Runtime inefficient way to find pin objects  
 The option '-fall_to : [get_pins -hier -filter {NAME=~ *InstDAC_ClkinODDR*/R}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '8' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: z:/DAT096/signal generator/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 8)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 8)
 Related violations: <none>
 
 XDCB-5#7 Warning
 Runtime inefficient way to find pin objects  
 The option '-rise_from : [get_pins -hier -filter {NAME =~ *InstDacClkReset*/SyncAsyncx/oSyncStages_reg[1]/C}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '12' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: z:/DAT096/signal generator/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 12)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 12)
 Related violations: <none>
 
 XDCB-5#8 Warning
 Runtime inefficient way to find pin objects  
 The option '-rise_from : [get_pins -hier -filter {NAME =~ *InstDacClkReset*/SyncAsyncx/oSyncStages_reg[1]/C}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '8' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: z:/DAT096/signal generator/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 8)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 8)
 Related violations: <none>
 
 XDCB-5#9 Warning
 Runtime inefficient way to find pin objects  
 The option '-rise_from : [get_pins -hier -filter {NAME =~ *InstSamplingReset*/SyncAsyncx/oSyncStages_reg[1]/C}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '11' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: z:/DAT096/signal generator/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 11)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 11)
 Related violations: <none>
 
 XDCB-5#10 Warning
 Runtime inefficient way to find pin objects  
 The option '-rise_from : [get_pins -hier -filter {NAME =~ *InstSamplingReset*/SyncAsyncx/oSyncStages_reg[1]/C}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '7' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: z:/DAT096/signal generator/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 7)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 7)
 Related violations: <none>
 
 XDCB-5#11 Warning
 Runtime inefficient way to find pin objects  
 The option '-through : [get_pins -filter {NAME =~ *SyncAsync*/oSyncStages_reg[*]/D} -hier]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '5' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: z:/DAT096/signal generator/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 3)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 3)
 Related violations: <none>
 
 XDCB-5#12 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hier -filter {NAME=~ *InstDAC_ClkIO_ODDR*/R}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '9' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: z:/DAT096/signal generator/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 9)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 9)
 Related violations: <none>
 
 XDCB-5#13 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hier -filter {NAME=~ *InstDAC_ClkinODDR*/R}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '10' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: z:/DAT096/signal generator/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 10)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 10)
 Related violations: <none>
 
 XDCC-1#1 Warning
 Scoped Clock constraint overwritten with the same name  
 A new clock constraint create_generated_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
-New: create_generated_clock -name ZmodDAC_ClkIO -source [get_pins design_1_i/ZmodAWGController_0/U0/InstDAC_ClkIO_ODDR/C] -divide_by 1 [get_ports ZmodDAC_ClkIO_0] (Source: Z:/DAT096/signal generator/project_2/project_2.srcs/constrs_1/new/Eclypse Z7.xdc (Line: 90))
-Previous: create_generated_clock -name ZmodDAC_ClkIO -source [get_pins InstDAC_ClkIO_ODDR/C] -divide_by 1 -add -master_clock [get_clocks -of [get_ports -scoped_to_current_instance DAC_Clk]] [get_ports ZmodDAC_ClkIO_0] (Source: z:/DAT096/signal generator/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 14))
+New: create_generated_clock -name ZmodDAC_ClkIO -source [get_pins design_1_i/ZmodAWGController_0/U0/InstDAC_ClkIO_ODDR/C] -divide_by 1 [get_ports ZmodDAC_ClkIO_0] (Source: C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.srcs/constrs_1/new/Eclypse Z7.xdc (Line: 90))
+Previous: create_generated_clock -name ZmodDAC_ClkIO -source [get_pins InstDAC_ClkIO_ODDR/C] -divide_by 1 -add -master_clock [get_clocks -of [get_ports -scoped_to_current_instance DAC_Clk]] [get_ports ZmodDAC_ClkIO_0] (Source: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 14))
 Related violations: <none>
 
 XDCC-1#2 Warning
 Scoped Clock constraint overwritten with the same name  
 A new clock constraint create_generated_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
-New: create_generated_clock -name ZmodDAC_ClkIn -source [get_pins design_1_i/ZmodAWGController_0/U0/InstDAC_ClkinODDR/C] -divide_by 1 [get_ports ZmodDAC_ClkIn_0] (Source: Z:/DAT096/signal generator/project_2/project_2.srcs/constrs_1/new/Eclypse Z7.xdc (Line: 84))
-Previous: create_generated_clock -name ZmodDAC_ClkIn -source [get_pins InstDAC_ClkinODDR/C] -divide_by 1 -add -master_clock [get_clocks -of [get_ports -scoped_to_current_instance DAC_Clk]] [get_ports ZmodDAC_ClkIn_0] (Source: z:/DAT096/signal generator/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 15))
+New: create_generated_clock -name ZmodDAC_ClkIn -source [get_pins design_1_i/ZmodAWGController_0/U0/InstDAC_ClkinODDR/C] -divide_by 1 [get_ports ZmodDAC_ClkIn_0] (Source: C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.srcs/constrs_1/new/Eclypse Z7.xdc (Line: 84))
+Previous: create_generated_clock -name ZmodDAC_ClkIn -source [get_pins InstDAC_ClkinODDR/C] -divide_by 1 -add -master_clock [get_clocks -of [get_ports -scoped_to_current_instance DAC_Clk]] [get_ports ZmodDAC_ClkIn_0] (Source: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 15))
 Related violations: <none>
 
 XDCC-7#1 Warning
 Scoped Clock constraint overwritten on the same source  
 A new clock constraint create_generated_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
-New: create_generated_clock -name ZmodDAC_ClkIO -source [get_pins design_1_i/ZmodAWGController_0/U0/InstDAC_ClkIO_ODDR/C] -divide_by 1 [get_ports ZmodDAC_ClkIO_0] (Source: Z:/DAT096/signal generator/project_2/project_2.srcs/constrs_1/new/Eclypse Z7.xdc (Line: 90))
-Previous: create_generated_clock -name ZmodDAC_ClkIO -source [get_pins InstDAC_ClkIO_ODDR/C] -divide_by 1 -add -master_clock [get_clocks -of [get_ports -scoped_to_current_instance DAC_Clk]] [get_ports ZmodDAC_ClkIO_0] (Source: z:/DAT096/signal generator/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 14))
+New: create_generated_clock -name ZmodDAC_ClkIO -source [get_pins design_1_i/ZmodAWGController_0/U0/InstDAC_ClkIO_ODDR/C] -divide_by 1 [get_ports ZmodDAC_ClkIO_0] (Source: C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.srcs/constrs_1/new/Eclypse Z7.xdc (Line: 90))
+Previous: create_generated_clock -name ZmodDAC_ClkIO -source [get_pins InstDAC_ClkIO_ODDR/C] -divide_by 1 -add -master_clock [get_clocks -of [get_ports -scoped_to_current_instance DAC_Clk]] [get_ports ZmodDAC_ClkIO_0] (Source: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 14))
 Related violations: <none>
 
 XDCC-7#2 Warning
 Scoped Clock constraint overwritten on the same source  
 A new clock constraint create_generated_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
-New: create_generated_clock -name ZmodDAC_ClkIn -source [get_pins design_1_i/ZmodAWGController_0/U0/InstDAC_ClkinODDR/C] -divide_by 1 [get_ports ZmodDAC_ClkIn_0] (Source: Z:/DAT096/signal generator/project_2/project_2.srcs/constrs_1/new/Eclypse Z7.xdc (Line: 84))
-Previous: create_generated_clock -name ZmodDAC_ClkIn -source [get_pins InstDAC_ClkinODDR/C] -divide_by 1 -add -master_clock [get_clocks -of [get_ports -scoped_to_current_instance DAC_Clk]] [get_ports ZmodDAC_ClkIn_0] (Source: z:/DAT096/signal generator/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 15))
+New: create_generated_clock -name ZmodDAC_ClkIn -source [get_pins design_1_i/ZmodAWGController_0/U0/InstDAC_ClkinODDR/C] -divide_by 1 [get_ports ZmodDAC_ClkIn_0] (Source: C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.srcs/constrs_1/new/Eclypse Z7.xdc (Line: 84))
+Previous: create_generated_clock -name ZmodDAC_ClkIn -source [get_pins InstDAC_ClkinODDR/C] -divide_by 1 -add -master_clock [get_clocks -of [get_ports -scoped_to_current_instance DAC_Clk]] [get_ports ZmodDAC_ClkIn_0] (Source: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/constr/ConstrsZmodDAC1411.xdc (Line: 15))
 Related violations: <none>
 
 

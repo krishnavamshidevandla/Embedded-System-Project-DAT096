@@ -2,10 +2,10 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Thu Feb 26 09:49:15 2026
+// Date        : Wed Mar  4 14:10:42 2026
 // Host        : FY-6302-09 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim {z:/DAT096/signal
-//               generator/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_prbs_axis_master_32_0_0/design_1_prbs_axis_master_32_0_0_sim_netlist.v}
+// Command     : write_verilog -force -mode funcsim
+//               c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_prbs_axis_master_32_0_0/design_1_prbs_axis_master_32_0_0_sim_netlist.v
 // Design      : design_1_prbs_axis_master_32_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.

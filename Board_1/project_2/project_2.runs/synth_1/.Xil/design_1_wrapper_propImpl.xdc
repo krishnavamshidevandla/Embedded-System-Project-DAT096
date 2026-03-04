@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{Z:/DAT096/signal generator/project_2/project_2.srcs/constrs_1/new/Eclypse Z7.xdc} rfile:{../../../project_2.srcs/constrs_1/new/Eclypse Z7.xdc} id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.srcs/constrs_1/new/Eclypse Z7.xdc} rfile:{../../../project_2.srcs/constrs_1/new/Eclypse Z7.xdc} id:1} [current_design]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN D18 [get_ports sys_clk]
 set_property src_info {type:XDC file:1 line:20 export:INPUT save:INPUT read:READ} [current_design]

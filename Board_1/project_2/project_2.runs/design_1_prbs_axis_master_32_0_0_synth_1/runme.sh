@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='Z:/DAT096/signal generator/project_2/project_2.runs/design_1_prbs_axis_master_32_0_0_synth_1'
+HD_PWD='C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.runs/design_1_prbs_axis_master_32_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

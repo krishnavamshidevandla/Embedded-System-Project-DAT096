@@ -18,4 +18,4 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_Zm
 # IP: bd/design_1/ip/design_1_prbs_axis_master_32_0_0/design_1_prbs_axis_master_32_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_prbs_axis_master_32_0_0 || ORIG_REF_NAME==design_1_prbs_axis_master_32_0_0} -quiet] -quiet
 
-# XDC: z:/DAT096/signal generator/project_2/project_2.gen/sources_1/bd/design_1/design_1_ooc.xdc
+# XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.gen/sources_1/bd/design_1/design_1_ooc.xdc

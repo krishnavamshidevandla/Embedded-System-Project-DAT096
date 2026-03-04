@@ -9,25 +9,58 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2 ||
 # IP: bd/design_2/ip/design_2_ZmodScopeController_0_1/design_2_ZmodScopeController_0_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_ZmodScopeController_0_1 || ORIG_REF_NAME==design_2_ZmodScopeController_0_1} -quiet] -quiet
 
-# IP: bd/design_2/ip/design_2_clk_wiz_0_1/design_2_clk_wiz_0_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_clk_wiz_0_1 || ORIG_REF_NAME==design_2_clk_wiz_0_1} -quiet] -quiet
-
-# IP: bd/design_2/ip/design_2_xlconstant_0_1/design_2_xlconstant_0_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_xlconstant_0_1 || ORIG_REF_NAME==design_2_xlconstant_0_1} -quiet] -quiet
-
-# IP: bd/design_2/ip/design_2_xlconstant_1_0/design_2_xlconstant_1_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_xlconstant_1_0 || ORIG_REF_NAME==design_2_xlconstant_1_0} -quiet] -quiet
+# IP: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_1/src/ZmodADC_SynchonizationFIFO.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ZmodADC_SynchonizationFIFO || ORIG_REF_NAME==ZmodADC_SynchonizationFIFO} -quiet] -quiet
 
 # IP: bd/design_2/ip/design_2_ila_0_0/design_2_ila_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_ila_0_0 || ORIG_REF_NAME==design_2_ila_0_0} -quiet] -quiet
 
-# IP: bd/design_2/ip/design_2_util_ds_buf_0_0/design_2_util_ds_buf_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_util_ds_buf_0_0 || ORIG_REF_NAME==design_2_util_ds_buf_0_0} -quiet] -quiet
+# IP: bd/design_2/ip/design_2_xlslice_0_0/design_2_xlslice_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_xlslice_0_0 || ORIG_REF_NAME==design_2_xlslice_0_0} -quiet] -quiet
 
-# IP: bd/design_2/ip/design_2_axis_register_slice_0_0/design_2_axis_register_slice_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_axis_register_slice_0_0 || ORIG_REF_NAME==design_2_axis_register_slice_0_0} -quiet] -quiet
+# IP: bd/design_2/ip/design_2_xlconstant_0_0/design_2_xlconstant_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_xlconstant_0_0 || ORIG_REF_NAME==design_2_xlconstant_0_0} -quiet] -quiet
+
+# IP: bd/design_2/ip/design_2_adc_bit_decoder_0_0/design_2_adc_bit_decoder_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_adc_bit_decoder_0_0 || ORIG_REF_NAME==design_2_adc_bit_decoder_0_0} -quiet] -quiet
+
+# IP: bd/design_2/ip/design_2_xlconstant_1_0/design_2_xlconstant_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_xlconstant_1_0 || ORIG_REF_NAME==design_2_xlconstant_1_0} -quiet] -quiet
+
+# IP: bd/design_2/ip/design_2_clk_wiz_0_0/design_2_clk_wiz_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_clk_wiz_0_0 || ORIG_REF_NAME==design_2_clk_wiz_0_0} -quiet] -quiet
 
 # IP: bd/design_2/ip/design_2_xlconstant_2_0/design_2_xlconstant_2_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_xlconstant_2_0 || ORIG_REF_NAME==design_2_xlconstant_2_0} -quiet] -quiet
+
+# IP: bd/design_2/ip/design_2_xlconstant_3_0/design_2_xlconstant_3_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_xlconstant_3_0 || ORIG_REF_NAME==design_2_xlconstant_3_0} -quiet] -quiet
+
+# XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_1/src/ZmodADC_SynchonizationFIFO.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ZmodADC_SynchonizationFIFO || ORIG_REF_NAME==ZmodADC_SynchonizationFIFO} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_1/src/ZmodADC_SynchonizationFIFO_clocks.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ZmodADC_SynchonizationFIFO || ORIG_REF_NAME==ZmodADC_SynchonizationFIFO} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_1/constr/ConstrsZmodADC.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_2_ZmodScopeController_0_1 || ORIG_REF_NAME==design_2_ZmodScopeController_0_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_1/constr/ConstrZmodADC_ooc.xdc
+
+# XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/ila_v6_2/constraints/ila_impl.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_2_ila_0_0 || ORIG_REF_NAME==design_2_ila_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/ila_v6_2/constraints/ila.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_2_ila_0_0 || ORIG_REF_NAME==design_2_ila_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/design_2_ila_0_0_ooc.xdc
+
+# XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_clk_wiz_0_0/design_2_clk_wiz_0_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_2_clk_wiz_0_0 || ORIG_REF_NAME==design_2_clk_wiz_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_clk_wiz_0_0/design_2_clk_wiz_0_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_2_clk_wiz_0_0 || ORIG_REF_NAME==design_2_clk_wiz_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_clk_wiz_0_0/design_2_clk_wiz_0_0_ooc.xdc
 
 # XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/design_2_ooc.xdc

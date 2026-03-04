@@ -1,0 +1,14 @@
+verilog xil_defaultlib --include "../../../../Board_2.gen/sources_1/bd/design_2/ipshared/814a/hdl/verilog" --include "../../../../Board_2.gen/sources_1/bd/design_2/ipshared/1017/hdl/verilog" --include "../../../../Board_2.gen/sources_1/bd/design_2/ipshared/52c0/hdl/verilog" --include "../../../../Board_2.gen/sources_1/bd/design_2/ipshared/2276/hdl/verilog" --include "../../../../Board_2.gen/sources_1/bd/design_2/ipshared/3cbc" \
+"../../../bd/design_2/ip/design_2_ZmodScopeController_0_1/src/sim/ZmodADC_SynchonizationFIFO.v" \
+"../../../bd/design_2/ip/design_2_xlslice_0_0/sim/design_2_xlslice_0_0.v" \
+"../../../bd/design_2/ip/design_2_xlconstant_0_0/sim/design_2_xlconstant_0_0.v" \
+"../../../bd/design_2/ip/design_2_xlconstant_1_0/sim/design_2_xlconstant_1_0.v" \
+"../../../bd/design_2/ip/design_2_clk_wiz_0_0/design_2_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/design_2/ip/design_2_clk_wiz_0_0/design_2_clk_wiz_0_0.v" \
+"../../../bd/design_2/ip/design_2_xlconstant_2_0/sim/design_2_xlconstant_2_0.v" \
+"../../../bd/design_2/ip/design_2_xlconstant_3_0/sim/design_2_xlconstant_3_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

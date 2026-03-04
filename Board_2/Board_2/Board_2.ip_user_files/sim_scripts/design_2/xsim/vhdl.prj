@@ -1,0 +1,19 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_2/ipshared/6aaf/src/ADI_SPI.vhd" \
+"../../../bd/design_2/ipshared/6aaf/src/ConfigADC.vhd" \
+"../../../bd/design_2/ipshared/6aaf/src/ConfigRelays.vhd" \
+"../../../bd/design_2/ipshared/6aaf/src/SyncAsync.vhd" \
+"../../../bd/design_2/ipshared/6aaf/src/DataPath.vhd" \
+"../../../bd/design_2/ipshared/6aaf/src/HandshakeData.vhd" \
+"../../../bd/design_2/ipshared/6aaf/src/SyncBase.vhd" \
+"../../../bd/design_2/ipshared/6aaf/src/PkgZmodADC.vhd" \
+"../../../bd/design_2/ipshared/6aaf/src/ResetBridge.vhd" \
+"../../../bd/design_2/ipshared/6aaf/src/GainOffsetCalib.vhd" \
+"../../../bd/design_2/ipshared/6aaf/src/ZmodScopeController.vhd" \
+"../../../bd/design_2/ip/design_2_ZmodScopeController_0_1/sim/design_2_ZmodScopeController_0_1.vhd" \
+"../../../bd/design_2/ip/design_2_ila_0_0/sim/design_2_ila_0_0.vhd" \
+"../../../bd/design_2/ip/design_2_adc_bit_decoder_0_0/sim/design_2_adc_bit_decoder_0_0.vhd" \
+"../../../bd/design_2/sim/design_2.vhd" \
+
+# Do not sort compile order
+nosort

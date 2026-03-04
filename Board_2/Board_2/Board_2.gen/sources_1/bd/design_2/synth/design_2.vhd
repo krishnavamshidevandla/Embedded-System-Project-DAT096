@@ -2,7 +2,7 @@
 --Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
---Date        : Sun Mar  1 14:17:52 2026
+--Date        : Wed Mar  4 17:05:22 2026
 --Host        : FY-6302-09 running 64-bit major release  (build 9200)
 --Command     : generate_target design_2.bd
 --Design      : design_2
@@ -16,8 +16,7 @@ entity design_2 is
   port (
     ZmodAdcClkIn_n_0 : out STD_LOGIC;
     ZmodAdcClkIn_p_0 : out STD_LOGIC;
-    adc_dco_n : in STD_LOGIC;
-    adc_dco_p : in STD_LOGIC;
+    ZmodDcoClk_0 : in STD_LOGIC;
     dZmodADC_Data_0 : in STD_LOGIC_VECTOR ( 13 downto 0 );
     iZmodSync_0 : out STD_LOGIC;
     sZmodADC_CS_0 : out STD_LOGIC;
@@ -36,7 +35,7 @@ entity design_2 is
     sys_clk : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_2 : entity is "design_2,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_2,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=8,numReposBlks=8,numNonXlnxBlks=1,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=4,da_ps7_cnt=1,synth_mode=Hierarchical}";
+  attribute CORE_GENERATION_INFO of design_2 : entity is "design_2,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_2,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=9,numReposBlks=9,numNonXlnxBlks=1,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=4,da_ps7_cnt=2,synth_mode=None}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_2 : entity is "design_2.hwdef";
 end design_2;
@@ -89,80 +88,77 @@ architecture STRUCTURE of design_2 is
     sZmodRelayComL : out STD_LOGIC
   );
   end component design_2_ZmodScopeController_0_1;
-  component design_2_clk_wiz_0_1 is
+  component design_2_ila_0_0 is
   port (
-    reset : in STD_LOGIC;
-    clk_in1 : in STD_LOGIC;
-    clk_out1 : out STD_LOGIC;
-    locked : out STD_LOGIC
+    clk : in STD_LOGIC;
+    probe0 : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    probe1 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe2 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe3 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe4 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe5 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe6 : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    probe7 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  end component design_2_clk_wiz_0_1;
-  component design_2_xlconstant_0_1 is
+  end component design_2_ila_0_0;
+  component design_2_xlslice_0_0 is
+  port (
+    Din : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    Dout : out STD_LOGIC_VECTOR ( 13 downto 0 )
+  );
+  end component design_2_xlslice_0_0;
+  component design_2_xlconstant_0_0 is
   port (
     dout : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  end component design_2_xlconstant_0_1;
+  end component design_2_xlconstant_0_0;
+  component design_2_adc_bit_decoder_0_0 is
+  port (
+    clk : in STD_LOGIC;
+    rst : in STD_LOGIC;
+    adc_data : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    bit_out : out STD_LOGIC
+  );
+  end component design_2_adc_bit_decoder_0_0;
   component design_2_xlconstant_1_0 is
   port (
     dout : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component design_2_xlconstant_1_0;
-  component design_2_ila_0_0 is
+  component design_2_clk_wiz_0_0 is
   port (
-    clk : in STD_LOGIC;
-    probe0 : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    probe1 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe2 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe3 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe4 : in STD_LOGIC_VECTOR ( 0 to 0 )
+    clk_in1 : in STD_LOGIC;
+    clk_out1 : out STD_LOGIC
   );
-  end component design_2_ila_0_0;
-  component design_2_util_ds_buf_0_0 is
-  port (
-    IBUF_DS_P : in STD_LOGIC_VECTOR ( 0 to 0 );
-    IBUF_DS_N : in STD_LOGIC_VECTOR ( 0 to 0 );
-    IBUF_OUT : out STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  end component design_2_util_ds_buf_0_0;
-  component design_2_axis_register_slice_0_0 is
-  port (
-    aclk : in STD_LOGIC;
-    aresetn : in STD_LOGIC;
-    s_axis_tvalid : in STD_LOGIC;
-    s_axis_tready : out STD_LOGIC;
-    s_axis_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    m_axis_tvalid : out STD_LOGIC;
-    m_axis_tready : in STD_LOGIC;
-    m_axis_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 )
-  );
-  end component design_2_axis_register_slice_0_0;
+  end component design_2_clk_wiz_0_0;
   component design_2_xlconstant_2_0 is
   port (
     dout : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component design_2_xlconstant_2_0;
-  signal Net1 : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal ZmodScopeController_0_DataStream_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal ZmodScopeController_0_DataStream_TREADY : STD_LOGIC;
-  signal ZmodScopeController_0_DataStream_TVALID : STD_LOGIC;
+  component design_2_xlconstant_3_0 is
+  port (
+    dout : out STD_LOGIC_VECTOR ( 1 downto 0 )
+  );
+  end component design_2_xlconstant_3_0;
+  signal ZmodScopeController_0_cDataAxisTdata : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal ZmodScopeController_0_cDataAxisTvalid : STD_LOGIC;
   signal ZmodScopeController_0_sConfigError : STD_LOGIC;
   signal ZmodScopeController_0_sInitDoneADC : STD_LOGIC;
-  signal axis_register_slice_0_m_axis_tdata : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal axis_register_slice_0_m_axis_tvalid : STD_LOGIC;
+  signal adc_bit_decoder_0_bit_out : STD_LOGIC;
   signal clk_wiz_0_clk_out1 : STD_LOGIC;
-  signal util_ds_buf_0_IBUF_OUT : STD_LOGIC_VECTOR ( 0 to 0 );
   signal xlconstant_0_dout : STD_LOGIC_VECTOR ( 0 to 0 );
   signal xlconstant_1_dout : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal xlconstant_2_dout : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal xlconstant_3_dout : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal xlslice_0_Dout : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal NLW_ZmodScopeController_0_sDataOverflow_UNCONNECTED : STD_LOGIC;
   signal NLW_ZmodScopeController_0_sInitDoneRelay_UNCONNECTED : STD_LOGIC;
   signal NLW_ZmodScopeController_0_sRstBusy_UNCONNECTED : STD_LOGIC;
-  signal NLW_clk_wiz_0_locked_UNCONNECTED : STD_LOGIC;
   attribute X_INTERFACE_INFO : string;
-  attribute X_INTERFACE_INFO of adc_dco_n : signal is "xilinx.com:signal:data:1.0 DATA.ADC_DCO_N DATA";
+  attribute X_INTERFACE_INFO of ZmodDcoClk_0 : signal is "xilinx.com:signal:clock:1.0 CLK.ZMODDCOCLK_0 CLK";
   attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of adc_dco_n : signal is "XIL_INTERFACENAME DATA.ADC_DCO_N, LAYERED_METADATA undef";
-  attribute X_INTERFACE_INFO of adc_dco_p : signal is "xilinx.com:signal:data:1.0 DATA.ADC_DCO_P DATA";
-  attribute X_INTERFACE_PARAMETER of adc_dco_p : signal is "XIL_INTERFACENAME DATA.ADC_DCO_P, LAYERED_METADATA undef";
+  attribute X_INTERFACE_PARAMETER of ZmodDcoClk_0 : signal is "XIL_INTERFACENAME CLK.ZMODDCOCLK_0, CLK_DOMAIN design_2_ZmodDcoClk_0, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0";
   attribute X_INTERFACE_INFO of sys_clk : signal is "xilinx.com:signal:clock:1.0 CLK.SYS_CLK CLK";
   attribute X_INTERFACE_PARAMETER of sys_clk : signal is "XIL_INTERFACENAME CLK.SYS_CLK, CLK_DOMAIN design_2_sys_clk, FREQ_HZ 125000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0";
 begin
@@ -173,11 +169,11 @@ ZmodScopeController_0: component design_2_ZmodScopeController_0_1
       SysClk100 => clk_wiz_0_clk_out1,
       ZmodAdcClkIn_n => ZmodAdcClkIn_n_0,
       ZmodAdcClkIn_p => ZmodAdcClkIn_p_0,
-      ZmodDcoClk => util_ds_buf_0_IBUF_OUT(0),
-      aRst_n => xlconstant_0_dout(0),
-      cDataAxisTdata(31 downto 0) => ZmodScopeController_0_DataStream_TDATA(31 downto 0),
-      cDataAxisTready => ZmodScopeController_0_DataStream_TREADY,
-      cDataAxisTvalid => ZmodScopeController_0_DataStream_TVALID,
+      ZmodDcoClk => ZmodDcoClk_0,
+      aRst_n => xlconstant_1_dout(0),
+      cDataAxisTdata(31 downto 0) => ZmodScopeController_0_cDataAxisTdata(31 downto 0),
+      cDataAxisTready => xlconstant_1_dout(0),
+      cDataAxisTvalid => ZmodScopeController_0_cDataAxisTvalid,
       cExtCh1HgAddCoef(17 downto 0) => B"000000000000000000",
       cExtCh1HgMultCoef(17 downto 0) => B"000000000000000000",
       cExtCh1LgAddCoef(17 downto 0) => B"000000000000000000",
@@ -188,16 +184,16 @@ ZmodScopeController_0: component design_2_ZmodScopeController_0_1
       cExtCh2LgMultCoef(17 downto 0) => B"000000000000000000",
       dZmodADC_Data(13 downto 0) => dZmodADC_Data_0(13 downto 0),
       iZmodSync => iZmodSync_0,
-      sCh1CouplingConfig => xlconstant_1_dout(0),
-      sCh1GainConfig => xlconstant_1_dout(0),
-      sCh2CouplingConfig => xlconstant_1_dout(0),
-      sCh2GainConfig => xlconstant_1_dout(0),
+      sCh1CouplingConfig => xlconstant_2_dout(0),
+      sCh1GainConfig => xlconstant_3_dout(0),
+      sCh2CouplingConfig => xlconstant_2_dout(0),
+      sCh2GainConfig => xlconstant_3_dout(0),
       sConfigError => ZmodScopeController_0_sConfigError,
       sDataOverflow => NLW_ZmodScopeController_0_sDataOverflow_UNCONNECTED,
       sInitDoneADC => ZmodScopeController_0_sInitDoneADC,
       sInitDoneRelay => NLW_ZmodScopeController_0_sInitDoneRelay_UNCONNECTED,
       sRstBusy => NLW_ZmodScopeController_0_sRstBusy_UNCONNECTED,
-      sTestMode => xlconstant_1_dout(0),
+      sTestMode => xlconstant_0_dout(0),
       sZmodADC_CS => sZmodADC_CS_0,
       sZmodADC_SDIO => sZmodADC_SDIO_0,
       sZmodADC_Sclk => sZmodADC_Sclk_0,
@@ -212,40 +208,31 @@ ZmodScopeController_0: component design_2_ZmodScopeController_0_1
       sZmodRelayComH => sZmodRelayComH_0,
       sZmodRelayComL => sZmodRelayComL_0
     );
-axis_register_slice_0: component design_2_axis_register_slice_0_0
+adc_bit_decoder_0: component design_2_adc_bit_decoder_0_0
      port map (
-      aclk => clk_wiz_0_clk_out1,
-      aresetn => xlconstant_0_dout(0),
-      m_axis_tdata(31 downto 0) => axis_register_slice_0_m_axis_tdata(31 downto 0),
-      m_axis_tready => Net1(0),
-      m_axis_tvalid => axis_register_slice_0_m_axis_tvalid,
-      s_axis_tdata(31 downto 0) => ZmodScopeController_0_DataStream_TDATA(31 downto 0),
-      s_axis_tready => ZmodScopeController_0_DataStream_TREADY,
-      s_axis_tvalid => ZmodScopeController_0_DataStream_TVALID
+      adc_data(13 downto 0) => xlslice_0_Dout(13 downto 0),
+      bit_out => adc_bit_decoder_0_bit_out,
+      clk => clk_wiz_0_clk_out1,
+      rst => xlconstant_0_dout(0)
     );
-clk_wiz_0: component design_2_clk_wiz_0_1
+clk_wiz_0: component design_2_clk_wiz_0_0
      port map (
       clk_in1 => sys_clk,
-      clk_out1 => clk_wiz_0_clk_out1,
-      locked => NLW_clk_wiz_0_locked_UNCONNECTED,
-      reset => '0'
+      clk_out1 => clk_wiz_0_clk_out1
     );
 ila_0: component design_2_ila_0_0
      port map (
-      clk => clk_wiz_0_clk_out1,
-      probe0(31 downto 0) => axis_register_slice_0_m_axis_tdata(31 downto 0),
-      probe1(0) => axis_register_slice_0_m_axis_tvalid,
-      probe2(0) => Net1(0),
-      probe3(0) => ZmodScopeController_0_sInitDoneADC,
-      probe4(0) => ZmodScopeController_0_sConfigError
+      clk => ZmodDcoClk_0,
+      probe0(13 downto 0) => xlslice_0_Dout(13 downto 0),
+      probe1(0) => adc_bit_decoder_0_bit_out,
+      probe2(0) => ZmodScopeController_0_cDataAxisTvalid,
+      probe3(31 downto 0) => ZmodScopeController_0_cDataAxisTdata(31 downto 0),
+      probe4(0) => ZmodScopeController_0_sInitDoneADC,
+      probe5(0) => ZmodScopeController_0_sConfigError,
+      probe6(13 downto 0) => dZmodADC_Data_0(13 downto 0),
+      probe7(0) => xlconstant_1_dout(0)
     );
-util_ds_buf_0: component design_2_util_ds_buf_0_0
-     port map (
-      IBUF_DS_N(0) => adc_dco_n,
-      IBUF_DS_P(0) => adc_dco_p,
-      IBUF_OUT(0) => util_ds_buf_0_IBUF_OUT(0)
-    );
-xlconstant_0: component design_2_xlconstant_0_1
+xlconstant_0: component design_2_xlconstant_0_0
      port map (
       dout(0) => xlconstant_0_dout(0)
     );
@@ -255,6 +242,15 @@ xlconstant_1: component design_2_xlconstant_1_0
     );
 xlconstant_2: component design_2_xlconstant_2_0
      port map (
-      dout(0) => Net1(0)
+      dout(0) => xlconstant_2_dout(0)
+    );
+xlconstant_3: component design_2_xlconstant_3_0
+     port map (
+      dout(1 downto 0) => xlconstant_3_dout(1 downto 0)
+    );
+xlslice_0: component design_2_xlslice_0_0
+     port map (
+      Din(31 downto 0) => ZmodScopeController_0_cDataAxisTdata(31 downto 0),
+      Dout(13 downto 0) => xlslice_0_Dout(13 downto 0)
     );
 end STRUCTURE;

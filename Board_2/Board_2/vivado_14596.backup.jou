@@ -1,0 +1,64 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Mar  3 10:35:19 2026
+# Process ID         : 14596
+# Current directory  : C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent18108 C:\Users\qianzha\Desktop\Embedded-System-Project-DAT096\Board_2\Board_2\Board_2.xpr
+# Log file           : C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/vivado.log
+# Journal file       : C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2\vivado.jou
+# Running On         : FY-6302-04
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-14700
+# CPU Frequency      : 2112 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 34031 MB
+# Swap memory        : 5100 MB
+# Total Virtual      : 39131 MB
+# Available Virtual  : 28285 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/sources_1/bd/design_2/design_2.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+set_property location {1 240 -972} [get_bd_cells processing_system7_0]
+delete_bd_objs [get_bd_cells util_ds_buf_1]
+delete_bd_objs [get_bd_cells util_ds_buf_0]
+delete_bd_objs [get_bd_nets axis_register_slice_0_m_axis_tvalid] [get_bd_nets axis_register_slice_0_m_axis_tdata] [get_bd_intf_nets ZmodScopeController_0_DataStream] [get_bd_cells axis_register_slice_0]
+delete_bd_objs [get_bd_nets util_ds_buf_0_IBUF_OUT]
+delete_bd_objs [get_bd_nets xlconstant_1_dout]
+delete_bd_objs [get_bd_cells xlconstant_1]
+startgroup
+make_bd_pins_external  [get_bd_pins ZmodScopeController_0/ZmodDcoClk]
+endgroup
+set_property location {-94 -397} [get_bd_ports sZmodRelayComL_0]
+undo
+set_property location {-67 -383} [get_bd_ports dZmodADC_Data_0]
+set_property location {2136 -397} [get_bd_ports sZmodRelayComL_0]
+delete_bd_objs [get_bd_nets Net1] [get_bd_cells xlconstant_2]
+set_property location {1.5 389 -786} [get_bd_cells processing_system7_0]
+set_property location {3 1132 -335} [get_bd_cells xlconstant_0]
+delete_bd_objs [get_bd_nets util_ds_buf_1_BUFG_O]
+set_property location {3 1080 -649} [get_bd_cells clk_wiz_0]
+delete_bd_objs [get_bd_nets sys_clk_1]
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1]
+set_property location {1 216 -993} [get_bd_cells clk_wiz_0]
+set_property location {2 929 -618} [get_bd_cells processing_system7_0]
+delete_bd_objs [get_bd_nets ZmodScopeController_0_sConfigError]
+delete_bd_objs [get_bd_nets ZmodScopeController_0_sInitDoneADC]
+set_property location {2 876 -1003} [get_bd_cells ila_0]
+delete_bd_objs [get_bd_nets xlconstant_0_dout] [get_bd_cells xlconstant_0]
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+startgroup
+set_property CONFIG.PCW_USE_S_AXI_HP0 {1} [get_bd_cells processing_system7_0]
+endgroup
+regenerate_bd_layout
+undo
+save_bd_design
