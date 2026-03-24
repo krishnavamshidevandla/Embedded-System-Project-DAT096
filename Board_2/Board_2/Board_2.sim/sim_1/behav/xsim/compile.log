@@ -1,0 +1,51 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ip/design_2_ZmodScopeController_0_1/src/ZmodADC_SynchonizationFIFO/sim/ZmodADC_SynchonizationFIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZmodADC_SynchonizationFIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ip/design_2_xlconstant_0_0/sim/design_2_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ip/design_2_clk_wiz_0_0/design_2_clk_wiz_0_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_clk_wiz_0_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ip/design_2_clk_wiz_0_0/design_2_clk_wiz_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_clk_wiz_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ip/design_2_xlconstant_4_0/sim/design_2_xlconstant_4_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_xlconstant_4_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ip/design_2_xlconstant_2_1/sim/design_2_xlconstant_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_xlconstant_2_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ip/design_2_xlconstant_1_1/sim/design_2_xlconstant_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_xlconstant_1_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/sources_1/new/adc_bit_decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'adc_bit_decoder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ipshared/c25f/src/PkgZmodADC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ipshared/c25f/src/ADI_SPI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ADI_SPI'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ipshared/c25f/src/ConfigADC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ConfigADC'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ipshared/c25f/src/ConfigRelays.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ConfigRelays'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ipshared/c25f/src/SyncAsync.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SyncAsync'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ipshared/c25f/src/ResetBridge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ResetBridge'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ipshared/c25f/src/DataPath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DataPath'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ipshared/c25f/src/GainOffsetCalib.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'GainOffsetCalib'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ipshared/c25f/src/HandshakeData.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'HandshakeData'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ipshared/c25f/src/SyncBase.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SyncBase'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ipshared/c25f/src/ZmodScopeController.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ZmodScopeController'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ip/design_2_ZmodScopeController_0_1/sim/design_2_ZmodScopeController_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_2_ZmodScopeController_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ip/design_2_ila_0_0/sim/design_2_ila_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_2_ila_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ip/design_2_adc_bit_decoder_0_0/sim/design_2_adc_bit_decoder_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_2_adc_bit_decoder_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ip/design_2_proc_sys_reset_0_0/sim/design_2_proc_sys_reset_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_2_proc_sys_reset_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/sim/design_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/hdl/design_2_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_2_wrapper'

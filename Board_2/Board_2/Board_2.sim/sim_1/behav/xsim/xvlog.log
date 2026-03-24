@@ -1,0 +1,16 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ip/design_2_ZmodScopeController_0_1/src/ZmodADC_SynchonizationFIFO/sim/ZmodADC_SynchonizationFIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZmodADC_SynchonizationFIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ip/design_2_xlconstant_0_0/sim/design_2_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ip/design_2_clk_wiz_0_0/design_2_clk_wiz_0_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_clk_wiz_0_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ip/design_2_clk_wiz_0_0/design_2_clk_wiz_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_clk_wiz_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ip/design_2_xlconstant_4_0/sim/design_2_xlconstant_4_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_xlconstant_4_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ip/design_2_xlconstant_2_1/sim/design_2_xlconstant_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_xlconstant_2_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.ip_user_files/bd/design_2/ip/design_2_xlconstant_1_1/sim/design_2_xlconstant_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_xlconstant_1_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -46,8 +46,8 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: digilent.com:user:ZmodScopeController:1.0
--- IP Revision: 1
+-- IP VLNV: digilent.com:user:ZmodScopeController:1.2
+-- IP Revision: 4
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -63,22 +63,11 @@ ENTITY design_2_ZmodScopeController_0_1 IS
     sInitDoneADC : OUT STD_LOGIC;
     sConfigError : OUT STD_LOGIC;
     sInitDoneRelay : OUT STD_LOGIC;
+    sEnableAcquisition : IN STD_LOGIC;
     sDataOverflow : OUT STD_LOGIC;
     cDataAxisTvalid : OUT STD_LOGIC;
     cDataAxisTready : IN STD_LOGIC;
     cDataAxisTdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-    cExtCh1LgMultCoef : IN STD_LOGIC_VECTOR(17 DOWNTO 0);
-    cExtCh1LgAddCoef : IN STD_LOGIC_VECTOR(17 DOWNTO 0);
-    cExtCh1HgMultCoef : IN STD_LOGIC_VECTOR(17 DOWNTO 0);
-    cExtCh1HgAddCoef : IN STD_LOGIC_VECTOR(17 DOWNTO 0);
-    cExtCh2LgMultCoef : IN STD_LOGIC_VECTOR(17 DOWNTO 0);
-    cExtCh2LgAddCoef : IN STD_LOGIC_VECTOR(17 DOWNTO 0);
-    cExtCh2HgMultCoef : IN STD_LOGIC_VECTOR(17 DOWNTO 0);
-    cExtCh2HgAddCoef : IN STD_LOGIC_VECTOR(17 DOWNTO 0);
-    sCh1CouplingConfig : IN STD_LOGIC;
-    sCh2CouplingConfig : IN STD_LOGIC;
-    sCh1GainConfig : IN STD_LOGIC;
-    sCh2GainConfig : IN STD_LOGIC;
     sTestMode : IN STD_LOGIC;
     ZmodAdcClkIn_p : OUT STD_LOGIC;
     ZmodAdcClkIn_n : OUT STD_LOGIC;
@@ -117,15 +106,16 @@ ARCHITECTURE design_2_ZmodScopeController_0_1_arch OF design_2_ZmodScopeControll
       kCh2CouplingStatic : STD_LOGIC;
       kCh1GainStatic : STD_LOGIC;
       kCh2GainStatic : STD_LOGIC;
-      kCh1LgMultCoefStatic : STD_LOGIC_VECTOR(17 DOWNTO 0);
-      kCh1LgAddCoefStatic : STD_LOGIC_VECTOR(17 DOWNTO 0);
-      kCh1HgMultCoefStatic : STD_LOGIC_VECTOR(17 DOWNTO 0);
-      kCh1HgAddCoefStatic : STD_LOGIC_VECTOR(17 DOWNTO 0);
-      kCh2LgMultCoefStatic : STD_LOGIC_VECTOR(17 DOWNTO 0);
-      kCh2LgAddCoefStatic : STD_LOGIC_VECTOR(17 DOWNTO 0);
-      kCh2HgMultCoefStatic : STD_LOGIC_VECTOR(17 DOWNTO 0);
-      kCh2HgAddCoefStatic : STD_LOGIC_VECTOR(17 DOWNTO 0);
-      kZmodID : INTEGER
+      kCh1LgMultCoefStatic : STD_LOGIC_VECTOR(19 DOWNTO 0);
+      kCh1LgAddCoefStatic : STD_LOGIC_VECTOR(19 DOWNTO 0);
+      kCh1HgMultCoefStatic : STD_LOGIC_VECTOR(19 DOWNTO 0);
+      kCh1HgAddCoefStatic : STD_LOGIC_VECTOR(19 DOWNTO 0);
+      kCh2LgMultCoefStatic : STD_LOGIC_VECTOR(19 DOWNTO 0);
+      kCh2LgAddCoefStatic : STD_LOGIC_VECTOR(19 DOWNTO 0);
+      kCh2HgMultCoefStatic : STD_LOGIC_VECTOR(19 DOWNTO 0);
+      kCh2HgAddCoefStatic : STD_LOGIC_VECTOR(19 DOWNTO 0);
+      kZmodID : INTEGER;
+      kSimulation : BOOLEAN
     );
     PORT (
       SysClk100 : IN STD_LOGIC;
@@ -136,6 +126,7 @@ ARCHITECTURE design_2_ZmodScopeController_0_1_arch OF design_2_ZmodScopeControll
       sInitDoneADC : OUT STD_LOGIC;
       sConfigError : OUT STD_LOGIC;
       sInitDoneRelay : OUT STD_LOGIC;
+      sEnableAcquisition : IN STD_LOGIC;
       sDataOverflow : OUT STD_LOGIC;
       cDataAxisTvalid : OUT STD_LOGIC;
       cDataAxisTready : IN STD_LOGIC;
@@ -191,13 +182,13 @@ ARCHITECTURE design_2_ZmodScopeController_0_1_arch OF design_2_ZmodScopeControll
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF ADC_InClk: SIGNAL IS "xilinx.com:signal:clock:1.0 ADC_InClk CLK";
   ATTRIBUTE X_INTERFACE_MODE OF ADC_InClk: SIGNAL IS "slave ADC_InClk";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF ADC_InClk: SIGNAL IS "XIL_INTERFACENAME ADC_InClk, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_2_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF ADC_InClk: SIGNAL IS "XIL_INTERFACENAME ADC_InClk, FREQ_TOLERANCE_HZ 0, PHASE 90.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF ADC_SamplingClk: SIGNAL IS "xilinx.com:signal:clock:1.0 ADC_SamplingClk CLK";
   ATTRIBUTE X_INTERFACE_MODE OF ADC_SamplingClk: SIGNAL IS "slave ADC_SamplingClk";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF ADC_SamplingClk: SIGNAL IS "XIL_INTERFACENAME ADC_SamplingClk, ASSOCIATED_BUSIF DataStream, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_2_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF ADC_SamplingClk: SIGNAL IS "XIL_INTERFACENAME ADC_SamplingClk, ASSOCIATED_BUSIF DataStream, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF SysClk100: SIGNAL IS "xilinx.com:signal:clock:1.0 SysClk100 CLK";
   ATTRIBUTE X_INTERFACE_MODE OF SysClk100: SIGNAL IS "slave SysClk100";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF SysClk100: SIGNAL IS "XIL_INTERFACENAME SysClk100, ASSOCIATED_BUSIF SPI_IAP_TX:SPI_IAP_RX, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_2_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF SysClk100: SIGNAL IS "XIL_INTERFACENAME SysClk100, ASSOCIATED_BUSIF SPI_IAP_TX:SPI_IAP_RX, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF ZmodDcoClk: SIGNAL IS "xilinx.com:signal:clock:1.0 ZmodDcoClk CLK";
   ATTRIBUTE X_INTERFACE_MODE OF ZmodDcoClk: SIGNAL IS "slave ZmodDcoClk";
   ATTRIBUTE X_INTERFACE_PARAMETER OF ZmodDcoClk: SIGNAL IS "XIL_INTERFACENAME ZmodDcoClk, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_2_ZmodDcoClk_0, INSERT_VIP 0";
@@ -208,40 +199,31 @@ ARCHITECTURE design_2_ZmodScopeController_0_1_arch OF design_2_ZmodScopeControll
   ATTRIBUTE X_INTERFACE_INFO OF cDataAxisTready: SIGNAL IS "xilinx.com:interface:axis:1.0 DataStream TREADY";
   ATTRIBUTE X_INTERFACE_INFO OF cDataAxisTvalid: SIGNAL IS "xilinx.com:interface:axis:1.0 DataStream TVALID";
   ATTRIBUTE X_INTERFACE_MODE OF cDataAxisTvalid: SIGNAL IS "master DataStream";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF cDataAxisTvalid: SIGNAL IS "XIL_INTERFACENAME DataStream, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, PHASE 0.0, CLK_DOMAIN design_2_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0";
-  ATTRIBUTE X_INTERFACE_INFO OF cExtCh1HgAddCoef: SIGNAL IS "natinst.com:user:ZmodScope_Calibration:1.0 ExtCh1Calib HgCoefAdd";
-  ATTRIBUTE X_INTERFACE_INFO OF cExtCh1HgMultCoef: SIGNAL IS "natinst.com:user:ZmodScope_Calibration:1.0 ExtCh1Calib HgCoefMult";
-  ATTRIBUTE X_INTERFACE_INFO OF cExtCh1LgAddCoef: SIGNAL IS "natinst.com:user:ZmodScope_Calibration:1.0 ExtCh1Calib LgCoefAdd";
-  ATTRIBUTE X_INTERFACE_INFO OF cExtCh1LgMultCoef: SIGNAL IS "natinst.com:user:ZmodScope_Calibration:1.0 ExtCh1Calib LgCoefMult";
-  ATTRIBUTE X_INTERFACE_MODE OF cExtCh1LgMultCoef: SIGNAL IS "slave ExtCh1Calib";
-  ATTRIBUTE X_INTERFACE_INFO OF cExtCh2HgAddCoef: SIGNAL IS "natinst.com:user:ZmodScope_Calibration:1.0 ExtCh2Calib HgCoefAdd";
-  ATTRIBUTE X_INTERFACE_INFO OF cExtCh2HgMultCoef: SIGNAL IS "natinst.com:user:ZmodScope_Calibration:1.0 ExtCh2Calib HgCoefMult";
-  ATTRIBUTE X_INTERFACE_INFO OF cExtCh2LgAddCoef: SIGNAL IS "natinst.com:user:ZmodScope_Calibration:1.0 ExtCh2Calib LgCoefAdd";
-  ATTRIBUTE X_INTERFACE_INFO OF cExtCh2LgMultCoef: SIGNAL IS "natinst.com:user:ZmodScope_Calibration:1.0 ExtCh2Calib LgCoefMult";
-  ATTRIBUTE X_INTERFACE_MODE OF cExtCh2LgMultCoef: SIGNAL IS "slave ExtCh2Calib";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF cDataAxisTvalid: SIGNAL IS "XIL_INTERFACENAME DataStream, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0";
 BEGIN
   U0 : ZmodScopeController
     GENERIC MAP (
       kSamplingPeriod => 10000,
       kADC_ClkDiv => 4,
       kADC_Width => 14,
-      kExtRelayConfigEn => true,
-      kExtCalibEn => true,
+      kExtRelayConfigEn => false,
+      kExtCalibEn => false,
       kExtCmdInterfaceEn => false,
       kExtSyncEn => false,
       kCh1CouplingStatic => '0',
       kCh2CouplingStatic => '0',
       kCh1GainStatic => '0',
       kCh2GainStatic => '0',
-      kCh1LgMultCoefStatic => B"010000000000000000",
-      kCh1LgAddCoefStatic => B"000000000000000000",
-      kCh1HgMultCoefStatic => B"010000000000000000",
-      kCh1HgAddCoefStatic => B"000000000000000000",
-      kCh2LgMultCoefStatic => B"010000000000000000",
-      kCh2LgAddCoefStatic => B"000000000000000000",
-      kCh2HgMultCoefStatic => B"010000000000000000",
-      kCh2HgAddCoefStatic => B"000000000000000000",
-      kZmodID => 0
+      kCh1LgMultCoefStatic => B"00010000000000000000",
+      kCh1LgAddCoefStatic => B"00000000000000000000",
+      kCh1HgMultCoefStatic => B"00010000000000000000",
+      kCh1HgAddCoefStatic => B"00000000000000000000",
+      kCh2LgMultCoefStatic => B"00010000000000000000",
+      kCh2LgAddCoefStatic => B"00000000000000000000",
+      kCh2HgMultCoefStatic => B"00010000000000000000",
+      kCh2HgAddCoefStatic => B"00000000000000000000",
+      kZmodID => 0,
+      kSimulation => false
     )
     PORT MAP (
       SysClk100 => SysClk100,
@@ -252,22 +234,23 @@ BEGIN
       sInitDoneADC => sInitDoneADC,
       sConfigError => sConfigError,
       sInitDoneRelay => sInitDoneRelay,
+      sEnableAcquisition => sEnableAcquisition,
       sDataOverflow => sDataOverflow,
       cDataAxisTvalid => cDataAxisTvalid,
       cDataAxisTready => cDataAxisTready,
       cDataAxisTdata => cDataAxisTdata,
-      cExtCh1LgMultCoef => cExtCh1LgMultCoef,
-      cExtCh1LgAddCoef => cExtCh1LgAddCoef,
-      cExtCh1HgMultCoef => cExtCh1HgMultCoef,
-      cExtCh1HgAddCoef => cExtCh1HgAddCoef,
-      cExtCh2LgMultCoef => cExtCh2LgMultCoef,
-      cExtCh2LgAddCoef => cExtCh2LgAddCoef,
-      cExtCh2HgMultCoef => cExtCh2HgMultCoef,
-      cExtCh2HgAddCoef => cExtCh2HgAddCoef,
-      sCh1CouplingConfig => sCh1CouplingConfig,
-      sCh2CouplingConfig => sCh2CouplingConfig,
-      sCh1GainConfig => sCh1GainConfig,
-      sCh2GainConfig => sCh2GainConfig,
+      cExtCh1LgMultCoef => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 18)),
+      cExtCh1LgAddCoef => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 18)),
+      cExtCh1HgMultCoef => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 18)),
+      cExtCh1HgAddCoef => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 18)),
+      cExtCh2LgMultCoef => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 18)),
+      cExtCh2LgAddCoef => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 18)),
+      cExtCh2HgMultCoef => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 18)),
+      cExtCh2HgAddCoef => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 18)),
+      sCh1CouplingConfig => '0',
+      sCh2CouplingConfig => '0',
+      sCh1GainConfig => '0',
+      sCh2GainConfig => '0',
       sTestMode => sTestMode,
       cSyncIn => STD_LOGIC_VECTOR(TO_UNSIGNED(1, 4)),
       sCmdTxAxisTvalid => '0',

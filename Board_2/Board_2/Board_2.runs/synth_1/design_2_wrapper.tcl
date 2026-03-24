@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/design_2_wrapper.tcl"
+  variable script "C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/design_2_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -66,36 +66,36 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.cache/wt [current_project]
-set_property parent.project_path C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.cache/wt [current_project]
+set_property parent.project_path C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property board_part_repo_paths {C:/Users/qianzha/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store} [current_project]
-set_property board_part digilentinc.com:eclypse-z7:part0:1.1 [current_project]
-set_property ip_repo_paths z:/DAT096/vivado-library-zmod-v2-2019.1-2/vivado-library-zmod-v2-2019.1-2 [current_project]
+set_property ip_repo_paths {
+  z:/DAT096/vivado-library-zmod-v2-2019.1-2/vivado-library-zmod-v2-2019.1-2
+  z:/eda234/vivado-library-master
+  z:/eda234/vivado-library-master/ip
+} [current_project]
 update_ip_catalog
-set_property ip_output_repo c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.cache/ip [current_project]
+set_property ip_output_repo c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/sources_1/new/adc_bit_decoder.vhd
-  C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/hdl/design_2_wrapper.vhd
+  C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/sources_1/new/adc_bit_decoder.vhd
+  C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/hdl/design_2_wrapper.vhd
 }
-add_files C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/sources_1/bd/design_2/design_2.bd
-set_property used_in_implementation false [get_files -all c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_1/src/ZmodADC_SynchonizationFIFO.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_1/src/ZmodADC_SynchonizationFIFO_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_1/constr/ConstrsZmodADC.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_1/constr/ConstrZmodADC_ooc.xdc]
-set_property used_in_synthesis false [get_files -all c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/design_2_ila_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_clk_wiz_0_0/design_2_clk_wiz_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_clk_wiz_0_0/design_2_clk_wiz_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_clk_wiz_0_0/design_2_clk_wiz_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/design_2_ooc.xdc]
+add_files C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/sources_1/bd/design_2/design_2.bd
+set_property used_in_implementation false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_1/src/ZmodADC_SynchonizationFIFO/ZmodADC_SynchonizationFIFO.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_1/src/ZmodADC_SynchonizationFIFO/ZmodADC_SynchonizationFIFO_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_1/ConstrsZmodADC.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_1/src/ConstrZmodADC_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/design_2_ila_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_processing_system7_0_0/design_2_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/design_2_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -106,14 +106,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/constrs_1/new/Board_2.xdc
-set_property used_in_implementation false [get_files C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/constrs_1/new/Board_2.xdc]
+read_xdc C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/constrs_1/new/Board_2.xdc
+set_property used_in_implementation false [get_files C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/constrs_1/new/Board_2.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/utils_1/imports/synth_1/design_2_wrapper.dcp
+read_checkpoint -auto_incremental -incremental C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/utils_1/imports/synth_1/design_2_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

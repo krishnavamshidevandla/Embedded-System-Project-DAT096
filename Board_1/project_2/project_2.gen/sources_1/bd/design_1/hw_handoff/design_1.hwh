@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Mar  4 14:10:04 2026" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Mar  9 15:59:13 2026" VIVADOVERSION="2024.2">
 
-  <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:eclypse-z7:part0:1.1" DEVICE="7z020" NAME="design_1" PACKAGE="clg484" SPEEDGRADE="-1"/>
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="design_1" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
     <PORT CLKFREQUENCY="100000000" DIR="O" NAME="ZmodDAC_ClkIO_0" SIGIS="clk" SIGNAME="ZmodAWGController_0_ZmodDAC_ClkIO">
@@ -65,9 +65,7 @@
 
   <MODULES>
     <MODULE COREREVISION="1" FULLNAME="/ZmodAWGController_0" HWVERSION="1.0" INSTANCE="ZmodAWGController_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ZmodAWGController" VLNV="digilent.com:user:ZmodAWGController:1.0">
-      <DOCUMENTS>
-        <DOCUMENT SOURCE="z:/DAT096/vivado-library-zmod-v2-2019.1-2/vivado-library-zmod-v2-2019.1-2/ip/Zmods/ZmodAWGController/docs/ZmodAWG1411_Controller.pdf"/>
-      </DOCUMENTS>
+      <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="kCh1HgAddCoefStatic" VALUE="&quot;000000000000000000&quot;"/>
         <PARAMETER NAME="kCh1HgMultCoefStatic" VALUE="&quot;010000000000000000&quot;"/>

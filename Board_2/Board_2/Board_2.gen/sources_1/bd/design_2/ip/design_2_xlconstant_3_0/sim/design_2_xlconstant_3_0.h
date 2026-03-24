@@ -54,8 +54,8 @@
 #include "systemc.h"
 class design_2_xlconstant_3_0 : public sc_module {
   public:
-xlconstant_v1_1_9<2,0> mod;
-  sc_out< sc_bv<2> > dout;
+xlconstant_v1_1_9<1,1> mod;
+  sc_out< sc_bv<1> > dout;
 design_2_xlconstant_3_0 (sc_core::sc_module_name name);
   };
 

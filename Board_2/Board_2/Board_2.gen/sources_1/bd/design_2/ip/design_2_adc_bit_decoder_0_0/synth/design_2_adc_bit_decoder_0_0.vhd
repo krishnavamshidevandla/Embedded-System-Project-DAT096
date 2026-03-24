@@ -56,8 +56,9 @@ USE ieee.numeric_std.ALL;
 ENTITY design_2_adc_bit_decoder_0_0 IS
   PORT (
     clk : IN STD_LOGIC;
-    rst : IN STD_LOGIC;
-    adc_data : IN STD_LOGIC_VECTOR(13 DOWNTO 0);
+    t_data : IN STD_LOGIC_VECTOR(13 DOWNTO 0);
+    t_valid : IN STD_LOGIC;
+    t_ready : OUT STD_LOGIC;
     bit_out : OUT STD_LOGIC
   );
 END design_2_adc_bit_decoder_0_0;
@@ -73,8 +74,9 @@ ARCHITECTURE design_2_adc_bit_decoder_0_0_arch OF design_2_adc_bit_decoder_0_0 I
     );
     PORT (
       clk : IN STD_LOGIC;
-      rst : IN STD_LOGIC;
-      adc_data : IN STD_LOGIC_VECTOR(13 DOWNTO 0);
+      t_data : IN STD_LOGIC_VECTOR(13 DOWNTO 0);
+      t_valid : IN STD_LOGIC;
+      t_ready : OUT STD_LOGIC;
       bit_out : OUT STD_LOGIC
     );
   END COMPONENT adc_bit_decoder;
@@ -83,7 +85,7 @@ ARCHITECTURE design_2_adc_bit_decoder_0_0_arch OF design_2_adc_bit_decoder_0_0 I
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_2_adc_bit_decoder_0_0_arch : ARCHITECTURE IS "design_2_adc_bit_decoder_0_0,adc_bit_decoder,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_2_adc_bit_decoder_0_0_arch: ARCHITECTURE IS "design_2_adc_bit_decoder_0_0,adc_bit_decoder,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=adc_bit_decoder,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,ADC_WIDTH=14,MID_CODE=8192,THRESHOLD=1500}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_2_adc_bit_decoder_0_0_arch: ARCHITECTURE IS "design_2_adc_bit_decoder_0_0,adc_bit_decoder,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=adc_bit_decoder,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,ADC_WIDTH=13,MID_CODE=8192,THRESHOLD=1500}";
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
   ATTRIBUTE IP_DEFINITION_SOURCE OF design_2_adc_bit_decoder_0_0_arch: ARCHITECTURE IS "module_ref";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
@@ -91,21 +93,19 @@ ARCHITECTURE design_2_adc_bit_decoder_0_0_arch OF design_2_adc_bit_decoder_0_0 I
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF clk: SIGNAL IS "xilinx.com:signal:clock:1.0 clk CLK";
   ATTRIBUTE X_INTERFACE_MODE OF clk: SIGNAL IS "slave clk";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF clk: SIGNAL IS "XIL_INTERFACENAME clk, ASSOCIATED_RESET rst, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_2_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
-  ATTRIBUTE X_INTERFACE_INFO OF rst: SIGNAL IS "xilinx.com:signal:reset:1.0 rst RST";
-  ATTRIBUTE X_INTERFACE_MODE OF rst: SIGNAL IS "slave rst";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF rst: SIGNAL IS "XIL_INTERFACENAME rst, POLARITY ACTIVE_LOW, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF clk: SIGNAL IS "XIL_INTERFACENAME clk, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_2_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
 BEGIN
   U0 : adc_bit_decoder
     GENERIC MAP (
-      ADC_WIDTH => 14,
+      ADC_WIDTH => 13,
       MID_CODE => 8192,
       THRESHOLD => 1500
     )
     PORT MAP (
       clk => clk,
-      rst => rst,
-      adc_data => adc_data,
+      t_data => t_data,
+      t_valid => t_valid,
+      t_ready => t_ready,
       bit_out => bit_out
     );
 END design_2_adc_bit_decoder_0_0_arch;

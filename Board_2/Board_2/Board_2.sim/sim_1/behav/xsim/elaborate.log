@@ -1,0 +1,84 @@
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Progs/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_11 -L xlconstant_v1_1_9 -L lib_cdc_v1_0_3 -L proc_sys_reset_v5_0_16 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_2_wrapper_behav xil_defaultlib.design_2_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package xil_defaultlib.pkgzmodadc
+Compiling package ieee.math_real
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture oserdese2_v of entity unisim.OSERDESE2 [\OSERDESE2(data_rate_oq="SDR",da...]
+Compiling architecture behavioral of entity xil_defaultlib.SyncAsync [syncasync_default]
+Compiling architecture behavioral of entity xil_defaultlib.ResetBridge [\ResetBridge(kpolarity='0')\]
+Compiling architecture behavioral of entity xil_defaultlib.SyncAsync [\SyncAsync(kresetto='1')\]
+Compiling architecture behavioral of entity xil_defaultlib.ResetBridge [resetbridge_default]
+Compiling architecture behavioral of entity xil_defaultlib.ConfigRelays [configrelays_default]
+Compiling architecture behavioral of entity xil_defaultlib.HandshakeData [\HandshakeData(kdatawidth=1)\]
+Compiling architecture iobuf_v of entity unisim.IOBUF [\IOBUF(iostandard="LVCMOS18")(1,...]
+Compiling architecture behavioral of entity xil_defaultlib.ADI_SPI [adi_spi_default]
+Compiling architecture behavioral of entity xil_defaultlib.ConfigADC [configadc_default]
+Compiling architecture iddr_v of entity unisim.IDDR [\IDDR(ddr_clk_edge="SAME_EDGE")(...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture bufr_v of entity unisim.BUFR [\BUFR(bufr_divide="1")(1,1)(1,7)...]
+Compiling architecture bufio_v of entity unisim.BUFIO [bufio_default]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=6.0,...]
+Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_sync_sta...
+Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_bhv_ver_...
+Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_bhv_ver_...
+Compiling module fifo_generator_v13_2_11.fifo_generator_v13_2_11_CONV_VER...
+Compiling module fifo_generator_v13_2_11.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module xil_defaultlib.ZmodADC_SynchonizationFIFO
+Compiling architecture behavioral of entity xil_defaultlib.DataPath [datapath_default]
+Compiling architecture oddr_v of entity unisim.ODDR [\ODDR(srtype="ASYNC")(1,13)(1,5)...]
+Compiling architecture obufds_v of entity unisim.OBUFDS [\OBUFDS(1,9)(1,7)(1,4)\]
+Compiling architecture behavioral of entity xil_defaultlib.SyncBase [syncbase_default]
+Compiling architecture behavioral of entity xil_defaultlib.GainOffsetCalib [\GainOffsetCalib(kextcaliben=fal...]
+Compiling architecture behavioral of entity xil_defaultlib.GainOffsetCalib [\GainOffsetCalib(kextcaliben=fal...]
+Compiling architecture behavioral of entity xil_defaultlib.ZmodScopeController [\ZmodScopeController(kadc_width=...]
+Compiling architecture design_2_zmodscopecontroller_0_1_arch of entity xil_defaultlib.design_2_ZmodScopeController_0_1 [design_2_zmodscopecontroller_0_1...]
+Compiling architecture rtl of entity xil_defaultlib.adc_bit_decoder [adc_bit_decoder_default]
+Compiling architecture design_2_adc_bit_decoder_0_0_arch of entity xil_defaultlib.design_2_adc_bit_decoder_0_0 [design_2_adc_bit_decoder_0_0_def...]
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=8.0,C...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.design_2_clk_wiz_0_0_clk_wiz
+Compiling module xil_defaultlib.design_2_clk_wiz_0_0
+Compiling architecture design_2_ila_0_0_arch of entity xil_defaultlib.design_2_ila_0_0 [design_2_ila_0_0_default]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_3.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_16.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_16.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_16.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_16.proc_sys_reset [\proc_sys_reset(c_family="zynq",...]
+Compiling architecture design_2_proc_sys_reset_0_0_arch of entity xil_defaultlib.design_2_proc_sys_reset_0_0 [design_2_proc_sys_reset_0_0_defa...]
+Compiling module xlconstant_v1_1_9.xlconstant_v1_1_9_xlconstant(CON...
+Compiling module xil_defaultlib.design_2_xlconstant_0_0
+Compiling module xlconstant_v1_1_9.xlconstant_v1_1_9_xlconstant(CON...
+Compiling module xil_defaultlib.design_2_xlconstant_1_1
+Compiling module xil_defaultlib.design_2_xlconstant_2_1
+Compiling module xil_defaultlib.design_2_xlconstant_4_0
+Compiling architecture structure of entity xil_defaultlib.design_2 [design_2_default]
+Compiling architecture structure of entity xil_defaultlib.design_2_wrapper
+Built simulation snapshot design_2_wrapper_behav

@@ -1,0 +1,23 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Board_2.srcs/sources_1/new/adc_bit_decoder.vhd" \
+"../../../../Board_2.ip_user_files/bd/design_2/ipshared/c25f/src/PkgZmodADC.vhd" \
+"../../../../Board_2.ip_user_files/bd/design_2/ipshared/c25f/src/ADI_SPI.vhd" \
+"../../../../Board_2.ip_user_files/bd/design_2/ipshared/c25f/src/ConfigADC.vhd" \
+"../../../../Board_2.ip_user_files/bd/design_2/ipshared/c25f/src/ConfigRelays.vhd" \
+"../../../../Board_2.ip_user_files/bd/design_2/ipshared/c25f/src/SyncAsync.vhd" \
+"../../../../Board_2.ip_user_files/bd/design_2/ipshared/c25f/src/ResetBridge.vhd" \
+"../../../../Board_2.ip_user_files/bd/design_2/ipshared/c25f/src/DataPath.vhd" \
+"../../../../Board_2.ip_user_files/bd/design_2/ipshared/c25f/src/GainOffsetCalib.vhd" \
+"../../../../Board_2.ip_user_files/bd/design_2/ipshared/c25f/src/HandshakeData.vhd" \
+"../../../../Board_2.ip_user_files/bd/design_2/ipshared/c25f/src/SyncBase.vhd" \
+"../../../../Board_2.ip_user_files/bd/design_2/ipshared/c25f/src/ZmodScopeController.vhd" \
+"../../../../Board_2.ip_user_files/bd/design_2/ip/design_2_ZmodScopeController_0_1/sim/design_2_ZmodScopeController_0_1.vhd" \
+"../../../../Board_2.ip_user_files/bd/design_2/ip/design_2_ila_0_0/sim/design_2_ila_0_0.vhd" \
+"../../../../Board_2.ip_user_files/bd/design_2/ip/design_2_adc_bit_decoder_0_0/sim/design_2_adc_bit_decoder_0_0.vhd" \
+"../../../../Board_2.ip_user_files/bd/design_2/ip/design_2_proc_sys_reset_0_0/sim/design_2_proc_sys_reset_0_0.vhd" \
+"../../../../Board_2.ip_user_files/bd/design_2/sim/design_2.vhd" \
+"../../../../Board_2.gen/sources_1/bd/design_2/hdl/design_2_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

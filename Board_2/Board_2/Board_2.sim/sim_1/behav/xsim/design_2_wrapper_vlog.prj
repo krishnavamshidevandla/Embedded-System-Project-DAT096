@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Board_2.gen/sources_1/bd/design_2/ipshared/3cbc" \
+"../../../../Board_2.ip_user_files/bd/design_2/ip/design_2_ZmodScopeController_0_1/src/ZmodADC_SynchonizationFIFO/sim/ZmodADC_SynchonizationFIFO.v" \
+"../../../../Board_2.ip_user_files/bd/design_2/ip/design_2_xlconstant_0_0/sim/design_2_xlconstant_0_0.v" \
+"../../../../Board_2.ip_user_files/bd/design_2/ip/design_2_clk_wiz_0_0/design_2_clk_wiz_0_0_clk_wiz.v" \
+"../../../../Board_2.ip_user_files/bd/design_2/ip/design_2_clk_wiz_0_0/design_2_clk_wiz_0_0.v" \
+"../../../../Board_2.ip_user_files/bd/design_2/ip/design_2_xlconstant_4_0/sim/design_2_xlconstant_4_0.v" \
+"../../../../Board_2.ip_user_files/bd/design_2/ip/design_2_xlconstant_2_1/sim/design_2_xlconstant_2_1.v" \
+"../../../../Board_2.ip_user_files/bd/design_2/ip/design_2_xlconstant_1_1/sim/design_2_xlconstant_1_1.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

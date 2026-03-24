@@ -5,7 +5,7 @@
     "cell_name": "ZmodAWGController_0",
     "component_reference": "digilent.com:user:ZmodAWGController:1.0",
     "ip_revision": "1",
-    "gen_directory": "../../../../../../project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0",
+    "gen_directory": ".",
     "parameters": {
       "component_parameters": {
         "kDAC_Width": [ { "value": "14", "resolve_type": "user", "format": "long", "usage": "all" } ],
@@ -58,8 +58,9 @@
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
         "IPREVISION": [ { "value": "1" } ],
+        "LOCKEDBYUSER": [ { "value": "TRUE" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../../../project_2.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0" } ],
+        "OUTPUTDIR": [ { "value": "." } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
         "SWVERSION": [ { "value": "2024.2" } ],
