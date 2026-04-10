@@ -6,7 +6,7 @@ entity Signal_generator is
   generic (
     DAC_WIDTH : positive := 14;   -- 14-bit for Zmod AWG
     MID_CODE  : natural  := 8192; -- offset-binary mid-scale
-    AMP_CODE  : natural  := 3500; -- MID ± AMP
+    AMP_CODE  : natural  := 5500; -- MID ± AMP
     SEED      : natural  := 1     -- non-zero
   );
   port (

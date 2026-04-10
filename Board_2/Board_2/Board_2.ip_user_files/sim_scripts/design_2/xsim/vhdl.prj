@@ -1,4 +1,6 @@
 vhdl xil_defaultlib  \
+"../../../bd/design_2/ip/design_2_ila_0_0/sim/design_2_ila_0_0.vhd" \
+"../../../bd/design_2/ip/design_2_adc_bit_decoder_0_0/sim/design_2_adc_bit_decoder_0_0.vhd" \
 "../../../bd/design_2/ipshared/c25f/src/PkgZmodADC.vhd" \
 "../../../bd/design_2/ipshared/c25f/src/ADI_SPI.vhd" \
 "../../../bd/design_2/ipshared/c25f/src/ConfigADC.vhd" \
@@ -10,9 +12,12 @@ vhdl xil_defaultlib  \
 "../../../bd/design_2/ipshared/c25f/src/HandshakeData.vhd" \
 "../../../bd/design_2/ipshared/c25f/src/SyncBase.vhd" \
 "../../../bd/design_2/ipshared/c25f/src/ZmodScopeController.vhd" \
-"../../../bd/design_2/ip/design_2_ZmodScopeController_0_1/sim/design_2_ZmodScopeController_0_1.vhd" \
-"../../../bd/design_2/ip/design_2_ila_0_0/sim/design_2_ila_0_0.vhd" \
-"../../../bd/design_2/ip/design_2_adc_bit_decoder_0_0/sim/design_2_adc_bit_decoder_0_0.vhd" \
+"../../../bd/design_2/ip/design_2_ZmodScopeController_0_2/sim/design_2_ZmodScopeController_0_2.vhd" \
+"../../../bd/design_2/ipshared/9ebe/src/PkgZmodDAC.vhd" \
+"../../../bd/design_2/ipshared/9ebe/src/ADI_SPI.vhd" \
+"../../../bd/design_2/ipshared/9ebe/src/ConfigDAC.vhd" \
+"../../../bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd" \
+"../../../bd/design_2/ip/design_2_ZmodAWGController_0_0/sim/design_2_ZmodAWGController_0_0.vhd" \
 "../../../bd/design_2/sim/design_2.vhd" \
 
 # Do not sort compile order

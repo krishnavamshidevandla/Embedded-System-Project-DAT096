@@ -6,12 +6,6 @@
 # Block Designs: bd/design_2/design_2.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2 || ORIG_REF_NAME==design_2} -quiet] -quiet
 
-# IP: bd/design_2/ip/design_2_ZmodScopeController_0_1/design_2_ZmodScopeController_0_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_ZmodScopeController_0_1 || ORIG_REF_NAME==design_2_ZmodScopeController_0_1} -quiet] -quiet
-
-# IP: c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_1/src/ZmodADC_SynchonizationFIFO/ZmodADC_SynchonizationFIFO.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ZmodADC_SynchonizationFIFO || ORIG_REF_NAME==ZmodADC_SynchonizationFIFO} -quiet] -quiet
-
 # IP: bd/design_2/ip/design_2_ila_0_0/design_2_ila_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_ila_0_0 || ORIG_REF_NAME==design_2_ila_0_0} -quiet] -quiet
 
@@ -30,26 +24,13 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_xl
 # IP: bd/design_2/ip/design_2_processing_system7_0_0/design_2_processing_system7_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_processing_system7_0_0 || ORIG_REF_NAME==design_2_processing_system7_0_0} -quiet] -quiet
 
-# XDC: c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_1/src/ZmodADC_SynchonizationFIFO/ZmodADC_SynchonizationFIFO.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ZmodADC_SynchonizationFIFO || ORIG_REF_NAME==ZmodADC_SynchonizationFIFO} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+# IP: bd/design_2/ip/design_2_ZmodScopeController_0_2/design_2_ZmodScopeController_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_ZmodScopeController_0_2 || ORIG_REF_NAME==design_2_ZmodScopeController_0_2} -quiet] -quiet
 
-# XDC: c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_1/src/ZmodADC_SynchonizationFIFO/ZmodADC_SynchonizationFIFO_clocks.xdc
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ZmodADC_SynchonizationFIFO || ORIG_REF_NAME==ZmodADC_SynchonizationFIFO} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+# IP: bd/design_2/ip/design_2_ZmodAWGController_0_0/design_2_ZmodAWGController_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_ZmodAWGController_0_0 || ORIG_REF_NAME==design_2_ZmodAWGController_0_0} -quiet] -quiet
 
-# XDC: c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_1/ConstrsZmodADC.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_2_ZmodScopeController_0_1 || ORIG_REF_NAME==design_2_ZmodScopeController_0_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
-
-# XDC: c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_1/src/ConstrZmodADC_ooc.xdc
-
-# XDC: c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/ila_v6_2/constraints/ila_impl.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_2_ila_0_0 || ORIG_REF_NAME==design_2_ila_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
-
-# XDC: c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/ila_v6_2/constraints/ila.xdc
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_2_ila_0_0 || ORIG_REF_NAME==design_2_ila_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
-
-# XDC: c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/design_2_ila_0_0_ooc.xdc
-
-# XDC: c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_processing_system7_0_0/design_2_processing_system7_0_0.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_2_processing_system7_0_0 || ORIG_REF_NAME==design_2_processing_system7_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+# IP: bd/design_2/ip/design_2_clk_wiz_0_0/design_2_clk_wiz_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_clk_wiz_0_0 || ORIG_REF_NAME==design_2_clk_wiz_0_0} -quiet] -quiet
 
 # XDC: c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/design_2_ooc.xdc

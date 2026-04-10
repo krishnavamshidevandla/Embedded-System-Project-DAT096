@@ -1,23 +1,25 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xB2F05381DDB7E6D2",
+      "boundary_crc": "0x1E15EF26B6C2E987",
       "device": "xc7z020clg484-1",
       "gen_directory": "../../../../Board_2.gen/sources_1/bd/design_2",
       "name": "design_2",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
-      "synth_flow_mode": "None",
+      "synth_flow_mode": "Hierarchical",
       "tool_version": "2024.2",
       "validated": "true"
     },
     "design_tree": {
-      "ZmodScopeController_0": "",
       "ila_0": "",
       "adc_bit_decoder_0": "",
       "xlconstant_1": "",
       "xlslice_0": "",
       "xlconstant_3": "",
-      "processing_system7_0": ""
+      "processing_system7_0": "",
+      "ZmodScopeController_0": "",
+      "ZmodAWGController_0": "",
+      "clk_wiz_0": ""
     },
     "interface_ports": {
       "DDR_0": {
@@ -190,11 +192,6 @@
       }
     },
     "ports": {
-      "dZmodADC_Data_0": {
-        "direction": "I",
-        "left": "13",
-        "right": "0"
-      },
       "sZmodADC_SDIO_0": {
         "direction": "IO"
       },
@@ -231,17 +228,41 @@
       "sZmodCh2GainL_0": {
         "direction": "O"
       },
-      "sZmodRelayComH_0": {
-        "direction": "O"
-      },
-      "sZmodRelayComL_0": {
-        "direction": "O"
-      },
       "ZmodAdcClkIn_n_0": {
         "direction": "O"
       },
       "ZmodAdcClkIn_p_0": {
         "direction": "O"
+      },
+      "sys_clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_2_sys_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "125000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "dZmodADC_Data_0": {
+        "direction": "I",
+        "left": "13",
+        "right": "0"
       },
       "ZmodDcoClk_0": {
         "type": "clk",
@@ -269,16 +290,46 @@
           }
         }
       },
-      "sys_clk": {
-        "type": "clk",
-        "direction": "I",
+      "sZmodRelayComH_0": {
+        "direction": "O"
+      },
+      "sZmodRelayComL_0": {
+        "direction": "O"
+      },
+      "sZmodDAC_CS_0": {
+        "direction": "O"
+      },
+      "sZmodDAC_SCLK_0": {
+        "direction": "O"
+      },
+      "sZmodDAC_SDIO_0": {
+        "direction": "IO"
+      },
+      "sZmodDAC_Reset_0": {
+        "type": "rst",
+        "direction": "O",
         "parameters": {
-          "CLK_DOMAIN": {
-            "value": "design_2_sys_clk",
+          "INSERT_VIP": {
+            "value": "0",
             "value_src": "default"
           },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "ZmodDAC_ClkIO_0": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_2_ZmodAWGController_0_0_ZmodDAC_ClkIO",
+            "value_src": "default_prop"
+          },
           "FREQ_HZ": {
-            "value": "125000000"
+            "value": "100000000",
+            "value_src": "default"
           },
           "FREQ_TOLERANCE_HZ": {
             "value": "0",
@@ -293,54 +344,49 @@
             "value_src": "default"
           }
         }
-      }
-    },
-    "components": {
-      "ZmodScopeController_0": {
-        "vlnv": "digilent.com:user:ZmodScopeController:1.2",
-        "ip_revision": "4",
-        "xci_name": "design_2_ZmodScopeController_0_1",
-        "xci_path": "ip\\design_2_ZmodScopeController_0_1\\design_2_ZmodScopeController_0_1.xci",
-        "inst_hier_path": "ZmodScopeController_0",
+      },
+      "ZmodDAC_ClkIn_0": {
+        "type": "clk",
+        "direction": "O",
         "parameters": {
-          "kCh1HgAddCoefStatic": {
-            "value": "\"00000000000000000000\""
+          "CLK_DOMAIN": {
+            "value": "design_2_ZmodAWGController_0_0_ZmodDAC_ClkIn",
+            "value_src": "default_prop"
           },
-          "kCh1HgMultCoefStatic": {
-            "value": "\"00010000000000000000\""
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
           },
-          "kCh1LgAddCoefStatic": {
-            "value": "\"00000000000000000000\""
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
           },
-          "kCh1LgMultCoefStatic": {
-            "value": "\"00010000000000000000\""
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
           },
-          "kCh2HgAddCoefStatic": {
-            "value": "\"00000000000000000000\""
-          },
-          "kCh2HgMultCoefStatic": {
-            "value": "\"00010000000000000000\""
-          },
-          "kCh2LgAddCoefStatic": {
-            "value": "\"00000000000000000000\""
-          },
-          "kCh2LgMultCoefStatic": {
-            "value": "\"00010000000000000000\""
-          },
-          "kExtCalibEn": {
-            "value": "false"
-          },
-          "kExtCmdInterfaceEn": {
-            "value": "false"
-          },
-          "kExtRelayConfigEn": {
-            "value": "false"
-          },
-          "kExtSyncEn": {
-            "value": "false"
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
           }
         }
       },
+      "dZmodDAC_Data_0": {
+        "direction": "O",
+        "left": "13",
+        "right": "0"
+      },
+      "sZmodDAC_SetFS1_0": {
+        "direction": "O"
+      },
+      "sZmodDAC_SetFS2_0": {
+        "direction": "O"
+      },
+      "sZmodDAC_EnOut_0": {
+        "direction": "O"
+      }
+    },
+    "components": {
       "ila_0": {
         "vlnv": "xilinx.com:ip:ila:6.2",
         "ip_revision": "16",
@@ -423,6 +469,11 @@
           "t_ready": {
             "direction": "O"
           },
+          "dac_data": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
           "bit_out": {
             "direction": "O"
           }
@@ -472,8 +523,98 @@
         "xci_path": "ip\\design_2_processing_system7_0_0\\design_2_processing_system7_0_0.xci",
         "inst_hier_path": "processing_system7_0",
         "parameters": {
+          "PCW_ACT_APU_PERIPHERAL_FREQMHZ": {
+            "value": "666.666687"
+          },
+          "PCW_ACT_CAN_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_DCI_PERIPHERAL_FREQMHZ": {
+            "value": "10.158730"
+          },
+          "PCW_ACT_ENET0_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_ENET1_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ": {
+            "value": "50.000000"
+          },
+          "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_FPGA3_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_PCAP_PERIPHERAL_FREQMHZ": {
+            "value": "200.000000"
+          },
+          "PCW_ACT_QSPI_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_SDIO_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_SMC_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_SPI_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_TPIU_PERIPHERAL_FREQMHZ": {
+            "value": "200.000000"
+          },
+          "PCW_ACT_TTC0_CLK0_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_ACT_TTC0_CLK1_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_ACT_TTC0_CLK2_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_ACT_TTC1_CLK0_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_ACT_TTC1_CLK1_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_ACT_TTC1_CLK2_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_ACT_UART_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_WDT_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_CLK0_FREQ": {
+            "value": "50000000"
+          },
+          "PCW_CLK1_FREQ": {
+            "value": "10000000"
+          },
+          "PCW_CLK2_FREQ": {
+            "value": "10000000"
+          },
+          "PCW_CLK3_FREQ": {
+            "value": "10000000"
+          },
+          "PCW_DDR_RAM_HIGHADDR": {
+            "value": "0x1FFFFFFF"
+          },
+          "PCW_EN_CLK1_PORT": {
+            "value": "0"
+          },
           "PCW_FPGA_FCLK0_ENABLE": {
             "value": "1"
+          },
+          "PCW_UIPARAM_ACT_DDR_FREQ_MHZ": {
+            "value": "533.333374"
           }
         },
         "interface_ports": {
@@ -606,6 +747,58 @@
             }
           }
         }
+      },
+      "ZmodScopeController_0": {
+        "vlnv": "digilent.com:user:ZmodScopeController:1.2",
+        "ip_revision": "4",
+        "xci_name": "design_2_ZmodScopeController_0_2",
+        "xci_path": "ip\\design_2_ZmodScopeController_0_2\\design_2_ZmodScopeController_0_2.xci",
+        "inst_hier_path": "ZmodScopeController_0",
+        "parameters": {
+          "kExtCalibEn": {
+            "value": "false"
+          },
+          "kExtRelayConfigEn": {
+            "value": "false"
+          }
+        }
+      },
+      "ZmodAWGController_0": {
+        "vlnv": "digilent.com:user:ZmodAWGController:1.1",
+        "ip_revision": "4",
+        "xci_name": "design_2_ZmodAWGController_0_0",
+        "xci_path": "ip\\design_2_ZmodAWGController_0_0\\design_2_ZmodAWGController_0_0.xci",
+        "inst_hier_path": "ZmodAWGController_0"
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "ip_revision": "15",
+        "xci_name": "design_2_clk_wiz_0_0",
+        "xci_path": "ip\\design_2_clk_wiz_0_0\\design_2_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKOUT1_JITTER": {
+            "value": "192.113"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "50"
+          },
+          "CLKOUT1_REQUESTED_PHASE": {
+            "value": "90"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "20.000"
+          },
+          "MMCM_CLKOUT0_PHASE": {
+            "value": "90.000"
+          },
+          "USE_LOCKED": {
+            "value": "false"
+          },
+          "USE_RESET": {
+            "value": "false"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -627,6 +820,66 @@
         "ports": [
           "sZmodADC_SDIO_0",
           "ZmodScopeController_0/sZmodADC_SDIO"
+        ]
+      },
+      "Net1": {
+        "ports": [
+          "sZmodDAC_SDIO_0",
+          "ZmodAWGController_0/sZmodDAC_SDIO"
+        ]
+      },
+      "ZmodAWGController_0_ZmodDAC_ClkIO": {
+        "ports": [
+          "ZmodAWGController_0/ZmodDAC_ClkIO",
+          "ZmodDAC_ClkIO_0"
+        ]
+      },
+      "ZmodAWGController_0_ZmodDAC_ClkIn": {
+        "ports": [
+          "ZmodAWGController_0/ZmodDAC_ClkIn",
+          "ZmodDAC_ClkIn_0"
+        ]
+      },
+      "ZmodAWGController_0_dZmodDAC_Data": {
+        "ports": [
+          "ZmodAWGController_0/dZmodDAC_Data",
+          "dZmodDAC_Data_0"
+        ]
+      },
+      "ZmodAWGController_0_sZmodDAC_CS": {
+        "ports": [
+          "ZmodAWGController_0/sZmodDAC_CS",
+          "sZmodDAC_CS_0"
+        ]
+      },
+      "ZmodAWGController_0_sZmodDAC_EnOut": {
+        "ports": [
+          "ZmodAWGController_0/sZmodDAC_EnOut",
+          "sZmodDAC_EnOut_0"
+        ]
+      },
+      "ZmodAWGController_0_sZmodDAC_Reset": {
+        "ports": [
+          "ZmodAWGController_0/sZmodDAC_Reset",
+          "sZmodDAC_Reset_0"
+        ]
+      },
+      "ZmodAWGController_0_sZmodDAC_SCLK": {
+        "ports": [
+          "ZmodAWGController_0/sZmodDAC_SCLK",
+          "sZmodDAC_SCLK_0"
+        ]
+      },
+      "ZmodAWGController_0_sZmodDAC_SetFS1": {
+        "ports": [
+          "ZmodAWGController_0/sZmodDAC_SetFS1",
+          "sZmodDAC_SetFS1_0"
+        ]
+      },
+      "ZmodAWGController_0_sZmodDAC_SetFS2": {
+        "ports": [
+          "ZmodAWGController_0/sZmodDAC_SetFS2",
+          "sZmodDAC_SetFS2_0"
         ]
       },
       "ZmodDcoClk_0_1": {
@@ -744,11 +997,24 @@
           "ila_0/probe1"
         ]
       },
+      "adc_bit_decoder_0_dac_data": {
+        "ports": [
+          "adc_bit_decoder_0/dac_data",
+          "ZmodAWGController_0/cDataAxisTdata"
+        ]
+      },
       "adc_bit_decoder_0_t_ready": {
         "ports": [
           "adc_bit_decoder_0/t_ready",
           "ila_0/probe0",
-          "ZmodScopeController_0/cDataAxisTready"
+          "ZmodScopeController_0/cDataAxisTready",
+          "ZmodAWGController_0/cDataAxisTvalid"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "ZmodAWGController_0/DAC_Clk"
         ]
       },
       "dZmodADC_Data_0_1": {
@@ -760,17 +1026,21 @@
       "processing_system7_0_FCLK_CLK0": {
         "ports": [
           "processing_system7_0/FCLK_CLK0",
-          "ZmodScopeController_0/SysClk100",
-          "ZmodScopeController_0/ADC_InClk",
-          "ZmodScopeController_0/ADC_SamplingClk",
           "ila_0/clk",
+          "ZmodScopeController_0/SysClk100",
+          "ZmodScopeController_0/ADC_SamplingClk",
+          "ZmodScopeController_0/ADC_InClk",
+          "clk_wiz_0/clk_in1",
+          "ZmodAWGController_0/SysClk100",
+          "ZmodAWGController_0/DAC_InIO_Clk",
           "adc_bit_decoder_0/clk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
         "ports": [
           "processing_system7_0/FCLK_RESET0_N",
-          "ZmodScopeController_0/aRst_n"
+          "ZmodScopeController_0/aRst_n",
+          "ZmodAWGController_0/aRst_n"
         ]
       },
       "sys_clk_1": {
@@ -782,13 +1052,15 @@
       "xlconstant_1_dout": {
         "ports": [
           "xlconstant_1/dout",
-          "ZmodScopeController_0/sTestMode"
+          "ZmodScopeController_0/sTestMode",
+          "ZmodAWGController_0/sTestMode"
         ]
       },
       "xlconstant_3_dout": {
         "ports": [
           "xlconstant_3/dout",
-          "ZmodScopeController_0/sEnableAcquisition"
+          "ZmodScopeController_0/sEnableAcquisition",
+          "ZmodAWGController_0/sDAC_EnIn"
         ]
       },
       "xlslice_0_Dout": {

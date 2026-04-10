@@ -2,8 +2,8 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Mon Mar  9 15:58:58 2026
-// Host        : FY-6302-12 running 64-bit major release  (build 9200)
+// Date        : Tue Mar 24 14:55:16 2026
+// Host        : FY-6302-02 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_prbs_axis_master_32_0_0/design_1_prbs_axis_master_32_0_0_stub.v
 // Design      : design_1_prbs_axis_master_32_0_0
@@ -14,7 +14,7 @@
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-(* CHECK_LICENSE_TYPE = "design_1_prbs_axis_master_32_0_0,prbs_axis_master_32,{}" *) (* core_generation_info = "design_1_prbs_axis_master_32_0_0,prbs_axis_master_32,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=prbs_axis_master_32,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,DAC_WIDTH=14,MID_CODE=8192,AMP_CODE=2500,SEED=1}" *) (* downgradeipidentifiedwarnings = "yes" *) 
+(* CHECK_LICENSE_TYPE = "design_1_prbs_axis_master_32_0_0,prbs_axis_master_32,{}" *) (* core_generation_info = "design_1_prbs_axis_master_32_0_0,prbs_axis_master_32,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=prbs_axis_master_32,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,DAC_WIDTH=14,MID_CODE=8192,AMP_CODE=5500,SEED=1}" *) (* downgradeipidentifiedwarnings = "yes" *) 
 (* ip_definition_source = "module_ref" *) (* x_core_info = "prbs_axis_master_32,Vivado 2024.2" *) 
 module design_1_prbs_axis_master_32_0_0(clk, rst, m_axis_tdata, m_axis_tvalid, 
   m_axis_tready, prbs_bit)

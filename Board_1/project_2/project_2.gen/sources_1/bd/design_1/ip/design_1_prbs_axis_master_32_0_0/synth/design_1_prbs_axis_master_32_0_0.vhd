@@ -88,7 +88,7 @@ ARCHITECTURE design_1_prbs_axis_master_32_0_0_arch OF design_1_prbs_axis_master_
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_prbs_axis_master_32_0_0_arch : ARCHITECTURE IS "design_1_prbs_axis_master_32_0_0,prbs_axis_master_32,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_prbs_axis_master_32_0_0_arch: ARCHITECTURE IS "design_1_prbs_axis_master_32_0_0,prbs_axis_master_32,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=prbs_axis_master_32,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,DAC_WIDTH=14,MID_CODE=8192,AMP_CODE=2500,SEED=1}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_prbs_axis_master_32_0_0_arch: ARCHITECTURE IS "design_1_prbs_axis_master_32_0_0,prbs_axis_master_32,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=prbs_axis_master_32,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,DAC_WIDTH=14,MID_CODE=8192,AMP_CODE=5500,SEED=1}";
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
   ATTRIBUTE IP_DEFINITION_SOURCE OF design_1_prbs_axis_master_32_0_0_arch: ARCHITECTURE IS "module_ref";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
@@ -110,7 +110,7 @@ BEGIN
     GENERIC MAP (
       DAC_WIDTH => 14,
       MID_CODE => 8192,
-      AMP_CODE => 2500,
+      AMP_CODE => 5500,
       SEED => 1
     )
     PORT MAP (

@@ -102,7 +102,7 @@ BEGIN
     GENERIC MAP (
       DAC_WIDTH => 14,
       MID_CODE => 8192,
-      AMP_CODE => 2500,
+      AMP_CODE => 5500,
       SEED => 1
     )
     PORT MAP (

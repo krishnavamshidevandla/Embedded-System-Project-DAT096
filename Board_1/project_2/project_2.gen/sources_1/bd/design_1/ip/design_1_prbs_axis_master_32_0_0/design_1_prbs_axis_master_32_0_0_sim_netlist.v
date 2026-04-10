@@ -2,8 +2,8 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Mon Mar  9 15:58:58 2026
-// Host        : FY-6302-12 running 64-bit major release  (build 9200)
+// Date        : Tue Mar 24 14:55:16 2026
+// Host        : FY-6302-02 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_prbs_axis_master_32_0_0/design_1_prbs_axis_master_32_0_0_sim_netlist.v
 // Design      : design_1_prbs_axis_master_32_0_0
@@ -57,13 +57,10 @@ module design_1_prbs_axis_master_32_0_0
   assign m_axis_tdata[15] = \<const0> ;
   assign m_axis_tdata[14] = \<const0> ;
   assign m_axis_tdata[13] = \^m_axis_tdata [13];
-  assign m_axis_tdata[12] = \^m_axis_tdata [10];
-  assign m_axis_tdata[11] = \^m_axis_tdata [8];
-  assign m_axis_tdata[10] = \^m_axis_tdata [10];
-  assign m_axis_tdata[9] = \^m_axis_tdata [10];
-  assign m_axis_tdata[8] = \^m_axis_tdata [8];
-  assign m_axis_tdata[7] = \^m_axis_tdata [8];
-  assign m_axis_tdata[6] = \^m_axis_tdata [8];
+  assign m_axis_tdata[12:11] = \^m_axis_tdata [10:9];
+  assign m_axis_tdata[10:9] = \^m_axis_tdata [10:9];
+  assign m_axis_tdata[8:7] = \^m_axis_tdata [10:9];
+  assign m_axis_tdata[6] = \^m_axis_tdata [10];
   assign m_axis_tdata[5] = \^m_axis_tdata [10];
   assign m_axis_tdata[4] = \^m_axis_tdata [10];
   assign m_axis_tdata[3] = \^m_axis_tdata [10];
@@ -75,7 +72,7 @@ module design_1_prbs_axis_master_32_0_0
        (.G(\<const0> ));
   design_1_prbs_axis_master_32_0_0_prbs_axis_master_32 U0
        (.clk(clk),
-        .m_axis_tdata({\^m_axis_tdata [13],\^m_axis_tdata [10],\^m_axis_tdata [8],\^m_axis_tdata [2]}),
+        .m_axis_tdata({\^m_axis_tdata [13],\^m_axis_tdata [10:9],\^m_axis_tdata [2]}),
         .m_axis_tready(m_axis_tready),
         .prbs_bit(prbs_bit),
         .rst(rst));
@@ -195,7 +192,7 @@ module design_1_prbs_axis_master_32_0_0_Signal_generator
         .R(1'b0));
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT4 #(
-    .INIT(16'hE020)) 
+    .INIT(16'h10D0)) 
     \code_u[11]_i_1 
        (.I0(p_0_in_0[13]),
         .I1(\code_u[13]_i_3_n_0 ),
@@ -204,7 +201,7 @@ module design_1_prbs_axis_master_32_0_0_Signal_generator
         .O(p_1_in[11]));
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT4 #(
-    .INIT(16'h10D0)) 
+    .INIT(16'hE020)) 
     \code_u[12]_i_1 
        (.I0(p_0_in_0[13]),
         .I1(\code_u[13]_i_3_n_0 ),

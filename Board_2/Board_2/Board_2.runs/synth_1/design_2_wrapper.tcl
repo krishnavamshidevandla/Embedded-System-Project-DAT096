@@ -56,9 +56,8 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param tcl.collectionResultDisplayLimit 0
 set_param chipscope.maxJobs 7
-set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg484-1
 
@@ -73,6 +72,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property ip_repo_paths {
   z:/DAT096/vivado-library-zmod-v2-2019.1-2/vivado-library-zmod-v2-2019.1-2
+  {z:/embedded project/Eclypse-Z7-HW/Eclypse-Z7-HW.ipdefs/repo}
   z:/eda234/vivado-library-master
   z:/eda234/vivado-library-master/ip
 } [current_project]
@@ -81,20 +81,22 @@ set_property ip_output_repo c:/Users/devandla/Desktop/Embedded-System-Project-DA
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib {
-  C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/sources_1/new/adc_bit_decoder.vhd
-  C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/hdl/design_2_wrapper.vhd
-}
+read_vhdl -library xil_defaultlib C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/hdl/design_2_wrapper.vhd
 add_files C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/sources_1/bd/design_2/design_2.bd
-set_property used_in_implementation false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_1/src/ZmodADC_SynchonizationFIFO/ZmodADC_SynchonizationFIFO.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_1/src/ZmodADC_SynchonizationFIFO/ZmodADC_SynchonizationFIFO_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_1/ConstrsZmodADC.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_1/src/ConstrZmodADC_ooc.xdc]
 set_property used_in_synthesis false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/ila_v6_2/constraints/ila_impl.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/ila_v6_2/constraints/ila_impl.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/ila_v6_2/constraints/ila.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/design_2_ila_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_processing_system7_0_0/design_2_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/src/ZmodADC_SynchonizationFIFO/ZmodADC_SynchonizationFIFO.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/src/ZmodADC_SynchonizationFIFO/ZmodADC_SynchonizationFIFO_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/src/ConstrZmodADC_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/ConstrsZmodDAC.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/constr/ConstrZmodDAC1411_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_clk_wiz_0_0/design_2_clk_wiz_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_clk_wiz_0_0/design_2_clk_wiz_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_clk_wiz_0_0/design_2_clk_wiz_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/design_2_ooc.xdc]
 
 OPTRACE "Adding files" END { }

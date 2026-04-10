@@ -16,7 +16,9 @@ entity adc_bit_decoder is
     t_valid : in std_logic;
     
     t_ready : out std_logic;
-
+    
+    dac_data : out std_logic_vector(31 downto 0);
+    
     bit_out  : out std_logic
   );
 end entity;
@@ -40,6 +42,7 @@ begin
     if rising_edge(clk) then
         -- 带"滞回"的 1-bit 恢复：中间区保持上一次结果
        if t_valid = '1' then
+        dac_data <= (31 downto 14 => '0') & t_data;
         if adc_u >= HI_THR then
           bit_q <= '1';
         elsif adc_u <= LO_THR then

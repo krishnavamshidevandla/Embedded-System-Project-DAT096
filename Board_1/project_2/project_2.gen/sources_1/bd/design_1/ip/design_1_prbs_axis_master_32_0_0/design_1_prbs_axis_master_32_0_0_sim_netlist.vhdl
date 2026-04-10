@@ -2,8 +2,8 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Mon Mar  9 15:58:58 2026
--- Host        : FY-6302-12 running 64-bit major release  (build 9200)
+-- Date        : Tue Mar 24 14:55:16 2026
+-- Host        : FY-6302-02 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_1/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_prbs_axis_master_32_0_0/design_1_prbs_axis_master_32_0_0_sim_netlist.vhdl
 -- Design      : design_1_prbs_axis_master_32_0_0
@@ -155,7 +155,7 @@ begin
     );
 \code_u[11]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"E020"
+      INIT => X"10D0"
     )
         port map (
       I0 => p_0_in_0(13),
@@ -166,7 +166,7 @@ begin
     );
 \code_u[12]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"10D0"
+      INIT => X"E020"
     )
         port map (
       I0 => p_0_in_0(13),
@@ -584,13 +584,10 @@ begin
   m_axis_tdata(15) <= \<const0>\;
   m_axis_tdata(14) <= \<const0>\;
   m_axis_tdata(13) <= \^m_axis_tdata\(13);
-  m_axis_tdata(12) <= \^m_axis_tdata\(10);
-  m_axis_tdata(11) <= \^m_axis_tdata\(8);
-  m_axis_tdata(10) <= \^m_axis_tdata\(10);
-  m_axis_tdata(9) <= \^m_axis_tdata\(10);
-  m_axis_tdata(8) <= \^m_axis_tdata\(8);
-  m_axis_tdata(7) <= \^m_axis_tdata\(8);
-  m_axis_tdata(6) <= \^m_axis_tdata\(8);
+  m_axis_tdata(12 downto 11) <= \^m_axis_tdata\(10 downto 9);
+  m_axis_tdata(10 downto 9) <= \^m_axis_tdata\(10 downto 9);
+  m_axis_tdata(8 downto 7) <= \^m_axis_tdata\(10 downto 9);
+  m_axis_tdata(6) <= \^m_axis_tdata\(10);
   m_axis_tdata(5) <= \^m_axis_tdata\(10);
   m_axis_tdata(4) <= \^m_axis_tdata\(10);
   m_axis_tdata(3) <= \^m_axis_tdata\(10);
@@ -606,8 +603,7 @@ U0: entity work.design_1_prbs_axis_master_32_0_0_prbs_axis_master_32
      port map (
       clk => clk,
       m_axis_tdata(3) => \^m_axis_tdata\(13),
-      m_axis_tdata(2) => \^m_axis_tdata\(10),
-      m_axis_tdata(1) => \^m_axis_tdata\(8),
+      m_axis_tdata(2 downto 1) => \^m_axis_tdata\(10 downto 9),
       m_axis_tdata(0) => \^m_axis_tdata\(2),
       m_axis_tready => m_axis_tready,
       prbs_bit => prbs_bit,

@@ -59,6 +59,7 @@ ENTITY design_2_adc_bit_decoder_0_0 IS
     t_data : IN STD_LOGIC_VECTOR(13 DOWNTO 0);
     t_valid : IN STD_LOGIC;
     t_ready : OUT STD_LOGIC;
+    dac_data : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     bit_out : OUT STD_LOGIC
   );
 END design_2_adc_bit_decoder_0_0;
@@ -77,6 +78,7 @@ ARCHITECTURE design_2_adc_bit_decoder_0_0_arch OF design_2_adc_bit_decoder_0_0 I
       t_data : IN STD_LOGIC_VECTOR(13 DOWNTO 0);
       t_valid : IN STD_LOGIC;
       t_ready : OUT STD_LOGIC;
+      dac_data : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
       bit_out : OUT STD_LOGIC
     );
   END COMPONENT adc_bit_decoder;
@@ -98,6 +100,7 @@ BEGIN
       t_data => t_data,
       t_valid => t_valid,
       t_ready => t_ready,
+      dac_data => dac_data,
       bit_out => bit_out
     );
 END design_2_adc_bit_decoder_0_0_arch;

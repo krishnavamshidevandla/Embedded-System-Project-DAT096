@@ -6,7 +6,7 @@ entity prbs_axis_master_32 is
   generic (
     DAC_WIDTH : positive := 14;
     MID_CODE  : natural  := 8192;
-    AMP_CODE  : natural  := 2500;
+    AMP_CODE  : natural  := 5500;
     SEED      : natural  := 1
   );
   port (

@@ -10,14 +10,14 @@
       "component_parameters": {
         "DAC_WIDTH": [ { "value": "14", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "MID_CODE": [ { "value": "8192", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "AMP_CODE": [ { "value": "2500", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "AMP_CODE": [ { "value": "5500", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "SEED": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "Component_Name": [ { "value": "design_1_prbs_axis_master_32_0_0", "resolve_type": "user", "usage": "all" } ]
       },
       "model_parameters": {
         "DAC_WIDTH": [ { "value": "14", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "MID_CODE": [ { "value": "8192", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "AMP_CODE": [ { "value": "2500", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "AMP_CODE": [ { "value": "5500", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "SEED": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ]
       },
       "project_parameters": {

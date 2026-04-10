@@ -103,3 +103,88 @@ set_output_delay -clock [get_clocks ZmodDAC_ClkIn]              -max -add_delay 
 # - sInitDoneDAC_0 / sConfigError_0 are status outputs; unless you wire
 #   them to actual board pins, you do not add PACKAGE_PIN constraints.
 #####################################################################
+
+
+
+#-------------------------------------------------------------------------------------------------------------------------------------------- ADC
+
+# -----------------------------------------------------------------------------
+# 1) Zmod Scope / ADC control & SPI (LVCMOS18)
+# -----------------------------------------------------------------------------
+set_property PACKAGE_PIN T16 [get_ports sZmodCh1CouplingH_0]
+set_property IOSTANDARD LVCMOS18 [get_ports sZmodCh1CouplingH_0]
+
+set_property PACKAGE_PIN T17 [get_ports sZmodCh1CouplingL_0]
+set_property IOSTANDARD LVCMOS18 [get_ports sZmodCh1CouplingL_0]
+
+set_property PACKAGE_PIN N15 [get_ports sZmodCh1GainH_0]
+set_property IOSTANDARD LVCMOS18 [get_ports sZmodCh1GainH_0]
+
+set_property PACKAGE_PIN P15 [get_ports sZmodCh1GainL_0]
+set_property IOSTANDARD LVCMOS18 [get_ports sZmodCh1GainL_0]
+
+set_property PACKAGE_PIN R19 [get_ports sZmodCh2CouplingH_0]
+set_property IOSTANDARD LVCMOS18 [get_ports sZmodCh2CouplingH_0]
+
+set_property PACKAGE_PIN T19 [get_ports sZmodCh2CouplingL_0]
+set_property IOSTANDARD LVCMOS18 [get_ports sZmodCh2CouplingL_0]
+
+set_property PACKAGE_PIN P17 [get_ports sZmodCh2GainH_0]
+set_property IOSTANDARD LVCMOS18 [get_ports sZmodCh2GainH_0]
+
+set_property PACKAGE_PIN P18 [get_ports sZmodCh2GainL_0]
+set_property IOSTANDARD LVCMOS18 [get_ports sZmodCh2GainL_0]
+
+set_property PACKAGE_PIN J20 [get_ports sZmodRelayComH_0]
+set_property IOSTANDARD LVCMOS18 [get_ports sZmodRelayComH_0]
+
+set_property PACKAGE_PIN K21 [get_ports sZmodRelayComL_0]
+set_property IOSTANDARD LVCMOS18 [get_ports sZmodRelayComL_0]
+
+set_property PACKAGE_PIN M21 [get_ports sZmodADC_CS_0]
+set_property IOSTANDARD LVCMOS18 [get_ports sZmodADC_CS_0]
+set_property DRIVE 4 [get_ports sZmodADC_CS_0]
+
+set_property PACKAGE_PIN R18 [get_ports sZmodADC_SDIO_0]
+set_property IOSTANDARD LVCMOS18 [get_ports sZmodADC_SDIO_0]
+set_property DRIVE 4 [get_ports sZmodADC_SDIO_0]
+
+set_property PACKAGE_PIN T18 [get_ports sZmodADC_Sclk_0]
+set_property IOSTANDARD LVCMOS18 [get_ports sZmodADC_Sclk_0]
+set_property DRIVE 4 [get_ports sZmodADC_Sclk_0]
+
+set_property PACKAGE_PIN M22 [get_ports iZmodSync_0]
+set_property IOSTANDARD LVCMOS18 [get_ports iZmodSync_0]
+set_property DRIVE 4 [get_ports iZmodSync_0]
+set_property SLEW SLOW [get_ports iZmodSync_0]
+
+set_property PACKAGE_PIN M19 [get_ports ZmodDcoClk_0]
+set_property IOSTANDARD LVCMOS18 [get_ports ZmodDcoClk_0]
+
+# -----------------------------------------------------------------------------
+# 2) ADC sampling clock out (carrier -> Zmod): differential pair
+# -----------------------------------------------------------------------------
+set_property PACKAGE_PIN N19 [get_ports ZmodAdcClkIn_p_0]
+set_property PACKAGE_PIN N20 [get_ports ZmodAdcClkIn_n_0]
+set_property IOSTANDARD DIFF_SSTL18_II [get_ports {ZmodAdcClkIn_p_0 ZmodAdcClkIn_n_0}]
+set_property SLEW SLOW [get_ports {ZmodAdcClkIn_p_0 ZmodAdcClkIn_n_0}]
+
+# -----------------------------------------------------------------------------
+# 3) ADC 14-bit parallel data bus (LVCMOS18)
+# -----------------------------------------------------------------------------
+set_property PACKAGE_PIN N22 [get_ports {dZmodADC_Data_0[0]}]
+set_property PACKAGE_PIN L21 [get_ports {dZmodADC_Data_0[1]}]
+set_property PACKAGE_PIN R16 [get_ports {dZmodADC_Data_0[2]}]
+set_property PACKAGE_PIN J18 [get_ports {dZmodADC_Data_0[3]}]
+set_property PACKAGE_PIN K18 [get_ports {dZmodADC_Data_0[4]}]
+set_property PACKAGE_PIN L19 [get_ports {dZmodADC_Data_0[5]}]
+set_property PACKAGE_PIN L18 [get_ports {dZmodADC_Data_0[6]}]
+set_property PACKAGE_PIN L22 [get_ports {dZmodADC_Data_0[7]}]
+set_property PACKAGE_PIN K20 [get_ports {dZmodADC_Data_0[8]}]
+set_property PACKAGE_PIN P16 [get_ports {dZmodADC_Data_0[9]}]
+set_property PACKAGE_PIN K19 [get_ports {dZmodADC_Data_0[10]}]
+set_property PACKAGE_PIN J22 [get_ports {dZmodADC_Data_0[11]}]
+set_property PACKAGE_PIN J21 [get_ports {dZmodADC_Data_0[12]}]
+set_property PACKAGE_PIN P22 [get_ports {dZmodADC_Data_0[13]}]
+set_property IOSTANDARD LVCMOS18 [get_ports -filter { name =~ dZmodADC_Data_0*}]
+
