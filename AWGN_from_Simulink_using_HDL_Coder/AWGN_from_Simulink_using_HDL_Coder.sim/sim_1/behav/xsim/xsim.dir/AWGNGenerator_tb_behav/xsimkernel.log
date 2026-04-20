@@ -1,0 +1,7 @@
+Running: xsim.dir/AWGNGenerator_tb_behav/xsimk.exe -simmode gui -wdb AWGNGenerator_tb_behav.wdb -simrunnum 0 -socket 53588
+Design successfully loaded
+Design Loading Memory Usage: 29336 KB (Peak: 29336 KB)
+Design Loading CPU Usage: 437 ms
+Simulation completed
+Simulation Memory Usage: 31300 KB (Peak: 31300 KB)
+Simulation CPU Usage: 562 ms

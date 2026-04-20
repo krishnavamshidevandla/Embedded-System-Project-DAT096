@@ -1,0 +1,891 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Mar 10 11:40:35 2026
+# Process ID         : 26372
+# Current directory  : C:/Users/arikb/Desktop/AWGN_from_Simulink_using_HDL_Coder/AWGN_from_Simulink_using_HDL_Coder.runs/synth_1
+# Command line       : vivado.exe -log top_awgn.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_awgn.tcl
+# Log file           : C:/Users/arikb/Desktop/AWGN_from_Simulink_using_HDL_Coder/AWGN_from_Simulink_using_HDL_Coder.runs/synth_1/top_awgn.vds
+# Journal file       : C:/Users/arikb/Desktop/AWGN_from_Simulink_using_HDL_Coder/AWGN_from_Simulink_using_HDL_Coder.runs/synth_1\vivado.jou
+# Running On         : FY-6302-05
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-14700
+# CPU Frequency      : 2112 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 34031 MB
+# Swap memory        : 5100 MB
+# Total Virtual      : 39131 MB
+# Available Virtual  : 18503 MB
+#-----------------------------------------------------------
+source top_awgn.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/arikb/Desktop/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Progs/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/arikb/Desktop/AWGN_from_Simulink_using_HDL_Coder/AWGN_from_Simulink_using_HDL_Coder.cache/ip 
+Command: read_checkpoint -auto_incremental -incremental C:/Users/arikb/Desktop/AWGN_from_Simulink_using_HDL_Coder/AWGN_from_Simulink_using_HDL_Coder.srcs/utils_1/imports/synth_1/AWGNGenerator_tb.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/arikb/Desktop/AWGN_from_Simulink_using_HDL_Coder/AWGN_from_Simulink_using_HDL_Coder.srcs/utils_1/imports/synth_1/AWGNGenerator_tb.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_awgn -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11580
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1092.551 ; gain = 469.367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_awgn' [C:/Users/arikb/Desktop/AWGN_from_Simulink_using_HDL_Coder/AWGN_from_Simulink_using_HDL_Coder.srcs/sources_1/new/top_awgn.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'AWGNGenerator' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/AWGNGenerator.vhd:58]
+INFO: [Synth 8-3491] module 'dBtoLinearConverter' declared at 'C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/dBtoLinearConverter.vhd:24' bound to instance 'u_dBtoLinearConverter' of component 'dBtoLinearConverter' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/AWGNGenerator.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'dBtoLinearConverter' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/dBtoLinearConverter.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'dBtoLinearConverter' (0#1) [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/dBtoLinearConverter.vhd:34]
+INFO: [Synth 8-3491] module 'GaussianNoiseWithUnitVar' declared at 'C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/GaussianNoiseWithUnitVar.vhd:24' bound to instance 'u_GaussianNoiseWithUnitVar' of component 'GaussianNoiseWithUnitVar' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/AWGNGenerator.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'GaussianNoiseWithUnitVar' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/GaussianNoiseWithUnitVar.vhd:34]
+INFO: [Synth 8-3491] module 'TausUniformRandGen' declared at 'C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/TausUniformRandGen.vhd:23' bound to instance 'u_TausUniformRandGen' of component 'TausUniformRandGen' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/GaussianNoiseWithUnitVar.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'TausUniformRandGen' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/TausUniformRandGen.vhd:33]
+INFO: [Synth 8-3491] module 'TausURNG1' declared at 'C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/TausURNG1.vhd:23' bound to instance 'u_TausURNG1' of component 'TausURNG1' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/TausUniformRandGen.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'TausURNG1' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/TausURNG1.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'TausURNG1' (0#1) [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/TausURNG1.vhd:32]
+INFO: [Synth 8-3491] module 'TausURNG2' declared at 'C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/TausURNG2.vhd:23' bound to instance 'u_TausURNG2' of component 'TausURNG2' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/TausUniformRandGen.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'TausURNG2' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/TausURNG2.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'TausURNG2' (0#1) [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/TausURNG2.vhd:32]
+INFO: [Synth 8-3491] module 'ConcatandExtract' declared at 'C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/ConcatandExtract.vhd:23' bound to instance 'u_ConcatandExtract' of component 'ConcatandExtract' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/TausUniformRandGen.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'ConcatandExtract' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/ConcatandExtract.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'ConcatandExtract' (0#1) [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/ConcatandExtract.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'TausUniformRandGen' (0#1) [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/TausUniformRandGen.vhd:33]
+INFO: [Synth 8-3491] module 'logImplementation' declared at 'C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/logImplementation.vhd:24' bound to instance 'u_logImplementation' of component 'logImplementation' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/GaussianNoiseWithUnitVar.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'logImplementation' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/logImplementation.vhd:34]
+INFO: [Synth 8-3491] module 'log' declared at 'C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/log.vhd:23' bound to instance 'u_log' of component 'log' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/logImplementation.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'log' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/log.vhd:33]
+INFO: [Synth 8-3491] module 'RangeReduction_block' declared at 'C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/RangeReduction_block.vhd:24' bound to instance 'u_RangeReduction' of component 'RangeReduction_block' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/log.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'RangeReduction_block' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/RangeReduction_block.vhd:35]
+INFO: [Synth 8-3491] module 'leadingZeroDetector_block' declared at 'C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/leadingZeroDetector_block.vhd:23' bound to instance 'u_leadingZeroDetector' of component 'leadingZeroDetector_block' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/RangeReduction_block.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'leadingZeroDetector_block' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/leadingZeroDetector_block.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'leadingZeroDetector_block' (0#1) [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/leadingZeroDetector_block.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'RangeReduction_block' (0#1) [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/RangeReduction_block.vhd:35]
+INFO: [Synth 8-3491] module 'FunctionEvaluation_block' declared at 'C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/FunctionEvaluation_block.vhd:24' bound to instance 'u_FunctionEvaluation' of component 'FunctionEvaluation_block' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/log.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'FunctionEvaluation_block' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/FunctionEvaluation_block.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'FunctionEvaluation_block' (0#1) [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/FunctionEvaluation_block.vhd:36]
+INFO: [Synth 8-3491] module 'RangeReconstruction_block' declared at 'C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/RangeReconstruction_block.vhd:24' bound to instance 'u_RangeReconstruction' of component 'RangeReconstruction_block' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/log.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'RangeReconstruction_block' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/RangeReconstruction_block.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'RangeReconstruction_block' (0#1) [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/RangeReconstruction_block.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'log' (0#1) [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/log.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'logImplementation' (0#1) [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/logImplementation.vhd:34]
+INFO: [Synth 8-3491] module 'SqrtImplementation' declared at 'C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/SqrtImplementation.vhd:24' bound to instance 'u_SqrtImplementation' of component 'SqrtImplementation' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/GaussianNoiseWithUnitVar.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'SqrtImplementation' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/SqrtImplementation.vhd:34]
+INFO: [Synth 8-3491] module 'SqrtEval' declared at 'C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/SqrtEval.vhd:23' bound to instance 'u_SqrtEval' of component 'SqrtEval' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/SqrtImplementation.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'SqrtEval' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/SqrtEval.vhd:33]
+INFO: [Synth 8-3491] module 'RangeReduction' declared at 'C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/RangeReduction.vhd:23' bound to instance 'u_RangeReduction' of component 'RangeReduction' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/SqrtEval.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'RangeReduction' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/RangeReduction.vhd:35]
+INFO: [Synth 8-3491] module 'leadingZeroDetector' declared at 'C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/leadingZeroDetector.vhd:23' bound to instance 'u_leadingZeroDetector' of component 'leadingZeroDetector' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/RangeReduction.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'leadingZeroDetector' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/leadingZeroDetector.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'leadingZeroDetector' (0#1) [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/leadingZeroDetector.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'RangeReduction' (0#1) [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/RangeReduction.vhd:35]
+INFO: [Synth 8-3491] module 'FunctionEvaluation' declared at 'C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/FunctionEvaluation.vhd:24' bound to instance 'u_FunctionEvaluation' of component 'FunctionEvaluation' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/SqrtEval.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'FunctionEvaluation' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/FunctionEvaluation.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'FunctionEvaluation' (0#1) [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/FunctionEvaluation.vhd:38]
+INFO: [Synth 8-3491] module 'RangeReconstruction' declared at 'C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/RangeReconstruction.vhd:23' bound to instance 'u_RangeReconstruction' of component 'RangeReconstruction' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/SqrtEval.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'RangeReconstruction' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/RangeReconstruction.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'RangeReconstruction' (0#1) [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/RangeReconstruction.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'SqrtEval' (0#1) [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/SqrtEval.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'SqrtImplementation' (0#1) [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/SqrtImplementation.vhd:34]
+INFO: [Synth 8-3491] module 'SinCos' declared at 'C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/SinCos.vhd:23' bound to instance 'u_SinCos' of component 'SinCos' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/GaussianNoiseWithUnitVar.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'SinCos' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/SinCos.vhd:34]
+INFO: [Synth 8-3491] module 'Sine_HDL_Optimized' declared at 'C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/Sine_HDL_Optimized.vhd:24' bound to instance 'u_Sine_HDL_Optimized' of component 'Sine_HDL_Optimized' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/SinCos.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'Sine_HDL_Optimized' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/Sine_HDL_Optimized.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'Sine_HDL_Optimized' (0#1) [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/Sine_HDL_Optimized.vhd:31]
+INFO: [Synth 8-3491] module 'Sine_HDL_Optimized1' declared at 'C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/Sine_HDL_Optimized1.vhd:24' bound to instance 'u_Sine_HDL_Optimized1' of component 'Sine_HDL_Optimized1' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/SinCos.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'Sine_HDL_Optimized1' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/Sine_HDL_Optimized1.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'Sine_HDL_Optimized1' (0#1) [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/Sine_HDL_Optimized1.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'SinCos' (0#1) [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/SinCos.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'GaussianNoiseWithUnitVar' (0#1) [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/GaussianNoiseWithUnitVar.vhd:34]
+INFO: [Synth 8-3491] module 'GaussianNoiseWithReqVar' declared at 'C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/GaussianNoiseWithReqVar.vhd:24' bound to instance 'u_GaussianNoiseWithReqVar' of component 'GaussianNoiseWithReqVar' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/AWGNGenerator.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'GaussianNoiseWithReqVar' [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/GaussianNoiseWithReqVar.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'GaussianNoiseWithReqVar' (0#1) [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/GaussianNoiseWithReqVar.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'AWGNGenerator' (0#1) [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/AWGNGenerator.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'top_awgn' (0#1) [C:/Users/arikb/Desktop/AWGN_from_Simulink_using_HDL_Coder/AWGN_from_Simulink_using_HDL_Coder.srcs/sources_1/new/top_awgn.vhd:14]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Abs_rsvd_y_reg' and it is trimmed from '34' to '31' bits. [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/FunctionEvaluation.vhd:373]
+WARNING: [Synth 8-7129] Port u[3] in module Sine_HDL_Optimized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port u[2] in module Sine_HDL_Optimized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port u[1] in module Sine_HDL_Optimized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port u[0] in module Sine_HDL_Optimized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port u[3] in module Sine_HDL_Optimized is either unconnected or has no load
+WARNING: [Synth 8-7129] Port u[2] in module Sine_HDL_Optimized is either unconnected or has no load
+WARNING: [Synth 8-7129] Port u[1] in module Sine_HDL_Optimized is either unconnected or has no load
+WARNING: [Synth 8-7129] Port u[0] in module Sine_HDL_Optimized is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1228.520 ; gain = 605.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1228.520 ; gain = 605.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1228.520 ; gain = 605.336
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1228.520 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led0_b'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led0_r'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1_b'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1_g'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1_r'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_c2p_clk_n'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_c2p_clk_p'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_n[0]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_p[0]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_n[1]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_p[1]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_n[2]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_p[2]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_n[3]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_p[3]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_n[4]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_p[4]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_n[5]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_p[5]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_n[6]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_p[6]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_n[7]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_p[7]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_p2c_clk_n'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_p2c_clk_p'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_s[16]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_s[17]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_s[18]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_s[19]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_s[20]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_s[21]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_s[22]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_s[23]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_s[24]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_s[25]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_s[26]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_s[27]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_c2p_clk_n'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_c2p_clk_p'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_n[0]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_p[0]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_n[1]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_p[1]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_n[2]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_p[2]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_n[3]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_p[3]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_n[4]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_p[4]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_n[5]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_p[5]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_n[6]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_p[6]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_n[7]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_p[7]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_p2c_clk_n'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_p2c_clk_p'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_s[16]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_s[17]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_s[18]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_s[19]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_s[20]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_s[21]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_s[22]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_s[23]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_s[24]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_s[25]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_s[26]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_s[27]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'crypto_sda'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mcu_rsvd[0]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mcu_rsvd[1]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_awgn_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_awgn_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1337.250 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1337.250 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1337.250 ; gain = 714.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1337.250 ; gain = 714.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1337.250 ; gain = 714.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1337.250 ; gain = 714.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   40 Bit       Adders := 1     
+	   3 Input   35 Bit       Adders := 1     
+	   2 Input   34 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   31 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 7     
+	   2 Input   16 Bit       Adders := 3     
+	   2 Input    9 Bit       Adders := 2     
+	   3 Input    9 Bit       Adders := 1     
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 6     
+	   3 Input     32 Bit         XORs := 2     
++---Registers : 
+	               49 Bit    Registers := 1     
+	               48 Bit    Registers := 20    
+	               44 Bit    Registers := 2     
+	               39 Bit    Registers := 1     
+	               32 Bit    Registers := 13    
+	               31 Bit    Registers := 27    
+	               22 Bit    Registers := 30    
+	               21 Bit    Registers := 6     
+	               17 Bit    Registers := 4     
+	               16 Bit    Registers := 77    
+	               13 Bit    Registers := 4     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 8     
+	                8 Bit    Registers := 28    
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Multipliers : 
+	              13x32  Multipliers := 2     
+	               9x33  Multipliers := 1     
++---ROMs : 
+	                    ROMs := 2     
++---Muxes : 
+	   2 Input   31 Bit        Muxes := 3     
+	   3 Input   21 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 5     
+	   3 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   3 Input   13 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 8     
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 4     
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-6014] Unused sequential element u_RangeReconstruction/Delay2_out1_reg was removed.  [C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/RangeReconstruction_block.vhd:87]
+DSP Report: Generating DSP u_FunctionEvaluation/Delay2_out1_reg, operation Mode is: (A''*B2)'.
+DSP Report: register u_FunctionEvaluation/Delay1_reg_reg[1] is absorbed into DSP u_FunctionEvaluation/Delay2_out1_reg.
+DSP Report: register u_FunctionEvaluation/Delay2_out1_reg is absorbed into DSP u_FunctionEvaluation/Delay2_out1_reg.
+DSP Report: register u_FunctionEvaluation/Delay2_out1_reg is absorbed into DSP u_FunctionEvaluation/Delay2_out1_reg.
+DSP Report: register u_FunctionEvaluation/Delay2_out1_reg is absorbed into DSP u_FunctionEvaluation/Delay2_out1_reg.
+DSP Report: operator u_FunctionEvaluation/Product_mul_temp is absorbed into DSP u_FunctionEvaluation/Delay2_out1_reg.
+DSP Report: Generating DSP u_FunctionEvaluation/Delay13_out1_reg, operation Mode is: (A''*B'')'.
+DSP Report: register u_FunctionEvaluation/Delay10_reg_reg[0] is absorbed into DSP u_FunctionEvaluation/Delay13_out1_reg.
+DSP Report: register u_FunctionEvaluation/Delay10_reg_reg[1] is absorbed into DSP u_FunctionEvaluation/Delay13_out1_reg.
+DSP Report: register u_FunctionEvaluation/Delay13_out1_reg is absorbed into DSP u_FunctionEvaluation/Delay13_out1_reg.
+DSP Report: register u_FunctionEvaluation/Delay13_out1_reg is absorbed into DSP u_FunctionEvaluation/Delay13_out1_reg.
+DSP Report: register u_FunctionEvaluation/Delay13_out1_reg is absorbed into DSP u_FunctionEvaluation/Delay13_out1_reg.
+DSP Report: operator u_FunctionEvaluation/Product1_mul_temp is absorbed into DSP u_FunctionEvaluation/Delay13_out1_reg.
+DSP Report: Generating DSP u_RangeReconstruction/Product_mul_temp, operation Mode is: (A:0x17f8)*B''.
+DSP Report: register u_RangeReconstruction/Product_mul_temp is absorbed into DSP u_RangeReconstruction/Product_mul_temp.
+DSP Report: register u_RangeReconstruction/Product_mul_temp is absorbed into DSP u_RangeReconstruction/Product_mul_temp.
+DSP Report: operator u_RangeReconstruction/Product_mul_temp is absorbed into DSP u_RangeReconstruction/Product_mul_temp.
+DSP Report: operator u_RangeReconstruction/Product_mul_temp is absorbed into DSP u_RangeReconstruction/Product_mul_temp.
+DSP Report: Generating DSP u_RangeReconstruction/Delay2_out1_reg, operation Mode is: (PCIN>>17)+A*B''.
+DSP Report: register u_RangeReconstruction/Delay2_out1_reg is absorbed into DSP u_RangeReconstruction/Delay2_out1_reg.
+DSP Report: register u_RangeReconstruction/Delay2_out1_reg is absorbed into DSP u_RangeReconstruction/Delay2_out1_reg.
+DSP Report: register u_RangeReconstruction/Delay2_out1_reg is absorbed into DSP u_RangeReconstruction/Delay2_out1_reg.
+DSP Report: operator u_RangeReconstruction/Product_mul_temp is absorbed into DSP u_RangeReconstruction/Delay2_out1_reg.
+DSP Report: operator u_RangeReconstruction/Product_mul_temp is absorbed into DSP u_RangeReconstruction/Delay2_out1_reg.
+DSP Report: Generating DSP u_SqrtEval/u_FunctionEvaluation/Product1_mul_temp, operation Mode is: A''*B2.
+DSP Report: register u_SqrtEval/u_FunctionEvaluation/Delay21_reg_reg[1] is absorbed into DSP u_SqrtEval/u_FunctionEvaluation/Product1_mul_temp.
+DSP Report: register u_SqrtEval/u_FunctionEvaluation/Product1_mul_temp is absorbed into DSP u_SqrtEval/u_FunctionEvaluation/Product1_mul_temp.
+DSP Report: register u_SqrtEval/u_FunctionEvaluation/Product1_mul_temp is absorbed into DSP u_SqrtEval/u_FunctionEvaluation/Product1_mul_temp.
+DSP Report: operator u_SqrtEval/u_FunctionEvaluation/Product1_mul_temp is absorbed into DSP u_SqrtEval/u_FunctionEvaluation/Product1_mul_temp.
+DSP Report: operator u_SqrtEval/u_FunctionEvaluation/Product1_mul_temp is absorbed into DSP u_SqrtEval/u_FunctionEvaluation/Product1_mul_temp.
+DSP Report: Generating DSP u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg, operation Mode is: (PCIN>>17)+A''*B2.
+DSP Report: register u_SqrtEval/u_FunctionEvaluation/Delay21_reg_reg[1] is absorbed into DSP u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg.
+DSP Report: register u_SqrtEval/u_FunctionEvaluation/Delay20_reg_reg[0] is absorbed into DSP u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg.
+DSP Report: register u_SqrtEval/u_FunctionEvaluation/Delay20_reg_reg[1] is absorbed into DSP u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg.
+DSP Report: register u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg is absorbed into DSP u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg.
+DSP Report: operator u_SqrtEval/u_FunctionEvaluation/Product1_mul_temp is absorbed into DSP u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg.
+DSP Report: operator u_SqrtEval/u_FunctionEvaluation/Product1_mul_temp is absorbed into DSP u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg.
+DSP Report: Generating DSP u_SqrtEval/u_FunctionEvaluation/Product_mul_temp, operation Mode is: A''*B2.
+DSP Report: register u_SqrtEval/u_FunctionEvaluation/Delay17_reg_reg[1] is absorbed into DSP u_SqrtEval/u_FunctionEvaluation/Product_mul_temp.
+DSP Report: register u_SqrtEval/u_FunctionEvaluation/Product_mul_temp is absorbed into DSP u_SqrtEval/u_FunctionEvaluation/Product_mul_temp.
+DSP Report: register u_SqrtEval/u_FunctionEvaluation/Product_mul_temp is absorbed into DSP u_SqrtEval/u_FunctionEvaluation/Product_mul_temp.
+DSP Report: operator u_SqrtEval/u_FunctionEvaluation/Product_mul_temp is absorbed into DSP u_SqrtEval/u_FunctionEvaluation/Product_mul_temp.
+DSP Report: operator u_SqrtEval/u_FunctionEvaluation/Product_mul_temp is absorbed into DSP u_SqrtEval/u_FunctionEvaluation/Product_mul_temp.
+DSP Report: Generating DSP u_SqrtEval/u_FunctionEvaluation/Delay24_out1_reg, operation Mode is: (PCIN>>17)+A''*B2.
+DSP Report: register u_SqrtEval/u_FunctionEvaluation/Delay17_reg_reg[1] is absorbed into DSP u_SqrtEval/u_FunctionEvaluation/Delay24_out1_reg.
+DSP Report: register u_SqrtEval/u_FunctionEvaluation/Delay20_reg_reg[0] is absorbed into DSP u_SqrtEval/u_FunctionEvaluation/Delay24_out1_reg.
+DSP Report: register u_SqrtEval/u_FunctionEvaluation/Delay20_reg_reg[1] is absorbed into DSP u_SqrtEval/u_FunctionEvaluation/Delay24_out1_reg.
+DSP Report: register u_SqrtEval/u_FunctionEvaluation/Delay24_out1_reg is absorbed into DSP u_SqrtEval/u_FunctionEvaluation/Delay24_out1_reg.
+DSP Report: operator u_SqrtEval/u_FunctionEvaluation/Product_mul_temp is absorbed into DSP u_SqrtEval/u_FunctionEvaluation/Delay24_out1_reg.
+DSP Report: operator u_SqrtEval/u_FunctionEvaluation/Product_mul_temp is absorbed into DSP u_SqrtEval/u_FunctionEvaluation/Delay24_out1_reg.
+DSP Report: Generating DSP Delay8_out1_reg, operation Mode is: (A''*B'')'.
+DSP Report: register Delay6_reg_reg[0] is absorbed into DSP Delay8_out1_reg.
+DSP Report: register Delay6_reg_reg[1] is absorbed into DSP Delay8_out1_reg.
+DSP Report: register Delay8_out1_reg is absorbed into DSP Delay8_out1_reg.
+DSP Report: register Delay8_out1_reg is absorbed into DSP Delay8_out1_reg.
+DSP Report: register Delay8_out1_reg is absorbed into DSP Delay8_out1_reg.
+DSP Report: operator Product_mul_temp is absorbed into DSP Delay8_out1_reg.
+DSP Report: Generating DSP Delay9_out1_reg, operation Mode is: (A''*B'')'.
+DSP Report: register Delay7_reg_reg[0] is absorbed into DSP Delay9_out1_reg.
+DSP Report: register Delay7_reg_reg[1] is absorbed into DSP Delay9_out1_reg.
+DSP Report: register Delay8_out1_reg is absorbed into DSP Delay9_out1_reg.
+DSP Report: register Delay8_out1_reg is absorbed into DSP Delay9_out1_reg.
+DSP Report: register Delay9_out1_reg is absorbed into DSP Delay9_out1_reg.
+DSP Report: operator Product1_mul_temp is absorbed into DSP Delay9_out1_reg.
+DSP Report: Generating DSP u_awgn/u_dBtoLinearConverter/Gain_out1, operation Mode is: (A:0x5000)*(B:0x329)''.
+DSP Report: register u_awgn/u_dBtoLinearConverter/Delay_reg_reg[0] is absorbed into DSP u_awgn/u_dBtoLinearConverter/Gain_out1.
+DSP Report: register u_awgn/u_dBtoLinearConverter/Delay_reg_reg[1] is absorbed into DSP u_awgn/u_dBtoLinearConverter/Gain_out1.
+DSP Report: operator u_awgn/u_dBtoLinearConverter/Gain_out1 is absorbed into DSP u_awgn/u_dBtoLinearConverter/Gain_out1.
+DSP Report: Generating DSP u_awgn/u_GaussianNoiseWithReqVar/Delay6_out1_re_reg, operation Mode is: (A''*B'')'.
+DSP Report: register u_awgn/u_GaussianNoiseWithReqVar/Delay5_reg_re_reg[0] is absorbed into DSP u_awgn/u_GaussianNoiseWithReqVar/Delay6_out1_re_reg.
+DSP Report: register u_awgn/u_GaussianNoiseWithReqVar/Delay5_reg_re_reg[1] is absorbed into DSP u_awgn/u_GaussianNoiseWithReqVar/Delay6_out1_re_reg.
+DSP Report: register u_awgn/u_GaussianNoiseWithReqVar/Delay6_out1_re_reg is absorbed into DSP u_awgn/u_GaussianNoiseWithReqVar/Delay6_out1_re_reg.
+DSP Report: register u_awgn/u_GaussianNoiseWithReqVar/Delay6_out1_re_reg is absorbed into DSP u_awgn/u_GaussianNoiseWithReqVar/Delay6_out1_re_reg.
+DSP Report: register u_awgn/u_GaussianNoiseWithReqVar/Delay6_out1_re_reg is absorbed into DSP u_awgn/u_GaussianNoiseWithReqVar/Delay6_out1_re_reg.
+DSP Report: operator u_awgn/u_GaussianNoiseWithReqVar/Product1_mul_temp is absorbed into DSP u_awgn/u_GaussianNoiseWithReqVar/Delay6_out1_re_reg.
+DSP Report: Generating DSP u_awgn/u_GaussianNoiseWithReqVar/Delay6_out1_im_reg, operation Mode is: (A''*B'')'.
+DSP Report: register u_awgn/u_GaussianNoiseWithReqVar/Delay5_reg_im_reg[0] is absorbed into DSP u_awgn/u_GaussianNoiseWithReqVar/Delay6_out1_im_reg.
+DSP Report: register u_awgn/u_GaussianNoiseWithReqVar/Delay5_reg_im_reg[1] is absorbed into DSP u_awgn/u_GaussianNoiseWithReqVar/Delay6_out1_im_reg.
+DSP Report: register u_awgn/u_GaussianNoiseWithReqVar/Delay6_out1_im_reg is absorbed into DSP u_awgn/u_GaussianNoiseWithReqVar/Delay6_out1_im_reg.
+DSP Report: register u_awgn/u_GaussianNoiseWithReqVar/Delay6_out1_im_reg is absorbed into DSP u_awgn/u_GaussianNoiseWithReqVar/Delay6_out1_im_reg.
+DSP Report: register u_awgn/u_GaussianNoiseWithReqVar/Delay6_out1_im_reg is absorbed into DSP u_awgn/u_GaussianNoiseWithReqVar/Delay6_out1_im_reg.
+DSP Report: operator u_awgn/u_GaussianNoiseWithReqVar/Product11_mul_temp is absorbed into DSP u_awgn/u_GaussianNoiseWithReqVar/Delay6_out1_im_reg.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[47]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[46]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[45]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[44]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[43]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[42]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[41]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[40]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[39]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[38]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[37]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[36]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[35]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[34]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[33]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[32]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[31]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[30]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[29]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[28]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[27]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[26]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[25]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[24]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[23]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[22]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[21]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[20]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[19]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[18]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[17]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[4]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[3]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[2]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[1]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_log/u_RangeReconstruction/Delay2_out1_reg[0]) is unused and will be removed from module logImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[47]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[46]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[45]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[44]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[43]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[42]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[41]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[40]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[39]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[38]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[37]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[36]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[35]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[34]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[33]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[32]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[31]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[30]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[29]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[28]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[27]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[26]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[25]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[24]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[23]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[22]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[21]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[20]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[19]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[18]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[17]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[16]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[15]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[14]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[13]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[12]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[11]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[10]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[9]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[8]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[7]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[6]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[5]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[4]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[3]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[2]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[1]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay27_out1_reg[0]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay24_out1_reg[47]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay24_out1_reg[46]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay24_out1_reg[45]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay24_out1_reg[44]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay24_out1_reg[43]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay24_out1_reg[42]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay24_out1_reg[41]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay24_out1_reg[40]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay24_out1_reg[39]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay24_out1_reg[38]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay24_out1_reg[37]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay24_out1_reg[36]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay24_out1_reg[35]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay24_out1_reg[34]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay24_out1_reg[33]) is unused and will be removed from module SqrtImplementation.
+WARNING: [Synth 8-3332] Sequential element (u_SqrtEval/u_FunctionEvaluation/Delay24_out1_reg[32]) is unused and will be removed from module SqrtImplementation.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1369.996 ; gain = 746.812
+---------------------------------------------------------------------------------
+ Sort Area is  u_SqrtEval/u_FunctionEvaluation/Product1_mul_temp_a : 0 0 : 2332 4587 : Used 1 time 0
+ Sort Area is  u_SqrtEval/u_FunctionEvaluation/Product1_mul_temp_a : 0 1 : 2255 4587 : Used 1 time 0
+ Sort Area is  u_SqrtEval/u_FunctionEvaluation/Product_mul_temp_7 : 0 0 : 2332 4587 : Used 1 time 0
+ Sort Area is  u_SqrtEval/u_FunctionEvaluation/Product_mul_temp_7 : 0 1 : 2255 4587 : Used 1 time 0
+ Sort Area is  u_RangeReconstruction/Product_mul_temp_0 : 0 0 : 1098 2740 : Used 1 time 0
+ Sort Area is  u_RangeReconstruction/Product_mul_temp_0 : 0 1 : 1642 2740 : Used 1 time 0
+ Sort Area is  u_awgn/u_GaussianNoiseWithReqVar/Delay6_out1_im_reg_12 : 0 0 : 2702 2702 : Used 1 time 0
+ Sort Area is  u_awgn/u_GaussianNoiseWithReqVar/Delay6_out1_re_reg_10 : 0 0 : 2702 2702 : Used 1 time 0
+ Sort Area is  Delay8_out1_reg_b : 0 0 : 2227 2227 : Used 1 time 0
+ Sort Area is  Delay9_out1_reg_d : 0 0 : 2227 2227 : Used 1 time 0
+ Sort Area is  u_FunctionEvaluation/Delay13_out1_reg_5 : 0 0 : 2132 2132 : Used 1 time 0
+ Sort Area is  u_FunctionEvaluation/Delay2_out1_reg_3 : 0 0 : 2115 2115 : Used 1 time 0
+ Sort Area is  u_awgn/u_dBtoLinearConverter/Gain_out1_e : 0 0 : 223 223 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++-------------------------+----------------------------------------------------------------+---------------+----------------+
+|Module Name              | RTL Object                                                     | Depth x Width | Implemented As | 
++-------------------------+----------------------------------------------------------------+---------------+----------------+
+|dBtoLinearConverter      | sqrt_noisePow_2_data[0]                                        | 512x21        | LUT            | 
+|FunctionEvaluation_block | alpha1_D_Lookup_Table1_table_data[0]                           | 256x15        | LUT            | 
+|FunctionEvaluation       | alpha1_D_Lookup_Table3_data[0]                                 | 128x20        | LUT            | 
+|FunctionEvaluation       | alpha1_D_Lookup_Table2_data[0]                                 | 128x11        | LUT            | 
+|FunctionEvaluation       | alpha1_D_Lookup_Table1_data[0]                                 | 128x20        | LUT            | 
+|FunctionEvaluation       | alpha1_D_Lookup_Table_data[0]                                  | 128x11        | LUT            | 
+|Sine_HDL_Optimized       | Look_Up_Table_data[0]                                          | 1024x15       | LUT            | 
+|Sine_HDL_Optimized1      | Look_Up_Table_data[0]                                          | 1024x15       | LUT            | 
+|log                      | u_FunctionEvaluation/Delay5_reg_reg[0]                         | 256x32        | Block RAM      | 
+|log                      | u_FunctionEvaluation/alpha1_D_Lookup_Table1_table_data[0]      | 256x15        | LUT            | 
+|log                      | u_FunctionEvaluation/Delay1_reg_reg[0]                         | 256x16        | Block RAM      | 
+|SqrtImplementation       | u_SqrtEval/u_FunctionEvaluation/alpha1_D_Lookup_Table3_data[0] | 128x20        | LUT            | 
+|SqrtImplementation       | u_SqrtEval/u_FunctionEvaluation/alpha1_D_Lookup_Table2_data[0] | 128x11        | LUT            | 
+|SqrtImplementation       | u_SqrtEval/u_FunctionEvaluation/alpha1_D_Lookup_Table1_data[0] | 128x20        | LUT            | 
+|SqrtImplementation       | u_SqrtEval/u_FunctionEvaluation/alpha1_D_Lookup_Table_data[0]  | 128x11        | LUT            | 
+|SinCos                   | u_Sine_HDL_Optimized/Look_Up_Table_data[0]                     | 1024x15       | LUT            | 
+|SinCos                   | u_Sine_HDL_Optimized1/Look_Up_Table_data[0]                    | 1024x15       | LUT            | 
+|top_awgn                 | u_awgn/Delay_reg_reg[0]                                        | 512x22        | Block RAM      | 
++-------------------------+----------------------------------------------------------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-------------------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name              | DSP Mapping            | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|FunctionEvaluation_block | (A''*B2)'              | 17     | 16     | -      | -      | 33     | 2    | 1    | -    | -    | -     | 1    | 0    | 
+|FunctionEvaluation_block | (A''*B'')'             | 17     | 16     | -      | -      | 33     | 2    | 2    | -    | -    | -     | 1    | 0    | 
+|log                      | (A:0x17f8)*B''         | 9      | 14     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|log                      | (PCIN>>17)+A*B''       | 16     | 9      | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|SqrtImplementation       | A''*B2                 | 18     | 13     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|SqrtImplementation       | (PCIN>>17)+A''*B2      | 15     | 13     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|SqrtImplementation       | A''*B2                 | 18     | 13     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|SqrtImplementation       | (PCIN>>17)+A''*B2      | 15     | 13     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|GaussianNoiseWithUnitVar | (A''*B'')'             | 18     | 16     | -      | -      | 34     | 2    | 2    | -    | -    | -     | 1    | 0    | 
+|GaussianNoiseWithUnitVar | (A''*B'')'             | 18     | 16     | -      | -      | 34     | 2    | 2    | -    | -    | -     | 1    | 0    | 
+|dBtoLinearConverter      | (A:0x5000)*(B:0x329)'' | 16     | 16     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|GaussianNoiseWithReqVar  | (A''*B'')'             | 23     | 16     | -      | -      | 39     | 2    | 2    | -    | -    | -     | 1    | 0    | 
+|GaussianNoiseWithReqVar  | (A''*B'')'             | 23     | 16     | -      | -      | 39     | 2    | 2    | -    | -    | -     | 1    | 0    | 
++-------------------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1503.797 ; gain = 880.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1537.598 ; gain = 914.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance u_awgn/u_GaussianNoiseWithUnitVar/u_logImplementation/u_log/u_FunctionEvaluation/Delay5_reg_reg[0] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_awgn/u_GaussianNoiseWithUnitVar/u_logImplementation/u_log/u_FunctionEvaluation/Delay5_reg_reg[0] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_awgn/u_GaussianNoiseWithUnitVar/u_logImplementation/u_log/u_FunctionEvaluation/Delay1_reg_reg[0] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_awgn/Delay_reg_reg[0] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_awgn/Delay_reg_reg[0] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1663.402 ; gain = 1040.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1758.281 ; gain = 1135.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1758.281 ; gain = 1135.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1758.281 ; gain = 1135.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1758.281 ; gain = 1135.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 1767.516 ; gain = 1144.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 1767.516 ; gain = 1144.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                                                   | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top_awgn    | u_awgn/u_GaussianNoiseWithUnitVar/u_logImplementation/u_log/u_FunctionEvaluation/Delay14_out1_reg[31]      | 5      | 30    | YES          | NO                 | YES               | 30     | 0       | 
+|top_awgn    | u_awgn/u_GaussianNoiseWithUnitVar/u_logImplementation/u_log/u_RangeReconstruction/Delay3_out1_reg[30]      | 4      | 31    | YES          | NO                 | YES               | 31     | 0       | 
+|top_awgn    | u_awgn/u_GaussianNoiseWithUnitVar/u_logImplementation/u_log/u_FunctionEvaluation/Delay17_out1_reg[5]       | 9      | 6     | YES          | NO                 | YES               | 6      | 0       | 
+|top_awgn    | u_awgn/u_GaussianNoiseWithUnitVar/u_logImplementation/Delay_reg_reg[15][47]                                | 13     | 48    | YES          | NO                 | YES               | 48     | 0       | 
+|top_awgn    | u_awgn/u_GaussianNoiseWithUnitVar/u_SqrtImplementation/u_SqrtEval/u_FunctionEvaluation/Delay15_out1_reg[7] | 8      | 5     | YES          | NO                 | YES               | 5      | 0       | 
+|top_awgn    | u_awgn/u_GaussianNoiseWithUnitVar/u_SqrtImplementation/Delay2_reg_reg[6][30]                               | 8      | 30    | YES          | NO                 | YES               | 30     | 0       | 
+|top_awgn    | u_awgn/u_GaussianNoiseWithUnitVar/u_SqrtImplementation/u_SqrtEval/u_FunctionEvaluation/Delay12_out1_reg[0] | 8      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|top_awgn    | u_awgn/u_GaussianNoiseWithUnitVar/Delay10_reg_reg[6][15]                                                   | 29     | 16    | YES          | NO                 | YES               | 0      | 16      | 
+|top_awgn    | u_awgn/u_GaussianNoiseWithUnitVar/Delay11_reg_reg[6][15]                                                   | 29     | 16    | YES          | NO                 | YES               | 0      | 16      | 
+|top_awgn    | u_awgn/u_GaussianNoiseWithUnitVar/Delay1_reg_reg[4][30]                                                    | 5      | 30    | YES          | NO                 | YES               | 30     | 0       | 
+|top_awgn    | u_awgn/Delay_reg_reg[29][21]                                                                               | 29     | 22    | YES          | NO                 | YES               | 0      | 22      | 
+|top_awgn    | u_awgn/u_GaussianNoiseWithReqVar/Delay8_reg_reg[2]                                                         | 37     | 1     | YES          | NO                 | YES               | 0      | 2       | 
++------------+------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name              | DSP Mapping         | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|GaussianNoiseWithReqVar  | ((A''*B')')'        | 22     | 18     | -      | -      | 38     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|GaussianNoiseWithReqVar  | ((A''*B')')'        | 22     | 18     | -      | -      | 38     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|GaussianNoiseWithUnitVar | ((A'*B'')')'        | 17     | 18     | -      | -      | 33     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|GaussianNoiseWithUnitVar | ((A'*B'')')'        | 17     | 18     | -      | -      | 33     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|SqrtImplementation       | A''*B''             | 17     | 11     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|SqrtImplementation       | (PCIN>>17+A''*B'')' | 14     | 11     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|SqrtImplementation       | A''*B''             | 17     | 11     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|SqrtImplementation       | (PCIN>>17+A''*B'')' | 14     | 11     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|FunctionEvaluation_block | (A''*B')'           | 16     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|FunctionEvaluation_block | (A''*B'')'          | 16     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|log                      | A''*B               | 6      | 13     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|log                      | (PCIN>>17+A*B'')'   | 15     | 6      | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|dBtoLinearConverter      | A*B''               | 15     | 10     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
++-------------------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |   485|
+|3     |DSP48E1  |    13|
+|12    |LUT1     |    34|
+|13    |LUT2     |  3805|
+|14    |LUT3     |   150|
+|15    |LUT4     |   183|
+|16    |LUT5     |   175|
+|17    |LUT6     |   859|
+|18    |MUXF7    |   194|
+|19    |MUXF8    |    88|
+|20    |RAMB18E1 |     3|
+|23    |SRL16E   |   181|
+|24    |SRLC32E  |    56|
+|25    |FDRE     |  1356|
+|26    |FDSE     |    26|
+|27    |IBUF     |     2|
+|28    |OBUF     |    17|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 1767.516 ; gain = 1144.332
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 132 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 1767.516 ; gain = 1035.602
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 1767.516 ; gain = 1144.332
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1776.617 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 783 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1780.336 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 9ced122d
+INFO: [Common 17-83] Releasing license: Synthesis
+100 Infos, 185 Warnings, 73 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 1780.336 ; gain = 1391.012
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1780.336 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/arikb/Desktop/AWGN_from_Simulink_using_HDL_Coder/AWGN_from_Simulink_using_HDL_Coder.runs/synth_1/top_awgn.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_awgn_utilization_synth.rpt -pb top_awgn_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 10 11:41:41 2026...

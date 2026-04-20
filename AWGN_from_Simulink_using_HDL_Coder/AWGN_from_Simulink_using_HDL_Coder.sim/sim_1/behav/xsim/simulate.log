@@ -1,0 +1,14 @@
+Warning: File snrdB.dat could not be opened
+on HDL file C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/AWGNGenerator_tb.vhd line 175
+Warning: File awgn_re_expected.dat could not be opened
+on HDL file C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/AWGNGenerator_tb.vhd line 311
+Warning: File awgn_im_expected.dat could not be opened
+on HDL file C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/AWGNGenerator_tb.vhd line 344
+Warning: File valid_expected.dat could not be opened
+on HDL file C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/AWGNGenerator_tb.vhd line 377
+Time resolution is 1 ps
+ERROR: File snrdB.dat is not open. Cannot call endfile on it
+Time: 30 ns  Iteration: 3  Process: /AWGNGenerator_tb/snrdB_fileread
+  File: C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/AWGNGenerator_tb.vhd
+
+HDL Line: C:/Users/arikb/Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/AWGNGenerator_tb.vhd:181

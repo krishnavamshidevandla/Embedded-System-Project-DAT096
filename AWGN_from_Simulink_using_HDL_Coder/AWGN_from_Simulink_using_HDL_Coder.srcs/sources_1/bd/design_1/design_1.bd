@@ -1,0 +1,59 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7z020clg484-1",
+      "gen_directory": "../../../../AWGN_from_Simulink_using_HDL_Coder.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2"
+    },
+    "design_tree": {
+      "top_awgn_0": ""
+    },
+    "components": {
+      "top_awgn_0": {
+        "vlnv": "xilinx.com:module_ref:top_awgn:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_top_awgn_0_0",
+        "xci_path": "ip\\design_1_top_awgn_0_0\\design_1_top_awgn_0_0.xci",
+        "inst_hier_path": "top_awgn_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "top_awgn",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "valid": {
+            "direction": "O"
+          },
+          "awgn_re_dbg": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "awgn_im_dbg": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      }
+    }
+  }
+}

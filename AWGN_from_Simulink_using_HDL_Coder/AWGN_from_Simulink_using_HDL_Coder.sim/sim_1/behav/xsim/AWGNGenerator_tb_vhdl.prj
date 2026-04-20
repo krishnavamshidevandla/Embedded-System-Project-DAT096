@@ -1,0 +1,31 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/AWGNGenerator_pkg.vhd" \
+"../../../../../../Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/dBtoLinearConverter.vhd" \
+"../../../../../../Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/TausURNG1.vhd" \
+"../../../../../../Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/TausURNG2.vhd" \
+"../../../../../../Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/ConcatandExtract.vhd" \
+"../../../../../../Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/TausUniformRandGen.vhd" \
+"../../../../../../Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/leadingZeroDetector_block.vhd" \
+"../../../../../../Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/RangeReduction_block.vhd" \
+"../../../../../../Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/FunctionEvaluation_block.vhd" \
+"../../../../../../Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/RangeReconstruction_block.vhd" \
+"../../../../../../Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/log.vhd" \
+"../../../../../../Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/logImplementation.vhd" \
+"../../../../../../Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/leadingZeroDetector.vhd" \
+"../../../../../../Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/RangeReduction.vhd" \
+"../../../../../../Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/FunctionEvaluation.vhd" \
+"../../../../../../Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/RangeReconstruction.vhd" \
+"../../../../../../Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/SqrtEval.vhd" \
+"../../../../../../Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/SqrtImplementation.vhd" \
+"../../../../../../Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/Sine_HDL_Optimized.vhd" \
+"../../../../../../Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/Sine_HDL_Optimized1.vhd" \
+"../../../../../../Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/SinCos.vhd" \
+"../../../../../../Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/GaussianNoiseWithUnitVar.vhd" \
+"../../../../../../Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/GaussianNoiseWithReqVar.vhd" \
+"../../../../../../Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/AWGNGenerator.vhd" \
+"../../../../../../Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/AWGNGenerator_tb_pkg.vhd" \
+"../../../../../../Documents/MATLAB/Examples/R2024a/whdl/HDLImplementationOfAWGNGeneratorExample/hdl_prj/hdlsrc/whdlAWGNGenerator/AWGNGenerator_tb.vhd" \
+
+# Do not sort compile order
+nosort

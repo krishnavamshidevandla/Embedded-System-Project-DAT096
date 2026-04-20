@@ -1,0 +1,1246 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Mar 10 10:32:54 2026
+# Process ID         : 23648
+# Current directory  : C:/Users/arikb/Desktop/AWGN_from_Simulink_using_HDL_Coder/AWGN_from_Simulink_using_HDL_Coder.runs/impl_1
+# Command line       : vivado.exe -log top_awgn.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_awgn.tcl -notrace
+# Log file           : C:/Users/arikb/Desktop/AWGN_from_Simulink_using_HDL_Coder/AWGN_from_Simulink_using_HDL_Coder.runs/impl_1/top_awgn.vdi
+# Journal file       : C:/Users/arikb/Desktop/AWGN_from_Simulink_using_HDL_Coder/AWGN_from_Simulink_using_HDL_Coder.runs/impl_1\vivado.jou
+# Running On         : FY-6302-05
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-14700
+# CPU Frequency      : 2112 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 34031 MB
+# Swap memory        : 5100 MB
+# Total Virtual      : 39131 MB
+# Available Virtual  : 20239 MB
+#-----------------------------------------------------------
+source top_awgn.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/arikb/Desktop/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Progs/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is C:/Users/arikb/Desktop/AWGN_from_Simulink_using_HDL_Coder/AWGN_from_Simulink_using_HDL_Coder.cache/ip 
+Command: link_design -top top_awgn -part xc7z020clg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 635.832 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 783 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led0_b'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led0_r'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1_b'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1_g'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1_r'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_c2p_clk_n'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_c2p_clk_p'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_n[0]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_p[0]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_n[1]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_p[1]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_n[2]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_p[2]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_n[3]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_p[3]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_n[4]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_p[4]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_n[5]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_p[5]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_n[6]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_p[6]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_n[7]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_d_p[7]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_p2c_clk_n'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_p2c_clk_p'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_s[16]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_s[17]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_s[18]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_s[19]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_s[20]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_s[21]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_s[22]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_s[23]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_s[24]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_s[25]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_s[26]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_a_s[27]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_c2p_clk_n'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_c2p_clk_p'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_n[0]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_p[0]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_n[1]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_p[1]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_n[2]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_p[2]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_n[3]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_p[3]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_n[4]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_p[4]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_n[5]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_p[5]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_n[6]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_p[6]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_n[7]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_d_p[7]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_p2c_clk_n'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_p2c_clk_p'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_s[16]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_s[17]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_s[18]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_s[19]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_s[20]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_s[21]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_s[22]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_s[23]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_s[24]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_s[25]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_s[26]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'syzygy_b_s[27]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'crypto_sda'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mcu_rsvd[0]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mcu_rsvd[1]'. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/arikb/Desktop/Eclypse-Z7-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 779.832 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+10 Infos, 74 Warnings, 73 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.900 . Memory (MB): peak = 815.812 ; gain = 35.980
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1512d17d2
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1357.562 ; gain = 541.750
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1512d17d2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1764.395 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1512d17d2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1764.395 ; gain = 0.000
+Phase 1 Initialization | Checksum: 1512d17d2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1764.395 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 1512d17d2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1764.395 ; gain = 0.000
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 1512d17d2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 1764.395 ; gain = 0.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1512d17d2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 1764.395 ; gain = 0.000
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 1 inverters resulting in an inversion of 2 pins
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 1071b4404
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.115 . Memory (MB): peak = 1764.395 ; gain = 0.000
+Retarget | Checksum: 1071b4404
+INFO: [Opt 31-389] Phase Retarget created 2 cells and removed 5 cells
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 16de5feef
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.136 . Memory (MB): peak = 1764.395 ; gain = 0.000
+Constant propagation | Checksum: 16de5feef
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1764.395 ; gain = 0.000
+Phase 5 Sweep | Checksum: cd61b1ce
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.172 . Memory (MB): peak = 1764.395 ; gain = 0.000
+Sweep | Checksum: cd61b1ce
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: cd61b1ce
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.203 . Memory (MB): peak = 1764.395 ; gain = 0.000
+BUFG optimization | Checksum: cd61b1ce
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: cd61b1ce
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.209 . Memory (MB): peak = 1764.395 ; gain = 0.000
+Shift Register Optimization | Checksum: cd61b1ce
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: cd61b1ce
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.215 . Memory (MB): peak = 1764.395 ; gain = 0.000
+Post Processing Netlist | Checksum: cd61b1ce
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1b2e96f7f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.305 . Memory (MB): peak = 1764.395 ; gain = 0.000
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1764.395 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 1b2e96f7f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.314 . Memory (MB): peak = 1764.395 ; gain = 0.000
+Phase 9 Finalization | Checksum: 1b2e96f7f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.314 . Memory (MB): peak = 1764.395 ; gain = 0.000
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               2  |               5  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 1b2e96f7f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.315 . Memory (MB): peak = 1764.395 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 3 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 6
+Ending PowerOpt Patch Enables Task | Checksum: 1b2e96f7f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1b2e96f7f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.675 . Memory (MB): peak = 1835.461 ; gain = 71.066
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1b2e96f7f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1b2e96f7f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1835.461 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+36 Infos, 74 Warnings, 73 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1835.461 ; gain = 1055.629
+INFO: [Vivado 12-24828] Executing command : report_drc -file top_awgn_drc_opted.rpt -pb top_awgn_drc_opted.pb -rpx top_awgn_drc_opted.rpx
+Command: report_drc -file top_awgn_drc_opted.rpt -pb top_awgn_drc_opted.pb -rpx top_awgn_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/arikb/Desktop/AWGN_from_Simulink_using_HDL_Coder/AWGN_from_Simulink_using_HDL_Coder.runs/impl_1/top_awgn_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1835.461 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/arikb/Desktop/AWGN_from_Simulink_using_HDL_Coder/AWGN_from_Simulink_using_HDL_Coder.runs/impl_1/top_awgn_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: c0ac1179
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: bffd3b20
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.349 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 198b2f38f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.790 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 198b2f38f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.795 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 198b2f38f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.803 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 11edececd
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.976 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 14983b165
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 14983b165
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 115062aa1
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 178b4fff1
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 17 LUTNM shape to break, 85 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 6, two critical 11, total 17, new lutff created 1
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 58 nets or LUTs. Breaked 17 LUTs, combined 41 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1402] Pass 1: Identified 32 candidate cells for Shift Register optimization.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 29 nets or cells. Created 29 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1835.461 ; gain = 0.000
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |           17  |             41  |                    58  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |           29  |              0  |                    29  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           46  |             41  |                    87  |           0  |           9  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 12d202ef0
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Phase 2.5 Global Place Phase2 | Checksum: 11eb69715
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 11eb69715
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1d22c23d5
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 26d1e710b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 28dce8e11
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1cc65892c
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 1c1241d06
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 1e13acaf2
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 1c156c679
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 28dba4fc4
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 1ed82f4e3
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1ed82f4e3
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 19d31d295
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.080 | TNS=-68.917 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1e7892ef7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1835.461 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 1ed40dd93
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 19d31d295
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-2.152. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 216987d31
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 216987d31
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 216987d31
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                1x1|
+|___________|___________________|___________________|
+|      South|                1x1|                2x2|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 216987d31
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 216987d31
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 236bee307
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Ending Placer Task | Checksum: 153a66938
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1835.461 ; gain = 0.000
+78 Infos, 74 Warnings, 73 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1835.461 ; gain = 0.000
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_io -file top_awgn_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1835.461 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_awgn_utilization_placed.rpt -pb top_awgn_utilization_placed.pb
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file top_awgn_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1835.461 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.201 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.235 . Memory (MB): peak = 1835.461 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/arikb/Desktop/AWGN_from_Simulink_using_HDL_Coder/AWGN_from_Simulink_using_HDL_Coder.runs/impl_1/top_awgn_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.242 . Memory (MB): peak = 1835.461 ; gain = 0.000
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 1.00s |  WALL: 0.26s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.053 | TNS=-47.756 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1f64a9568
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.234 . Memory (MB): peak = 1835.461 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.053 | TNS=-47.756 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 1f64a9568
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.258 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.053 | TNS=-47.756 |
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/Delay11_reg_reg[4][6]_srl27___u_awgn_u_GaussianNoiseWithReqVar_Delay1_reg_reg_r_23_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/LTEp25_cast[9]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/LTEp25_cast[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.045 | TNS=-47.508 |
+INFO: [Physopt 32-1134] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/LTEp25_cast[9]. Created 1 instance.
+INFO: [Physopt 32-735] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/LTEp25_cast[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.022 | TNS=-47.068 |
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/srlopt_n_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/LTEp25_cast[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/_inferred__5/i__carry__2_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/_inferred__5/i__carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/_inferred__5/i__carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/_inferred__5/i__carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_5__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_25_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_63_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-735] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_139_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.020 | TNS=-47.038 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-735] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_139_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.020 | TNS=-47.038 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-735] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_138_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.979 | TNS=-46.447 |
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_139_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/prelookup_idx[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/p_0_in0_in[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/_inferred__1/i__carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/_inferred__1/i__carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 29 pins.
+INFO: [Physopt 32-735] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_4__3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.917 | TNS=-45.376 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 23 pins.
+INFO: [Physopt 32-735] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry__2_i_12_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.868 | TNS=-44.659 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry__0_i_4__2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.862 | TNS=-44.575 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry__0_i_3__3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.862 | TNS=-44.575 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 29 pins.
+INFO: [Physopt 32-735] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_3__3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.853 | TNS=-44.431 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 29 pins.
+INFO: [Physopt 32-735] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_2__3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.786 | TNS=-43.359 |
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_9__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_9__1_n_0. Critical path length was reduced through logic transformation on cell u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_9__1_comp.
+INFO: [Physopt 32-735] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/Delay2_out1_reg[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.729 | TNS=-42.557 |
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_5__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/Delay2_out1_reg[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-242] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized/Delay2_out1_reg[9]. Rewired (signal push) u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized/LTEp25_cast[5] to 4 loads. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized/Delay2_out1_reg[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.723 | TNS=-42.296 |
+INFO: [Physopt 32-81] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/LTEp25_cast[8]. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/LTEp25_cast[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.719 | TNS=-42.247 |
+INFO: [Physopt 32-663] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/LTEp25_cast[5].  Re-placed instance u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/Delay2_out1_reg[5]
+INFO: [Physopt 32-735] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/LTEp25_cast[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.699 | TNS=-42.167 |
+INFO: [Physopt 32-663] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/LTEp25_cast[4].  Re-placed instance u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/Delay2_out1_reg[4]
+INFO: [Physopt 32-735] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/LTEp25_cast[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.697 | TNS=-41.710 |
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/LTEp25_cast[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized/Delay2_out1_reg[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/Cosine[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/srlopt_n_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/LTEp25_cast[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/_inferred__5/i__carry__2_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_5__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_25_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_63_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_139_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/prelookup_idx[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/p_0_in0_in[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_5__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/Delay2_out1_reg[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized/Delay2_out1_reg[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/Cosine[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.697 | TNS=-41.710 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Phase 3 Critical Path Optimization | Checksum: 1f64a9568
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1835.461 ; gain = 0.000
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.697 | TNS=-41.710 |
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/srlopt_n_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/LTEp25_cast[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/_inferred__5/i__carry__2_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/_inferred__5/i__carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/_inferred__5/i__carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/_inferred__5/i__carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_5__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_25_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_63_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_139_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/prelookup_idx[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/p_0_in0_in[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/_inferred__1/i__carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/_inferred__1/i__carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_5__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/Delay2_out1_reg[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized/Delay2_out1_reg[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/Cosine[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/srlopt_n_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/LTEp25_cast[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/_inferred__5/i__carry__2_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_5__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_25_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_63_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_139_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/prelookup_idx[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/p_0_in0_in[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/i__carry_i_5__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/Delay2_out1_reg[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized/Delay2_out1_reg[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_awgn/u_GaussianNoiseWithUnitVar/u_SinCos/u_Sine_HDL_Optimized1/Cosine[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.697 | TNS=-41.710 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Phase 4 Critical Path Optimization | Checksum: 1f64a9568
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1835.461 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-1.697 | TNS=-41.710 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          0.356  |          6.046  |            6  |              0  |                    16  |           0  |           2  |  00:00:02  |
+|  Total          |          0.356  |          6.046  |            6  |              0  |                    16  |           0  |           3  |  00:00:02  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 1ee268d88
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1835.461 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+218 Infos, 74 Warnings, 73 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.202 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1835.461 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.238 . Memory (MB): peak = 1835.461 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/arikb/Desktop/AWGN_from_Simulink_using_HDL_Coder/AWGN_from_Simulink_using_HDL_Coder.runs/impl_1/top_awgn_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: c9cfad15 ConstDB: 0 ShapeSum: 764a8c6a RouteDB: 15f972f0
+Post Restoration Checksum: NetGraph: 320f86aa | NumContArr: e444cb11 | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 29ba646f5
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1940.527 ; gain = 102.562
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 29ba646f5
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1940.527 ; gain = 102.562
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 29ba646f5
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1940.527 ; gain = 102.562
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 34ea0f2d1
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1983.305 ; gain = 145.340
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.617 | TNS=-38.044| WHS=-0.191 | THS=-23.024|
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 3575
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 3575
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 300ba6f76
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 1989.188 ; gain = 151.223
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 300ba6f76
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 1989.188 ; gain = 151.223
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 1772f12d6
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 1989.188 ; gain = 151.223
+Phase 4 Initial Routing | Checksum: 1772f12d6
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 1989.188 ; gain = 151.223
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 1112
+ Number of Nodes with overlaps = 622
+ Number of Nodes with overlaps = 349
+ Number of Nodes with overlaps = 66
+ Number of Nodes with overlaps = 60
+ Number of Nodes with overlaps = 26
+ Number of Nodes with overlaps = 23
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.101 | TNS=-70.848| WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Global Iteration 0 | Checksum: 2087594fe
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2030.664 ; gain = 192.699
+
+Phase 5.2 Global Iteration 1
+ Number of Nodes with overlaps = 249
+ Number of Nodes with overlaps = 212
+ Number of Nodes with overlaps = 68
+ Number of Nodes with overlaps = 22
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.807 | TNS=-67.942| WHS=N/A    | THS=N/A    |
+
+Phase 5.2 Global Iteration 1 | Checksum: 183760e40
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 2030.664 ; gain = 192.699
+
+Phase 5.3 Global Iteration 2
+ Number of Nodes with overlaps = 301
+ Number of Nodes with overlaps = 170
+ Number of Nodes with overlaps = 100
+ Number of Nodes with overlaps = 41
+ Number of Nodes with overlaps = 16
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.663 | TNS=-65.552| WHS=N/A    | THS=N/A    |
+
+Phase 5.3 Global Iteration 2 | Checksum: 270598fee
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:25 . Memory (MB): peak = 2030.664 ; gain = 192.699
+
+Phase 5.4 Global Iteration 3
+ Number of Nodes with overlaps = 287
+ Number of Nodes with overlaps = 190
+ Number of Nodes with overlaps = 71
+ Number of Nodes with overlaps = 40
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.876 | TNS=-71.278| WHS=N/A    | THS=N/A    |
+
+Phase 5.4 Global Iteration 3 | Checksum: 1820790ca
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 2030.664 ; gain = 192.699
+Phase 5 Rip-up And Reroute | Checksum: 1820790ca
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 2030.664 ; gain = 192.699
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1d0410c01
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 2030.664 ; gain = 192.699
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.532 | TNS=-61.905| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 6.1 Delay CleanUp | Checksum: 292632e63
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 2030.664 ; gain = 192.699
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 292632e63
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 2030.664 ; gain = 192.699
+Phase 6 Delay and Skew Optimization | Checksum: 292632e63
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 2030.664 ; gain = 192.699
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.532 | TNS=-61.656| WHS=0.010  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 26a85bef0
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 2030.664 ; gain = 192.699
+Phase 7 Post Hold Fix | Checksum: 26a85bef0
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 2030.664 ; gain = 192.699
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.940095 %
+  Global Horizontal Routing Utilization  = 1.20242 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+--GLOBAL Congestion:
+Utilization threshold used for congestion level computation: 0.85
+Congestion Report
+North Dir 1x1 Area, Max Cong = 58.5586%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 58.5586%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 42.6471%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 70.5882%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 8 Route finalize | Checksum: 26a85bef0
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 2030.664 ; gain = 192.699
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 26a85bef0
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 2030.664 ; gain = 192.699
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 1bbd5b517
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:27 . Memory (MB): peak = 2030.664 ; gain = 192.699
+
+Phase 11 Post Process Routing
+Phase 11 Post Process Routing | Checksum: 1bbd5b517
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:27 . Memory (MB): peak = 2030.664 ; gain = 192.699
+
+Phase 12 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-2.532 | TNS=-61.656| WHS=0.010  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 12 Post Router Timing | Checksum: 1bbd5b517
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:27 . Memory (MB): peak = 2030.664 ; gain = 192.699
+Total Elapsed time in route_design: 27.232 secs
+
+Phase 13 Post-Route Event Processing
+Phase 13 Post-Route Event Processing | Checksum: 16ec96e8f
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:27 . Memory (MB): peak = 2030.664 ; gain = 192.699
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: 16ec96e8f
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:27 . Memory (MB): peak = 2030.664 ; gain = 192.699
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+235 Infos, 75 Warnings, 73 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:28 . Memory (MB): peak = 2030.664 ; gain = 195.203
+INFO: [Vivado 12-24828] Executing command : report_drc -file top_awgn_drc_routed.rpt -pb top_awgn_drc_routed.pb -rpx top_awgn_drc_routed.rpx
+Command: report_drc -file top_awgn_drc_routed.rpt -pb top_awgn_drc_routed.pb -rpx top_awgn_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/arikb/Desktop/AWGN_from_Simulink_using_HDL_Coder/AWGN_from_Simulink_using_HDL_Coder.runs/impl_1/top_awgn_drc_routed.rpt.
+report_drc completed successfully
+INFO: [Vivado 12-24828] Executing command : report_methodology -file top_awgn_methodology_drc_routed.rpt -pb top_awgn_methodology_drc_routed.pb -rpx top_awgn_methodology_drc_routed.rpx
+Command: report_methodology -file top_awgn_methodology_drc_routed.rpt -pb top_awgn_methodology_drc_routed.pb -rpx top_awgn_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/Users/arikb/Desktop/AWGN_from_Simulink_using_HDL_Coder/AWGN_from_Simulink_using_HDL_Coder.runs/impl_1/top_awgn_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -report_unconstrained -file top_awgn_timing_summary_routed.rpt -pb top_awgn_timing_summary_routed.pb -rpx top_awgn_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [Vivado 12-24838] Running report commands "report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_route_status -file top_awgn_route_status.rpt -pb top_awgn_route_status.pb
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file top_awgn_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_power -file top_awgn_power_routed.rpt -pb top_awgn_power_summary_routed.pb -rpx top_awgn_power_routed.rpx
+Command: report_power -file top_awgn_power_routed.rpt -pb top_awgn_power_summary_routed.pb -rpx top_awgn_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+252 Infos, 75 Warnings, 74 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file top_awgn_clock_utilization_routed.rpt
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file top_awgn_bus_skew_routed.rpt -pb top_awgn_bus_skew_routed.pb -rpx top_awgn_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+generate_parallel_reports: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2060.387 ; gain = 29.723
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2060.387 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.200 . Memory (MB): peak = 2064.445 ; gain = 4.059
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2064.445 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 2064.445 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2064.445 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2064.445 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.259 . Memory (MB): peak = 2064.445 ; gain = 4.059
+INFO: [Common 17-1381] The checkpoint 'C:/Users/arikb/Desktop/AWGN_from_Simulink_using_HDL_Coder/AWGN_from_Simulink_using_HDL_Coder.runs/impl_1/top_awgn_routed.dcp' has been generated.
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 10 10:34:05 2026...
