@@ -1,0 +1,34 @@
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+// Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+// --------------------------------------------------------------------------------
+// Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+// Date        : Mon Apr 20 20:17:40 2026
+// Host        : FY-6302-06 running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub
+//               c:/Users/arikb/Desktop/VCSEL_implementation/VCSEL_implementation.gen/sources_1/bd/VCSEL_design/ip/VCSEL_design_VCSEL_model_0_0/VCSEL_design_VCSEL_model_0_0_stub.v
+// Design      : VCSEL_design_VCSEL_model_0_0
+// Purpose     : Stub declaration of top-level module interface
+// Device      : xc7z020clg484-1
+// --------------------------------------------------------------------------------
+
+// This empty module with port declaration file causes synthesis tools to infer a black box for IP.
+// The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
+// Please paste the declaration into a Verilog source file or add the file as an additional source.
+(* CHECK_LICENSE_TYPE = "VCSEL_design_VCSEL_model_0_0,VCSEL_model,{}" *) (* core_generation_info = "VCSEL_design_VCSEL_model_0_0,VCSEL_model,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=VCSEL_model,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL}" *) (* downgradeipidentifiedwarnings = "yes" *) 
+(* ip_definition_source = "module_ref" *) (* x_core_info = "VCSEL_model,Vivado 2024.2" *) 
+module VCSEL_design_VCSEL_model_0_0(clk, reset, btn, led0_b, valid, led0_r, led1_b, led1_g, 
+  led1_r, awgn_re_dbg, awgn_im_dbg)
+/* synthesis syn_black_box black_box_pad_pin="reset,btn[1:1],led0_b,valid,led0_r,led1_b,led1_g,led1_r,awgn_re_dbg[7:0],awgn_im_dbg[7:0]" */
+/* synthesis syn_force_seq_prim="clk" */;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_mode = "slave clk" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, ASSOCIATED_RESET reset, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input clk /* synthesis syn_isclock = 1 */;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 reset RST" *) (* x_interface_mode = "slave reset" *) (* x_interface_parameter = "XIL_INTERFACENAME reset, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input reset;
+  input [1:1]btn;
+  output led0_b;
+  output valid;
+  output led0_r;
+  output led1_b;
+  output led1_g;
+  output led1_r;
+  output [7:0]awgn_re_dbg;
+  output [7:0]awgn_im_dbg;
+endmodule
