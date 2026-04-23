@@ -8,7 +8,7 @@
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Fri Apr 10 14:12:20 2026
+  **** Start of session at: Thu Apr 23 14:58:29 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -24,7 +24,7 @@ WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilent.com:user:ZmodAWGCont
 WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilent.com:user:ZmodScopeController:1.2'. The one found in IP location 'z:/embedded project/Eclypse-Z7-HW/Eclypse-Z7-HW.ipdefs/repo/vivado-library/ip/Zmods/ZmodScopeController' will take precedence over the same IP in location z:/eda234/vivado-library-master/ip/Zmods/ZmodScopeController
 WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'digilent.com:user:ZmodAWG_Calibration:1.0'. The one found in location 'z:/embedded project/Eclypse-Z7-HW/Eclypse-Z7-HW.ipdefs/repo/vivado-library/if/ZmodAWG_Calibration_v1_0/ZmodAWG_Calibration.xml' will take precedence over the same Interface in location 'z:/eda234/vivado-library-master/if/ZmodAWG_Calibration_v1_0/ZmodAWG_Calibration.xml'
 WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'natinst.com:user:ZmodScope_Calibration:1.0'. The one found in location 'z:/embedded project/Eclypse-Z7-HW/Eclypse-Z7-HW.ipdefs/repo/vivado-library/if/ZmodScope_Calibration_v1_0/ZmodScope_Calibration.xml' will take precedence over the same Interface in location 'z:/eda234/vivado-library-master/if/ZmodScope_Calibration_v1_0/ZmodScope_Calibration.xml'
-update_ip_catalog: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 367.656 ; gain = 1.941
+update_ip_catalog: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 367.324 ; gain = 0.957
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.cache/ip 
 INFO: [Project 1-5578] Found utility IPs instantiated in block design C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.srcs/sources_1/bd/design_2/design_2.bd which have equivalent inline hdl with improved performance and reduced diskspace.
@@ -42,25 +42,25 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 6724
+INFO: [Synth 8-7075] Helper process launched with PID 11300
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1134.613 ; gain = 468.070
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1135.352 ; gain = 469.152
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_2_wrapper' [C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/hdl/design_2_wrapper.vhd:70]
 INFO: [Synth 8-3491] module 'design_2' declared at 'c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/synth/design_2.vhd:15' bound to instance 'design_2_i' of component 'design_2' [C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/hdl/design_2_wrapper.vhd:126]
 INFO: [Synth 8-638] synthesizing module 'design_2' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/synth/design_2.vhd:74]
-INFO: [Synth 8-3491] module 'design_2_ZmodAWGController_0_0' declared at 'C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/.Xil/Vivado-10956-FY-6302-10/realtime/design_2_ZmodAWGController_0_0_stub.vhdl:6' bound to instance 'ZmodAWGController_0' of component 'design_2_ZmodAWGController_0_0' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/synth/design_2.vhd:328]
-INFO: [Synth 8-638] synthesizing module 'design_2_ZmodAWGController_0_0' [C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/.Xil/Vivado-10956-FY-6302-10/realtime/design_2_ZmodAWGController_0_0_stub.vhdl:39]
-INFO: [Synth 8-3491] module 'design_2_ZmodScopeController_0_2' declared at 'C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/.Xil/Vivado-10956-FY-6302-10/realtime/design_2_ZmodScopeController_0_2_stub.vhdl:6' bound to instance 'ZmodScopeController_0' of component 'design_2_ZmodScopeController_0_2' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/synth/design_2.vhd:352]
-INFO: [Synth 8-638] synthesizing module 'design_2_ZmodScopeController_0_2' [C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/.Xil/Vivado-10956-FY-6302-10/realtime/design_2_ZmodScopeController_0_2_stub.vhdl:50]
-INFO: [Synth 8-3491] module 'design_2_adc_bit_decoder_0_0' declared at 'C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/.Xil/Vivado-10956-FY-6302-10/realtime/design_2_adc_bit_decoder_0_0_stub.vhdl:6' bound to instance 'adc_bit_decoder_0' of component 'design_2_adc_bit_decoder_0_0' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/synth/design_2.vhd:387]
-INFO: [Synth 8-638] synthesizing module 'design_2_adc_bit_decoder_0_0' [C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/.Xil/Vivado-10956-FY-6302-10/realtime/design_2_adc_bit_decoder_0_0_stub.vhdl:26]
-INFO: [Synth 8-3491] module 'design_2_clk_wiz_0_0' declared at 'C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/.Xil/Vivado-10956-FY-6302-10/realtime/design_2_clk_wiz_0_0_stub.vhdl:6' bound to instance 'clk_wiz_0' of component 'design_2_clk_wiz_0_0' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/synth/design_2.vhd:396]
-INFO: [Synth 8-638] synthesizing module 'design_2_clk_wiz_0_0' [C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/.Xil/Vivado-10956-FY-6302-10/realtime/design_2_clk_wiz_0_0_stub.vhdl:16]
-INFO: [Synth 8-3491] module 'design_2_ila_0_0' declared at 'C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/.Xil/Vivado-10956-FY-6302-10/realtime/design_2_ila_0_0_stub.vhdl:6' bound to instance 'ila_0' of component 'design_2_ila_0_0' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/synth/design_2.vhd:401]
-INFO: [Synth 8-638] synthesizing module 'design_2_ila_0_0' [C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/.Xil/Vivado-10956-FY-6302-10/realtime/design_2_ila_0_0_stub.vhdl:23]
-INFO: [Synth 8-3491] module 'design_2_processing_system7_0_0' declared at 'C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/.Xil/Vivado-10956-FY-6302-10/realtime/design_2_processing_system7_0_0_stub.vhdl:6' bound to instance 'processing_system7_0' of component 'design_2_processing_system7_0_0' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/synth/design_2.vhd:409]
-INFO: [Synth 8-638] synthesizing module 'design_2_processing_system7_0_0' [C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/.Xil/Vivado-10956-FY-6302-10/realtime/design_2_processing_system7_0_0_stub.vhdl:80]
+INFO: [Synth 8-3491] module 'design_2_ZmodAWGController_0_0' declared at 'C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/.Xil/Vivado-11484-FY-6302-01/realtime/design_2_ZmodAWGController_0_0_stub.vhdl:6' bound to instance 'ZmodAWGController_0' of component 'design_2_ZmodAWGController_0_0' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/synth/design_2.vhd:328]
+INFO: [Synth 8-638] synthesizing module 'design_2_ZmodAWGController_0_0' [C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/.Xil/Vivado-11484-FY-6302-01/realtime/design_2_ZmodAWGController_0_0_stub.vhdl:39]
+INFO: [Synth 8-3491] module 'design_2_ZmodScopeController_0_2' declared at 'C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/.Xil/Vivado-11484-FY-6302-01/realtime/design_2_ZmodScopeController_0_2_stub.vhdl:6' bound to instance 'ZmodScopeController_0' of component 'design_2_ZmodScopeController_0_2' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/synth/design_2.vhd:352]
+INFO: [Synth 8-638] synthesizing module 'design_2_ZmodScopeController_0_2' [C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/.Xil/Vivado-11484-FY-6302-01/realtime/design_2_ZmodScopeController_0_2_stub.vhdl:50]
+INFO: [Synth 8-3491] module 'design_2_adc_bit_decoder_0_0' declared at 'C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/.Xil/Vivado-11484-FY-6302-01/realtime/design_2_adc_bit_decoder_0_0_stub.vhdl:6' bound to instance 'adc_bit_decoder_0' of component 'design_2_adc_bit_decoder_0_0' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/synth/design_2.vhd:387]
+INFO: [Synth 8-638] synthesizing module 'design_2_adc_bit_decoder_0_0' [C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/.Xil/Vivado-11484-FY-6302-01/realtime/design_2_adc_bit_decoder_0_0_stub.vhdl:26]
+INFO: [Synth 8-3491] module 'design_2_clk_wiz_0_0' declared at 'C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/.Xil/Vivado-11484-FY-6302-01/realtime/design_2_clk_wiz_0_0_stub.vhdl:6' bound to instance 'clk_wiz_0' of component 'design_2_clk_wiz_0_0' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/synth/design_2.vhd:396]
+INFO: [Synth 8-638] synthesizing module 'design_2_clk_wiz_0_0' [C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/.Xil/Vivado-11484-FY-6302-01/realtime/design_2_clk_wiz_0_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_2_ila_0_0' declared at 'C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/.Xil/Vivado-11484-FY-6302-01/realtime/design_2_ila_0_0_stub.vhdl:6' bound to instance 'ila_0' of component 'design_2_ila_0_0' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/synth/design_2.vhd:401]
+INFO: [Synth 8-638] synthesizing module 'design_2_ila_0_0' [C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/.Xil/Vivado-11484-FY-6302-01/realtime/design_2_ila_0_0_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'design_2_processing_system7_0_0' declared at 'C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/.Xil/Vivado-11484-FY-6302-01/realtime/design_2_processing_system7_0_0_stub.vhdl:6' bound to instance 'processing_system7_0' of component 'design_2_processing_system7_0_0' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/synth/design_2.vhd:409]
+INFO: [Synth 8-638] synthesizing module 'design_2_processing_system7_0_0' [C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/.Xil/Vivado-11484-FY-6302-01/realtime/design_2_processing_system7_0_0_stub.vhdl:80]
 INFO: [Synth 8-3491] module 'design_2_xlconstant_1_1' declared at 'c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_xlconstant_1_1/synth/design_2_xlconstant_1_1.v:53' bound to instance 'xlconstant_1' of component 'design_2_xlconstant_1_1' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/synth/design_2.vhd:474]
 INFO: [Synth 8-6157] synthesizing module 'design_2_xlconstant_1_1' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_xlconstant_1_1/synth/design_2_xlconstant_1_1.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_9_xlconstant' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
@@ -95,20 +95,20 @@ WARNING: [Synth 8-7129] Port Din[18] in module xlslice_v1_0_4_xlslice is either 
 WARNING: [Synth 8-7129] Port Din[17] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[16] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[15] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[14] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1251.125 ; gain = 584.582
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1252.340 ; gain = 586.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1251.125 ; gain = 584.582
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1252.340 ; gain = 586.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1251.125 ; gain = 584.582
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1252.340 ; gain = 586.141
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1251.125 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1252.340 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -145,22 +145,22 @@ Parsing XDC File [C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board
 Finished Parsing XDC File [C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1251.125 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1252.340 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1251.125 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1252.340 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1251.125 ; gain = 584.582
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1252.340 ; gain = 586.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1251.125 ; gain = 584.582
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1252.340 ; gain = 586.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -448,10 +448,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_2_i/ZmodScopeController_0.
 Applied set_property KEEP_HIERARCHY = SOFT for design_2_i/ZmodAWGController_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_2_i/clk_wiz_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1251.125 ; gain = 584.582
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1252.340 ; gain = 586.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1251.125 ; gain = 584.582
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1252.340 ; gain = 586.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -490,27 +490,27 @@ WARNING: [Synth 8-7129] Port Din[18] in module design_2_xlslice_0_0 is either un
 WARNING: [Synth 8-7129] Port Din[17] in module design_2_xlslice_0_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[16] in module design_2_xlslice_0_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[15] in module design_2_xlslice_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[14] in module design_2_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module design_2_xlslice_0_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1251.125 ; gain = 584.582
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1253.180 ; gain = 586.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1420.168 ; gain = 753.625
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1432.043 ; gain = 765.844
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1420.168 ; gain = 753.625
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1432.191 ; gain = 765.992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1429.926 ; gain = 763.383
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1441.871 ; gain = 775.672
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -528,37 +528,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1646.039 ; gain = 979.496
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1658.246 ; gain = 992.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1646.039 ; gain = 979.496
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1658.246 ; gain = 992.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1646.039 ; gain = 979.496
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1658.246 ; gain = 992.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1646.039 ; gain = 979.496
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1658.246 ; gain = 992.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1646.039 ; gain = 979.496
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1658.246 ; gain = 992.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1646.039 ; gain = 979.496
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1658.246 ; gain = 992.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -590,25 +590,25 @@ Report Cell Usage:
 |8     |OBUF                                  |    33|
 +------+--------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1646.039 ; gain = 979.496
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1658.246 ; gain = 992.047
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1646.039 ; gain = 979.496
-Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1646.039 ; gain = 979.496
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1658.246 ; gain = 992.047
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1658.246 ; gain = 992.047
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1646.742 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1663.723 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1650.363 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1667.379 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 32451404
+Synth Design complete | Checksum: bc3ca3d6
 INFO: [Common 17-83] Releasing license: Synthesis
 60 Infos, 52 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1650.363 ; gain = 1218.301
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1650.363 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1667.379 ; gain = 1236.375
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1667.379 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/synth_1/design_2_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_2_wrapper_utilization_synth.rpt -pb design_2_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Apr 10 14:12:55 2026...
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 23 14:59:02 2026...

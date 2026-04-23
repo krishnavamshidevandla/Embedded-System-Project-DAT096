@@ -499,10 +499,10 @@
         "inst_hier_path": "xlslice_0",
         "parameters": {
           "DIN_FROM": {
-            "value": "13"
+            "value": "14"
           },
           "DIN_TO": {
-            "value": "0"
+            "value": "1"
           },
           "DOUT_WIDTH": {
             "value": "14"
@@ -609,6 +609,9 @@
           },
           "PCW_EN_CLK1_PORT": {
             "value": "0"
+          },
+          "PCW_FPGA0_PERIPHERAL_FREQMHZ": {
+            "value": "50"
           },
           "PCW_FPGA_FCLK0_ENABLE": {
             "value": "1"

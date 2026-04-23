@@ -137,7 +137,7 @@
         "PCW_TTC1_CLK2_PERIPHERAL_FREQMHZ": [ { "value": "133.333333", "resolve_type": "user", "format": "float", "enabled": false, "usage": "all" } ],
         "PCW_PCAP_PERIPHERAL_FREQMHZ": [ { "value": "200", "resolve_type": "user", "format": "float", "usage": "all" } ],
         "PCW_TPIU_PERIPHERAL_FREQMHZ": [ { "value": "200", "resolve_type": "user", "format": "float", "enabled": false, "usage": "all" } ],
-        "PCW_FPGA0_PERIPHERAL_FREQMHZ": [ { "value": "50", "resolve_type": "user", "format": "float", "usage": "all" } ],
+        "PCW_FPGA0_PERIPHERAL_FREQMHZ": [ { "value": "50", "value_src": "user", "resolve_type": "user", "format": "float", "usage": "all" } ],
         "PCW_FPGA1_PERIPHERAL_FREQMHZ": [ { "value": "50", "resolve_type": "user", "format": "float", "usage": "all" } ],
         "PCW_FPGA2_PERIPHERAL_FREQMHZ": [ { "value": "50", "resolve_type": "user", "format": "float", "usage": "all" } ],
         "PCW_FPGA3_PERIPHERAL_FREQMHZ": [ { "value": "50", "resolve_type": "user", "format": "float", "usage": "all" } ],

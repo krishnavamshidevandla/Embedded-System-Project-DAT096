@@ -2,8 +2,8 @@
 --Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
---Date        : Thu Apr  9 19:16:32 2026
---Host        : FY-6302-05 running 64-bit major release  (build 9200)
+--Date        : Mon Apr 20 12:54:34 2026
+--Host        : FY-6302-03 running 64-bit major release  (build 9200)
 --Command     : generate_target design_2.bd
 --Design      : design_2
 --Purpose     : IP block netlist
@@ -243,6 +243,7 @@ architecture STRUCTURE of design_2 is
   signal ZmodScopeController_0_cDataAxisTdata : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal ZmodScopeController_0_cDataAxisTvalid : STD_LOGIC;
   signal adc_bit_decoder_0_bit_out : STD_LOGIC;
+  signal adc_bit_decoder_0_dac_data : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal adc_bit_decoder_0_t_ready : STD_LOGIC;
   signal clk_wiz_0_clk_out1 : STD_LOGIC;
   signal processing_system7_0_FCLK_CLK0 : STD_LOGIC;
@@ -258,7 +259,6 @@ architecture STRUCTURE of design_2 is
   signal NLW_ZmodScopeController_0_sInitDoneADC_UNCONNECTED : STD_LOGIC;
   signal NLW_ZmodScopeController_0_sInitDoneRelay_UNCONNECTED : STD_LOGIC;
   signal NLW_ZmodScopeController_0_sRstBusy_UNCONNECTED : STD_LOGIC;
-  signal NLW_adc_bit_decoder_0_dac_data_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal NLW_processing_system7_0_M_AXI_GP0_ARVALID_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_M_AXI_GP0_AWVALID_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_M_AXI_GP0_BREADY_UNCONNECTED : STD_LOGIC;
@@ -333,7 +333,7 @@ ZmodAWGController_0: component design_2_ZmodAWGController_0_0
       ZmodDAC_ClkIO => ZmodDAC_ClkIO_0,
       ZmodDAC_ClkIn => ZmodDAC_ClkIn_0,
       aRst_n => processing_system7_0_FCLK_RESET0_N,
-      cDataAxisTdata(31 downto 0) => B"00000000000000000000000000000000",
+      cDataAxisTdata(31 downto 0) => adc_bit_decoder_0_dac_data(31 downto 0),
       cDataAxisTready => NLW_ZmodAWGController_0_cDataAxisTready_UNCONNECTED,
       cDataAxisTvalid => adc_bit_decoder_0_t_ready,
       dZmodDAC_Data(13 downto 0) => dZmodDAC_Data_0(13 downto 0),
@@ -388,7 +388,7 @@ adc_bit_decoder_0: component design_2_adc_bit_decoder_0_0
      port map (
       bit_out => adc_bit_decoder_0_bit_out,
       clk => processing_system7_0_FCLK_CLK0,
-      dac_data(31 downto 0) => NLW_adc_bit_decoder_0_dac_data_UNCONNECTED(31 downto 0),
+      dac_data(31 downto 0) => adc_bit_decoder_0_dac_data(31 downto 0),
       t_data(13 downto 0) => xlslice_0_Dout(13 downto 0),
       t_ready => adc_bit_decoder_0_t_ready,
       t_valid => ZmodScopeController_0_cDataAxisTvalid
