@@ -69,7 +69,7 @@ begin
   process(clk)
   begin
     if rising_edge(clk) then
-      if rst = '1' then
+      if rst = '0' then
         measuring   <= '0';
         start_count <= (others => '0');
         delay_reg   <= (others => '0');

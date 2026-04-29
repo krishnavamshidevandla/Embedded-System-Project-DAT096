@@ -2,8 +2,8 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Tue Apr 28 11:55:59 2026
--- Host        : FY-6302-09 running 64-bit major release  (build 9200)
+-- Date        : Wed Apr 29 15:25:59 2026
+-- Host        : FY-6302-12 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_pilot_tx_rx_0_0/design_2_pilot_tx_rx_0_0_sim_netlist.vhdl
 -- Design      : design_2_pilot_tx_rx_0_0
@@ -17,9 +17,9 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity design_2_pilot_tx_rx_0_0_pilot_tx_rx is
   port (
+    tx_bit : out STD_LOGIC;
     match : out STD_LOGIC;
     tx_start : out STD_LOGIC;
-    tx_bit : out STD_LOGIC;
     rst : in STD_LOGIC;
     clk : in STD_LOGIC;
     rx_bit : in STD_LOGIC
@@ -34,7 +34,6 @@ architecture STRUCTURE of design_2_pilot_tx_rx_0_0_pilot_tx_rx is
   signal \bit_index[1]_i_1_n_0\ : STD_LOGIC;
   signal \bit_index[2]_i_1_n_0\ : STD_LOGIC;
   signal \bit_index[3]_i_1_n_0\ : STD_LOGIC;
-  signal \bit_index[3]_i_2_n_0\ : STD_LOGIC;
   signal match_INST_0_i_1_n_0 : STD_LOGIC;
   signal match_INST_0_i_2_n_0 : STD_LOGIC;
   signal \os_counter[0]_i_1_n_0\ : STD_LOGIC;
@@ -44,17 +43,21 @@ architecture STRUCTURE of design_2_pilot_tx_rx_0_0_pilot_tx_rx is
   signal \os_counter[3]_i_2_n_0\ : STD_LOGIC;
   signal os_counter_reg : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal p_0_in : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal p_1_in : STD_LOGIC;
   signal sample_en : STD_LOGIC;
   signal \shift_reg_reg_n_0_[15]\ : STD_LOGIC;
+  signal tx_reg : STD_LOGIC;
   signal tx_reg_i_1_n_0 : STD_LOGIC;
   signal tx_start_INST_0_i_1_n_0 : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \bit_index[1]_i_1\ : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \bit_index[2]_i_1\ : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \bit_index[3]_i_2\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \os_counter[1]_i_1\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \os_counter[2]_i_1\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \bit_index[0]_i_1\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \bit_index[1]_i_1\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \bit_index[2]_i_1\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \bit_index[3]_i_1\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \os_counter[1]_i_1\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \os_counter[2]_i_1\ : label is "soft_lutpair3";
   attribute SOFT_HLUTNM of \os_counter[3]_i_2\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of tx_reg_i_3 : label is "soft_lutpair2";
   attribute SOFT_HLUTNM of tx_start_INST_0 : label is "soft_lutpair0";
   attribute SOFT_HLUTNM of tx_start_INST_0_i_1 : label is "soft_lutpair1";
 begin
@@ -87,17 +90,6 @@ begin
     );
 \bit_index[3]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"1000"
-    )
-        port map (
-      I0 => os_counter_reg(1),
-      I1 => os_counter_reg(2),
-      I2 => os_counter_reg(0),
-      I3 => os_counter_reg(3),
-      O => \bit_index[3]_i_1_n_0\
-    );
-\bit_index[3]_i_2\: unisim.vcomponents.LUT4
-    generic map(
       INIT => X"7F80"
     )
         port map (
@@ -105,7 +97,7 @@ begin
       I1 => bit_index(0),
       I2 => bit_index(2),
       I3 => bit_index(3),
-      O => \bit_index[3]_i_2_n_0\
+      O => \bit_index[3]_i_1_n_0\
     );
 \bit_index_reg[0]\: unisim.vcomponents.FDRE
     generic map(
@@ -113,10 +105,10 @@ begin
     )
         port map (
       C => clk,
-      CE => \bit_index[3]_i_1_n_0\,
+      CE => tx_reg,
       D => \bit_index[0]_i_1_n_0\,
       Q => bit_index(0),
-      R => rst
+      R => tx_reg_i_1_n_0
     );
 \bit_index_reg[1]\: unisim.vcomponents.FDRE
     generic map(
@@ -124,10 +116,10 @@ begin
     )
         port map (
       C => clk,
-      CE => \bit_index[3]_i_1_n_0\,
+      CE => tx_reg,
       D => \bit_index[1]_i_1_n_0\,
       Q => bit_index(1),
-      R => rst
+      R => tx_reg_i_1_n_0
     );
 \bit_index_reg[2]\: unisim.vcomponents.FDRE
     generic map(
@@ -135,10 +127,10 @@ begin
     )
         port map (
       C => clk,
-      CE => \bit_index[3]_i_1_n_0\,
+      CE => tx_reg,
       D => \bit_index[2]_i_1_n_0\,
       Q => bit_index(2),
-      R => rst
+      R => tx_reg_i_1_n_0
     );
 \bit_index_reg[3]\: unisim.vcomponents.FDRE
     generic map(
@@ -146,10 +138,10 @@ begin
     )
         port map (
       C => clk,
-      CE => \bit_index[3]_i_1_n_0\,
-      D => \bit_index[3]_i_2_n_0\,
+      CE => tx_reg,
+      D => \bit_index[3]_i_1_n_0\,
       Q => bit_index(3),
-      R => rst
+      R => tx_reg_i_1_n_0
     );
 match_INST_0: unisim.vcomponents.LUT6
     generic map(
@@ -219,14 +211,14 @@ match_INST_0_i_2: unisim.vcomponents.LUT6
     );
 \os_counter[3]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"AAAAAAEA"
+      INIT => X"0008FFFF"
     )
         port map (
-      I0 => rst,
-      I1 => os_counter_reg(3),
-      I2 => os_counter_reg(0),
-      I3 => os_counter_reg(2),
-      I4 => os_counter_reg(1),
+      I0 => os_counter_reg(3),
+      I1 => os_counter_reg(0),
+      I2 => os_counter_reg(2),
+      I3 => os_counter_reg(1),
+      I4 => rst,
       O => \os_counter[3]_i_1_n_0\
     );
 \os_counter[3]_i_2\: unisim.vcomponents.LUT4
@@ -482,17 +474,35 @@ sampled_bit_reg: unisim.vcomponents.FDRE
       Q => p_0_in(10),
       R => '0'
     );
-tx_reg_i_1: unisim.vcomponents.LUT5
+tx_reg_i_1: unisim.vcomponents.LUT1
     generic map(
-      INIT => X"0000B2D6"
+      INIT => X"1"
     )
         port map (
-      I0 => bit_index(0),
-      I1 => bit_index(1),
-      I2 => bit_index(2),
-      I3 => bit_index(3),
-      I4 => rst,
+      I0 => rst,
       O => tx_reg_i_1_n_0
+    );
+tx_reg_i_2: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"1000"
+    )
+        port map (
+      I0 => os_counter_reg(1),
+      I1 => os_counter_reg(2),
+      I2 => os_counter_reg(0),
+      I3 => os_counter_reg(3),
+      O => tx_reg
+    );
+tx_reg_i_3: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"CB5C"
+    )
+        port map (
+      I0 => bit_index(3),
+      I1 => bit_index(2),
+      I2 => bit_index(1),
+      I3 => bit_index(0),
+      O => p_1_in
     );
 tx_reg_reg: unisim.vcomponents.FDRE
     generic map(
@@ -500,10 +510,10 @@ tx_reg_reg: unisim.vcomponents.FDRE
     )
         port map (
       C => clk,
-      CE => '1',
-      D => tx_reg_i_1_n_0,
+      CE => tx_reg,
+      D => p_1_in,
       Q => tx_bit,
-      R => '0'
+      R => tx_reg_i_1_n_0
     );
 tx_start_INST_0: unisim.vcomponents.LUT5
     generic map(

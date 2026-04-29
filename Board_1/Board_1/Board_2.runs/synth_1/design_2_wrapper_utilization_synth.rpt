@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Tue Apr 28 11:57:02 2026
-| Host         : FY-6302-09 running 64-bit major release  (build 9200)
+| Date         : Wed Apr 29 15:44:45 2026
+| Host         : FY-6302-12 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_2_wrapper_utilization_synth.rpt -pb design_2_wrapper_utilization_synth.pb
 | Design       : design_2_wrapper
 | Device       : xc7z020clg484-1
@@ -161,6 +161,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 |             Ref Name             | Used |
 +----------------------------------+------+
 | design_2_processing_system7_0_0  |    1 |
+| design_2_proc_sys_reset_0_0      |    1 |
 | design_2_prbs_axis_master_32_0_0 |    1 |
 | design_2_pilot_tx_rx_0_0         |    1 |
 | design_2_ila_0_0                 |    1 |

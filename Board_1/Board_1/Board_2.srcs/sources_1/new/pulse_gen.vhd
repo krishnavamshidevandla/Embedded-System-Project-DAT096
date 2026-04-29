@@ -16,6 +16,7 @@ entity pilot_tx_rx is
     -- outputs to delay_measure
     tx_start  : out std_logic;
     match     : out std_logic
+    
   );
 end entity;
 
@@ -45,10 +46,11 @@ begin
   --------------------------------------------------
   -- TX: Pilot generator (10× oversampling)
   --------------------------------------------------
+
   process(clk)
   begin
     if rising_edge(clk) then
-      if rst = '1' then
+      if rst = '0' then
         bit_index  <= 0;
         os_counter <= 0;
         tx_reg     <= '0';
@@ -62,16 +64,21 @@ begin
           else
             bit_index <= bit_index + 1;
           end if;
+          tx_reg <= PILOT(bit_index);
 
         else
           os_counter <= os_counter + 1;
         end if;
-
-        tx_reg <= PILOT(bit_index);
       end if;
     end if;
   end process;
 
+--  process(clk)
+--    begin
+--      if rising_edge(clk) then
+--        tx_reg <= not tx_reg;
+--      end if;
+--    end process;
   tx_bit <= tx_reg;
 
   -- Start of pilot sequence (used by delay module)

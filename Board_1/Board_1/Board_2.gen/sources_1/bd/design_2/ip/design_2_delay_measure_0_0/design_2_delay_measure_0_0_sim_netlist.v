@@ -2,8 +2,8 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Tue Apr 28 11:55:59 2026
-// Host        : FY-6302-09 running 64-bit major release  (build 9200)
+// Date        : Wed Apr 29 15:31:19 2026
+// Host        : FY-6302-12 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_delay_measure_0_0/design_2_delay_measure_0_0_sim_netlist.v
 // Design      : design_2_delay_measure_0_0
@@ -193,6 +193,7 @@ module design_2_delay_measure_0_0_delay_measure
   wire measuring;
   wire measuring0;
   wire measuring_i_1_n_0;
+  wire p_0_in;
   wire rst;
   wire [31:0]start_count;
   wire tx_edge;
@@ -783,9 +784,14 @@ module design_2_delay_measure_0_0_delay_measure
        (.I0(counter_reg[0]),
         .I1(start_count[0]),
         .O(delay_reg0_carry_i_4_n_0));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \delay_reg[31]_i_1 
+       (.I0(rst),
+        .O(p_0_in));
   LUT2 #(
     .INIT(4'h8)) 
-    \delay_reg[31]_i_1 
+    \delay_reg[31]_i_2 
        (.I0(match_edge),
         .I1(measuring),
         .O(measuring0));
@@ -796,7 +802,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[0]),
         .Q(delay_cycles[0]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[10] 
@@ -804,7 +810,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[10]),
         .Q(delay_cycles[10]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[11] 
@@ -812,7 +818,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[11]),
         .Q(delay_cycles[11]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[12] 
@@ -820,7 +826,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[12]),
         .Q(delay_cycles[12]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[13] 
@@ -828,7 +834,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[13]),
         .Q(delay_cycles[13]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[14] 
@@ -836,7 +842,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[14]),
         .Q(delay_cycles[14]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[15] 
@@ -844,7 +850,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[15]),
         .Q(delay_cycles[15]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[16] 
@@ -852,7 +858,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[16]),
         .Q(delay_cycles[16]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[17] 
@@ -860,7 +866,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[17]),
         .Q(delay_cycles[17]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[18] 
@@ -868,7 +874,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[18]),
         .Q(delay_cycles[18]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[19] 
@@ -876,7 +882,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[19]),
         .Q(delay_cycles[19]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[1] 
@@ -884,7 +890,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[1]),
         .Q(delay_cycles[1]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[20] 
@@ -892,7 +898,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[20]),
         .Q(delay_cycles[20]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[21] 
@@ -900,7 +906,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[21]),
         .Q(delay_cycles[21]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[22] 
@@ -908,7 +914,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[22]),
         .Q(delay_cycles[22]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[23] 
@@ -916,7 +922,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[23]),
         .Q(delay_cycles[23]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[24] 
@@ -924,7 +930,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[24]),
         .Q(delay_cycles[24]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[25] 
@@ -932,7 +938,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[25]),
         .Q(delay_cycles[25]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[26] 
@@ -940,7 +946,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[26]),
         .Q(delay_cycles[26]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[27] 
@@ -948,7 +954,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[27]),
         .Q(delay_cycles[27]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[28] 
@@ -956,7 +962,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[28]),
         .Q(delay_cycles[28]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[29] 
@@ -964,7 +970,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[29]),
         .Q(delay_cycles[29]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[2] 
@@ -972,7 +978,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[2]),
         .Q(delay_cycles[2]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[30] 
@@ -980,7 +986,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[30]),
         .Q(delay_cycles[30]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[31] 
@@ -988,7 +994,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[31]),
         .Q(delay_cycles[31]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[3] 
@@ -996,7 +1002,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[3]),
         .Q(delay_cycles[3]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[4] 
@@ -1004,7 +1010,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[4]),
         .Q(delay_cycles[4]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[5] 
@@ -1012,7 +1018,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[5]),
         .Q(delay_cycles[5]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[6] 
@@ -1020,7 +1026,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[6]),
         .Q(delay_cycles[6]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[7] 
@@ -1028,7 +1034,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[7]),
         .Q(delay_cycles[7]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[8] 
@@ -1036,7 +1042,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[8]),
         .Q(delay_cycles[8]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \delay_reg_reg[9] 
@@ -1044,7 +1050,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(measuring0),
         .D(delay_reg0[9]),
         .Q(delay_cycles[9]),
-        .R(rst));
+        .R(p_0_in));
   LUT2 #(
     .INIT(4'h2)) 
     match_edge_i_1
@@ -1068,12 +1074,12 @@ module design_2_delay_measure_0_0_delay_measure
         .Q(match_prev),
         .R(1'b0));
   LUT4 #(
-    .INIT(16'h003A)) 
+    .INIT(16'h0C88)) 
     measuring_i_1
        (.I0(tx_edge),
-        .I1(match_edge),
-        .I2(measuring),
-        .I3(rst),
+        .I1(rst),
+        .I2(match_edge),
+        .I3(measuring),
         .O(measuring_i_1_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -1090,7 +1096,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[0]),
         .Q(start_count[0]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[10] 
@@ -1098,7 +1104,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[10]),
         .Q(start_count[10]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[11] 
@@ -1106,7 +1112,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[11]),
         .Q(start_count[11]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[12] 
@@ -1114,7 +1120,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[12]),
         .Q(start_count[12]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[13] 
@@ -1122,7 +1128,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[13]),
         .Q(start_count[13]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[14] 
@@ -1130,7 +1136,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[14]),
         .Q(start_count[14]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[15] 
@@ -1138,7 +1144,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[15]),
         .Q(start_count[15]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[16] 
@@ -1146,7 +1152,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[16]),
         .Q(start_count[16]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[17] 
@@ -1154,7 +1160,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[17]),
         .Q(start_count[17]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[18] 
@@ -1162,7 +1168,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[18]),
         .Q(start_count[18]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[19] 
@@ -1170,7 +1176,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[19]),
         .Q(start_count[19]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[1] 
@@ -1178,7 +1184,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[1]),
         .Q(start_count[1]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[20] 
@@ -1186,7 +1192,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[20]),
         .Q(start_count[20]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[21] 
@@ -1194,7 +1200,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[21]),
         .Q(start_count[21]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[22] 
@@ -1202,7 +1208,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[22]),
         .Q(start_count[22]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[23] 
@@ -1210,7 +1216,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[23]),
         .Q(start_count[23]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[24] 
@@ -1218,7 +1224,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[24]),
         .Q(start_count[24]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[25] 
@@ -1226,7 +1232,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[25]),
         .Q(start_count[25]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[26] 
@@ -1234,7 +1240,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[26]),
         .Q(start_count[26]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[27] 
@@ -1242,7 +1248,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[27]),
         .Q(start_count[27]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[28] 
@@ -1250,7 +1256,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[28]),
         .Q(start_count[28]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[29] 
@@ -1258,7 +1264,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[29]),
         .Q(start_count[29]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[2] 
@@ -1266,7 +1272,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[2]),
         .Q(start_count[2]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[30] 
@@ -1274,7 +1280,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[30]),
         .Q(start_count[30]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[31] 
@@ -1282,7 +1288,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[31]),
         .Q(start_count[31]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[3] 
@@ -1290,7 +1296,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[3]),
         .Q(start_count[3]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[4] 
@@ -1298,7 +1304,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[4]),
         .Q(start_count[4]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[5] 
@@ -1306,7 +1312,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[5]),
         .Q(start_count[5]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[6] 
@@ -1314,7 +1320,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[6]),
         .Q(start_count[6]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[7] 
@@ -1322,7 +1328,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[7]),
         .Q(start_count[7]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[8] 
@@ -1330,7 +1336,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[8]),
         .Q(start_count[8]),
-        .R(rst));
+        .R(p_0_in));
   FDRE #(
     .INIT(1'b0)) 
     \start_count_reg[9] 
@@ -1338,7 +1344,7 @@ module design_2_delay_measure_0_0_delay_measure
         .CE(tx_edge),
         .D(counter_reg[9]),
         .Q(start_count[9]),
-        .R(rst));
+        .R(p_0_in));
   LUT2 #(
     .INIT(4'h2)) 
     tx_edge_i_1

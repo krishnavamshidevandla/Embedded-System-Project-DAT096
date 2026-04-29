@@ -14,20 +14,12 @@
       <Cursor1Time time="0"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="242"></NameColumnWidth>
+      <NameColumnWidth column_width="238"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="4" />
+   <WVObjectSize size="5" />
    <wave_markers>
    </wave_markers>
-   <wvobject fp_name="design_2_i/adc_bit_decoder_0_bit_out" type="logic">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">design_2_i/adc_bit_decoder_0_bit_out</obj_property>
-      <obj_property name="ObjectShortName">adc_bit_decoder_0_bit_out</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
    <wvobject fp_name="design_2_i/adc_bit_decoder_0_t_ready" type="logic">
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">design_2_i/adc_bit_decoder_0_t_ready</obj_property>
@@ -43,12 +35,25 @@
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
       <obj_property name="CellHeight">100</obj_property>
-      <obj_property name="isExpanded"></obj_property>
    </wvobject>
-   <wvobject fp_name="design_2_i/delay_measure_0_delay_cycles" type="array">
+   <wvobject fp_name="design_2_i/ZmodScopeController_0_cDataAxisTvalid" type="logic">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">design_2_i/delay_measure_0_delay_cycles[31:0]</obj_property>
-      <obj_property name="ObjectShortName">delay_measure_0_delay_cycles[31:0]</obj_property>
+      <obj_property name="ElementShortName">design_2_i/ZmodScopeController_0_cDataAxisTvalid</obj_property>
+      <obj_property name="ObjectShortName">ZmodScopeController_0_cDataAxisTvalid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_2_i/pilot_tx_rx_0_tx_bit" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_2_i/pilot_tx_rx_0_tx_bit</obj_property>
+      <obj_property name="ObjectShortName">pilot_tx_rx_0_tx_bit</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_2_i/bit_to_dac14_axi_0_m_axis_tdata" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_2_i/bit_to_dac14_axi_0_m_axis_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bit_to_dac14_axi_0_m_axis_tdata[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>

@@ -1,104 +1,106 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"0.887249",
-   "Default View_TopLeft":"1571,-665",
+   "Default View_TopLeft":"2029,-881",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
 #  -string -flagsOSRD
-preplace port DDR_0 -pg 1 -lvl 7 -x 3460 -y -330 -defaultsOSRD
-preplace port FIXED_IO_0 -pg 1 -lvl 7 -x 3460 -y -310 -defaultsOSRD
-preplace port port-id_sZmodADC_SDIO_0 -pg 1 -lvl 7 -x 3460 -y -640 -defaultsOSRD
-preplace port port-id_sZmodADC_CS_0 -pg 1 -lvl 7 -x 3460 -y -620 -defaultsOSRD
-preplace port port-id_sZmodADC_Sclk_0 -pg 1 -lvl 7 -x 3460 -y -600 -defaultsOSRD
-preplace port port-id_iZmodSync_0 -pg 1 -lvl 7 -x 3460 -y -660 -defaultsOSRD
-preplace port port-id_sZmodCh1CouplingH_0 -pg 1 -lvl 7 -x 3460 -y -580 -defaultsOSRD
-preplace port port-id_sZmodCh1CouplingL_0 -pg 1 -lvl 7 -x 3460 -y -560 -defaultsOSRD
-preplace port port-id_sZmodCh1GainH_0 -pg 1 -lvl 7 -x 3460 -y -510 -defaultsOSRD
-preplace port port-id_sZmodCh1GainL_0 -pg 1 -lvl 7 -x 3460 -y -480 -defaultsOSRD
-preplace port port-id_sZmodCh2CouplingH_0 -pg 1 -lvl 7 -x 3460 -y -530 -defaultsOSRD
-preplace port port-id_sZmodCh2CouplingL_0 -pg 1 -lvl 7 -x 3460 -y -380 -defaultsOSRD
-preplace port port-id_sZmodCh2GainH_0 -pg 1 -lvl 7 -x 3460 -y -460 -defaultsOSRD
-preplace port port-id_sZmodCh2GainL_0 -pg 1 -lvl 7 -x 3460 -y -440 -defaultsOSRD
-preplace port port-id_ZmodAdcClkIn_n_0 -pg 1 -lvl 7 -x 3460 -y -680 -defaultsOSRD
-preplace port port-id_ZmodAdcClkIn_p_0 -pg 1 -lvl 7 -x 3460 -y -700 -defaultsOSRD
+preplace port DDR_0 -pg 1 -lvl 8 -x 3900 -y -330 -defaultsOSRD
+preplace port FIXED_IO_0 -pg 1 -lvl 8 -x 3900 -y -310 -defaultsOSRD
+preplace port port-id_sZmodADC_SDIO_0 -pg 1 -lvl 8 -x 3900 -y -640 -defaultsOSRD
+preplace port port-id_sZmodADC_CS_0 -pg 1 -lvl 8 -x 3900 -y -620 -defaultsOSRD
+preplace port port-id_sZmodADC_Sclk_0 -pg 1 -lvl 8 -x 3900 -y -600 -defaultsOSRD
+preplace port port-id_iZmodSync_0 -pg 1 -lvl 8 -x 3900 -y -660 -defaultsOSRD
+preplace port port-id_sZmodCh1CouplingH_0 -pg 1 -lvl 8 -x 3900 -y -580 -defaultsOSRD
+preplace port port-id_sZmodCh1CouplingL_0 -pg 1 -lvl 8 -x 3900 -y -560 -defaultsOSRD
+preplace port port-id_sZmodCh1GainH_0 -pg 1 -lvl 8 -x 3900 -y -510 -defaultsOSRD
+preplace port port-id_sZmodCh1GainL_0 -pg 1 -lvl 8 -x 3900 -y -480 -defaultsOSRD
+preplace port port-id_sZmodCh2CouplingH_0 -pg 1 -lvl 8 -x 3900 -y -530 -defaultsOSRD
+preplace port port-id_sZmodCh2CouplingL_0 -pg 1 -lvl 8 -x 3900 -y -380 -defaultsOSRD
+preplace port port-id_sZmodCh2GainH_0 -pg 1 -lvl 8 -x 3900 -y -460 -defaultsOSRD
+preplace port port-id_sZmodCh2GainL_0 -pg 1 -lvl 8 -x 3900 -y -440 -defaultsOSRD
+preplace port port-id_ZmodAdcClkIn_n_0 -pg 1 -lvl 8 -x 3900 -y -680 -defaultsOSRD
+preplace port port-id_ZmodAdcClkIn_p_0 -pg 1 -lvl 8 -x 3900 -y -700 -defaultsOSRD
 preplace port port-id_sys_clk -pg 1 -lvl 0 -x -90 -y -400 -defaultsOSRD
 preplace port port-id_ZmodDcoClk_0 -pg 1 -lvl 0 -x -90 -y -60 -defaultsOSRD
-preplace port port-id_sZmodRelayComH_0 -pg 1 -lvl 7 -x 3460 -y 140 -defaultsOSRD
-preplace port port-id_sZmodRelayComL_0 -pg 1 -lvl 7 -x 3460 -y 160 -defaultsOSRD
-preplace port port-id_sZmodDAC_CS_0 -pg 1 -lvl 7 -x 3460 -y -70 -defaultsOSRD
-preplace port port-id_sZmodDAC_SCLK_0 -pg 1 -lvl 7 -x 3460 -y -50 -defaultsOSRD
-preplace port port-id_sZmodDAC_SDIO_0 -pg 1 -lvl 7 -x 3460 -y -30 -defaultsOSRD
-preplace port port-id_sZmodDAC_Reset_0 -pg 1 -lvl 7 -x 3460 -y -10 -defaultsOSRD
-preplace port port-id_ZmodDAC_ClkIO_0 -pg 1 -lvl 7 -x 3460 -y 10 -defaultsOSRD
-preplace port port-id_ZmodDAC_ClkIn_0 -pg 1 -lvl 7 -x 3460 -y 30 -defaultsOSRD
-preplace port port-id_sZmodDAC_SetFS1_0 -pg 1 -lvl 7 -x 3460 -y 70 -defaultsOSRD
-preplace port port-id_sZmodDAC_SetFS2_0 -pg 1 -lvl 7 -x 3460 -y 90 -defaultsOSRD
-preplace port port-id_sZmodDAC_EnOut_0 -pg 1 -lvl 7 -x 3460 -y 110 -defaultsOSRD
+preplace port port-id_sZmodRelayComH_0 -pg 1 -lvl 8 -x 3900 -y 140 -defaultsOSRD
+preplace port port-id_sZmodRelayComL_0 -pg 1 -lvl 8 -x 3900 -y 160 -defaultsOSRD
+preplace port port-id_sZmodDAC_CS_0 -pg 1 -lvl 8 -x 3900 -y -70 -defaultsOSRD
+preplace port port-id_sZmodDAC_SCLK_0 -pg 1 -lvl 8 -x 3900 -y -50 -defaultsOSRD
+preplace port port-id_sZmodDAC_SDIO_0 -pg 1 -lvl 8 -x 3900 -y -30 -defaultsOSRD
+preplace port port-id_sZmodDAC_Reset_0 -pg 1 -lvl 8 -x 3900 -y -10 -defaultsOSRD
+preplace port port-id_ZmodDAC_ClkIO_0 -pg 1 -lvl 8 -x 3900 -y 10 -defaultsOSRD
+preplace port port-id_ZmodDAC_ClkIn_0 -pg 1 -lvl 8 -x 3900 -y 30 -defaultsOSRD
+preplace port port-id_sZmodDAC_SetFS1_0 -pg 1 -lvl 8 -x 3900 -y 70 -defaultsOSRD
+preplace port port-id_sZmodDAC_SetFS2_0 -pg 1 -lvl 8 -x 3900 -y 90 -defaultsOSRD
+preplace port port-id_sZmodDAC_EnOut_0 -pg 1 -lvl 8 -x 3900 -y 110 -defaultsOSRD
 preplace portBus dZmodADC_Data_0 -pg 1 -lvl 0 -x -90 -y -40 -defaultsOSRD
-preplace portBus dZmodDAC_Data_0 -pg 1 -lvl 7 -x 3460 -y 50 -defaultsOSRD
-preplace inst ila_0 -pg 1 -lvl 6 -x 3150 -y -650 -defaultsOSRD
-preplace inst adc_bit_decoder_0 -pg 1 -lvl 1 -x 1130 -y -630 -defaultsOSRD
+preplace portBus dZmodDAC_Data_0 -pg 1 -lvl 8 -x 3900 -y 50 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 7 -x 3590 -y -650 -defaultsOSRD
+preplace inst adc_bit_decoder_0 -pg 1 -lvl 1 -x 1130 -y -620 -defaultsOSRD
 preplace inst xlconstant_1 -pg 1 -lvl 1 -x 1130 -y 100 -defaultsOSRD
-preplace inst xlslice_0 -pg 1 -lvl 6 -x 3150 -y -500 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 7 -x 3590 -y -480 -defaultsOSRD
 preplace inst xlconstant_3 -pg 1 -lvl 1 -x 1130 -y 0 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 1 -x 1130 -y -310 -defaultsOSRD
-preplace inst ZmodScopeController_0 -pg 1 -lvl 2 -x 1550 -y -60 -defaultsOSRD
-preplace inst ZmodAWGController_0 -pg 1 -lvl 6 -x 3150 -y 200 -defaultsOSRD
+preplace inst ZmodScopeController_0 -pg 1 -lvl 3 -x 1930 -y -60 -defaultsOSRD
+preplace inst ZmodAWGController_0 -pg 1 -lvl 7 -x 3590 -y 200 -defaultsOSRD
 preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 1130 -y -160 -defaultsOSRD
-preplace inst prbs_axis_master_32_0 -pg 1 -lvl 6 -x 3150 -y -300 -defaultsOSRD
-preplace inst xlconstant_0 -pg 1 -lvl 5 -x 2740 -y -250 -defaultsOSRD
-preplace inst pilot_tx_rx_0 -pg 1 -lvl 3 -x 2120 -y -210 -defaultsOSRD
-preplace inst delay_measure_0 -pg 1 -lvl 3 -x 2120 -y 10 -defaultsOSRD
-preplace inst bit_to_dac14_axi_0 -pg 1 -lvl 4 -x 2540 -y -110 -defaultsOSRD
-preplace netloc Net 1 2 5 1780J -570 2270 -740 N -740 2820 -860 3420J
-preplace netloc Net1 1 6 1 3360 -30n
-preplace netloc ZmodAWGController_0_ZmodDAC_ClkIO 1 6 1 3380 10n
-preplace netloc ZmodAWGController_0_ZmodDAC_ClkIn 1 6 1 3400 30n
-preplace netloc ZmodAWGController_0_dZmodDAC_Data 1 6 1 3410 50n
-preplace netloc ZmodAWGController_0_sZmodDAC_CS 1 6 1 3340 -70n
-preplace netloc ZmodAWGController_0_sZmodDAC_EnOut 1 6 1 3440 110n
-preplace netloc ZmodAWGController_0_sZmodDAC_Reset 1 6 1 3370 -10n
-preplace netloc ZmodAWGController_0_sZmodDAC_SCLK 1 6 1 3350 -50n
-preplace netloc ZmodAWGController_0_sZmodDAC_SetFS1 1 6 1 3420 70n
-preplace netloc ZmodAWGController_0_sZmodDAC_SetFS2 1 6 1 3430 90n
-preplace netloc ZmodDcoClk_0_1 1 0 2 NJ -60 1330J
-preplace netloc ZmodScopeController_0_ZmodAdcClkIn_n 1 2 5 1760 -560 2280 -730 N -730 2830 -850 3440J
-preplace netloc ZmodScopeController_0_ZmodAdcClkIn_p 1 2 5 1770 -550 2290 -720 N -720 2840 -840 3430J
-preplace netloc ZmodScopeController_0_cDataAxisTdata 1 2 4 1810 -430 N -430 N -430 2820
-preplace netloc ZmodScopeController_0_cDataAxisTvalid 1 0 6 910 -720 NJ -720 1750 -440 2400 -610 N -610 2950
-preplace netloc ZmodScopeController_0_iZmodSync 1 2 5 1800 -540 2300 -710 N -710 2850 -830 3410J
-preplace netloc ZmodScopeController_0_sZmodADC_CS 1 2 5 1820 -530 2310 -700 N -700 2860 -820 3400J
-preplace netloc ZmodScopeController_0_sZmodADC_Sclk 1 2 5 1830J -520 2320 -690 N -690 2870 -810 3390J
-preplace netloc ZmodScopeController_0_sZmodCh1CouplingH 1 2 5 1740J -510 2330 -680 N -680 2880 -800 3380J
-preplace netloc ZmodScopeController_0_sZmodCh1CouplingL 1 2 5 1890J -500 2340 -670 N -670 2890 -790 3370J
-preplace netloc ZmodScopeController_0_sZmodCh1GainH 1 2 5 1910J -490 2350 -660 N -660 2900 -780 3360J
-preplace netloc ZmodScopeController_0_sZmodCh1GainL 1 2 5 1940J -420 N -420 N -420 2890 -440 3340J
-preplace netloc ZmodScopeController_0_sZmodCh2CouplingH 1 2 5 1920J -410 N -410 N -410 2970 -430 3330J
-preplace netloc ZmodScopeController_0_sZmodCh2CouplingL 1 2 5 1950J -380 N -380 N -380 N -380 NJ
-preplace netloc ZmodScopeController_0_sZmodCh2GainH 1 2 5 1930 -480 2360 -650 N -650 2910 -770 3350J
-preplace netloc ZmodScopeController_0_sZmodCh2GainL 1 2 5 1960 -400 N -400 N -400 2980 -420 3440J
-preplace netloc ZmodScopeController_0_sZmodRelayComH 1 2 5 NJ 160 2430 30 N 30 N 30 3320J
-preplace netloc ZmodScopeController_0_sZmodRelayComL 1 2 5 NJ 180 2270 20 N 20 N 20 3330J
-preplace netloc adc_bit_decoder_0_bit_out 1 1 5 N -610 1870 -450 2390 -620 N -620 2930
-preplace netloc adc_bit_decoder_0_t_ready 1 1 5 NJ -650 1730 -460 2380 -630 N -630 2920
-preplace netloc clk_wiz_0_clk_out1 1 1 5 1350J -370 1840 -360 N -360 N -360 2900
-preplace netloc dZmodADC_Data_0_1 1 0 2 -60J 160 1360J
-preplace netloc pilot_tx_rx_0_match 1 2 2 1970 -100 2260
-preplace netloc pilot_tx_rx_0_tx_bit 1 3 1 2340 -230n
-preplace netloc pilot_tx_rx_0_tx_start 1 2 2 1980 -120 2270
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 930 -410 1360 -390 1850 -130 2420 -200 2660 -190 2960
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 5 1370 -360 1790J -110 2430J -190 2650 -180 2820
+preplace inst prbs_axis_master_32_0 -pg 1 -lvl 7 -x 3590 -y -300 -defaultsOSRD
+preplace inst pilot_tx_rx_0 -pg 1 -lvl 4 -x 2500 -y -200 -defaultsOSRD
+preplace inst delay_measure_0 -pg 1 -lvl 4 -x 2500 -y 10 -defaultsOSRD
+preplace inst bit_to_dac14_axi_0 -pg 1 -lvl 5 -x 2960 -y -90 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 3 -x 1930 -y -500 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 2 -x 1450 -y -480 -defaultsOSRD
+preplace netloc Net 1 3 5 2170J -580 2640 -750 N -750 3150 -870 3860J
+preplace netloc Net1 1 7 1 3800 -30n
+preplace netloc ZmodAWGController_0_ZmodDAC_ClkIO 1 7 1 3830 10n
+preplace netloc ZmodAWGController_0_ZmodDAC_ClkIn 1 7 1 3840 30n
+preplace netloc ZmodAWGController_0_dZmodDAC_Data 1 7 1 3850 50n
+preplace netloc ZmodAWGController_0_sZmodDAC_CS 1 7 1 3780 -70n
+preplace netloc ZmodAWGController_0_sZmodDAC_EnOut 1 7 1 3880 110n
+preplace netloc ZmodAWGController_0_sZmodDAC_Reset 1 7 1 3810 -10n
+preplace netloc ZmodAWGController_0_sZmodDAC_SCLK 1 7 1 3790 -50n
+preplace netloc ZmodAWGController_0_sZmodDAC_SetFS1 1 7 1 3860 70n
+preplace netloc ZmodAWGController_0_sZmodDAC_SetFS2 1 7 1 3870 90n
+preplace netloc ZmodDcoClk_0_1 1 0 3 -70J 160 1340J 80 1730
+preplace netloc ZmodScopeController_0_ZmodAdcClkIn_n 1 3 5 2150 -570 2650 -740 N -740 3160 -860 3880J
+preplace netloc ZmodScopeController_0_ZmodAdcClkIn_p 1 3 5 2160 -560 2660 -730 N -730 3170 -850 3870J
+preplace netloc ZmodScopeController_0_cDataAxisTdata 1 3 4 2250 -430 N -430 N -430 3420
+preplace netloc ZmodScopeController_0_cDataAxisTvalid 1 0 7 910 -710 NJ -710 N -710 2140 -450 N -450 3100 -610 3390
+preplace netloc ZmodScopeController_0_iZmodSync 1 3 5 2180 -550 2670 -720 N -720 3180 -840 3850J
+preplace netloc ZmodScopeController_0_sZmodADC_CS 1 3 5 2190 -540 2680 -710 N -710 3190 -830 3840J
+preplace netloc ZmodScopeController_0_sZmodADC_Sclk 1 3 5 2200J -530 2690 -700 N -700 3200 -820 3830J
+preplace netloc ZmodScopeController_0_sZmodCh1CouplingH 1 3 5 2110J -520 2700 -690 N -690 3210 -810 3820J
+preplace netloc ZmodScopeController_0_sZmodCh1CouplingL 1 3 5 2270J -510 2710 -680 N -680 3220 -800 3810J
+preplace netloc ZmodScopeController_0_sZmodCh1GainH 1 3 5 2290J -500 2720 -670 N -670 3230 -790 3800J
+preplace netloc ZmodScopeController_0_sZmodCh1GainL 1 3 5 2310J -490 2730 -660 N -660 3240 -780 3790J
+preplace netloc ZmodScopeController_0_sZmodCh2CouplingH 1 3 5 2300J -440 N -440 N -440 3410 -540 3780J
+preplace netloc ZmodScopeController_0_sZmodCh2CouplingL 1 3 5 2330J -410 N -410 N -410 3270 -390 3880J
+preplace netloc ZmodScopeController_0_sZmodCh2GainH 1 3 5 2340 -420 N -420 N -420 N -420 3760J
+preplace netloc ZmodScopeController_0_sZmodCh2GainL 1 3 5 2320 -480 2740 -650 N -650 3250 -770 3770J
+preplace netloc ZmodScopeController_0_sZmodRelayComH 1 3 5 NJ 160 2780 30 N 30 N 30 3760J
+preplace netloc ZmodScopeController_0_sZmodRelayComL 1 3 5 NJ 180 2640 20 N 20 N 20 3770J
+preplace netloc adc_bit_decoder_0_t_ready 1 1 6 NJ -640 N -640 2130 -460 2760 -630 N -630 3260
+preplace netloc clk_wiz_0_clk_out1 1 1 6 1340J -360 1530 -400 N -400 N -400 N -400 3200
+preplace netloc dZmodADC_Data_0_1 1 0 3 -60J -60 NJ -60 1530
+preplace netloc pilot_tx_rx_0_match 1 3 2 2350 -120 2640
+preplace netloc pilot_tx_rx_0_tx_bit 1 4 3 2810 -620 N -620 3270
+preplace netloc pilot_tx_rx_0_tx_start 1 3 2 2360 -100 2680
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 7 930 -410 1330 -340 1740 -360 2240 -110 2820 -190 N -190 3400
 preplace netloc sys_clk_1 1 0 1 -70 -400n
-preplace netloc xlconstant_0_dout 1 5 1 2980 -290n
-preplace netloc xlconstant_1_dout 1 1 5 1370 240 N 240 N 240 N 240 N
-preplace netloc xlconstant_3_dout 1 1 5 1340 260 N 260 N 260 N 260 N
-preplace netloc xlslice_0_Dout 1 0 7 920 -710 N -710 1900 -470 2370 -640 N -640 2940 -760 3320
-preplace netloc delay_measure_0_delay_cycles 1 3 3 2410 -600 NJ -600 NJ
-preplace netloc bit_to_dac14_axi_0_m_axis 1 4 2 NJ -120 2840
-preplace netloc processing_system7_0_DDR 1 1 6 1330J -400 1880 -390 N -390 N -390 N -390 3440J
-preplace netloc processing_system7_0_FIXED_IO 1 1 6 1340J -380 1860 -370 N -370 N -370 N -370 3320J
-levelinfo -pg 1 -90 1130 1550 2120 2540 2740 3150 3460
-pagesize -pg 1 -db -bbox -sgen -310 -1850 3680 1020
+preplace netloc xlconstant_1_dout 1 1 6 N 100 1750 240 N 240 N 240 N 240 N
+preplace netloc xlconstant_3_dout 1 1 6 1330 90 1720 260 N 260 N 260 N 260 N
+preplace netloc xlslice_0_Dout 1 0 8 920 -700 N -700 N -700 2280 -470 2750 -640 N -640 3380 -760 3760
+preplace netloc xlconstant_2_dout 1 2 1 1530 -480n
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 6 N -270 1750J -380 N -380 N -380 N -380 3150
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 3 4 2120 -290 2790 -290 N -290 N
+preplace netloc adc_bit_decoder_0_bit_out 1 1 3 NJ -600 NJ -600 2260
+preplace netloc bit_to_dac14_axi_0_m_axis_tdata 1 5 2 3110 -600 NJ
+preplace netloc processing_system7_0_DDR 1 1 7 NJ -350 1540 -390 N -390 N -390 N -390 3230 -380 3840J
+preplace netloc processing_system7_0_FIXED_IO 1 1 7 NJ -330 1550 -370 N -370 N -370 N -370 N -370 3760J
+preplace netloc bit_to_dac14_axi_0_m_axis 1 5 2 NJ -130 3160
+levelinfo -pg 1 -90 1130 1450 1930 2500 2960 3130 3590 3900
+pagesize -pg 1 -db -bbox -sgen -310 -1850 4120 1020
 "
 }
 {

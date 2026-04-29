@@ -38,14 +38,7 @@ set_false_path -from [get_cells -hierarchical -filter { NAME =~  "*ila_core_inst
 #set_false_path -from [get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_regs/ila_clk_flag_reg*" && IS_SEQUENTIAL } ] -to [get_cells -hierarchical -filter { NAME =~ "*ila_core_inst/u_ila_regs/clk_lost_reg*" && IS_SEQUENTIAL} ]
 #set_false_path -from [get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_regs/ila_clk_flag_reg*" && IS_SEQUENTIAL } ] -to [get_cells -hierarchical -filter { NAME =~ "*ila_core_inst/u_ila_regs/next_state_xsdb_reg*" && IS_SEQUENTIAL} ]
 #set_false_path -from [get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_regs/ila_clk_flag_reg*" && IS_SEQUENTIAL } ] -to [get_cells -hierarchical -filter { NAME =~ "*ila_core_inst/u_ila_regs/clk_lost_cnt_reg[*]*" && IS_SEQUENTIAL} ]
-set_false_path -from [get_cells -hierarchical -filter { NAME =~ "*ila_core_inst/u_ila_regs/reg_stream_ffd/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg*" && IS_SEQUENTIAL} ] -to [get_cells -hierarchical -filter { NAME =~ "*ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[*].U_M/allx_typeA_match_detection.ltlib_v1_0_2_allx_typeA_inst/probeDelay1_reg*" && IS_SEQUENTIAL} ]
-set_false_path -from [get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg*" && IS_SEQUENTIAL } ] -to [get_cells -hierarchical -filter { NAME =~ "*ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[*].U_M/allx_typeA_match_detection.ltlib_v1_0_2_allx_typeA_inst/probeDelay1_reg*" && IS_SEQUENTIAL} ]
 
-##
-## Match Unit Configuration to Match Output false path
-##
-set_false_path -from [get_pins -filter {REF_PIN_NAME=~CLK} -of_objects [get_cells -hierarchical -filter {NAME =~ "*allx_typeA_match_detection.ltlib_v1_0_2_allx_typeA_inst/DUT/u_srl_drive*"}]] -to [get_pins -filter {REF_PIN_NAME=~D} -of_objects [get_cells -hierarchical -filter {NAME =~ "*allx_typeA_match_detection.ltlib_v1_0_2_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/I_IS_TERMINATION_SLICE_W_OUTPUT_REG.DOUT_O_reg*" && IS_SEQUENTIAL}]]
-#set_false_path -from [get_pins -hierarchical -filter {NAME =~ *allx_typeA_match_detection.ltlib_v1_0_2_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK}] -to [get_pins -hierarchical -filter {NAME =~ *allx_typeA_match_detection.ltlib_v1_0_2_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/I_IS_TERMINATION_SLICE_W_OUTPUT_REG.DOUT_O_reg/D}]
 
 ##
 ## ILA Capture Block False Paths

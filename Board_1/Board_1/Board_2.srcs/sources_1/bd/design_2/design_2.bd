@@ -21,10 +21,11 @@
       "ZmodAWGController_0": "",
       "clk_wiz_0": "",
       "prbs_axis_master_32_0": "",
-      "xlconstant_0": "",
       "pilot_tx_rx_0": "",
       "delay_measure_0": "",
-      "bit_to_dac14_axi_0": ""
+      "bit_to_dac14_axi_0": "",
+      "proc_sys_reset_0": "",
+      "xlconstant_2": ""
     },
     "interface_ports": {
       "DDR_0": {
@@ -421,7 +422,7 @@
             "value": "1"
           },
           "C_PROBE2_TYPE": {
-            "value": "2"
+            "value": "1"
           },
           "C_PROBE2_WIDTH": {
             "value": "1"
@@ -915,19 +916,18 @@
           },
           "rst": {
             "type": "rst",
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "const_prop"
+              }
+            }
           },
           "prbs_bit": {
             "direction": "O"
           }
         }
-      },
-      "xlconstant_0": {
-        "vlnv": "xilinx.com:ip:xlconstant:1.1",
-        "ip_revision": "9",
-        "xci_name": "design_2_xlconstant_0_0",
-        "xci_path": "ip\\design_2_xlconstant_0_0\\design_2_xlconstant_0_0.xci",
-        "inst_hier_path": "xlconstant_0"
       },
       "pilot_tx_rx_0": {
         "vlnv": "xilinx.com:module_ref:pilot_tx_rx:1.0",
@@ -961,7 +961,13 @@
           },
           "rst": {
             "type": "rst",
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "const_prop"
+              }
+            }
           },
           "tx_bit": {
             "direction": "O"
@@ -1009,7 +1015,13 @@
           },
           "rst": {
             "type": "rst",
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "const_prop"
+              }
+            }
           },
           "tx_start": {
             "direction": "I"
@@ -1125,7 +1137,13 @@
           },
           "rst": {
             "type": "rst",
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "const_prop"
+              }
+            }
           },
           "bit_in": {
             "direction": "I"
@@ -1134,6 +1152,20 @@
             "direction": "O"
           }
         }
+      },
+      "proc_sys_reset_0": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "ip_revision": "16",
+        "xci_name": "design_2_proc_sys_reset_0_0",
+        "xci_path": "ip\\design_2_proc_sys_reset_0_0\\design_2_proc_sys_reset_0_0.xci",
+        "inst_hier_path": "proc_sys_reset_0"
+      },
+      "xlconstant_2": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "design_2_xlconstant_2_0",
+        "xci_path": "ip\\design_2_xlconstant_2_0\\design_2_xlconstant_2_0.xci",
+        "inst_hier_path": "xlconstant_2"
       }
     },
     "interface_nets": {
@@ -1335,7 +1367,6 @@
       "adc_bit_decoder_0_bit_out": {
         "ports": [
           "adc_bit_decoder_0/bit_out",
-          "ila_0/probe1",
           "pilot_tx_rx_0/rx_bit"
         ]
       },
@@ -1344,6 +1375,12 @@
           "adc_bit_decoder_0/t_ready",
           "ZmodScopeController_0/cDataAxisTready",
           "ila_0/probe0"
+        ]
+      },
+      "bit_to_dac14_axi_0_m_axis_tdata": {
+        "ports": [
+          "bit_to_dac14_axi_0/m_axis_tdata",
+          "ila_0/probe4"
         ]
       },
       "clk_wiz_0_clk_out1": {
@@ -1358,12 +1395,6 @@
           "ZmodScopeController_0/dZmodADC_Data"
         ]
       },
-      "delay_measure_0_delay_cycles": {
-        "ports": [
-          "delay_measure_0/delay_cycles",
-          "ila_0/probe4"
-        ]
-      },
       "pilot_tx_rx_0_match": {
         "ports": [
           "pilot_tx_rx_0/match",
@@ -1373,13 +1404,23 @@
       "pilot_tx_rx_0_tx_bit": {
         "ports": [
           "pilot_tx_rx_0/tx_bit",
-          "bit_to_dac14_axi_0/bit_in"
+          "bit_to_dac14_axi_0/bit_in",
+          "ila_0/probe1"
         ]
       },
       "pilot_tx_rx_0_tx_start": {
         "ports": [
           "pilot_tx_rx_0/tx_start",
           "delay_measure_0/tx_start"
+        ]
+      },
+      "proc_sys_reset_0_peripheral_aresetn": {
+        "ports": [
+          "proc_sys_reset_0/peripheral_aresetn",
+          "bit_to_dac14_axi_0/rst",
+          "prbs_axis_master_32_0/rst",
+          "pilot_tx_rx_0/rst",
+          "delay_measure_0/rst"
         ]
       },
       "processing_system7_0_FCLK_CLK0": {
@@ -1394,19 +1435,18 @@
           "ZmodAWGController_0/DAC_InIO_Clk",
           "adc_bit_decoder_0/clk",
           "prbs_axis_master_32_0/clk",
+          "bit_to_dac14_axi_0/clk",
+          "proc_sys_reset_0/slowest_sync_clk",
           "pilot_tx_rx_0/clk",
-          "delay_measure_0/clk",
-          "bit_to_dac14_axi_0/clk"
+          "delay_measure_0/clk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
         "ports": [
           "processing_system7_0/FCLK_RESET0_N",
           "ZmodScopeController_0/aRst_n",
-          "ZmodAWGController_0/aRst_n",
-          "pilot_tx_rx_0/rst",
-          "delay_measure_0/rst",
-          "bit_to_dac14_axi_0/rst"
+          "proc_sys_reset_0/ext_reset_in",
+          "ZmodAWGController_0/aRst_n"
         ]
       },
       "sys_clk_1": {
@@ -1415,17 +1455,17 @@
           "processing_system7_0/M_AXI_GP0_ACLK"
         ]
       },
-      "xlconstant_0_dout": {
-        "ports": [
-          "xlconstant_0/dout",
-          "prbs_axis_master_32_0/rst"
-        ]
-      },
       "xlconstant_1_dout": {
         "ports": [
           "xlconstant_1/dout",
           "ZmodScopeController_0/sTestMode",
           "ZmodAWGController_0/sTestMode"
+        ]
+      },
+      "xlconstant_2_dout": {
+        "ports": [
+          "xlconstant_2/dout",
+          "proc_sys_reset_0/dcm_locked"
         ]
       },
       "xlconstant_3_dout": {

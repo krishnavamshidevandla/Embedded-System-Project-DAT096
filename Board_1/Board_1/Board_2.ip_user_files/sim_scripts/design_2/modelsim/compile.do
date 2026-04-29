@@ -10,6 +10,8 @@ vlib modelsim_lib/msim/axi_infrastructure_v1_1_0
 vlib modelsim_lib/msim/axi_vip_v1_1_19
 vlib modelsim_lib/msim/processing_system7_vip_v1_0_21
 vlib modelsim_lib/msim/fifo_generator_v13_2_11
+vlib modelsim_lib/msim/lib_cdc_v1_0_3
+vlib modelsim_lib/msim/proc_sys_reset_v5_0_16
 
 vmap xilinx_vip modelsim_lib/msim/xilinx_vip
 vmap xpm modelsim_lib/msim/xpm
@@ -20,6 +22,8 @@ vmap axi_infrastructure_v1_1_0 modelsim_lib/msim/axi_infrastructure_v1_1_0
 vmap axi_vip_v1_1_19 modelsim_lib/msim/axi_vip_v1_1_19
 vmap processing_system7_vip_v1_0_21 modelsim_lib/msim/processing_system7_vip_v1_0_21
 vmap fifo_generator_v13_2_11 modelsim_lib/msim/fifo_generator_v13_2_11
+vmap lib_cdc_v1_0_3 modelsim_lib/msim/lib_cdc_v1_0_3
+vmap proc_sys_reset_v5_0_16 modelsim_lib/msim/proc_sys_reset_v5_0_16
 
 vlog -work xilinx_vip  -incr -mfcu  -sv -L axi_vip_v1_1_19 -L processing_system7_vip_v1_0_21 -L xilinx_vip "+incdir+C:/Progs/Xilinx/Vivado/2024.2/data/xilinx_vip/include" \
 "C:/Progs/Xilinx/Vivado/2024.2/data/xilinx_vip/hdl/axi4stream_vip_axi4streampc.sv" \
@@ -105,9 +109,21 @@ vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../Board_2.gen/sources
 
 vcom -work xil_defaultlib  -93  \
 "../../../bd/design_2/ip/design_2_prbs_axis_master_32_0_0/sim/design_2_prbs_axis_master_32_0_0.vhd" \
+"../../../bd/design_2/ip/design_2_pilot_tx_rx_0_0/sim/design_2_pilot_tx_rx_0_0.vhd" \
+"../../../bd/design_2/ip/design_2_delay_measure_0_0/sim/design_2_delay_measure_0_0.vhd" \
+"../../../bd/design_2/ip/design_2_bit_to_dac14_axi_0_2/sim/design_2_bit_to_dac14_axi_0_2.vhd" \
+
+vcom -work lib_cdc_v1_0_3  -93  \
+"../../../../Board_2.gen/sources_1/bd/design_2/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd" \
+
+vcom -work proc_sys_reset_v5_0_16  -93  \
+"../../../../Board_2.gen/sources_1/bd/design_2/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib  -93  \
+"../../../bd/design_2/ip/design_2_proc_sys_reset_0_0/sim/design_2_proc_sys_reset_0_0.vhd" \
 
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../Board_2.gen/sources_1/bd/design_2/ipshared/ec67/hdl" "+incdir+../../../../Board_2.gen/sources_1/bd/design_2/ipshared/86fe/hdl" "+incdir+../../../../Board_2.gen/sources_1/bd/design_2/ipshared/3cbc" "+incdir+../../../../Board_2.gen/sources_1/bd/design_2/ipshared/814a/hdl/verilog" "+incdir+../../../../Board_2.gen/sources_1/bd/design_2/ipshared/1017/hdl/verilog" "+incdir+../../../../Board_2.gen/sources_1/bd/design_2/ipshared/52c0/hdl/verilog" "+incdir+../../../../Board_2.gen/sources_1/bd/design_2/ipshared/2276/hdl/verilog" "+incdir+C:/Progs/Xilinx/Vivado/2024.2/data/xilinx_vip/include" \
-"../../../bd/design_2/ip/design_2_xlconstant_0_0/sim/design_2_xlconstant_0_0.v" \
+"../../../bd/design_2/ip/design_2_xlconstant_2_0/sim/design_2_xlconstant_2_0.v" \
 
 vcom -work xil_defaultlib  -93  \
 "../../../bd/design_2/sim/design_2.vhd" \

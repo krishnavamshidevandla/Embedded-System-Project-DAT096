@@ -3,60 +3,69 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity bit_to_dac14_axi is
+  generic (
+    DAC_WIDTH : positive := 14;
+    MID_CODE  : natural  := 8192;
+    AMP_CODE  : natural  := 2500
+  );
   port (
     clk   : in  std_logic;
-    rst   : in  std_logic;  -- synchronous, active high
-    bit_in     : in  std_logic;
-    -- AXI4-Stream Master (to ZmodAWGController InputDataStream s_axis)
+    rst   : in  std_logic;
+
+    -- input bit stream
+    bit_in : in std_logic;
+
+    -- AXI4-Stream Master (to DAC)
     m_axis_tdata  : out std_logic_vector(31 downto 0);
     m_axis_tvalid : out std_logic;
-    m_axis_tready : in  std_logic;
-
-    -- optional debug
-    prbs_bit      : out std_logic
+    m_axis_tready : in  std_logic
   );
 end entity;
 
 architecture rtl of bit_to_dac14_axi is
-  signal dac_data_s : std_logic_vector(13 downto 0);
-  signal bit_s      : std_logic;
-  signal en_s       : std_logic;
-  
-  constant MID : unsigned(13 downto 0) := to_unsigned(8192, 14);
-  constant AMP : unsigned(13 downto 0) := to_unsigned(3500, 14);
-  
-  signal dac_val : unsigned(13 downto 0);
+
+  signal dac_val : unsigned(DAC_WIDTH-1 downto 0) := (others => '0');
+
+  -- enable signal (ONLY update when DAC is ready)
+  signal en_s : std_logic;
 
 begin
 
-   m_axis_tvalid <= '1';
+  --------------------------------------------------
+  -- Always valid (continuous streaming)
+  --------------------------------------------------
+  m_axis_tvalid <= '1';
 
-  -- Handshake-gated advance: only update on successful transfer
-  -- Since tvalid is always 1, handshake happens when tready=1.
+  --------------------------------------------------
+  -- Handshake-based update
+  --------------------------------------------------
   en_s <= m_axis_tready;
-  
+
+  --------------------------------------------------
+  -- DAC mapping (update ONLY when ready)
+  --------------------------------------------------
   process(clk)
   begin
     if rising_edge(clk) then
-      if rst = '1' then
-        dac_val <= MID;
-        m_axis_tvalid <= '0';
+      if rst = '0' then
+        dac_val <= to_unsigned(MID_CODE, DAC_WIDTH);
 
-      else
-        if (en_s = '1' and m_axis_tready = '1') then
-
-          -- Map bit → DAC level
-          if bit_in = '1' then
-            dac_val <= MID + AMP;
-          else
-            dac_val <= MID - AMP;
-          end if;
+      elsif en_s = '1' then
+        -- Map bit to DAC level
+        if bit_in = '1' then
+          dac_val <= to_unsigned(MID_CODE + AMP_CODE, DAC_WIDTH);
+        else
+          dac_val <= to_unsigned(MID_CODE - AMP_CODE, DAC_WIDTH);
         end if;
 
       end if;
     end if;
   end process;
 
-  m_axis_tdata <= (31 downto 15 => '0') & dac_data_s & '0';
+  --------------------------------------------------
+  -- Pack into 32-bit AXIS format
+  -- IMPORTANT: match your working format
+  --------------------------------------------------
+  m_axis_tdata <= (31 downto 15 => '0') & std_logic_vector(dac_val) & '0';
 
 end architecture;
