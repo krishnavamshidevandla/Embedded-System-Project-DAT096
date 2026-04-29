@@ -21,7 +21,10 @@
       "ZmodAWGController_0": "",
       "clk_wiz_0": "",
       "prbs_axis_master_32_0": "",
-      "xlconstant_0": ""
+      "xlconstant_0": "",
+      "pilot_tx_rx_0": "",
+      "delay_measure_0": "",
+      "bit_to_dac14_axi_0": ""
     },
     "interface_ports": {
       "DDR_0": {
@@ -403,7 +406,7 @@
             "value": "Native"
           },
           "C_NUM_OF_PROBES": {
-            "value": "4"
+            "value": "5"
           },
           "C_PROBE0_TYPE": {
             "value": "1"
@@ -433,7 +436,7 @@
             "value": "1"
           },
           "C_PROBE4_WIDTH": {
-            "value": "1"
+            "value": "32"
           },
           "C_PROBE6_WIDTH": {
             "value": "1"
@@ -925,12 +928,218 @@
         "xci_name": "design_2_xlconstant_0_0",
         "xci_path": "ip\\design_2_xlconstant_0_0\\design_2_xlconstant_0_0.xci",
         "inst_hier_path": "xlconstant_0"
+      },
+      "pilot_tx_rx_0": {
+        "vlnv": "xilinx.com:module_ref:pilot_tx_rx:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_2_pilot_tx_rx_0_0",
+        "xci_path": "ip\\design_2_pilot_tx_rx_0_0\\design_2_pilot_tx_rx_0_0.xci",
+        "inst_hier_path": "pilot_tx_rx_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "pilot_tx_rx",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "5e+07",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_2_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "tx_bit": {
+            "direction": "O"
+          },
+          "rx_bit": {
+            "direction": "I"
+          },
+          "tx_start": {
+            "direction": "O"
+          },
+          "match": {
+            "direction": "O"
+          }
+        }
+      },
+      "delay_measure_0": {
+        "vlnv": "xilinx.com:module_ref:delay_measure:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_2_delay_measure_0_0",
+        "xci_path": "ip\\design_2_delay_measure_0_0\\design_2_delay_measure_0_0.xci",
+        "inst_hier_path": "delay_measure_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "delay_measure",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "5e+07",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_2_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "tx_start": {
+            "direction": "I"
+          },
+          "match": {
+            "direction": "I"
+          },
+          "delay_cycles": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "bit_to_dac14_axi_0": {
+        "vlnv": "xilinx.com:module_ref:bit_to_dac14_axi:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_2_bit_to_dac14_axi_0_2",
+        "xci_path": "ip\\design_2_bit_to_dac14_axi_0_2\\design_2_bit_to_dac14_axi_0_2.xci",
+        "inst_hier_path": "bit_to_dac14_axi_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "bit_to_dac14_axi",
+          "boundary_crc": "0x0"
+        },
+        "interface_ports": {
+          "m_axis": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+            "parameters": {
+              "TDATA_NUM_BYTES": {
+                "value": "4",
+                "value_src": "constant"
+              },
+              "TDEST_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "TID_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "TUSER_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TREADY": {
+                "value": "1",
+                "value_src": "constant"
+              },
+              "HAS_TSTRB": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TKEEP": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TLAST": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "5e+07",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_2_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              }
+            },
+            "port_maps": {
+              "TDATA": {
+                "physical_name": "m_axis_tdata",
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              },
+              "TVALID": {
+                "physical_name": "m_axis_tvalid",
+                "direction": "O"
+              },
+              "TREADY": {
+                "physical_name": "m_axis_tready",
+                "direction": "I"
+              }
+            }
+          }
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_BUSIF": {
+                "value": "m_axis",
+                "value_src": "constant"
+              },
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "5e+07",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_2_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "bit_in": {
+            "direction": "I"
+          },
+          "prbs_bit": {
+            "direction": "O"
+          }
+        }
       }
     },
     "interface_nets": {
-      "prbs_axis_master_32_0_m_axis": {
+      "bit_to_dac14_axi_0_m_axis": {
         "interface_ports": [
-          "prbs_axis_master_32_0/m_axis",
+          "bit_to_dac14_axi_0/m_axis",
           "ZmodAWGController_0/InputDataStream"
         ]
       },
@@ -1126,7 +1335,8 @@
       "adc_bit_decoder_0_bit_out": {
         "ports": [
           "adc_bit_decoder_0/bit_out",
-          "ila_0/probe1"
+          "ila_0/probe1",
+          "pilot_tx_rx_0/rx_bit"
         ]
       },
       "adc_bit_decoder_0_t_ready": {
@@ -1148,6 +1358,30 @@
           "ZmodScopeController_0/dZmodADC_Data"
         ]
       },
+      "delay_measure_0_delay_cycles": {
+        "ports": [
+          "delay_measure_0/delay_cycles",
+          "ila_0/probe4"
+        ]
+      },
+      "pilot_tx_rx_0_match": {
+        "ports": [
+          "pilot_tx_rx_0/match",
+          "delay_measure_0/match"
+        ]
+      },
+      "pilot_tx_rx_0_tx_bit": {
+        "ports": [
+          "pilot_tx_rx_0/tx_bit",
+          "bit_to_dac14_axi_0/bit_in"
+        ]
+      },
+      "pilot_tx_rx_0_tx_start": {
+        "ports": [
+          "pilot_tx_rx_0/tx_start",
+          "delay_measure_0/tx_start"
+        ]
+      },
       "processing_system7_0_FCLK_CLK0": {
         "ports": [
           "processing_system7_0/FCLK_CLK0",
@@ -1159,14 +1393,20 @@
           "ZmodAWGController_0/SysClk100",
           "ZmodAWGController_0/DAC_InIO_Clk",
           "adc_bit_decoder_0/clk",
-          "prbs_axis_master_32_0/clk"
+          "prbs_axis_master_32_0/clk",
+          "pilot_tx_rx_0/clk",
+          "delay_measure_0/clk",
+          "bit_to_dac14_axi_0/clk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
         "ports": [
           "processing_system7_0/FCLK_RESET0_N",
           "ZmodScopeController_0/aRst_n",
-          "ZmodAWGController_0/aRst_n"
+          "ZmodAWGController_0/aRst_n",
+          "pilot_tx_rx_0/rst",
+          "delay_measure_0/rst",
+          "bit_to_dac14_axi_0/rst"
         ]
       },
       "sys_clk_1": {

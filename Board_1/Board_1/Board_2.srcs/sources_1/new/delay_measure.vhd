@@ -7,13 +7,13 @@ entity delay_measure is
     clk          : in  std_logic;
     rst          : in  std_logic;
 
-    -- from transmitter
-    tx_edge      : in  std_logic;
+    -- from TX (pilot generator)
+    tx_start     : in  std_logic;
 
-    -- from ADC comparator
-    rx_bit       : in  std_logic;
+    -- from RX (pattern detector)
+    match        : in  std_logic;
 
-    -- outputs
+    -- output
     delay_cycles : out unsigned(31 downto 0)
   );
 end entity;
@@ -26,13 +26,18 @@ architecture rtl of delay_measure is
 
   signal measuring      : std_logic := '0';
 
-  -- RX edge detect
-  signal rx_prev  : std_logic := '0';
-  signal rx_edge  : std_logic := '0';
+  -- edge detect for tx_start and match
+  signal tx_prev   : std_logic := '0';
+  signal tx_edge   : std_logic := '0';
+
+  signal match_prev : std_logic := '0';
+  signal match_edge : std_logic := '0';
 
 begin
 
+  --------------------------------------------------
   -- Free running counter
+  --------------------------------------------------
   process(clk)
   begin
     if rising_edge(clk) then
@@ -44,16 +49,23 @@ begin
     end if;
   end process;
 
-  -- RX edge detection
+  --------------------------------------------------
+  -- Edge detection (important to avoid multiple triggers)
+  --------------------------------------------------
   process(clk)
   begin
     if rising_edge(clk) then
-      rx_prev <= rx_bit;
-      rx_edge <= rx_bit and not rx_prev;
+      tx_prev    <= tx_start;
+      match_prev <= match;
+
+      tx_edge    <= tx_start and not tx_prev;
+      match_edge <= match and not match_prev;
     end if;
   end process;
 
+  --------------------------------------------------
   -- Measurement logic
+  --------------------------------------------------
   process(clk)
   begin
     if rising_edge(clk) then
@@ -63,14 +75,14 @@ begin
         delay_reg   <= (others => '0');
 
       else
-        -- Start measurement
+        -- Start measurement at beginning of pilot
         if tx_edge = '1' then
           start_count <= counter;
           measuring   <= '1';
         end if;
 
-        -- Stop measurement
-        if (rx_edge = '1') and (measuring = '1') then
+        -- Stop when full pilot is detected
+        if (match_edge = '1') and (measuring = '1') then
           delay_reg <= counter - start_count;
           measuring <= '0';
         end if;

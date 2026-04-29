@@ -5,7 +5,7 @@
 <!-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.        -->
 
 <hwsession version="1" minor="2">
-  <device name="xc7z020_1_1" gui_info="dashboard1=hw_ila_1[xc7z020_1_1/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7z020_1_1/hw_ila_1/Capture Setup=ILA_CAPTURE_1;xc7z020_1_1/hw_ila_1/Settings=ILA_SETTINGS_1;xc7z020_1_1/hw_ila_1/Status=ILA_STATUS_1;xc7z020_1_1/hw_ila_1/Waveform=ILA_WAVE_1;]"/>
+  <device name="xc7z020_1" gui_info="dashboard1=hw_ila_1[xc7z020_1/hw_ila_1/Waveform=ILA_WAVE_1;xc7z020_1/hw_ila_1/Capture Setup=ILA_CAPTURE_1;xc7z020_1/hw_ila_1/Status=ILA_STATUS_1;xc7z020_1/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7z020_1/hw_ila_1/Settings=ILA_SETTINGS_1;]"/>
   <ObjectList object_type="hw_device" gui_info="">
     <Object name="xc7z020_1" gui_info="">
       <Properties Property="FULL_PROBES.FILE" value="$_project_name_.runs/impl_1/design_2_wrapper.ltx"/>
@@ -297,6 +297,55 @@
         <net name="design_2_i/dZmodADC_Data_0[2]"/>
         <net name="design_2_i/dZmodADC_Data_0[1]"/>
         <net name="design_2_i/dZmodADC_Data_0[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe4[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="design_2_i/delay_measure_0_delay_cycles[31]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[30]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[29]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[28]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[27]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[26]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[25]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[24]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[23]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[22]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[21]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[20]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[19]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[18]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[17]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[16]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[15]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[14]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[13]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[12]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[11]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[10]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[9]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[8]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[7]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[6]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[5]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[4]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[3]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[2]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[1]"/>
+        <net name="design_2_i/delay_measure_0_delay_cycles[0]"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">

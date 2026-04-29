@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/devandla/Desktop/Board_2/Board_2.srcs/constrs_1/new/Board_2.xdc rfile:../../../Board_2.srcs/constrs_1/new/Board_2.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.srcs/constrs_1/new/Board_2.xdc rfile:../../../Board_2.srcs/constrs_1/new/Board_2.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN D18 IOSTANDARD LVCMOS33 } [get_ports { sys_clk }]
 set_property src_info {type:XDC file:1 line:15 export:INPUT save:INPUT read:READ} [current_design]
