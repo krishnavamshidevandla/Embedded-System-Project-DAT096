@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon May  4 15:54:22 2026
+# Process ID         : 4500
+# Current directory  : C:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent1036 C:\Users\qianzha\Desktop\DAT096-krishna\Embedded-System-Project-DAT096-krishna\Board_1\Board_1\Board_2.xpr
+# Log file           : C:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/vivado.log
+# Journal file       : C:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1\vivado.jou
+# Running On         : FY-6302-04
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-14700
+# CPU Frequency      : 2112 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 34031 MB
+# Swap memory        : 5100 MB
+# Total Virtual      : 39131 MB
+# Available Virtual  : 31162 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1'
+Scanning sources...
+Finished scanning sources
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at Z:/DAT096/vivado-boards-master/vivado-boards-master/new/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at Z:/DAT096/vivado-boards-master/vivado-boards-master/new/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'z:/DAT096/vivado-library-master/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Progs/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [Project 1-5579] Found utility IPs instantiated in one or more block designs which have equivalent inline hdl with improved performance and reduced diskspace. It is recommended to migrate these utility IPs to inline hdl using the command upgrade_project -migrate_to_inline_hdl. The utility IPs may be deprecated in future releases. More information on inline hdl is available in UG994.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 1417.711 ; gain = 335.523
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.srcs/sources_1/bd/design_2/design_2.bd}
+Reading block design file <C:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.srcs/sources_1/bd/design_2/design_2.bd>...
+Adding component instance block -- xilinx.com:ip:ila:6.2 - ila_0
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: AMD recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Adding component instance block -- xilinx.com:module_ref:adc_bit_decoder:1.0 - adc_bit_decoder_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_3
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- digilent.com:user:ZmodScopeController:1.2 - ZmodScopeController_0
+Adding component instance block -- digilent.com:user:ZmodAWGController:1.1 - ZmodAWGController_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:module_ref:prbs_axis_master_32:1.0 - prbs_axis_master_32_0
+Adding component instance block -- xilinx.com:module_ref:pilot_tx_rx:1.0 - pilot_tx_rx_0
+Adding component instance block -- xilinx.com:module_ref:delay_measure:1.0 - delay_measure_0
+Adding component instance block -- xilinx.com:module_ref:bit_to_dac14_axi:1.0 - bit_to_dac14_axi_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Successfully read diagram <design_2> from block design file <C:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.srcs/sources_1/bd/design_2/design_2.bd>
