@@ -1276,8 +1276,7 @@
       "ZmodScopeController_0_cDataAxisTdata": {
         "ports": [
           "ZmodScopeController_0/cDataAxisTdata",
-          "xlslice_0/Din",
-          "ila_0/probe7"
+          "xlslice_0/Din"
         ]
       },
       "ZmodScopeController_0_cDataAxisTvalid": {
@@ -1389,6 +1388,12 @@
         "ports": [
           "dZmodADC_Data_0",
           "ZmodScopeController_0/dZmodADC_Data"
+        ]
+      },
+      "delay_measure_0_delay_cycles": {
+        "ports": [
+          "delay_measure_0/delay_cycles",
+          "ila_0/probe7"
         ]
       },
       "pilot_tx_rx_0_match": {

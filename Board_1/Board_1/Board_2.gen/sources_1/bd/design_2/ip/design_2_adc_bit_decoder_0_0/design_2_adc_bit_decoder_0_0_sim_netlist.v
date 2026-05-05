@@ -2,10 +2,10 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Thu Apr 30 16:04:19 2026
-// Host        : FY-6302-09 running 64-bit major release  (build 9200)
+// Date        : Tue May  5 12:50:58 2026
+// Host        : FY-6302-12 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_adc_bit_decoder_0_0/design_2_adc_bit_decoder_0_0_sim_netlist.v
+//               c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_adc_bit_decoder_0_0/design_2_adc_bit_decoder_0_0_sim_netlist.v
 // Design      : design_2_adc_bit_decoder_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -87,13 +87,13 @@ endmodule
 module design_2_adc_bit_decoder_0_0_adc_bit_decoder
    (dac_data,
     bit_out,
-    t_data,
     t_valid,
+    t_data,
     clk);
   output [1:0]dac_data;
   output bit_out;
-  input [13:0]t_data;
   input t_valid;
+  input [13:0]t_data;
   input clk;
 
   wire bit_out;
@@ -110,14 +110,13 @@ module design_2_adc_bit_decoder_0_0_adc_bit_decoder
   wire [13:0]t_data;
   wire t_valid;
 
-  LUT5 #(
-    .INIT(32'hFF0CAAAA)) 
+  LUT4 #(
+    .INIT(16'h3FAA)) 
     bit_q_i_1
        (.I0(bit_out),
-        .I1(t_data[12]),
-        .I2(\dac_data[14]_i_2_n_0 ),
-        .I3(t_data[13]),
-        .I4(t_valid),
+        .I1(\dac_data[14]_i_2_n_0 ),
+        .I2(t_data[13]),
+        .I3(t_valid),
         .O(bit_q_i_1_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -128,70 +127,70 @@ module design_2_adc_bit_decoder_0_0_adc_bit_decoder
         .Q(bit_out),
         .R(1'b0));
   LUT6 #(
-    .INIT(64'h00AAEFAAAAAAEFAA)) 
+    .INIT(64'hEAEAEAEA0A0AAA0A)) 
     \dac_data[13]_i_1 
        (.I0(dac_data[0]),
         .I1(\dac_data[14]_i_2_n_0 ),
-        .I2(t_data[12]),
-        .I3(t_valid),
-        .I4(t_data[13]),
-        .I5(\dac_data[14]_i_3_n_0 ),
+        .I2(t_valid),
+        .I3(t_data[12]),
+        .I4(\dac_data[14]_i_3_n_0 ),
+        .I5(t_data[13]),
         .O(\dac_data[13]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hFFAA08AAAAAA08AA)) 
+    .INIT(64'h2A2A2A2AFAFAAAFA)) 
     \dac_data[14]_i_1 
        (.I0(dac_data[1]),
-        .I1(t_data[12]),
-        .I2(\dac_data[14]_i_2_n_0 ),
-        .I3(t_valid),
-        .I4(t_data[13]),
-        .I5(\dac_data[14]_i_3_n_0 ),
+        .I1(\dac_data[14]_i_2_n_0 ),
+        .I2(t_valid),
+        .I3(t_data[12]),
+        .I4(\dac_data[14]_i_3_n_0 ),
+        .I5(t_data[13]),
         .O(\dac_data[14]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'h00000000555555F7)) 
-    \dac_data[14]_i_2 
-       (.I0(t_data[9]),
-        .I1(t_data[6]),
-        .I2(\dac_data[14]_i_4_n_0 ),
-        .I3(t_data[8]),
-        .I4(t_data[7]),
-        .I5(\dac_data[14]_i_5_n_0 ),
-        .O(\dac_data[14]_i_2_n_0 ));
-  LUT6 #(
     .INIT(64'hEEEEEAAAAAAAAAAA)) 
-    \dac_data[14]_i_3 
+    \dac_data[14]_i_2 
        (.I0(t_data[12]),
         .I1(t_data[11]),
         .I2(t_data[7]),
-        .I3(\dac_data[14]_i_6_n_0 ),
+        .I3(\dac_data[14]_i_4_n_0 ),
         .I4(t_data[9]),
         .I5(t_data[10]),
+        .O(\dac_data[14]_i_2_n_0 ));
+  LUT6 #(
+    .INIT(64'h00000000555555F7)) 
+    \dac_data[14]_i_3 
+       (.I0(t_data[9]),
+        .I1(t_data[6]),
+        .I2(\dac_data[14]_i_5_n_0 ),
+        .I3(t_data[8]),
+        .I4(t_data[7]),
+        .I5(\dac_data[14]_i_6_n_0 ),
         .O(\dac_data[14]_i_3_n_0 ));
   LUT6 #(
-    .INIT(64'h000000005555777F)) 
-    \dac_data[14]_i_4 
-       (.I0(t_data[4]),
-        .I1(t_data[2]),
-        .I2(t_data[1]),
-        .I3(t_data[0]),
-        .I4(t_data[3]),
-        .I5(t_data[5]),
-        .O(\dac_data[14]_i_4_n_0 ));
-  LUT2 #(
-    .INIT(4'hE)) 
-    \dac_data[14]_i_5 
-       (.I0(t_data[10]),
-        .I1(t_data[11]),
-        .O(\dac_data[14]_i_5_n_0 ));
-  LUT6 #(
     .INIT(64'hAAAAAAAA88888000)) 
-    \dac_data[14]_i_6 
+    \dac_data[14]_i_4 
        (.I0(t_data[8]),
         .I1(t_data[5]),
         .I2(t_data[2]),
         .I3(t_data[3]),
         .I4(t_data[4]),
         .I5(t_data[6]),
+        .O(\dac_data[14]_i_4_n_0 ));
+  LUT6 #(
+    .INIT(64'h000000005555777F)) 
+    \dac_data[14]_i_5 
+       (.I0(t_data[4]),
+        .I1(t_data[2]),
+        .I2(t_data[1]),
+        .I3(t_data[0]),
+        .I4(t_data[3]),
+        .I5(t_data[5]),
+        .O(\dac_data[14]_i_5_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \dac_data[14]_i_6 
+       (.I0(t_data[10]),
+        .I1(t_data[11]),
         .O(\dac_data[14]_i_6_n_0 ));
   FDRE \dac_data_reg[13] 
        (.C(clk),

@@ -2,10 +2,10 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Thu Apr 30 13:51:27 2026
+// Date        : Thu Apr 30 13:51:25 2026
 // Host        : FY-6302-09 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/design_2_ila_0_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top design_2_ila_0_0 -prefix
+//               design_2_ila_0_0_ design_2_ila_0_0_stub.v
 // Design      : design_2_ila_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg484-1

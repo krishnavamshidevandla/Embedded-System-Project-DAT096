@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Apr 30 16:03:26 2026" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue May  5 12:59:09 2026" VIVADOVERSION="2024.2">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="design_2" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
@@ -517,7 +517,6 @@
         <PORT DIR="O" LEFT="31" NAME="cDataAxisTdata" RIGHT="0" SIGIS="undef" SIGNAME="ZmodScopeController_0_cDataAxisTdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="xlslice_0" PORT="Din"/>
-            <CONNECTION INSTANCE="ila_0" PORT="probe7"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="cDataAxisTready" SIGIS="undef" SIGNAME="adc_bit_decoder_0_t_ready">
@@ -1355,7 +1354,11 @@
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="delay_cycles" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="delay_cycles" RIGHT="0" SIGIS="undef" SIGNAME="delay_measure_0_delay_cycles">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ila_0" PORT="probe7"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" NAME="match" SIGIS="undef" SIGNAME="pilot_tx_rx_0_match">
           <CONNECTIONS>
             <CONNECTION INSTANCE="pilot_tx_rx_0" PORT="match"/>
@@ -4554,9 +4557,9 @@
             <CONNECTION INSTANCE="pilot_tx_rx_0" PORT="match"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="probe7" RIGHT="0" SIGIS="undef" SIGNAME="ZmodScopeController_0_cDataAxisTdata">
+        <PORT DIR="I" LEFT="31" NAME="probe7" RIGHT="0" SIGIS="undef" SIGNAME="delay_measure_0_delay_cycles">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ZmodScopeController_0" PORT="cDataAxisTdata"/>
+            <CONNECTION INSTANCE="delay_measure_0" PORT="delay_cycles"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

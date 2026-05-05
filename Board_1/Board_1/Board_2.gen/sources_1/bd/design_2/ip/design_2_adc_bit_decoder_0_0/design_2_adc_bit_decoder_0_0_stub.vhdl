@@ -2,10 +2,10 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Thu Apr 30 16:04:19 2026
--- Host        : FY-6302-09 running 64-bit major release  (build 9200)
+-- Date        : Tue May  5 12:50:58 2026
+-- Host        : FY-6302-12 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_adc_bit_decoder_0_0/design_2_adc_bit_decoder_0_0_stub.vhdl
+--               c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_adc_bit_decoder_0_0/design_2_adc_bit_decoder_0_0_stub.vhdl
 -- Design      : design_2_adc_bit_decoder_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg484-1

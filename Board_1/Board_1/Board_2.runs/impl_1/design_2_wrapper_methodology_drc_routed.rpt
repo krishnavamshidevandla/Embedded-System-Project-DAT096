@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Thu Apr 30 16:06:34 2026
-| Host         : FY-6302-09 running 64-bit major release  (build 9200)
+| Date         : Tue May  5 13:01:20 2026
+| Host         : FY-6302-12 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file design_2_wrapper_methodology_drc_routed.rpt -pb design_2_wrapper_methodology_drc_routed.pb -rpx design_2_wrapper_methodology_drc_routed.rpx
 | Design       : design_2_wrapper
 | Device       : xc7z020clg484-1
@@ -431,223 +431,223 @@ Related violations: <none>
 XDCB-5#1 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -filter {NAME =~ *InstADC_InClkReset*SyncAsync*/oSyncStages_reg[0]/C} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '72' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 21)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 21)
 Related violations: <none>
 
 XDCB-5#2 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -filter {NAME =~ *InstAdcSamplingReset*SyncAsync*/oSyncStages_reg[0]/C} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '71' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 19)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 19)
 Related violations: <none>
 
 XDCB-5#3 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -filter {NAME =~ *InstAdcSysReset*SyncAsync*/oSyncStages_reg[0]/C} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '70' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 17)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 17)
 Related violations: <none>
 
 XDCB-5#4 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -filter {NAME =~ *InstAdcTestModeSync*SyncAsync*/oSyncStages_reg[0]/C} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '74' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 25)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 25)
 Related violations: <none>
 
 XDCB-5#5 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -filter {NAME =~ *InstDacClkReset*SyncAsync*/oSyncStages_reg[0]/C} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '148' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 9)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 9)
 Related violations: <none>
 
 XDCB-5#6 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -filter {NAME =~ *InstDacSamplingReset*SyncAsync*/oSyncStages_reg[0]/C} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '147' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 7)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 7)
 Related violations: <none>
 
 XDCB-5#7 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -filter {NAME =~ *InstDacSysReset*SyncAsync*/oSyncStages_reg[0]/C} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '146' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 5)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 5)
 Related violations: <none>
 
 XDCB-5#8 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -filter {NAME =~ *InstDacTestModeSync*SyncAsync*/oSyncStages_reg[0]/C} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '149' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 11)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 11)
 Related violations: <none>
 
 XDCB-5#9 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -filter {NAME =~ *InstHandshakeInitDoneRelay*SyncAsyncPushT/oSyncStages_reg[0]/C} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '68' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 15)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 15)
 Related violations: <none>
 
 XDCB-5#10 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -filter {NAME =~ *InstHandshakeInitDoneRelay*SyncAsyncPushTBack*/oSyncStages_reg[0]/C} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '67' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 13)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 13)
 Related violations: <none>
 
 XDCB-5#11 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -filter {NAME =~ *InstHandshakeInitDoneRelay*SyncReset*SyncAsync*/oSyncStages_reg[0]/C} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '69' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 16)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 16)
 Related violations: <none>
 
 XDCB-5#12 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -filter {NAME =~ *InstMMCM_LockSampingClkSync*/oSyncStages_reg[0]/C} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '82' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 39)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 39)
 Related violations: <none>
 
 XDCB-5#13 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -filter {NAME =~ *InstSyncAsyncEnableAcquisitionDco*/oSyncStages_reg[0]/C} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '77' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 31)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 31)
 Related violations: <none>
 
 XDCB-5#14 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -filter {NAME =~ *InstSyncAsyncInitDoneADC*/oSyncStages_reg[0]/C} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '75' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 27)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 27)
 Related violations: <none>
 
 XDCB-5#15 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -filter {NAME =~ *InstSyncAsyncInitDoneDco*/oSyncStages_reg[0]/C} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '76' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 29)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 29)
 Related violations: <none>
 
 XDCB-5#16 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -filter {NAME =~ *InstSyncDcoFIFO_Reset*SyncAsync*/oSyncStages_reg[0]/C} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '73' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 23)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 23)
 Related violations: <none>
 
 XDCB-5#17 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/allx_typeA_match_detection.ltlib_v1_0_2_allx_typeA_inst/DUT/u_srl_drive/CLK}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '42' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/ila_v6_2/constraints/ila.xdc (Line: 72)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/ila_v6_2/constraints/ila.xdc (Line: 72)
 Related violations: <none>
 
 XDCB-5#18 Warning
 Runtime inefficient way to find pin objects  
 The option '-through : [get_pins -filter {NAME =~ *InstMMCM_LockSampingClkSync*/oSyncStages_reg[0]/D} -hier]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '66' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 10)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 10)
 Related violations: <none>
 
 XDCB-5#19 Warning
 Runtime inefficient way to find pin objects  
 The option '-through : [get_pins -filter {NAME =~ *SyncAsync*/oSyncStages_reg[0]/D} -hier]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '145' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 2)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 2)
 Related violations: <none>
 
 XDCB-5#20 Warning
 Runtime inefficient way to find pin objects  
 The option '-through : [get_pins -filter {NAME =~ *SyncAsync*/oSyncStages_reg[0]/D} -hier]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '65' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 9)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 9)
 Related violations: <none>
 
 XDCB-5#21 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -filter {NAME =~ *InstADC_InClkReset*SyncAsync*/oSyncStages_reg[1]/D} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '72' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 21)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 21)
 Related violations: <none>
 
 XDCB-5#22 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -filter {NAME =~ *InstAdcSamplingReset*SyncAsync*/oSyncStages_reg[1]/D} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '71' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 19)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 19)
 Related violations: <none>
 
 XDCB-5#23 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -filter {NAME =~ *InstAdcSysReset*SyncAsync*/oSyncStages_reg[1]/D} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '70' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 17)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 17)
 Related violations: <none>
 
 XDCB-5#24 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -filter {NAME =~ *InstAdcTestModeSync*SyncAsync*/oSyncStages_reg[1]/D} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '74' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 25)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 25)
 Related violations: <none>
 
 XDCB-5#25 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -filter {NAME =~ *InstDacClkReset*SyncAsync*/oSyncStages_reg[1]/D} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '148' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 9)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 9)
 Related violations: <none>
 
 XDCB-5#26 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -filter {NAME =~ *InstDacSamplingReset*SyncAsync*/oSyncStages_reg[1]/D} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '147' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 7)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 7)
 Related violations: <none>
 
 XDCB-5#27 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -filter {NAME =~ *InstDacSysReset*SyncAsync*/oSyncStages_reg[1]/D} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '146' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 5)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 5)
 Related violations: <none>
 
 XDCB-5#28 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -filter {NAME =~ *InstDacTestModeSync*SyncAsync*/oSyncStages_reg[1]/D} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '149' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 11)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/ConstrsZmodDAC.xdc (Line: 11)
 Related violations: <none>
 
 XDCB-5#29 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -filter {NAME =~ *InstHandshakeInitDoneRelay*SyncAsyncPushT/oSyncStages_reg[1]/D} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '68' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 15)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 15)
 Related violations: <none>
 
 XDCB-5#30 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -filter {NAME =~ *InstHandshakeInitDoneRelay*SyncAsyncPushTBack*/oSyncStages_reg[1]/D} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '67' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 13)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 13)
 Related violations: <none>
 
 XDCB-5#31 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -filter {NAME =~ *InstHandshakeInitDoneRelay*SyncReset*SyncAsync*/oSyncStages_reg[1]/D} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '69' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 16)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 16)
 Related violations: <none>
 
 XDCB-5#32 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -filter {NAME =~ *InstMMCM_LockSampingClkSync*/oSyncStages_reg[1]/D} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '82' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 39)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 39)
 Related violations: <none>
 
 XDCB-5#33 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -filter {NAME =~ *InstSyncAsyncEnableAcquisitionDco*/oSyncStages_reg[1]/D} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '77' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 31)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 31)
 Related violations: <none>
 
 XDCB-5#34 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -filter {NAME =~ *InstSyncAsyncInitDoneADC*/oSyncStages_reg[1]/D} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '75' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 27)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 27)
 Related violations: <none>
 
 XDCB-5#35 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -filter {NAME =~ *InstSyncAsyncInitDoneDco*/oSyncStages_reg[1]/D} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '76' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 29)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 29)
 Related violations: <none>
 
 XDCB-5#36 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -filter {NAME =~ *InstSyncDcoFIFO_Reset*SyncAsync*/oSyncStages_reg[1]/D} -hier]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '73' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 23)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc (Line: 23)
 Related violations: <none>
 
 XDCB-5#37 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/yes_output_reg.dout_reg_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '42' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/ila_v6_2/constraints/ila.xdc (Line: 72)
+Current XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ila_0_0/ila_v6_2/constraints/ila.xdc (Line: 72)
 Related violations: <none>
 
 

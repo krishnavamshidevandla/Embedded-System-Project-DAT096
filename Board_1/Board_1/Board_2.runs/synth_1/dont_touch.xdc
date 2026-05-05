@@ -51,4 +51,4 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_pr
 # IP: bd/design_2/ip/design_2_xlconstant_2_0/design_2_xlconstant_2_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_xlconstant_2_0 || ORIG_REF_NAME==design_2_xlconstant_2_0} -quiet] -quiet
 
-# XDC: c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/design_2_ooc.xdc
+# XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/design_2_ooc.xdc

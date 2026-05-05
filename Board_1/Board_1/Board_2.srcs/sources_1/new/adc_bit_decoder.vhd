@@ -42,10 +42,10 @@ begin
     if rising_edge(clk) then
 
        if t_valid = '1' then
-        if adc_u >= HI_THR then
+        if adc_u <= LO_THR then
           bit_q <= '1';
           dac_data <= (31 downto 15 => '0') & std_logic_vector(HI_THR) & '0';
-        elsif adc_u <= LO_THR then
+        elsif adc_u >= HI_THR then
           bit_q <= '0';
           dac_data <= (31 downto 15 => '0') & std_logic_vector(LO_THR) & '0';
         else

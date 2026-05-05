@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1777557820" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/design_2_wrapper.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1777978754" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/design_2_wrapper.dcp">
   <File Type="PA-TCL" Name="design_2_wrapper.tcl"/>
   <File Type="REPORTS-TCL" Name="design_2_wrapper_reports.tcl"/>
   <File Type="RDS-RDS" Name="design_2_wrapper.vds"/>
@@ -102,7 +102,6 @@
   <BlockFileSet Type="BlockSrcs" Name="design_2_prbs_axis_master_32_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_2_proc_sys_reset_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_2_delay_measure_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_2_ila_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_2_bit_to_dac14_axi_0_2"/>
   <BlockFileSet Type="BlockSrcs" Name="design_2_pilot_tx_rx_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_2_adc_bit_decoder_0_0"/>

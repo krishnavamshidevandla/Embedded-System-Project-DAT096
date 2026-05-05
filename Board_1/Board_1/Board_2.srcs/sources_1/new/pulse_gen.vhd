@@ -31,7 +31,7 @@ architecture rtl of pilot_tx_rx is
   -- TX SIGNALS
   -- ===============================
   signal bit_index   : integer range 0 to 15 := 15;
-  signal os_counter  : integer range 0 to 9 := 0;
+  signal os_counter  : integer range 0 to 19 := 0;
   signal tx_reg      : std_logic := '0';
 
   -- ===============================
@@ -56,7 +56,7 @@ begin
         tx_reg     <= '0';
 
       else
-        if os_counter = 9 then
+        if os_counter = 19 then
           os_counter <= 0;
 
           if bit_index = 0 then
@@ -81,7 +81,7 @@ begin
   --------------------------------------------------
   -- RX: Sampling at mid-bit (cycle 5 of 10)
   --------------------------------------------------
-  sample_en <= '1' when os_counter = 5 else '0';
+  sample_en <= '1' when os_counter = 10 else '0';
 
   process(clk)
   begin

@@ -2,10 +2,10 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Thu Apr 30 14:54:23 2026
-// Host        : FY-6302-09 running 64-bit major release  (build 9200)
+// Date        : Tue May  5 12:18:02 2026
+// Host        : FY-6302-12 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_pilot_tx_rx_0_0/design_2_pilot_tx_rx_0_0_sim_netlist.v
+//               c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_pilot_tx_rx_0_0/design_2_pilot_tx_rx_0_0_sim_netlist.v
 // Design      : design_2_pilot_tx_rx_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -74,8 +74,9 @@ module design_2_pilot_tx_rx_0_0_pilot_tx_rx
   wire \os_counter[1]_i_1_n_0 ;
   wire \os_counter[2]_i_1_n_0 ;
   wire \os_counter[3]_i_1_n_0 ;
-  wire \os_counter[3]_i_2_n_0 ;
-  wire [3:0]os_counter_reg;
+  wire \os_counter[4]_i_1_n_0 ;
+  wire \os_counter[4]_i_2_n_0 ;
+  wire [4:0]os_counter_reg;
   wire [15:0]p_0_in;
   wire p_1_in;
   wire rst;
@@ -200,24 +201,35 @@ module design_2_pilot_tx_rx_0_0_pilot_tx_rx
         .I1(os_counter_reg[1]),
         .I2(os_counter_reg[2]),
         .O(\os_counter[2]_i_1_n_0 ));
-  LUT5 #(
-    .INIT(32'h0008FFFF)) 
-    \os_counter[3]_i_1 
-       (.I0(os_counter_reg[3]),
-        .I1(os_counter_reg[0]),
-        .I2(os_counter_reg[2]),
-        .I3(os_counter_reg[1]),
-        .I4(rst),
-        .O(\os_counter[3]_i_1_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
-    \os_counter[3]_i_2 
+    \os_counter[3]_i_1 
        (.I0(os_counter_reg[1]),
         .I1(os_counter_reg[0]),
         .I2(os_counter_reg[2]),
         .I3(os_counter_reg[3]),
-        .O(\os_counter[3]_i_2_n_0 ));
+        .O(\os_counter[3]_i_1_n_0 ));
+  LUT6 #(
+    .INIT(64'h00002000FFFFFFFF)) 
+    \os_counter[4]_i_1 
+       (.I0(os_counter_reg[4]),
+        .I1(os_counter_reg[2]),
+        .I2(os_counter_reg[0]),
+        .I3(os_counter_reg[1]),
+        .I4(os_counter_reg[3]),
+        .I5(rst),
+        .O(\os_counter[4]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT5 #(
+    .INIT(32'h7FFF8000)) 
+    \os_counter[4]_i_2 
+       (.I0(os_counter_reg[2]),
+        .I1(os_counter_reg[0]),
+        .I2(os_counter_reg[1]),
+        .I3(os_counter_reg[3]),
+        .I4(os_counter_reg[4]),
+        .O(\os_counter[4]_i_2_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \os_counter_reg[0] 
@@ -225,7 +237,7 @@ module design_2_pilot_tx_rx_0_0_pilot_tx_rx
         .CE(1'b1),
         .D(\os_counter[0]_i_1_n_0 ),
         .Q(os_counter_reg[0]),
-        .R(\os_counter[3]_i_1_n_0 ));
+        .R(\os_counter[4]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \os_counter_reg[1] 
@@ -233,7 +245,7 @@ module design_2_pilot_tx_rx_0_0_pilot_tx_rx
         .CE(1'b1),
         .D(\os_counter[1]_i_1_n_0 ),
         .Q(os_counter_reg[1]),
-        .R(\os_counter[3]_i_1_n_0 ));
+        .R(\os_counter[4]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \os_counter_reg[2] 
@@ -241,22 +253,31 @@ module design_2_pilot_tx_rx_0_0_pilot_tx_rx
         .CE(1'b1),
         .D(\os_counter[2]_i_1_n_0 ),
         .Q(os_counter_reg[2]),
-        .R(\os_counter[3]_i_1_n_0 ));
+        .R(\os_counter[4]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \os_counter_reg[3] 
        (.C(clk),
         .CE(1'b1),
-        .D(\os_counter[3]_i_2_n_0 ),
+        .D(\os_counter[3]_i_1_n_0 ),
         .Q(os_counter_reg[3]),
-        .R(\os_counter[3]_i_1_n_0 ));
-  LUT4 #(
-    .INIT(16'h1000)) 
+        .R(\os_counter[4]_i_1_n_0 ));
+  FDRE #(
+    .INIT(1'b0)) 
+    \os_counter_reg[4] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\os_counter[4]_i_2_n_0 ),
+        .Q(os_counter_reg[4]),
+        .R(\os_counter[4]_i_1_n_0 ));
+  LUT5 #(
+    .INIT(32'h00000020)) 
     sampled_bit_i_1
-       (.I0(os_counter_reg[3]),
-        .I1(os_counter_reg[1]),
-        .I2(os_counter_reg[0]),
-        .I3(os_counter_reg[2]),
+       (.I0(os_counter_reg[1]),
+        .I1(os_counter_reg[2]),
+        .I2(os_counter_reg[3]),
+        .I3(os_counter_reg[0]),
+        .I4(os_counter_reg[4]),
         .O(sample_en));
   FDRE #(
     .INIT(1'b0)) 
@@ -399,13 +420,14 @@ module design_2_pilot_tx_rx_0_0_pilot_tx_rx
     tx_reg_i_1
        (.I0(rst),
         .O(tx_reg_i_1_n_0));
-  LUT4 #(
-    .INIT(16'h1000)) 
+  LUT5 #(
+    .INIT(32'h00400000)) 
     tx_reg_i_2
-       (.I0(os_counter_reg[1]),
-        .I1(os_counter_reg[2]),
+       (.I0(os_counter_reg[3]),
+        .I1(os_counter_reg[1]),
         .I2(os_counter_reg[0]),
-        .I3(os_counter_reg[3]),
+        .I3(os_counter_reg[2]),
+        .I4(os_counter_reg[4]),
         .O(tx_reg));
   (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT4 #(
@@ -424,15 +446,15 @@ module design_2_pilot_tx_rx_0_0_pilot_tx_rx
         .D(p_1_in),
         .Q(tx_bit),
         .R(tx_reg_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT5 #(
-    .INIT(32'h00000002)) 
+  LUT6 #(
+    .INIT(64'h0000000000000002)) 
     tx_start_INST_0
        (.I0(tx_start_INST_0_i_1_n_0),
-        .I1(os_counter_reg[1]),
-        .I2(os_counter_reg[0]),
-        .I3(os_counter_reg[2]),
-        .I4(os_counter_reg[3]),
+        .I1(os_counter_reg[2]),
+        .I2(os_counter_reg[4]),
+        .I3(os_counter_reg[0]),
+        .I4(os_counter_reg[1]),
+        .I5(os_counter_reg[3]),
         .O(tx_start));
   (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT4 #(
