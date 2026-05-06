@@ -2,7 +2,7 @@
 --Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
---Date        : Tue May  5 12:49:59 2026
+--Date        : Wed May  6 16:13:24 2026
 --Host        : FY-6302-12 running 64-bit major release  (build 9200)
 --Command     : generate_target design_2.bd
 --Design      : design_2
@@ -82,7 +82,8 @@ architecture STRUCTURE of design_2 is
     probe4 : in STD_LOGIC_VECTOR ( 0 to 0 );
     probe5 : in STD_LOGIC_VECTOR ( 0 to 0 );
     probe6 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe7 : in STD_LOGIC_VECTOR ( 31 downto 0 )
+    probe7 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe8 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component design_2_ila_0_0;
   component design_2_adc_bit_decoder_0_0 is
@@ -270,6 +271,7 @@ architecture STRUCTURE of design_2 is
     rst : in STD_LOGIC;
     tx_start : in STD_LOGIC;
     match : in STD_LOGIC;
+    start : out STD_LOGIC;
     delay_cycles : out STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   end component design_2_delay_measure_0_0;
@@ -310,6 +312,8 @@ architecture STRUCTURE of design_2 is
   signal bit_to_dac14_axi_0_m_axis_TREADY : STD_LOGIC;
   signal bit_to_dac14_axi_0_m_axis_TVALID : STD_LOGIC;
   signal clk_wiz_0_clk_out1 : STD_LOGIC;
+  signal delay_measure_0_delay_cycles : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal delay_measure_0_start : STD_LOGIC;
   signal pilot_tx_rx_0_match : STD_LOGIC;
   signal pilot_tx_rx_0_tx_bit : STD_LOGIC;
   signal pilot_tx_rx_0_tx_start : STD_LOGIC;
@@ -328,7 +332,6 @@ architecture STRUCTURE of design_2 is
   signal NLW_ZmodScopeController_0_sInitDoneRelay_UNCONNECTED : STD_LOGIC;
   signal NLW_ZmodScopeController_0_sRstBusy_UNCONNECTED : STD_LOGIC;
   signal NLW_adc_bit_decoder_0_dac_data_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal NLW_delay_measure_0_delay_cycles_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal NLW_prbs_axis_master_32_0_m_axis_tvalid_UNCONNECTED : STD_LOGIC;
   signal NLW_prbs_axis_master_32_0_prbs_bit_UNCONNECTED : STD_LOGIC;
   signal NLW_prbs_axis_master_32_0_m_axis_tdata_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -487,9 +490,10 @@ clk_wiz_0: component design_2_clk_wiz_0_0
 delay_measure_0: component design_2_delay_measure_0_0
      port map (
       clk => processing_system7_0_FCLK_CLK0,
-      delay_cycles(31 downto 0) => NLW_delay_measure_0_delay_cycles_UNCONNECTED(31 downto 0),
+      delay_cycles(31 downto 0) => delay_measure_0_delay_cycles(31 downto 0),
       match => pilot_tx_rx_0_match,
       rst => proc_sys_reset_0_peripheral_aresetn(0),
+      start => delay_measure_0_start,
       tx_start => pilot_tx_rx_0_tx_start
     );
 ila_0: component design_2_ila_0_0
@@ -502,7 +506,8 @@ ila_0: component design_2_ila_0_0
       probe4(0) => adc_bit_decoder_0_bit_out,
       probe5(0) => pilot_tx_rx_0_tx_start,
       probe6(0) => pilot_tx_rx_0_match,
-      probe7(31 downto 0) => ZmodScopeController_0_cDataAxisTdata(31 downto 0)
+      probe7(31 downto 0) => delay_measure_0_delay_cycles(31 downto 0),
+      probe8(0) => delay_measure_0_start
     );
 pilot_tx_rx_0: component design_2_pilot_tx_rx_0_0
      port map (

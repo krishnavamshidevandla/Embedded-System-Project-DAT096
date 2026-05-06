@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue May  5 12:59:09 2026" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed May  6 16:16:01 2026" VIVADOVERSION="2024.2">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="design_2" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
@@ -1369,6 +1369,11 @@
             <CONNECTION INSTANCE="proc_sys_reset_0" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="O" NAME="start" SIGIS="undef" SIGNAME="delay_measure_0_start">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ila_0" PORT="probe8"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" NAME="tx_start" SIGIS="undef" SIGNAME="pilot_tx_rx_0_tx_start">
           <CONNECTIONS>
             <CONNECTION INSTANCE="pilot_tx_rx_0" PORT="tx_start"/>
@@ -1409,7 +1414,7 @@
         <PARAMETER NAME="C_MU_TYPE" VALUE="0"/>
         <PARAMETER NAME="C_NEXT_SLAVE" VALUE="0"/>
         <PARAMETER NAME="C_NUM_MONITOR_SLOTS" VALUE="1"/>
-        <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="8"/>
+        <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="9"/>
         <PARAMETER NAME="C_PIPE_IFACE" VALUE="1"/>
         <PARAMETER NAME="C_PROBE0_MU_CNT" VALUE="1"/>
         <PARAMETER NAME="C_PROBE0_TYPE" VALUE="1"/>
@@ -4148,7 +4153,7 @@
         <PARAMETER NAME="C_PROBE89_TYPE" VALUE="0"/>
         <PARAMETER NAME="C_PROBE89_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE8_MU_CNT" VALUE="1"/>
-        <PARAMETER NAME="C_PROBE8_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_PROBE8_TYPE" VALUE="1"/>
         <PARAMETER NAME="C_PROBE8_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE900_MU_CNT" VALUE="1"/>
         <PARAMETER NAME="C_PROBE900_TYPE" VALUE="0"/>
@@ -4481,7 +4486,7 @@
         <PARAMETER NAME="C_PROBE99_TYPE" VALUE="0"/>
         <PARAMETER NAME="C_PROBE99_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE9_MU_CNT" VALUE="1"/>
-        <PARAMETER NAME="C_PROBE9_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_PROBE9_TYPE" VALUE="1"/>
         <PARAMETER NAME="C_PROBE9_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_RAM_STYLE" VALUE="SUBCORE"/>
         <PARAMETER NAME="C_SLOT_0_AXIS_TDEST_WIDTH" VALUE="32"/>
@@ -4562,6 +4567,11 @@
             <CONNECTION INSTANCE="delay_measure_0" PORT="delay_cycles"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" LEFT="0" NAME="probe8" RIGHT="0" SIGIS="undef" SIGNAME="delay_measure_0_start">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="delay_measure_0" PORT="start"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
@@ -4579,8 +4589,8 @@
         </PORT>
         <PORT DIR="O" NAME="match" SIGIS="undef" SIGNAME="pilot_tx_rx_0_match">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="delay_measure_0" PORT="match"/>
             <CONNECTION INSTANCE="ila_0" PORT="probe6"/>
+            <CONNECTION INSTANCE="delay_measure_0" PORT="match"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_aresetn">
@@ -4601,8 +4611,8 @@
         </PORT>
         <PORT DIR="O" NAME="tx_start" SIGIS="undef" SIGNAME="pilot_tx_rx_0_tx_start">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="delay_measure_0" PORT="tx_start"/>
             <CONNECTION INSTANCE="ila_0" PORT="probe5"/>
+            <CONNECTION INSTANCE="delay_measure_0" PORT="tx_start"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -4695,8 +4705,8 @@
         <PORT DIR="O" LEFT="0" NAME="peripheral_aresetn" POLARITY="ACTIVE_LOW" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_aresetn">
           <CONNECTIONS>
             <CONNECTION INSTANCE="prbs_axis_master_32_0" PORT="rst"/>
-            <CONNECTION INSTANCE="delay_measure_0" PORT="rst"/>
             <CONNECTION INSTANCE="bit_to_dac14_axi_0" PORT="rst"/>
+            <CONNECTION INSTANCE="delay_measure_0" PORT="rst"/>
             <CONNECTION INSTANCE="pilot_tx_rx_0" PORT="rst"/>
           </CONNECTIONS>
         </PORT>
@@ -5747,10 +5757,10 @@
             <CONNECTION INSTANCE="ZmodAWGController_0" PORT="DAC_InIO_Clk"/>
             <CONNECTION INSTANCE="prbs_axis_master_32_0" PORT="clk"/>
             <CONNECTION INSTANCE="proc_sys_reset_0" PORT="slowest_sync_clk"/>
-            <CONNECTION INSTANCE="delay_measure_0" PORT="clk"/>
             <CONNECTION INSTANCE="bit_to_dac14_axi_0" PORT="clk"/>
-            <CONNECTION INSTANCE="pilot_tx_rx_0" PORT="clk"/>
             <CONNECTION INSTANCE="adc_bit_decoder_0" PORT="clk"/>
+            <CONNECTION INSTANCE="delay_measure_0" PORT="clk"/>
+            <CONNECTION INSTANCE="pilot_tx_rx_0" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">

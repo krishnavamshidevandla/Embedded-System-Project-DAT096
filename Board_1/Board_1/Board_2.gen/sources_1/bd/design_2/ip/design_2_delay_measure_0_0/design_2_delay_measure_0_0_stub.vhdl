@@ -2,10 +2,10 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Wed Apr 29 16:22:37 2026
--- Host        : FY-6302-11 running 64-bit major release  (build 9200)
+-- Date        : Wed May  6 16:07:42 2026
+-- Host        : FY-6302-12 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/qianzha/Desktop/DAT096-krishna/Embedded-System-Project-DAT096-krishna/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_delay_measure_0_0/design_2_delay_measure_0_0_stub.vhdl
+--               c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_delay_measure_0_0/design_2_delay_measure_0_0_stub.vhdl
 -- Design      : design_2_delay_measure_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg484-1
@@ -19,6 +19,7 @@ entity design_2_delay_measure_0_0 is
     rst : in STD_LOGIC;
     tx_start : in STD_LOGIC;
     match : in STD_LOGIC;
+    start : out STD_LOGIC;
     delay_cycles : out STD_LOGIC_VECTOR ( 31 downto 0 )
   );
 
@@ -36,7 +37,7 @@ architecture stub of design_2_delay_measure_0_0 is
   attribute syn_black_box : boolean;
   attribute black_box_pad_pin : string;
   attribute syn_black_box of stub : architecture is true;
-  attribute black_box_pad_pin of stub : architecture is "clk,rst,tx_start,match,delay_cycles[31:0]";
+  attribute black_box_pad_pin of stub : architecture is "clk,rst,tx_start,match,start,delay_cycles[31:0]";
   attribute x_interface_info : string;
   attribute x_interface_info of clk : signal is "xilinx.com:signal:clock:1.0 clk CLK";
   attribute x_interface_mode : string;

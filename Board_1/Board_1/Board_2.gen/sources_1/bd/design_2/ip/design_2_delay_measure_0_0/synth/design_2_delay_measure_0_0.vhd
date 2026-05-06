@@ -59,6 +59,7 @@ ENTITY design_2_delay_measure_0_0 IS
     rst : IN STD_LOGIC;
     tx_start : IN STD_LOGIC;
     match : IN STD_LOGIC;
+    start : OUT STD_LOGIC;
     delay_cycles : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
   );
 END design_2_delay_measure_0_0;
@@ -72,6 +73,7 @@ ARCHITECTURE design_2_delay_measure_0_0_arch OF design_2_delay_measure_0_0 IS
       rst : IN STD_LOGIC;
       tx_start : IN STD_LOGIC;
       match : IN STD_LOGIC;
+      start : OUT STD_LOGIC;
       delay_cycles : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
     );
   END COMPONENT delay_measure;
@@ -99,6 +101,7 @@ BEGIN
       rst => rst,
       tx_start => tx_start,
       match => match,
+      start => start,
       delay_cycles => delay_cycles
     );
 END design_2_delay_measure_0_0_arch;

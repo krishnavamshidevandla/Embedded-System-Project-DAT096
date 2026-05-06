@@ -38,7 +38,7 @@ architecture rtl of pilot_tx_rx is
   -- RX SIGNALS
   -- ===============================
   signal sample_en   : std_logic := '0';
-  signal sampled_bit : std_logic := '0';
+  --signal sampled_bit : std_logic := '0';
   signal shift_reg   : std_logic_vector(15 downto 0) := (others => '0');
 
 begin
@@ -76,21 +76,21 @@ begin
   tx_bit <= tx_reg;
 
   -- Start of pilot sequence (used by delay module)
-  tx_start <= '1' when (bit_index = 0 and os_counter = 0) else '0';
+  tx_start <= '1' when (bit_index = 15 and os_counter = 19) else '0';
 
   --------------------------------------------------
   -- RX: Sampling at mid-bit (cycle 5 of 10)
   --------------------------------------------------
   sample_en <= '1' when os_counter = 10 else '0';
 
-  process(clk)
-  begin
-    if rising_edge(clk) then
-      if sample_en = '1' then
-        sampled_bit <= rx_bit;
-      end if;
-    end if;
-  end process;
+  --process(clk)
+  --begin
+  --  if rising_edge(clk) then
+  --   if sample_en = '1' then
+  --      sampled_bit <= rx_bit;
+  --    end if;
+  --  end if;
+  --end process;
 
   --------------------------------------------------
   -- RX: Shift register for pattern detection
@@ -99,7 +99,7 @@ begin
   begin
     if rising_edge(clk) then
       if sample_en = '1' then
-        shift_reg <= shift_reg(14 downto 0) & sampled_bit;
+        shift_reg <= shift_reg(14 downto 0) & rx_bit;
       end if;
     end if;
   end process;

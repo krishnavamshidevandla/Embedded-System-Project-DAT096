@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Tue May  5 12:18:02 2026
+// Date        : Wed May  6 16:14:22 2026
 // Host        : FY-6302-12 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_pilot_tx_rx_0_0/design_2_pilot_tx_rx_0_0_sim_netlist.v
@@ -77,17 +77,16 @@ module design_2_pilot_tx_rx_0_0_pilot_tx_rx
   wire \os_counter[4]_i_1_n_0 ;
   wire \os_counter[4]_i_2_n_0 ;
   wire [4:0]os_counter_reg;
-  wire [15:0]p_0_in;
+  wire [15:1]p_0_in;
   wire p_1_in;
   wire rst;
   wire rx_bit;
   wire sample_en;
   wire \shift_reg_reg_n_0_[15] ;
   wire tx_bit;
-  wire tx_reg;
   wire tx_reg_i_1_n_0;
+  wire tx_reg_i_2_n_0;
   wire tx_start;
-  wire tx_start_INST_0_i_1_n_0;
 
   (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT1 #(
@@ -123,7 +122,7 @@ module design_2_pilot_tx_rx_0_0_pilot_tx_rx
     .INIT(1'b1)) 
     \bit_index_reg[0] 
        (.C(clk),
-        .CE(tx_reg),
+        .CE(tx_reg_i_2_n_0),
         .D(\bit_index[0]_i_1_n_0 ),
         .Q(bit_index[0]),
         .R(tx_reg_i_1_n_0));
@@ -131,7 +130,7 @@ module design_2_pilot_tx_rx_0_0_pilot_tx_rx
     .INIT(1'b1)) 
     \bit_index_reg[1] 
        (.C(clk),
-        .CE(tx_reg),
+        .CE(tx_reg_i_2_n_0),
         .D(\bit_index[1]_i_1_n_0 ),
         .Q(bit_index[1]),
         .R(tx_reg_i_1_n_0));
@@ -139,7 +138,7 @@ module design_2_pilot_tx_rx_0_0_pilot_tx_rx
     .INIT(1'b1)) 
     \bit_index_reg[2] 
        (.C(clk),
-        .CE(tx_reg),
+        .CE(tx_reg_i_2_n_0),
         .D(\bit_index[2]_i_1_n_0 ),
         .Q(bit_index[2]),
         .R(tx_reg_i_1_n_0));
@@ -147,7 +146,7 @@ module design_2_pilot_tx_rx_0_0_pilot_tx_rx
     .INIT(1'b1)) 
     \bit_index_reg[3] 
        (.C(clk),
-        .CE(tx_reg),
+        .CE(tx_reg_i_2_n_0),
         .D(\bit_index[3]_i_1_n_0 ),
         .Q(bit_index[3]),
         .R(tx_reg_i_1_n_0));
@@ -272,7 +271,7 @@ module design_2_pilot_tx_rx_0_0_pilot_tx_rx
         .R(\os_counter[4]_i_1_n_0 ));
   LUT5 #(
     .INIT(32'h00000020)) 
-    sampled_bit_i_1
+    \shift_reg[15]_i_1 
        (.I0(os_counter_reg[1]),
         .I1(os_counter_reg[2]),
         .I2(os_counter_reg[3]),
@@ -281,18 +280,10 @@ module design_2_pilot_tx_rx_0_0_pilot_tx_rx
         .O(sample_en));
   FDRE #(
     .INIT(1'b0)) 
-    sampled_bit_reg
-       (.C(clk),
-        .CE(sample_en),
-        .D(rx_bit),
-        .Q(p_0_in[0]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
     \shift_reg_reg[0] 
        (.C(clk),
         .CE(sample_en),
-        .D(p_0_in[0]),
+        .D(rx_bit),
         .Q(p_0_in[1]),
         .R(1'b0));
   FDRE #(
@@ -428,7 +419,7 @@ module design_2_pilot_tx_rx_0_0_pilot_tx_rx
         .I2(os_counter_reg[0]),
         .I3(os_counter_reg[2]),
         .I4(os_counter_reg[4]),
-        .O(tx_reg));
+        .O(tx_reg_i_2_n_0));
   (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT4 #(
     .INIT(16'hCB5C)) 
@@ -442,29 +433,20 @@ module design_2_pilot_tx_rx_0_0_pilot_tx_rx
     .INIT(1'b0)) 
     tx_reg_reg
        (.C(clk),
-        .CE(tx_reg),
+        .CE(tx_reg_i_2_n_0),
         .D(p_1_in),
         .Q(tx_bit),
         .R(tx_reg_i_1_n_0));
-  LUT6 #(
-    .INIT(64'h0000000000000002)) 
-    tx_start_INST_0
-       (.I0(tx_start_INST_0_i_1_n_0),
-        .I1(os_counter_reg[2]),
-        .I2(os_counter_reg[4]),
-        .I3(os_counter_reg[0]),
-        .I4(os_counter_reg[1]),
-        .I5(os_counter_reg[3]),
-        .O(tx_start));
   (* SOFT_HLUTNM = "soft_lutpair1" *) 
-  LUT4 #(
-    .INIT(16'h0001)) 
-    tx_start_INST_0_i_1
-       (.I0(bit_index[3]),
-        .I1(bit_index[2]),
-        .I2(bit_index[0]),
-        .I3(bit_index[1]),
-        .O(tx_start_INST_0_i_1_n_0));
+  LUT5 #(
+    .INIT(32'h80000000)) 
+    tx_start_INST_0
+       (.I0(bit_index[1]),
+        .I1(bit_index[0]),
+        .I2(bit_index[2]),
+        .I3(bit_index[3]),
+        .I4(tx_reg_i_2_n_0),
+        .O(tx_start));
 endmodule
 `ifndef GLBL
 `define GLBL
