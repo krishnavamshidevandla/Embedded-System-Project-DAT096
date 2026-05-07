@@ -2,10 +2,10 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Thu Apr 23 14:57:21 2026
-// Host        : FY-6302-01 running 64-bit major release  (build 9200)
+// Date        : Thu May  7 14:42:06 2026
+// Host        : FY-6302-12 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/Users/devandla/Desktop/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_prbs_axis_master_32_0_0/design_2_prbs_axis_master_32_0_0_sim_netlist.v
+//               c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_prbs_axis_master_32_0_0/design_2_prbs_axis_master_32_0_0_sim_netlist.v
 // Design      : design_2_prbs_axis_master_32_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -23,9 +23,9 @@ module design_2_prbs_axis_master_32_0_0
     m_axis_tvalid,
     m_axis_tready,
     prbs_bit);
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_mode = "slave clk" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, ASSOCIATED_BUSIF m_axis, ASSOCIATED_RESET rst, FREQ_HZ 5e+07, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_2_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_mode = "slave clk" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, ASSOCIATED_BUSIF m_axis, ASSOCIATED_RESET rst, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_2_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 rst RST" *) (* x_interface_mode = "slave rst" *) (* x_interface_parameter = "XIL_INTERFACENAME rst, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input rst;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 m_axis TDATA" *) (* x_interface_mode = "master m_axis" *) (* x_interface_parameter = "XIL_INTERFACENAME m_axis, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 5e+07, PHASE 0.0, CLK_DOMAIN design_2_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]m_axis_tdata;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 m_axis TDATA" *) (* x_interface_mode = "master m_axis" *) (* x_interface_parameter = "XIL_INTERFACENAME m_axis, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 50000000, PHASE 0.0, CLK_DOMAIN design_2_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]m_axis_tdata;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 m_axis TVALID" *) output m_axis_tvalid;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 m_axis TREADY" *) input m_axis_tready;
   output prbs_bit;
@@ -87,25 +87,25 @@ endmodule
 module design_2_prbs_axis_master_32_0_0_Signal_generator
    (prbs_bit,
     m_axis_tdata,
-    clk,
+    m_axis_tready,
     rst,
-    m_axis_tready);
+    clk);
   output prbs_bit;
   output [3:0]m_axis_tdata;
-  input clk;
-  input rst;
   input m_axis_tready;
+  input rst;
+  input clk;
 
   wire clk;
   wire cnt;
   wire \cnt[0]_i_1_n_0 ;
-  wire \cnt[1]_i_1_n_0 ;
   wire \cnt[2]_i_1_n_0 ;
-  wire \cnt[3]_i_2_n_0 ;
+  wire \cnt[4]_i_1_n_0 ;
   wire \cnt_reg_n_0_[0] ;
   wire \cnt_reg_n_0_[1] ;
   wire \cnt_reg_n_0_[2] ;
   wire \cnt_reg_n_0_[3] ;
+  wire \cnt_reg_n_0_[4] ;
   wire \code_u[13]_i_1_n_0 ;
   wire \code_u[13]_i_3_n_0 ;
   wire [10:2]lfsr;
@@ -115,57 +115,74 @@ module design_2_prbs_axis_master_32_0_0_Signal_generator
   wire [3:0]m_axis_tdata;
   wire m_axis_tready;
   wire [13:13]next_lfsr;
+  wire \next_lfsr[13]_i_1_n_0 ;
   wire [0:0]next_lfsr_2;
   wire p_0_in;
   wire [13:1]p_0_in_0;
   wire [0:0]p_0_in__0;
   wire [13:11]p_1_in;
+  wire [4:1]plusOp__7;
   wire prbs_bit;
   wire rst;
-  wire sel;
 
-  LUT1 #(
-    .INIT(2'h1)) 
-    \cnt[0]_i_1 
-       (.I0(\cnt_reg_n_0_[0] ),
-        .O(\cnt[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
-  LUT4 #(
-    .INIT(16'h0BF0)) 
-    \cnt[1]_i_1 
-       (.I0(\cnt_reg_n_0_[2] ),
-        .I1(\cnt_reg_n_0_[3] ),
-        .I2(\cnt_reg_n_0_[1] ),
-        .I3(\cnt_reg_n_0_[0] ),
-        .O(\cnt[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT3 #(
-    .INIT(8'h6A)) 
-    \cnt[2]_i_1 
-       (.I0(\cnt_reg_n_0_[2] ),
-        .I1(\cnt_reg_n_0_[0] ),
-        .I2(\cnt_reg_n_0_[1] ),
-        .O(\cnt[2]_i_1_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \cnt[3]_i_1 
+    .INIT(8'h78)) 
+    \cnt[0]_i_1 
        (.I0(m_axis_tready),
         .I1(rst),
-        .O(cnt));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+        .I2(\cnt_reg_n_0_[0] ),
+        .O(\cnt[0]_i_1_n_0 ));
+  LUT2 #(
+    .INIT(4'h6)) 
+    \cnt[1]_i_1 
+       (.I0(\cnt_reg_n_0_[0] ),
+        .I1(\cnt_reg_n_0_[1] ),
+        .O(plusOp__7[1]));
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  LUT3 #(
+    .INIT(8'h78)) 
+    \cnt[2]_i_1 
+       (.I0(\cnt_reg_n_0_[1] ),
+        .I1(\cnt_reg_n_0_[0] ),
+        .I2(\cnt_reg_n_0_[2] ),
+        .O(\cnt[2]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT4 #(
-    .INIT(16'h68AA)) 
-    \cnt[3]_i_2 
-       (.I0(\cnt_reg_n_0_[3] ),
-        .I1(\cnt_reg_n_0_[2] ),
-        .I2(\cnt_reg_n_0_[1] ),
-        .I3(\cnt_reg_n_0_[0] ),
-        .O(\cnt[3]_i_2_n_0 ));
+    .INIT(16'h7F80)) 
+    \cnt[3]_i_1 
+       (.I0(\cnt_reg_n_0_[0] ),
+        .I1(\cnt_reg_n_0_[1] ),
+        .I2(\cnt_reg_n_0_[2] ),
+        .I3(\cnt_reg_n_0_[3] ),
+        .O(plusOp__7[3]));
+  LUT3 #(
+    .INIT(8'h08)) 
+    \cnt[4]_i_1 
+       (.I0(m_axis_tready),
+        .I1(rst),
+        .I2(\code_u[13]_i_3_n_0 ),
+        .O(\cnt[4]_i_1_n_0 ));
+  LUT2 #(
+    .INIT(4'h8)) 
+    \cnt[4]_i_2 
+       (.I0(rst),
+        .I1(m_axis_tready),
+        .O(cnt));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT5 #(
+    .INIT(32'h7FFF8000)) 
+    \cnt[4]_i_3 
+       (.I0(\cnt_reg_n_0_[0] ),
+        .I1(\cnt_reg_n_0_[1] ),
+        .I2(\cnt_reg_n_0_[2] ),
+        .I3(\cnt_reg_n_0_[3] ),
+        .I4(\cnt_reg_n_0_[4] ),
+        .O(plusOp__7[4]));
   FDRE #(
     .INIT(1'b0)) 
     \cnt_reg[0] 
        (.C(clk),
-        .CE(cnt),
+        .CE(1'b1),
         .D(\cnt[0]_i_1_n_0 ),
         .Q(\cnt_reg_n_0_[0] ),
         .R(1'b0));
@@ -174,9 +191,9 @@ module design_2_prbs_axis_master_32_0_0_Signal_generator
     \cnt_reg[1] 
        (.C(clk),
         .CE(cnt),
-        .D(\cnt[1]_i_1_n_0 ),
+        .D(plusOp__7[1]),
         .Q(\cnt_reg_n_0_[1] ),
-        .R(1'b0));
+        .R(\cnt[4]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \cnt_reg[2] 
@@ -184,16 +201,24 @@ module design_2_prbs_axis_master_32_0_0_Signal_generator
         .CE(cnt),
         .D(\cnt[2]_i_1_n_0 ),
         .Q(\cnt_reg_n_0_[2] ),
-        .R(1'b0));
+        .R(\cnt[4]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \cnt_reg[3] 
        (.C(clk),
         .CE(cnt),
-        .D(\cnt[3]_i_2_n_0 ),
+        .D(plusOp__7[3]),
         .Q(\cnt_reg_n_0_[3] ),
-        .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+        .R(\cnt[4]_i_1_n_0 ));
+  FDRE #(
+    .INIT(1'b0)) 
+    \cnt_reg[4] 
+       (.C(clk),
+        .CE(cnt),
+        .D(plusOp__7[4]),
+        .Q(\cnt_reg_n_0_[4] ),
+        .R(\cnt[4]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT4 #(
     .INIT(16'hE020)) 
     \code_u[11]_i_1 
@@ -202,7 +227,7 @@ module design_2_prbs_axis_master_32_0_0_Signal_generator
         .I2(rst),
         .I3(next_lfsr),
         .O(p_1_in[11]));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT4 #(
     .INIT(16'h10D0)) 
     \code_u[12]_i_1 
@@ -225,14 +250,15 @@ module design_2_prbs_axis_master_32_0_0_Signal_generator
         .I2(\code_u[13]_i_3_n_0 ),
         .I3(p_0_in_0[13]),
         .O(p_1_in[13]));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
-  LUT4 #(
-    .INIT(16'hFFDF)) 
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT5 #(
+    .INIT(32'hFFFFBFFF)) 
     \code_u[13]_i_3 
-       (.I0(\cnt_reg_n_0_[0] ),
-        .I1(\cnt_reg_n_0_[1] ),
-        .I2(\cnt_reg_n_0_[3] ),
-        .I3(\cnt_reg_n_0_[2] ),
+       (.I0(\cnt_reg_n_0_[2] ),
+        .I1(\cnt_reg_n_0_[0] ),
+        .I2(\cnt_reg_n_0_[1] ),
+        .I3(\cnt_reg_n_0_[4] ),
+        .I4(\cnt_reg_n_0_[3] ),
         .O(\code_u[13]_i_3_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
@@ -307,14 +333,15 @@ module design_2_prbs_axis_master_32_0_0_Signal_generator
     \lfsr[13]_i_1 
        (.I0(rst),
         .O(p_0_in));
-  LUT5 #(
-    .INIT(32'h00200000)) 
+  LUT6 #(
+    .INIT(64'h0000000020000000)) 
     \lfsr[13]_i_2 
        (.I0(m_axis_tready),
-        .I1(\cnt_reg_n_0_[2] ),
-        .I2(\cnt_reg_n_0_[3] ),
+        .I1(\cnt_reg_n_0_[3] ),
+        .I2(\cnt_reg_n_0_[4] ),
         .I3(\cnt_reg_n_0_[1] ),
         .I4(\cnt_reg_n_0_[0] ),
+        .I5(\cnt_reg_n_0_[2] ),
         .O(lfsr_1));
   FDSE #(
     .INIT(1'b0)) 
@@ -428,20 +455,19 @@ module design_2_prbs_axis_master_32_0_0_Signal_generator
         .D(lfsr[8]),
         .Q(lfsr[9]),
         .R(p_0_in));
-  LUT6 #(
-    .INIT(64'hAAAAAEAAAAAAA2AA)) 
+  LUT5 #(
+    .INIT(32'hEFFF4000)) 
     \next_lfsr[13]_i_1 
-       (.I0(next_lfsr),
-        .I1(\cnt_reg_n_0_[0] ),
-        .I2(\cnt_reg_n_0_[1] ),
-        .I3(\cnt_reg_n_0_[3] ),
-        .I4(\cnt_reg_n_0_[2] ),
-        .I5(p_0_in_0[13]),
-        .O(sel));
+       (.I0(\code_u[13]_i_3_n_0 ),
+        .I1(p_0_in_0[13]),
+        .I2(rst),
+        .I3(m_axis_tready),
+        .I4(next_lfsr),
+        .O(\next_lfsr[13]_i_1_n_0 ));
   FDRE \next_lfsr_reg[13] 
        (.C(clk),
-        .CE(cnt),
-        .D(sel),
+        .CE(1'b1),
+        .D(\next_lfsr[13]_i_1_n_0 ),
         .Q(next_lfsr),
         .R(1'b0));
 endmodule
@@ -450,14 +476,14 @@ endmodule
 module design_2_prbs_axis_master_32_0_0_prbs_axis_master_32
    (prbs_bit,
     m_axis_tdata,
-    clk,
+    m_axis_tready,
     rst,
-    m_axis_tready);
+    clk);
   output prbs_bit;
   output [3:0]m_axis_tdata;
-  input clk;
-  input rst;
   input m_axis_tready;
+  input rst;
+  input clk;
 
   wire clk;
   wire [3:0]m_axis_tdata;

@@ -3,13 +3,13 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Thu Apr  9 18:52:17 2026
-# Process ID         : 24176
-# Current directory  : C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/design_2_ZmodAWGController_0_0_synth_1
+# Start of session at: Thu May  7 13:57:57 2026
+# Process ID         : 17900
+# Current directory  : C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.runs/design_2_ZmodAWGController_0_0_synth_1
 # Command line       : vivado.exe -log design_2_ZmodAWGController_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_2_ZmodAWGController_0_0.tcl
-# Log file           : C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/design_2_ZmodAWGController_0_0_synth_1/design_2_ZmodAWGController_0_0.vds
-# Journal file       : C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/design_2_ZmodAWGController_0_0_synth_1\vivado.jou
-# Running On         : FY-6302-05
+# Log file           : C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.runs/design_2_ZmodAWGController_0_0_synth_1/design_2_ZmodAWGController_0_0.vds
+# Journal file       : C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.runs/design_2_ZmodAWGController_0_0_synth_1\vivado.jou
+# Running On         : FY-6302-12
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26200
 # Processor Detail   : Intel(R) Core(TM) i7-14700
@@ -19,23 +19,15 @@
 # Host memory        : 34031 MB
 # Swap memory        : 5100 MB
 # Total Virtual      : 39131 MB
-# Available Virtual  : 23480 MB
+# Available Virtual  : 26952 MB
 #-----------------------------------------------------------
 source design_2_ZmodAWGController_0_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'z:/DAT096/vivado-library-zmod-v2-2019.1-2/vivado-library-zmod-v2-2019.1-2'; Can't find the specified path.
-If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'z:/embedded project/Eclypse-Z7-HW/Eclypse-Z7-HW.ipdefs/repo'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'z:/eda234/vivado-library-master'.
-WARNING: [IP_Flow 19-3685] Ignored loading user repository 'z:/eda234/vivado-library-master/ip'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'z:/DAT096/vivado-library-master/vivado-library-master'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Progs/Xilinx/Vivado/2024.2/data/ip'.
-WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilent.com:user:ZmodAWGController:1.1'. The one found in IP location 'z:/embedded project/Eclypse-Z7-HW/Eclypse-Z7-HW.ipdefs/repo/vivado-library/ip/Zmods/ZmodAWGController' will take precedence over the same IP in location z:/eda234/vivado-library-master/ip/Zmods/ZmodAWGController
-WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilent.com:user:ZmodScopeController:1.2'. The one found in IP location 'z:/embedded project/Eclypse-Z7-HW/Eclypse-Z7-HW.ipdefs/repo/vivado-library/ip/Zmods/ZmodScopeController' will take precedence over the same IP in location z:/eda234/vivado-library-master/ip/Zmods/ZmodScopeController
-WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'digilent.com:user:ZmodAWG_Calibration:1.0'. The one found in location 'z:/embedded project/Eclypse-Z7-HW/Eclypse-Z7-HW.ipdefs/repo/vivado-library/if/ZmodAWG_Calibration_v1_0/ZmodAWG_Calibration.xml' will take precedence over the same Interface in location 'z:/eda234/vivado-library-master/if/ZmodAWG_Calibration_v1_0/ZmodAWG_Calibration.xml'
-WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'natinst.com:user:ZmodScope_Calibration:1.0'. The one found in location 'z:/embedded project/Eclypse-Z7-HW/Eclypse-Z7-HW.ipdefs/repo/vivado-library/if/ZmodScope_Calibration_v1_0/ZmodScope_Calibration.xml' will take precedence over the same Interface in location 'z:/eda234/vivado-library-master/if/ZmodScope_Calibration_v1_0/ZmodScope_Calibration.xml'
-update_ip_catalog: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 368.363 ; gain = 0.988
+update_ip_catalog: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 367.672 ; gain = 0.980
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
-Current IP cache path is c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.cache/ip 
+Current IP cache path is c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.cache/ip 
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_2_ZmodAWGController_0_0
 Command: synth_design -top design_2_ZmodAWGController_0_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
 Starting synth_design
@@ -44,11 +36,11 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 19196
+INFO: [Synth 8-7075] Helper process launched with PID 20028
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1094.762 ; gain = 466.945
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1092.887 ; gain = 466.629
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_2_ZmodAWGController_0_0' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/synth/design_2_ZmodAWGController_0_0.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'design_2_ZmodAWGController_0_0' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/synth/design_2_ZmodAWGController_0_0.vhd:82]
 	Parameter kDAC_Width bound to: 14 - type: integer 
 	Parameter kExtCalibEn bound to: 0 - type: bool 
 	Parameter kExtScaleConfigEn bound to: 0 - type: bool 
@@ -64,98 +56,98 @@ INFO: [Synth 8-638] synthesizing module 'design_2_ZmodAWGController_0_0' [c:/Use
 	Parameter kCh1ScaleStatic bound to: 1'b0 
 	Parameter kCh2ScaleStatic bound to: 1'b0 
 	Parameter kZmodID bound to: 7 - type: integer 
-INFO: [Synth 8-3491] module 'ZmodAWG_1411_Controller' declared at 'c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:56' bound to instance 'U0' of component 'ZmodAWG_1411_Controller' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/synth/design_2_ZmodAWGController_0_0.vhd:176]
-INFO: [Synth 8-638] synthesizing module 'ZmodAWG_1411_Controller' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:170]
-INFO: [Synth 8-638] synthesizing module 'ResetBridge' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ResetBridge.vhd:96]
-INFO: [Synth 8-638] synthesizing module 'SyncAsync' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/SyncAsync.vhd:92]
-INFO: [Synth 8-256] done synthesizing module 'SyncAsync' (0#1) [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/SyncAsync.vhd:92]
-INFO: [Synth 8-256] done synthesizing module 'ResetBridge' (0#1) [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ResetBridge.vhd:96]
-INFO: [Synth 8-638] synthesizing module 'SyncBase' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/SyncBase.vhd:96]
-INFO: [Synth 8-256] done synthesizing module 'SyncBase' (0#1) [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/SyncBase.vhd:96]
-INFO: [Synth 8-638] synthesizing module 'ConfigDAC' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ConfigDAC.vhd:90]
-INFO: [Synth 8-638] synthesizing module 'ADI_SPI' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ADI_SPI.vhd:95]
+INFO: [Synth 8-3491] module 'ZmodAWG_1411_Controller' declared at 'c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:56' bound to instance 'U0' of component 'ZmodAWG_1411_Controller' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/synth/design_2_ZmodAWGController_0_0.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'ZmodAWG_1411_Controller' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'ResetBridge' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ResetBridge.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/SyncAsync.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync' (0#1) [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/SyncAsync.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'ResetBridge' (0#1) [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ResetBridge.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'SyncBase' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/SyncBase.vhd:96]
+INFO: [Synth 8-256] done synthesizing module 'SyncBase' (0#1) [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/SyncBase.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'ConfigDAC' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ConfigDAC.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'ADI_SPI' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ADI_SPI.vhd:95]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IOSTANDARD bound to: LVCMOS18 - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'InstIOBUF' to cell 'IOBUF' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ADI_SPI.vhd:145]
-INFO: [Synth 8-256] done synthesizing module 'ADI_SPI' (0#1) [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ADI_SPI.vhd:95]
-INFO: [Synth 8-256] done synthesizing module 'ConfigDAC' (0#1) [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ConfigDAC.vhd:90]
+INFO: [Synth 8-113] binding component instance 'InstIOBUF' to cell 'IOBUF' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ADI_SPI.vhd:145]
+INFO: [Synth 8-256] done synthesizing module 'ADI_SPI' (0#1) [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ADI_SPI.vhd:95]
+INFO: [Synth 8-256] done synthesizing module 'ConfigDAC' (0#1) [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ConfigDAC.vhd:90]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstDAC_ClkIO_ODDR' to cell 'ODDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:309]
+INFO: [Synth 8-113] binding component instance 'InstDAC_ClkIO_ODDR' to cell 'ODDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:309]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 	Parameter SLEW bound to: FAST - type: string 
-INFO: [Synth 8-113] binding component instance 'InstObufDAC_ClkIO' to cell 'OBUF' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:329]
+INFO: [Synth 8-113] binding component instance 'InstObufDAC_ClkIO' to cell 'OBUF' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:329]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstDAC_ClkinODDR' to cell 'ODDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:339]
+INFO: [Synth 8-113] binding component instance 'InstDAC_ClkinODDR' to cell 'ODDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:339]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 	Parameter SLEW bound to: FAST - type: string 
-INFO: [Synth 8-113] binding component instance 'InstObufDAC_ClkIn' to cell 'OBUF' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:354]
-INFO: [Synth 8-638] synthesizing module 'GainOffsetCalib' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/GainOffsetCalib.vhd:98]
-INFO: [Synth 8-256] done synthesizing module 'GainOffsetCalib' (0#1) [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/GainOffsetCalib.vhd:98]
+INFO: [Synth 8-113] binding component instance 'InstObufDAC_ClkIn' to cell 'OBUF' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:354]
+INFO: [Synth 8-638] synthesizing module 'GainOffsetCalib' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/GainOffsetCalib.vhd:98]
+INFO: [Synth 8-256] done synthesizing module 'GainOffsetCalib' (0#1) [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/GainOffsetCalib.vhd:98]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
-INFO: [Synth 8-256] done synthesizing module 'ZmodAWG_1411_Controller' (0#1) [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:170]
-INFO: [Synth 8-256] done synthesizing module 'design_2_ZmodAWGController_0_0' (0#1) [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/synth/design_2_ZmodAWGController_0_0.vhd:82]
+INFO: [Synth 8-113] binding component instance 'InstDataODDR' to cell 'ODDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:471]
+INFO: [Synth 8-256] done synthesizing module 'ZmodAWG_1411_Controller' (0#1) [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd:170]
+INFO: [Synth 8-256] done synthesizing module 'design_2_ZmodAWGController_0_0' (0#1) [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/synth/design_2_ZmodAWGController_0_0.vhd:82]
 WARNING: [Synth 8-7129] Port cExtLgMultCoef[17] in module GainOffsetCalib is either unconnected or has no load
 WARNING: [Synth 8-7129] Port cExtLgMultCoef[16] in module GainOffsetCalib is either unconnected or has no load
 WARNING: [Synth 8-7129] Port cExtLgMultCoef[15] in module GainOffsetCalib is either unconnected or has no load
@@ -246,59 +238,59 @@ WARNING: [Synth 8-7129] Port cDataAxisTdata[0] in module ZmodAWG_1411_Controller
 WARNING: [Synth 8-7129] Port sExtCh1Scale in module ZmodAWG_1411_Controller is either unconnected or has no load
 WARNING: [Synth 8-7129] Port sExtCh2Scale in module ZmodAWG_1411_Controller is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1209.086 ; gain = 581.270
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1208.016 ; gain = 581.758
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1209.086 ; gain = 581.270
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1208.016 ; gain = 581.758
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1209.086 ; gain = 581.270
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1208.016 ; gain = 581.758
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1209.086 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1208.016 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/constr/ConstrZmodDAC1411_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/constr/ConstrZmodDAC1411_ooc.xdc] for cell 'U0'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/constr/ConstrZmodDAC1411_ooc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_2_ZmodAWGController_0_0_propImpl.xdc].
+Parsing XDC File [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/constr/ConstrZmodDAC1411_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/constr/ConstrZmodDAC1411_ooc.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/constr/ConstrZmodDAC1411_ooc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_2_ZmodAWGController_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_2_ZmodAWGController_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/design_2_ZmodAWGController_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/design_2_ZmodAWGController_0_0_synth_1/dont_touch.xdc]
-Parsing XDC File [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/ConstrsZmodDAC.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/ConstrsZmodDAC.xdc] for cell 'U0'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/ConstrsZmodDAC.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_2_ZmodAWGController_0_0_propImpl.xdc].
+Parsing XDC File [C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.runs/design_2_ZmodAWGController_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.runs/design_2_ZmodAWGController_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/ConstrsZmodDAC.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/ConstrsZmodDAC.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodAWGController_0_0/ConstrsZmodDAC.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_2_ZmodAWGController_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_2_ZmodAWGController_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1295.184 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1298.102 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1295.188 ; gain = 0.004
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1298.254 ; gain = 0.152
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1295.188 ; gain = 667.371
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1298.254 ; gain = 671.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1295.188 ; gain = 667.371
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1298.254 ; gain = 671.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/design_2_ZmodAWGController_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.runs/design_2_ZmodAWGController_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1295.188 ; gain = 667.371
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1298.254 ; gain = 671.996
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'sCurrentState_reg' in module 'ADI_SPI'
 INFO: [Synth 8-802] inferred FSM for state register 'sCurrentState_reg' in module 'ConfigDAC'
@@ -334,7 +326,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'sCurrentState_reg' using e
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'sCurrentState_reg' using encoding 'one-hot' in module 'ConfigDAC'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1295.188 ; gain = 667.371
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1298.254 ; gain = 671.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -407,7 +399,7 @@ WARNING: [Synth 8-7129] Port cExtCh1LgMultCoef[13] in module ZmodAWG_1411_Contro
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-3332] Sequential element (InstConfigDAC/FSM_onehot_sCurrentState_reg[10]) is unused and will be removed from module ZmodAWG_1411_Controller.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1295.188 ; gain = 667.371
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1298.254 ; gain = 671.996
 ---------------------------------------------------------------------------------
  Sort Area is  InstCh1DAC_Calibration/cCalibMult0_0 : 0 0 : 2478 2478 : Used 1 time 0
  Sort Area is  InstCh2DAC_Calibration/cCalibMult0_2 : 0 0 : 2478 2478 : Used 1 time 0
@@ -431,19 +423,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1445.199 ; gain = 817.383
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1448.375 ; gain = 822.117
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1465.945 ; gain = 838.129
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1469.340 ; gain = 843.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1465.945 ; gain = 838.129
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1469.340 ; gain = 843.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -461,37 +453,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1674.609 ; gain = 1046.793
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1677.969 ; gain = 1051.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1674.609 ; gain = 1046.793
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1677.969 ; gain = 1051.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1674.609 ; gain = 1046.793
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1677.969 ; gain = 1051.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1674.609 ; gain = 1046.793
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1677.969 ; gain = 1051.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1674.609 ; gain = 1046.793
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1677.969 ; gain = 1051.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1674.609 ; gain = 1046.793
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1677.969 ; gain = 1051.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -531,32 +523,32 @@ Report Cell Usage:
 |13    |OBUF    |     2|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1674.609 ; gain = 1046.793
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1677.969 ; gain = 1051.711
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 160 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1674.609 ; gain = 960.691
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1674.609 ; gain = 1046.793
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1677.969 ; gain = 961.473
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1677.969 ; gain = 1051.711
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1674.609 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1677.969 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1678.527 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1677.969 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
 
 Synth Design complete | Checksum: 68e0d370
 INFO: [Common 17-83] Releasing license: Synthesis
-65 Infos, 109 Warnings, 0 Critical Warnings and 0 Errors encountered.
+64 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1678.527 ; gain = 1281.164
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1678.527 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/design_2_ZmodAWGController_0_0_synth_1/design_2_ZmodAWGController_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_2_ZmodAWGController_0_0, cache-ID = c1aa163caa2845ad
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1677.969 ; gain = 1281.387
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1677.969 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.runs/design_2_ZmodAWGController_0_0_synth_1/design_2_ZmodAWGController_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_2_ZmodAWGController_0_0, cache-ID = 18943da76125135d
 INFO: [Coretcl 2-1174] Renamed 17 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1678.527 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/design_2_ZmodAWGController_0_0_synth_1/design_2_ZmodAWGController_0_0.dcp' has been generated.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1677.969 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.runs/design_2_ZmodAWGController_0_0_synth_1/design_2_ZmodAWGController_0_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_2_ZmodAWGController_0_0_utilization_synth.rpt -pb design_2_ZmodAWGController_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Apr  9 18:52:58 2026...
+INFO: [Common 17-206] Exiting Vivado at Thu May  7 13:58:40 2026...

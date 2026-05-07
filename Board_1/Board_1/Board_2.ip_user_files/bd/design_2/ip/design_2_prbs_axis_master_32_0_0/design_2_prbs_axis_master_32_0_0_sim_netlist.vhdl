@@ -2,10 +2,10 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Thu Apr 23 14:57:21 2026
--- Host        : FY-6302-01 running 64-bit major release  (build 9200)
+-- Date        : Thu May  7 14:42:06 2026
+-- Host        : FY-6302-12 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               c:/Users/devandla/Desktop/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_prbs_axis_master_32_0_0/design_2_prbs_axis_master_32_0_0_sim_netlist.vhdl
+--               c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_prbs_axis_master_32_0_0/design_2_prbs_axis_master_32_0_0_sim_netlist.vhdl
 -- Design      : design_2_prbs_axis_master_32_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -19,9 +19,9 @@ entity design_2_prbs_axis_master_32_0_0_Signal_generator is
   port (
     prbs_bit : out STD_LOGIC;
     m_axis_tdata : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    clk : in STD_LOGIC;
+    m_axis_tready : in STD_LOGIC;
     rst : in STD_LOGIC;
-    m_axis_tready : in STD_LOGIC
+    clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of design_2_prbs_axis_master_32_0_0_Signal_generator : entity is "Signal_generator";
@@ -30,13 +30,13 @@ end design_2_prbs_axis_master_32_0_0_Signal_generator;
 architecture STRUCTURE of design_2_prbs_axis_master_32_0_0_Signal_generator is
   signal cnt : STD_LOGIC;
   signal \cnt[0]_i_1_n_0\ : STD_LOGIC;
-  signal \cnt[1]_i_1_n_0\ : STD_LOGIC;
   signal \cnt[2]_i_1_n_0\ : STD_LOGIC;
-  signal \cnt[3]_i_2_n_0\ : STD_LOGIC;
+  signal \cnt[4]_i_1_n_0\ : STD_LOGIC;
   signal \cnt_reg_n_0_[0]\ : STD_LOGIC;
   signal \cnt_reg_n_0_[1]\ : STD_LOGIC;
   signal \cnt_reg_n_0_[2]\ : STD_LOGIC;
   signal \cnt_reg_n_0_[3]\ : STD_LOGIC;
+  signal \cnt_reg_n_0_[4]\ : STD_LOGIC;
   signal \code_u[13]_i_1_n_0\ : STD_LOGIC;
   signal \code_u[13]_i_3_n_0\ : STD_LOGIC;
   signal lfsr : STD_LOGIC_VECTOR ( 10 downto 2 );
@@ -44,70 +44,93 @@ architecture STRUCTURE of design_2_prbs_axis_master_32_0_0_Signal_generator is
   signal \lfsr[0]_i_3_n_0\ : STD_LOGIC;
   signal lfsr_1 : STD_LOGIC;
   signal next_lfsr : STD_LOGIC_VECTOR ( 13 to 13 );
+  signal \next_lfsr[13]_i_1_n_0\ : STD_LOGIC;
   signal next_lfsr_2 : STD_LOGIC_VECTOR ( 0 to 0 );
   signal p_0_in : STD_LOGIC;
   signal p_0_in_0 : STD_LOGIC_VECTOR ( 13 downto 1 );
   signal \p_0_in__0\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal p_1_in : STD_LOGIC_VECTOR ( 13 downto 11 );
+  signal \plusOp__7\ : STD_LOGIC_VECTOR ( 4 downto 1 );
   signal \^prbs_bit\ : STD_LOGIC;
-  signal sel : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \cnt[1]_i_1\ : label is "soft_lutpair1";
   attribute SOFT_HLUTNM of \cnt[2]_i_1\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \cnt[3]_i_2\ : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of \code_u[11]_i_1\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \code_u[12]_i_1\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \code_u[13]_i_3\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \cnt[3]_i_1\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \cnt[4]_i_3\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \code_u[11]_i_1\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of \code_u[12]_i_1\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of \code_u[13]_i_3\ : label is "soft_lutpair0";
 begin
   prbs_bit <= \^prbs_bit\;
-\cnt[0]_i_1\: unisim.vcomponents.LUT1
+\cnt[0]_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => \cnt_reg_n_0_[0]\,
-      O => \cnt[0]_i_1_n_0\
-    );
-\cnt[1]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"0BF0"
-    )
-        port map (
-      I0 => \cnt_reg_n_0_[2]\,
-      I1 => \cnt_reg_n_0_[3]\,
-      I2 => \cnt_reg_n_0_[1]\,
-      I3 => \cnt_reg_n_0_[0]\,
-      O => \cnt[1]_i_1_n_0\
-    );
-\cnt[2]_i_1\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"6A"
-    )
-        port map (
-      I0 => \cnt_reg_n_0_[2]\,
-      I1 => \cnt_reg_n_0_[0]\,
-      I2 => \cnt_reg_n_0_[1]\,
-      O => \cnt[2]_i_1_n_0\
-    );
-\cnt[3]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
+      INIT => X"78"
     )
         port map (
       I0 => m_axis_tready,
       I1 => rst,
-      O => cnt
+      I2 => \cnt_reg_n_0_[0]\,
+      O => \cnt[0]_i_1_n_0\
     );
-\cnt[3]_i_2\: unisim.vcomponents.LUT4
+\cnt[1]_i_1\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"68AA"
+      INIT => X"6"
     )
         port map (
-      I0 => \cnt_reg_n_0_[3]\,
-      I1 => \cnt_reg_n_0_[2]\,
-      I2 => \cnt_reg_n_0_[1]\,
-      I3 => \cnt_reg_n_0_[0]\,
-      O => \cnt[3]_i_2_n_0\
+      I0 => \cnt_reg_n_0_[0]\,
+      I1 => \cnt_reg_n_0_[1]\,
+      O => \plusOp__7\(1)
+    );
+\cnt[2]_i_1\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"78"
+    )
+        port map (
+      I0 => \cnt_reg_n_0_[1]\,
+      I1 => \cnt_reg_n_0_[0]\,
+      I2 => \cnt_reg_n_0_[2]\,
+      O => \cnt[2]_i_1_n_0\
+    );
+\cnt[3]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"7F80"
+    )
+        port map (
+      I0 => \cnt_reg_n_0_[0]\,
+      I1 => \cnt_reg_n_0_[1]\,
+      I2 => \cnt_reg_n_0_[2]\,
+      I3 => \cnt_reg_n_0_[3]\,
+      O => \plusOp__7\(3)
+    );
+\cnt[4]_i_1\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"08"
+    )
+        port map (
+      I0 => m_axis_tready,
+      I1 => rst,
+      I2 => \code_u[13]_i_3_n_0\,
+      O => \cnt[4]_i_1_n_0\
+    );
+\cnt[4]_i_2\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"8"
+    )
+        port map (
+      I0 => rst,
+      I1 => m_axis_tready,
+      O => cnt
+    );
+\cnt[4]_i_3\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"7FFF8000"
+    )
+        port map (
+      I0 => \cnt_reg_n_0_[0]\,
+      I1 => \cnt_reg_n_0_[1]\,
+      I2 => \cnt_reg_n_0_[2]\,
+      I3 => \cnt_reg_n_0_[3]\,
+      I4 => \cnt_reg_n_0_[4]\,
+      O => \plusOp__7\(4)
     );
 \cnt_reg[0]\: unisim.vcomponents.FDRE
     generic map(
@@ -115,7 +138,7 @@ begin
     )
         port map (
       C => clk,
-      CE => cnt,
+      CE => '1',
       D => \cnt[0]_i_1_n_0\,
       Q => \cnt_reg_n_0_[0]\,
       R => '0'
@@ -127,9 +150,9 @@ begin
         port map (
       C => clk,
       CE => cnt,
-      D => \cnt[1]_i_1_n_0\,
+      D => \plusOp__7\(1),
       Q => \cnt_reg_n_0_[1]\,
-      R => '0'
+      R => \cnt[4]_i_1_n_0\
     );
 \cnt_reg[2]\: unisim.vcomponents.FDRE
     generic map(
@@ -140,7 +163,7 @@ begin
       CE => cnt,
       D => \cnt[2]_i_1_n_0\,
       Q => \cnt_reg_n_0_[2]\,
-      R => '0'
+      R => \cnt[4]_i_1_n_0\
     );
 \cnt_reg[3]\: unisim.vcomponents.FDRE
     generic map(
@@ -149,9 +172,20 @@ begin
         port map (
       C => clk,
       CE => cnt,
-      D => \cnt[3]_i_2_n_0\,
+      D => \plusOp__7\(3),
       Q => \cnt_reg_n_0_[3]\,
-      R => '0'
+      R => \cnt[4]_i_1_n_0\
+    );
+\cnt_reg[4]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clk,
+      CE => cnt,
+      D => \plusOp__7\(4),
+      Q => \cnt_reg_n_0_[4]\,
+      R => \cnt[4]_i_1_n_0\
     );
 \code_u[11]_i_1\: unisim.vcomponents.LUT4
     generic map(
@@ -195,15 +229,16 @@ begin
       I3 => p_0_in_0(13),
       O => p_1_in(13)
     );
-\code_u[13]_i_3\: unisim.vcomponents.LUT4
+\code_u[13]_i_3\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FFDF"
+      INIT => X"FFFFBFFF"
     )
         port map (
-      I0 => \cnt_reg_n_0_[0]\,
-      I1 => \cnt_reg_n_0_[1]\,
-      I2 => \cnt_reg_n_0_[3]\,
-      I3 => \cnt_reg_n_0_[2]\,
+      I0 => \cnt_reg_n_0_[2]\,
+      I1 => \cnt_reg_n_0_[0]\,
+      I2 => \cnt_reg_n_0_[1]\,
+      I3 => \cnt_reg_n_0_[4]\,
+      I4 => \cnt_reg_n_0_[3]\,
       O => \code_u[13]_i_3_n_0\
     );
 \code_u_reg[11]\: unisim.vcomponents.FDRE
@@ -306,16 +341,17 @@ begin
       I0 => rst,
       O => p_0_in
     );
-\lfsr[13]_i_2\: unisim.vcomponents.LUT5
+\lfsr[13]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00200000"
+      INIT => X"0000000020000000"
     )
         port map (
       I0 => m_axis_tready,
-      I1 => \cnt_reg_n_0_[2]\,
-      I2 => \cnt_reg_n_0_[3]\,
+      I1 => \cnt_reg_n_0_[3]\,
+      I2 => \cnt_reg_n_0_[4]\,
       I3 => \cnt_reg_n_0_[1]\,
       I4 => \cnt_reg_n_0_[0]\,
+      I5 => \cnt_reg_n_0_[2]\,
       O => lfsr_1
     );
 \lfsr_reg[0]\: unisim.vcomponents.FDSE
@@ -472,24 +508,23 @@ begin
       Q => lfsr(9),
       R => p_0_in
     );
-\next_lfsr[13]_i_1\: unisim.vcomponents.LUT6
+\next_lfsr[13]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"AAAAAEAAAAAAA2AA"
+      INIT => X"EFFF4000"
     )
         port map (
-      I0 => next_lfsr(13),
-      I1 => \cnt_reg_n_0_[0]\,
-      I2 => \cnt_reg_n_0_[1]\,
-      I3 => \cnt_reg_n_0_[3]\,
-      I4 => \cnt_reg_n_0_[2]\,
-      I5 => p_0_in_0(13),
-      O => sel
+      I0 => \code_u[13]_i_3_n_0\,
+      I1 => p_0_in_0(13),
+      I2 => rst,
+      I3 => m_axis_tready,
+      I4 => next_lfsr(13),
+      O => \next_lfsr[13]_i_1_n_0\
     );
 \next_lfsr_reg[13]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => cnt,
-      D => sel,
+      CE => '1',
+      D => \next_lfsr[13]_i_1_n_0\,
       Q => next_lfsr(13),
       R => '0'
     );
@@ -502,9 +537,9 @@ entity design_2_prbs_axis_master_32_0_0_prbs_axis_master_32 is
   port (
     prbs_bit : out STD_LOGIC;
     m_axis_tdata : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    clk : in STD_LOGIC;
+    m_axis_tready : in STD_LOGIC;
     rst : in STD_LOGIC;
-    m_axis_tready : in STD_LOGIC
+    clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of design_2_prbs_axis_master_32_0_0_prbs_axis_master_32 : entity is "prbs_axis_master_32";
@@ -555,7 +590,7 @@ architecture STRUCTURE of design_2_prbs_axis_master_32_0_0 is
   attribute x_interface_mode : string;
   attribute x_interface_mode of clk : signal is "slave clk";
   attribute x_interface_parameter : string;
-  attribute x_interface_parameter of clk : signal is "XIL_INTERFACENAME clk, ASSOCIATED_BUSIF m_axis, ASSOCIATED_RESET rst, FREQ_HZ 5e+07, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_2_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute x_interface_parameter of clk : signal is "XIL_INTERFACENAME clk, ASSOCIATED_BUSIF m_axis, ASSOCIATED_RESET rst, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_2_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute x_interface_info of m_axis_tready : signal is "xilinx.com:interface:axis:1.0 m_axis TREADY";
   attribute x_interface_info of m_axis_tvalid : signal is "xilinx.com:interface:axis:1.0 m_axis TVALID";
   attribute x_interface_info of rst : signal is "xilinx.com:signal:reset:1.0 rst RST";
@@ -563,7 +598,7 @@ architecture STRUCTURE of design_2_prbs_axis_master_32_0_0 is
   attribute x_interface_parameter of rst : signal is "XIL_INTERFACENAME rst, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute x_interface_info of m_axis_tdata : signal is "xilinx.com:interface:axis:1.0 m_axis TDATA";
   attribute x_interface_mode of m_axis_tdata : signal is "master m_axis";
-  attribute x_interface_parameter of m_axis_tdata : signal is "XIL_INTERFACENAME m_axis, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 5e+07, PHASE 0.0, CLK_DOMAIN design_2_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0";
+  attribute x_interface_parameter of m_axis_tdata : signal is "XIL_INTERFACENAME m_axis, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 50000000, PHASE 0.0, CLK_DOMAIN design_2_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0";
 begin
   m_axis_tdata(31) <= \<const0>\;
   m_axis_tdata(30) <= \<const0>\;

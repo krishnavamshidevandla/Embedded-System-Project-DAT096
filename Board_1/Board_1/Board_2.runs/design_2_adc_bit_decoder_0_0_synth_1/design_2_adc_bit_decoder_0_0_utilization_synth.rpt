@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Tue May  5 12:50:58 2026
+| Date         : Thu May  7 16:21:00 2026
 | Host         : FY-6302-12 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_2_adc_bit_decoder_0_0_utilization_synth.rpt -pb design_2_adc_bit_decoder_0_0_utilization_synth.pb
 | Design       : design_2_adc_bit_decoder_0_0
@@ -151,7 +151,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------+------+---------------------+
 | LUT6     |    6 |                 LUT |
 | FDRE     |    3 |        Flop & Latch |
-| LUT4     |    1 |                 LUT |
+| LUT5     |    1 |                 LUT |
 | LUT2     |    1 |                 LUT |
 +----------+------+---------------------+
 

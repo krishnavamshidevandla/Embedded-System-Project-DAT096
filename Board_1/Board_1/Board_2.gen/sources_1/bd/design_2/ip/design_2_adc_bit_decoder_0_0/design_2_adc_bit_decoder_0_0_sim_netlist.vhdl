@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Tue May  5 12:50:58 2026
+-- Date        : Thu May  7 16:21:00 2026
 -- Host        : FY-6302-12 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_adc_bit_decoder_0_0/design_2_adc_bit_decoder_0_0_sim_netlist.vhdl
@@ -19,8 +19,8 @@ entity design_2_adc_bit_decoder_0_0_adc_bit_decoder is
   port (
     dac_data : out STD_LOGIC_VECTOR ( 1 downto 0 );
     bit_out : out STD_LOGIC;
-    t_valid : in STD_LOGIC;
     t_data : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    t_valid : in STD_LOGIC;
     clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
@@ -41,15 +41,16 @@ architecture STRUCTURE of design_2_adc_bit_decoder_0_0_adc_bit_decoder is
 begin
   bit_out <= \^bit_out\;
   dac_data(1 downto 0) <= \^dac_data\(1 downto 0);
-bit_q_i_1: unisim.vcomponents.LUT4
+bit_q_i_1: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"3FAA"
+      INIT => X"FF0CAAAA"
     )
         port map (
       I0 => \^bit_out\,
-      I1 => \dac_data[14]_i_2_n_0\,
-      I2 => t_data(13),
-      I3 => t_valid,
+      I1 => t_data(12),
+      I2 => \dac_data[14]_i_2_n_0\,
+      I3 => t_data(13),
+      I4 => t_valid,
       O => bit_q_i_1_n_0
     );
 bit_q_reg: unisim.vcomponents.FDRE
@@ -65,31 +66,44 @@ bit_q_reg: unisim.vcomponents.FDRE
     );
 \dac_data[13]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"EAEAEAEA0A0AAA0A"
+      INIT => X"00AAEFAAAAAAEFAA"
     )
         port map (
       I0 => \^dac_data\(0),
       I1 => \dac_data[14]_i_2_n_0\,
-      I2 => t_valid,
-      I3 => t_data(12),
-      I4 => \dac_data[14]_i_3_n_0\,
-      I5 => t_data(13),
+      I2 => t_data(12),
+      I3 => t_valid,
+      I4 => t_data(13),
+      I5 => \dac_data[14]_i_3_n_0\,
       O => \dac_data[13]_i_1_n_0\
     );
 \dac_data[14]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"2A2A2A2AFAFAAAFA"
+      INIT => X"FFAA08AAAAAA08AA"
     )
         port map (
       I0 => \^dac_data\(1),
-      I1 => \dac_data[14]_i_2_n_0\,
-      I2 => t_valid,
-      I3 => t_data(12),
-      I4 => \dac_data[14]_i_3_n_0\,
-      I5 => t_data(13),
+      I1 => t_data(12),
+      I2 => \dac_data[14]_i_2_n_0\,
+      I3 => t_valid,
+      I4 => t_data(13),
+      I5 => \dac_data[14]_i_3_n_0\,
       O => \dac_data[14]_i_1_n_0\
     );
 \dac_data[14]_i_2\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"00000000555555F7"
+    )
+        port map (
+      I0 => t_data(9),
+      I1 => t_data(6),
+      I2 => \dac_data[14]_i_4_n_0\,
+      I3 => t_data(8),
+      I4 => t_data(7),
+      I5 => \dac_data[14]_i_5_n_0\,
+      O => \dac_data[14]_i_2_n_0\
+    );
+\dac_data[14]_i_3\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"EEEEEAAAAAAAAAAA"
     )
@@ -97,38 +111,12 @@ bit_q_reg: unisim.vcomponents.FDRE
       I0 => t_data(12),
       I1 => t_data(11),
       I2 => t_data(7),
-      I3 => \dac_data[14]_i_4_n_0\,
+      I3 => \dac_data[14]_i_6_n_0\,
       I4 => t_data(9),
       I5 => t_data(10),
-      O => \dac_data[14]_i_2_n_0\
-    );
-\dac_data[14]_i_3\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"00000000555555F7"
-    )
-        port map (
-      I0 => t_data(9),
-      I1 => t_data(6),
-      I2 => \dac_data[14]_i_5_n_0\,
-      I3 => t_data(8),
-      I4 => t_data(7),
-      I5 => \dac_data[14]_i_6_n_0\,
       O => \dac_data[14]_i_3_n_0\
     );
 \dac_data[14]_i_4\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"AAAAAAAA88888000"
-    )
-        port map (
-      I0 => t_data(8),
-      I1 => t_data(5),
-      I2 => t_data(2),
-      I3 => t_data(3),
-      I4 => t_data(4),
-      I5 => t_data(6),
-      O => \dac_data[14]_i_4_n_0\
-    );
-\dac_data[14]_i_5\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"000000005555777F"
     )
@@ -139,15 +127,28 @@ bit_q_reg: unisim.vcomponents.FDRE
       I3 => t_data(0),
       I4 => t_data(3),
       I5 => t_data(5),
-      O => \dac_data[14]_i_5_n_0\
+      O => \dac_data[14]_i_4_n_0\
     );
-\dac_data[14]_i_6\: unisim.vcomponents.LUT2
+\dac_data[14]_i_5\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"E"
     )
         port map (
       I0 => t_data(10),
       I1 => t_data(11),
+      O => \dac_data[14]_i_5_n_0\
+    );
+\dac_data[14]_i_6\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"AAAAAAAA88888000"
+    )
+        port map (
+      I0 => t_data(8),
+      I1 => t_data(5),
+      I2 => t_data(2),
+      I3 => t_data(3),
+      I4 => t_data(4),
+      I5 => t_data(6),
       O => \dac_data[14]_i_6_n_0\
     );
 \dac_data_reg[13]\: unisim.vcomponents.FDRE
@@ -201,7 +202,7 @@ architecture STRUCTURE of design_2_adc_bit_decoder_0_0 is
   attribute x_interface_mode : string;
   attribute x_interface_mode of clk : signal is "slave clk";
   attribute x_interface_parameter : string;
-  attribute x_interface_parameter of clk : signal is "XIL_INTERFACENAME clk, FREQ_HZ 5e+07, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_2_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute x_interface_parameter of clk : signal is "XIL_INTERFACENAME clk, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_2_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
 begin
   dac_data(31) <= \<const0>\;
   dac_data(30) <= \<const0>\;

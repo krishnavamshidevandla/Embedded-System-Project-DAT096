@@ -3,13 +3,13 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Thu Apr  9 18:52:17 2026
-# Process ID         : 14152
-# Current directory  : C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/design_2_ZmodScopeController_0_2_synth_1
+# Start of session at: Thu May  7 13:57:57 2026
+# Process ID         : 15160
+# Current directory  : C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.runs/design_2_ZmodScopeController_0_2_synth_1
 # Command line       : vivado.exe -log design_2_ZmodScopeController_0_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_2_ZmodScopeController_0_2.tcl
-# Log file           : C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/design_2_ZmodScopeController_0_2_synth_1/design_2_ZmodScopeController_0_2.vds
-# Journal file       : C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/design_2_ZmodScopeController_0_2_synth_1\vivado.jou
-# Running On         : FY-6302-05
+# Log file           : C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.runs/design_2_ZmodScopeController_0_2_synth_1/design_2_ZmodScopeController_0_2.vds
+# Journal file       : C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.runs/design_2_ZmodScopeController_0_2_synth_1\vivado.jou
+# Running On         : FY-6302-12
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26200
 # Processor Detail   : Intel(R) Core(TM) i7-14700
@@ -19,23 +19,15 @@
 # Host memory        : 34031 MB
 # Swap memory        : 5100 MB
 # Total Virtual      : 39131 MB
-# Available Virtual  : 23382 MB
+# Available Virtual  : 26934 MB
 #-----------------------------------------------------------
 source design_2_ZmodScopeController_0_2.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'z:/DAT096/vivado-library-zmod-v2-2019.1-2/vivado-library-zmod-v2-2019.1-2'; Can't find the specified path.
-If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'z:/embedded project/Eclypse-Z7-HW/Eclypse-Z7-HW.ipdefs/repo'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'z:/eda234/vivado-library-master'.
-WARNING: [IP_Flow 19-3685] Ignored loading user repository 'z:/eda234/vivado-library-master/ip'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'z:/DAT096/vivado-library-master/vivado-library-master'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Progs/Xilinx/Vivado/2024.2/data/ip'.
-WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilent.com:user:ZmodAWGController:1.1'. The one found in IP location 'z:/embedded project/Eclypse-Z7-HW/Eclypse-Z7-HW.ipdefs/repo/vivado-library/ip/Zmods/ZmodAWGController' will take precedence over the same IP in location z:/eda234/vivado-library-master/ip/Zmods/ZmodAWGController
-WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilent.com:user:ZmodScopeController:1.2'. The one found in IP location 'z:/embedded project/Eclypse-Z7-HW/Eclypse-Z7-HW.ipdefs/repo/vivado-library/ip/Zmods/ZmodScopeController' will take precedence over the same IP in location z:/eda234/vivado-library-master/ip/Zmods/ZmodScopeController
-WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'digilent.com:user:ZmodAWG_Calibration:1.0'. The one found in location 'z:/embedded project/Eclypse-Z7-HW/Eclypse-Z7-HW.ipdefs/repo/vivado-library/if/ZmodAWG_Calibration_v1_0/ZmodAWG_Calibration.xml' will take precedence over the same Interface in location 'z:/eda234/vivado-library-master/if/ZmodAWG_Calibration_v1_0/ZmodAWG_Calibration.xml'
-WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'natinst.com:user:ZmodScope_Calibration:1.0'. The one found in location 'z:/embedded project/Eclypse-Z7-HW/Eclypse-Z7-HW.ipdefs/repo/vivado-library/if/ZmodScope_Calibration_v1_0/ZmodScope_Calibration.xml' will take precedence over the same Interface in location 'z:/eda234/vivado-library-master/if/ZmodScope_Calibration_v1_0/ZmodScope_Calibration.xml'
-update_ip_catalog: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 367.910 ; gain = 2.957
+update_ip_catalog: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 367.652 ; gain = 0.969
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
-Current IP cache path is c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.cache/ip 
+Current IP cache path is c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.cache/ip 
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_2_ZmodScopeController_0_2
 Command: synth_design -top design_2_ZmodScopeController_0_2 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
 Starting synth_design
@@ -44,11 +36,11 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 16456
+INFO: [Synth 8-7075] Helper process launched with PID 19808
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1096.855 ; gain = 467.348
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1097.000 ; gain = 467.059
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_2_ZmodScopeController_0_2' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/synth/design_2_ZmodScopeController_0_2.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'design_2_ZmodScopeController_0_2' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/synth/design_2_ZmodScopeController_0_2.vhd:93]
 	Parameter kSamplingPeriod bound to: 10000 - type: integer 
 	Parameter kADC_ClkDiv bound to: 4 - type: integer 
 	Parameter kADC_Width bound to: 14 - type: integer 
@@ -70,104 +62,104 @@ INFO: [Synth 8-638] synthesizing module 'design_2_ZmodScopeController_0_2' [c:/U
 	Parameter kCh2HgAddCoefStatic bound to: 20'b00000000000000000000 
 	Parameter kZmodID bound to: 0 - type: integer 
 	Parameter kSimulation bound to: 0 - type: bool 
-INFO: [Synth 8-3491] module 'ZmodScopeController' declared at 'c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ZmodScopeController.vhd:59' bound to instance 'U0' of component 'ZmodScopeController' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/synth/design_2_ZmodScopeController_0_2.vhd:204]
-INFO: [Synth 8-638] synthesizing module 'ZmodScopeController' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ZmodScopeController.vhd:229]
-INFO: [Synth 8-638] synthesizing module 'ResetBridge' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ResetBridge.vhd:96]
-INFO: [Synth 8-638] synthesizing module 'SyncAsync' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/SyncAsync.vhd:92]
-INFO: [Synth 8-256] done synthesizing module 'SyncAsync' (0#1) [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/SyncAsync.vhd:92]
-INFO: [Synth 8-256] done synthesizing module 'ResetBridge' (0#1) [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ResetBridge.vhd:96]
-INFO: [Synth 8-638] synthesizing module 'ResetBridge__parameterized0' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ResetBridge.vhd:96]
-INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized0' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/SyncAsync.vhd:92]
-INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized0' (0#1) [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/SyncAsync.vhd:92]
-INFO: [Synth 8-256] done synthesizing module 'ResetBridge__parameterized0' (0#1) [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ResetBridge.vhd:96]
-INFO: [Synth 8-638] synthesizing module 'ConfigRelays' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ConfigRelays.vhd:135]
-INFO: [Synth 8-256] done synthesizing module 'ConfigRelays' (0#1) [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ConfigRelays.vhd:135]
-INFO: [Synth 8-638] synthesizing module 'HandshakeData' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/HandshakeData.vhd:134]
-INFO: [Synth 8-256] done synthesizing module 'HandshakeData' (0#1) [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/HandshakeData.vhd:134]
-INFO: [Synth 8-638] synthesizing module 'ConfigADC' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ConfigADC.vhd:97]
-INFO: [Synth 8-638] synthesizing module 'ADI_SPI' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ADI_SPI.vhd:95]
+INFO: [Synth 8-3491] module 'ZmodScopeController' declared at 'c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ZmodScopeController.vhd:59' bound to instance 'U0' of component 'ZmodScopeController' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/synth/design_2_ZmodScopeController_0_2.vhd:204]
+INFO: [Synth 8-638] synthesizing module 'ZmodScopeController' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ZmodScopeController.vhd:229]
+INFO: [Synth 8-638] synthesizing module 'ResetBridge' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ResetBridge.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/SyncAsync.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync' (0#1) [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/SyncAsync.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'ResetBridge' (0#1) [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ResetBridge.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'ResetBridge__parameterized0' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ResetBridge.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized0' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/SyncAsync.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized0' (0#1) [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/SyncAsync.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'ResetBridge__parameterized0' (0#1) [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ResetBridge.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'ConfigRelays' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ConfigRelays.vhd:135]
+INFO: [Synth 8-256] done synthesizing module 'ConfigRelays' (0#1) [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ConfigRelays.vhd:135]
+INFO: [Synth 8-638] synthesizing module 'HandshakeData' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/HandshakeData.vhd:134]
+INFO: [Synth 8-256] done synthesizing module 'HandshakeData' (0#1) [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/HandshakeData.vhd:134]
+INFO: [Synth 8-638] synthesizing module 'ConfigADC' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ConfigADC.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'ADI_SPI' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ADI_SPI.vhd:95]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IOSTANDARD bound to: LVCMOS18 - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'InstIOBUF' to cell 'IOBUF' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ADI_SPI.vhd:145]
-INFO: [Synth 8-256] done synthesizing module 'ADI_SPI' (0#1) [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ADI_SPI.vhd:95]
-INFO: [Synth 8-256] done synthesizing module 'ConfigADC' (0#1) [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ConfigADC.vhd:97]
-INFO: [Synth 8-638] synthesizing module 'DataPath' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:104]
+INFO: [Synth 8-113] binding component instance 'InstIOBUF' to cell 'IOBUF' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ADI_SPI.vhd:145]
+INFO: [Synth 8-256] done synthesizing module 'ADI_SPI' (0#1) [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ADI_SPI.vhd:95]
+INFO: [Synth 8-256] done synthesizing module 'ConfigADC' (0#1) [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ConfigADC.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'DataPath' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:104]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT_Q1 bound to: 1'b0 
 	Parameter INIT_Q2 bound to: 1'b0 
 	Parameter SRTYPE bound to: SYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
+INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT_Q1 bound to: 1'b0 
 	Parameter INIT_Q2 bound to: 1'b0 
 	Parameter SRTYPE bound to: SYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
+INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT_Q1 bound to: 1'b0 
 	Parameter INIT_Q2 bound to: 1'b0 
 	Parameter SRTYPE bound to: SYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
+INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT_Q1 bound to: 1'b0 
 	Parameter INIT_Q2 bound to: 1'b0 
 	Parameter SRTYPE bound to: SYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
+INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT_Q1 bound to: 1'b0 
 	Parameter INIT_Q2 bound to: 1'b0 
 	Parameter SRTYPE bound to: SYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
+INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT_Q1 bound to: 1'b0 
 	Parameter INIT_Q2 bound to: 1'b0 
 	Parameter SRTYPE bound to: SYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
+INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT_Q1 bound to: 1'b0 
 	Parameter INIT_Q2 bound to: 1'b0 
 	Parameter SRTYPE bound to: SYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
+INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT_Q1 bound to: 1'b0 
 	Parameter INIT_Q2 bound to: 1'b0 
 	Parameter SRTYPE bound to: SYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
+INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT_Q1 bound to: 1'b0 
 	Parameter INIT_Q2 bound to: 1'b0 
 	Parameter SRTYPE bound to: SYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
+INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT_Q1 bound to: 1'b0 
 	Parameter INIT_Q2 bound to: 1'b0 
 	Parameter SRTYPE bound to: SYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
+INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT_Q1 bound to: 1'b0 
 	Parameter INIT_Q2 bound to: 1'b0 
 	Parameter SRTYPE bound to: SYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
+INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT_Q1 bound to: 1'b0 
 	Parameter INIT_Q2 bound to: 1'b0 
 	Parameter SRTYPE bound to: SYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
+INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT_Q1 bound to: 1'b0 
 	Parameter INIT_Q2 bound to: 1'b0 
 	Parameter SRTYPE bound to: SYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
+INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT_Q1 bound to: 1'b0 
 	Parameter INIT_Q2 bound to: 1'b0 
 	Parameter SRTYPE bound to: SYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
-INFO: [Synth 8-113] binding component instance 'InstDcoBufg' to cell 'BUFG' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:224]
+INFO: [Synth 8-113] binding component instance 'InstIDDR' to cell 'IDDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:193]
+INFO: [Synth 8-113] binding component instance 'InstDcoBufg' to cell 'BUFG' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:224]
 	Parameter BUFR_DIVIDE bound to: 1 - type: string 
 	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
-INFO: [Synth 8-113] binding component instance 'InstBufrFeedbackPLL' to cell 'BUFR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:232]
-INFO: [Synth 8-113] binding component instance 'InstDcoBufio' to cell 'BUFIO' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:244]
+INFO: [Synth 8-113] binding component instance 'InstBufrFeedbackPLL' to cell 'BUFR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:232]
+INFO: [Synth 8-113] binding component instance 'InstDcoBufio' to cell 'BUFIO' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:244]
 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
 	Parameter CLKFBOUT_MULT_F bound to: 6.000000 - type: double 
 	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
@@ -211,11 +203,11 @@ INFO: [Synth 8-113] binding component instance 'InstDcoBufio' to cell 'BUFIO' [c
 	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
 	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
 	Parameter STARTUP_WAIT bound to: 0 - type: bool 
-INFO: [Synth 8-113] binding component instance 'MMCME2_ADV_inst' to cell 'MMCME2_ADV' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:250]
-INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized1' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/SyncAsync.vhd:92]
-INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized1' (0#1) [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/SyncAsync.vhd:92]
-INFO: [Synth 8-3491] module 'ZmodADC_SynchonizationFIFO' declared at 'c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/src/ZmodADC_SynchonizationFIFO/synth/ZmodADC_SynchonizationFIFO.vhd:59' bound to instance 'InstADC_FIFO' of component 'ZmodADC_SynchonizationFIFO' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:546]
-INFO: [Synth 8-638] synthesizing module 'ZmodADC_SynchonizationFIFO' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/src/ZmodADC_SynchonizationFIFO/synth/ZmodADC_SynchonizationFIFO.vhd:75]
+INFO: [Synth 8-113] binding component instance 'MMCME2_ADV_inst' to cell 'MMCME2_ADV' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:250]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized1' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/SyncAsync.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized1' (0#1) [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/SyncAsync.vhd:92]
+INFO: [Synth 8-3491] module 'ZmodADC_SynchonizationFIFO' declared at 'c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/src/ZmodADC_SynchonizationFIFO/synth/ZmodADC_SynchonizationFIFO.vhd:59' bound to instance 'InstADC_FIFO' of component 'ZmodADC_SynchonizationFIFO' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:546]
+INFO: [Synth 8-638] synthesizing module 'ZmodADC_SynchonizationFIFO' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/src/ZmodADC_SynchonizationFIFO/synth/ZmodADC_SynchonizationFIFO.vhd:75]
 	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
 	Parameter C_SELECT_XPM bound to: 0 - type: integer 
 	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
@@ -418,28 +410,28 @@ INFO: [Synth 8-638] synthesizing module 'ZmodADC_SynchonizationFIFO' [c:/Users/d
 	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
 	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
 	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'fifo_generator_v13_2_11' declared at 'c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/src/ZmodADC_SynchonizationFIFO/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38305' bound to instance 'U0' of component 'fifo_generator_v13_2_11' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/src/ZmodADC_SynchonizationFIFO/synth/ZmodADC_SynchonizationFIFO.vhd:550]
+INFO: [Synth 8-3491] module 'fifo_generator_v13_2_11' declared at 'c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/src/ZmodADC_SynchonizationFIFO/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38305' bound to instance 'U0' of component 'fifo_generator_v13_2_11' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/src/ZmodADC_SynchonizationFIFO/synth/ZmodADC_SynchonizationFIFO.vhd:550]
 INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [C:/Progs/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (0#1) [C:/Progs/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
 INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [C:/Progs/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [C:/Progs/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
 INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [C:/Progs/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (0#1) [C:/Progs/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
-INFO: [Synth 8-256] done synthesizing module 'ZmodADC_SynchonizationFIFO' (0#1) [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/src/ZmodADC_SynchonizationFIFO/synth/ZmodADC_SynchonizationFIFO.vhd:75]
-INFO: [Synth 8-256] done synthesizing module 'DataPath' (0#1) [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:104]
+INFO: [Synth 8-256] done synthesizing module 'ZmodADC_SynchonizationFIFO' (0#1) [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/src/ZmodADC_SynchonizationFIFO/synth/ZmodADC_SynchonizationFIFO.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'DataPath' (0#1) [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/DataPath.vhd:104]
 	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'InstADC_ClkODDR' to cell 'ODDR' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ZmodScopeController.vhd:581]
+INFO: [Synth 8-113] binding component instance 'InstADC_ClkODDR' to cell 'ODDR' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ZmodScopeController.vhd:581]
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'InstADC_ClkOBUFDS' to cell 'OBUFDS' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ZmodScopeController.vhd:596]
-INFO: [Synth 8-638] synthesizing module 'SyncBase' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/SyncBase.vhd:96]
-INFO: [Synth 8-256] done synthesizing module 'SyncBase' (0#1) [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/SyncBase.vhd:96]
-INFO: [Synth 8-638] synthesizing module 'GainOffsetCalib' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/GainOffsetCalib.vhd:98]
-INFO: [Synth 8-256] done synthesizing module 'GainOffsetCalib' (0#1) [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/GainOffsetCalib.vhd:98]
-INFO: [Synth 8-638] synthesizing module 'GainOffsetCalib__parameterized0' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/GainOffsetCalib.vhd:98]
-INFO: [Synth 8-256] done synthesizing module 'GainOffsetCalib__parameterized0' (0#1) [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/GainOffsetCalib.vhd:98]
+INFO: [Synth 8-113] binding component instance 'InstADC_ClkOBUFDS' to cell 'OBUFDS' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ZmodScopeController.vhd:596]
+INFO: [Synth 8-638] synthesizing module 'SyncBase' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/SyncBase.vhd:96]
+INFO: [Synth 8-256] done synthesizing module 'SyncBase' (0#1) [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/SyncBase.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'GainOffsetCalib' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/GainOffsetCalib.vhd:98]
+INFO: [Synth 8-256] done synthesizing module 'GainOffsetCalib' (0#1) [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/GainOffsetCalib.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'GainOffsetCalib__parameterized0' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/GainOffsetCalib.vhd:98]
+INFO: [Synth 8-256] done synthesizing module 'GainOffsetCalib__parameterized0' (0#1) [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/GainOffsetCalib.vhd:98]
 	Parameter DATA_RATE_OQ bound to: SDR - type: string 
 	Parameter DATA_RATE_TQ bound to: BUF - type: string 
 	Parameter DATA_WIDTH bound to: 4 - type: integer 
@@ -451,9 +443,9 @@ INFO: [Synth 8-256] done synthesizing module 'GainOffsetCalib__parameterized0' (
 	Parameter TBYTE_CTL bound to: FALSE - type: string 
 	Parameter TBYTE_SRC bound to: FALSE - type: string 
 	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-113] binding component instance 'InstSyncOserdes' to cell 'OSERDESE2' [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ZmodScopeController.vhd:710]
-INFO: [Synth 8-256] done synthesizing module 'ZmodScopeController' (0#1) [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ZmodScopeController.vhd:229]
-INFO: [Synth 8-256] done synthesizing module 'design_2_ZmodScopeController_0_2' (0#1) [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/synth/design_2_ZmodScopeController_0_2.vhd:93]
+INFO: [Synth 8-113] binding component instance 'InstSyncOserdes' to cell 'OSERDESE2' [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ZmodScopeController.vhd:710]
+INFO: [Synth 8-256] done synthesizing module 'ZmodScopeController' (0#1) [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ipshared/c25f/src/ZmodScopeController.vhd:229]
+INFO: [Synth 8-256] done synthesizing module 'design_2_ZmodScopeController_0_2' (0#1) [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/synth/design_2_ZmodScopeController_0_2.vhd:93]
 WARNING: [Synth 8-7129] Port cExtLgMultCoef[17] in module GainOffsetCalib__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port cExtLgMultCoef[16] in module GainOffsetCalib__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port cExtLgMultCoef[15] in module GainOffsetCalib__parameterized0 is either unconnected or has no load
@@ -556,40 +548,40 @@ WARNING: [Synth 8-7129] Port cExtLgAddCoef[10] in module GainOffsetCalib is eith
 WARNING: [Synth 8-7129] Port cExtLgAddCoef[9] in module GainOffsetCalib is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1347.387 ; gain = 717.879
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1346.344 ; gain = 716.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1347.387 ; gain = 717.879
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1346.344 ; gain = 716.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1347.387 ; gain = 717.879
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1346.344 ; gain = 716.402
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1347.387 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1346.344 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/src/ConstrZmodADC_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/src/ConstrZmodADC_ooc.xdc] for cell 'U0'
-Parsing XDC File [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/src/ZmodADC_SynchonizationFIFO/ZmodADC_SynchonizationFIFO.xdc] for cell 'U0/InstDataPath/InstADC_FIFO/U0'
-Finished Parsing XDC File [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/src/ZmodADC_SynchonizationFIFO/ZmodADC_SynchonizationFIFO.xdc] for cell 'U0/InstDataPath/InstADC_FIFO/U0'
-Parsing XDC File [C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/design_2_ZmodScopeController_0_2_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/design_2_ZmodScopeController_0_2_synth_1/dont_touch.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/design_2_ZmodScopeController_0_2_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_2_ZmodScopeController_0_2_propImpl.xdc].
+Parsing XDC File [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/src/ConstrZmodADC_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/src/ConstrZmodADC_ooc.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/src/ZmodADC_SynchonizationFIFO/ZmodADC_SynchonizationFIFO.xdc] for cell 'U0/InstDataPath/InstADC_FIFO/U0'
+Finished Parsing XDC File [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/src/ZmodADC_SynchonizationFIFO/ZmodADC_SynchonizationFIFO.xdc] for cell 'U0/InstDataPath/InstADC_FIFO/U0'
+Parsing XDC File [C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.runs/design_2_ZmodScopeController_0_2_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.runs/design_2_ZmodScopeController_0_2_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.runs/design_2_ZmodScopeController_0_2_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_2_ZmodScopeController_0_2_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_2_ZmodScopeController_0_2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/src/ZmodADC_SynchonizationFIFO/ZmodADC_SynchonizationFIFO_clocks.xdc] for cell 'U0/InstDataPath/InstADC_FIFO/U0'
-Finished Parsing XDC File [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/src/ZmodADC_SynchonizationFIFO/ZmodADC_SynchonizationFIFO_clocks.xdc] for cell 'U0/InstDataPath/InstADC_FIFO/U0'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/src/ZmodADC_SynchonizationFIFO/ZmodADC_SynchonizationFIFO_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_2_ZmodScopeController_0_2_propImpl.xdc].
+Parsing XDC File [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/src/ZmodADC_SynchonizationFIFO/ZmodADC_SynchonizationFIFO_clocks.xdc] for cell 'U0/InstDataPath/InstADC_FIFO/U0'
+Finished Parsing XDC File [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/src/ZmodADC_SynchonizationFIFO/ZmodADC_SynchonizationFIFO_clocks.xdc] for cell 'U0/InstDataPath/InstADC_FIFO/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/src/ZmodADC_SynchonizationFIFO/ZmodADC_SynchonizationFIFO_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_2_ZmodScopeController_0_2_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_2_ZmodScopeController_0_2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc] for cell 'U0'
-INFO: [Timing 38-2] Deriving generated clocks [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc:14]
-Finished Parsing XDC File [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc] for cell 'U0'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_2_ZmodScopeController_0_2_propImpl.xdc].
+Parsing XDC File [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc] for cell 'U0'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc:14]
+Finished Parsing XDC File [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/ConstrsZmodADC.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_2_ZmodScopeController_0_2_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_2_ZmodScopeController_0_2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Progs/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_2_ZmodScopeController_0_2_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_2_ZmodScopeController_0_2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
@@ -598,29 +590,29 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/design_2_Zmo
 INFO: [Project 1-1714] 6 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1347.387 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1388.969 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1347.387 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1389.129 ; gain = 0.160
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1347.387 ; gain = 717.879
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1389.129 ; gain = 759.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1347.387 ; gain = 717.879
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1389.129 ; gain = 759.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0/InstDataPath/InstADC_FIFO/U0. (constraint file  C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/design_2_ZmodScopeController_0_2_synth_1/dont_touch.xdc, line 11).
-Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/design_2_ZmodScopeController_0_2_synth_1/dont_touch.xdc, line 18).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/InstDataPath/InstADC_FIFO/U0. (constraint file  C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.runs/design_2_ZmodScopeController_0_2_synth_1/dont_touch.xdc, line 11).
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.runs/design_2_ZmodScopeController_0_2_synth_1/dont_touch.xdc, line 18).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/InstDataPath/InstADC_FIFO. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/InstDataPath/InstADC_FIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/InstDataPath/InstADC_FIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
@@ -629,7 +621,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for U0/InstDataPath/InstADC_FIFO/U0/i
 Applied set_property KEEP_HIERARCHY = SOFT for U0/InstDataPath/InstADC_FIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/InstDataPath/InstADC_FIFO/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd . (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1347.387 ; gain = 717.879
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1389.129 ; gain = 759.188
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'sCurrentState_reg' in module 'ConfigRelays'
 INFO: [Synth 8-802] inferred FSM for state register 'sCurrentState_reg' in module 'ADI_SPI'
@@ -704,7 +696,7 @@ INFO: [Synth 8-6159] Found Keep on FSM register 'gpregsm1.curr_fwft_state_reg' i
             stage2_valid |                               01 |                               01
 ---------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1347.387 ; gain = 717.879
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1389.129 ; gain = 759.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -776,7 +768,7 @@ DSP Report: Generating DSP InstCh2ADC_Calibration/cCalibMult0, operation Mode is
 DSP Report: operator InstCh2ADC_Calibration/cCalibMult0 is absorbed into DSP InstCh2ADC_Calibration/cCalibMult0.
 WARNING: [Synth 8-3332] Sequential element (InstConfigADC/FSM_onehot_sCurrentState_reg[12]) is unused and will be removed from module ZmodScopeController.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1347.387 ; gain = 717.879
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1389.129 ; gain = 759.188
 ---------------------------------------------------------------------------------
  Sort Area is  InstCh1ADC_Calibration/cCalibMult0_0 : 0 0 : 2478 2478 : Used 1 time 0
  Sort Area is  InstCh2ADC_Calibration/cCalibMult0_2 : 0 0 : 2478 2478 : Used 1 time 0
@@ -809,13 +801,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1454.078 ; gain = 824.570
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1472.430 ; gain = 842.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1475.184 ; gain = 845.676
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1493.621 ; gain = 863.680
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -835,7 +827,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1476.188 ; gain = 846.680
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1494.539 ; gain = 864.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -853,37 +845,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1683.203 ; gain = 1053.695
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1701.688 ; gain = 1071.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1683.203 ; gain = 1053.695
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1701.688 ; gain = 1071.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1683.203 ; gain = 1053.695
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1701.688 ; gain = 1071.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1683.203 ; gain = 1053.695
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1701.688 ; gain = 1071.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1683.203 ; gain = 1053.695
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1701.688 ; gain = 1071.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1683.203 ; gain = 1053.695
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1701.688 ; gain = 1071.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -931,18 +923,18 @@ Report Cell Usage:
 |21    |OBUFDS     |     1|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1683.203 ; gain = 1053.695
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1701.688 ; gain = 1071.746
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 597 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:27 . Memory (MB): peak = 1683.203 ; gain = 1053.695
-Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1683.203 ; gain = 1053.695
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:30 . Memory (MB): peak = 1701.688 ; gain = 1028.961
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1701.688 ; gain = 1071.746
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1688.336 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1701.688 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 43 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1695.996 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1704.836 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 7 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
@@ -951,14 +943,14 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 
 Synth Design complete | Checksum: 1cd9c623
 INFO: [Common 17-83] Releasing license: Synthesis
-101 Infos, 109 Warnings, 0 Critical Warnings and 0 Errors encountered.
+100 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1695.996 ; gain = 1297.840
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1695.996 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/design_2_ZmodScopeController_0_2_synth_1/design_2_ZmodScopeController_0_2.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_2_ZmodScopeController_0_2, cache-ID = 870ed02403e81cd9
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1704.836 ; gain = 1310.266
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1704.836 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.runs/design_2_ZmodScopeController_0_2_synth_1/design_2_ZmodScopeController_0_2.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_2_ZmodScopeController_0_2, cache-ID = 2a7ee58a5a2fbf97
 INFO: [Coretcl 2-1174] Renamed 53 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1695.996 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/devandla/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2/Board_2.runs/design_2_ZmodScopeController_0_2_synth_1/design_2_ZmodScopeController_0_2.dcp' has been generated.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1704.836 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.runs/design_2_ZmodScopeController_0_2_synth_1/design_2_ZmodScopeController_0_2.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_2_ZmodScopeController_0_2_utilization_synth.rpt -pb design_2_ZmodScopeController_0_2_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Apr  9 18:53:07 2026...
+INFO: [Common 17-206] Exiting Vivado at Thu May  7 13:58:48 2026...

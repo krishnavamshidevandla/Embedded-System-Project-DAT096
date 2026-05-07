@@ -22,7 +22,7 @@ end entity;
 
 architecture rtl of Signal_generator is
   constant LFSR_N : positive := 14;
-  signal cnt : unsigned(3 downto 0) := (others => '0');
+  signal cnt : unsigned(4 downto 0) := (others => '0');
 
   signal lfsr   : unsigned(LFSR_N-1 downto 0) := (others => '0');
   signal code_u : unsigned(DAC_WIDTH-1 downto 0) := (others => '0');
@@ -47,7 +47,7 @@ begin
         -- IMPORTANT: only update when enabled (AXIS handshake)
         if en = '1' then
         
-          if cnt = 9 then 
+          if cnt = 19 then 
             cnt <= (others => '0');
           -- feedback taps (keep yours)
             fb_v := std_logic(lfsr(13) xor lfsr(12) xor lfsr(11) xor lfsr(1));
