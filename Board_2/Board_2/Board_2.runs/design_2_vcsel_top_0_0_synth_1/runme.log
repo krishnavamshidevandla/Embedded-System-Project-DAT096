@@ -1,0 +1,407 @@
+
+*** Running vivado
+    with args -log design_2_vcsel_top_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_2_vcsel_top_0_0.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Mon May 11 12:39:52 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_2_vcsel_top_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'z:/DAT096/vivado-library-zmod-v2-2019.1-2/vivado-library-zmod-v2-2019.1-2'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'z:/DAT096/Project_team5/ip_repo'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'z:/embedded project/Eclypse-Z7-HW/Eclypse-Z7-HW.ipdefs/repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'z:/DAT096/vivado-boards-master'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'z:/DAT096/vivado-library-master'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'z:/eda234/vivado-library-master'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'z:/eda234/vivado-library-master/ip'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Progs/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:user:axi_i2s_adi:1.2'. The one found in IP location 'z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/axi_i2s_adi_1.2' will take precedence over the same IP in location z:/DAT096/vivado-library-master/ip/axi_i2s_adi_1.2
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:axi_ps2:1.0'. The one found in IP location 'z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/axi_ps2_1.0' will take precedence over the same IP in location z:/DAT096/vivado-library-master/ip/axi_ps2_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:clock_forwarder:1.1'. The one found in IP location 'z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/clock_forwarder' will take precedence over the same IP in location z:/DAT096/vivado-library-master/ip/clock_forwarder
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:hls_contrast_stretch:1.0'. The one found in IP location 'z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/hls_contrast_stretch_1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-master/ip/hls_contrast_stretch_1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:hls_gamma_correction:1.0'. The one found in IP location 'z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/hls_gamma_correction_1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-master/ip/hls_gamma_correction_1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:hls_saturation_enhance:1.0'. The one found in IP location 'z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/hls_saturation_enhance_1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-master/ip/hls_saturation_enhance_1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2dpvid:1.0'. The one found in IP location 'z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/rgb2dpvid_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-master/ip/rgb2dpvid_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2vga:1.0'. The one found in IP location 'z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/rgb2vga_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-master/ip/rgb2vga_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:Sync:1.0'. The one found in IP location 'z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Sync_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-master/ip/Sync_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:usb2device:1.0'. The one found in IP location 'z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/usb2device_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-master/ip/usb2device_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:video:video_scaler:1.0'. The one found in IP location 'z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/video_scaler' will take precedence over the same IP in location z:/DAT096/vivado-library-master/ip/video_scaler
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:dvi2rgb:2.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/dvi2rgb' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/dvi2rgb
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:MotorFeedback:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/MotorFeedback_1.0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/MotorFeedback_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodACL2:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodACL2_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodACL2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodACL:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodACL_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodACL_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAD1:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodAD1_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodAD1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAD2:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodAD2_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodAD2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAD5:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodAD5_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodAD5_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodALS:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodALS_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodALS_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAMP2:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodAMP2_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodAMP2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAQS:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodAQS_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodAQS_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodBLE:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodBLE_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodBLE_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodBT2:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodBT2_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodBT2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodCAN:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodCAN_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodCAN_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodCLS:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodCLS_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodCLS_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodCMPS2:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodCMPS2_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodCMPS2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodCOLOR:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodCOLOR_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodCOLOR_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodDA1:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodDA1_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodDA1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodDHB1:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodDHB1_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodDHB1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodDPG1:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodDPG1_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodDPG1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodENC:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodENC_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodENC_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:user:PmodESP32:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodESP32_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodESP32_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodGPIO:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodGPIO_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodGPIO_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodGPS:1.1'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodGPS_v1_1' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodGPS_v1_1
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodGYRO:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodGYRO_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodGYRO_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodHYGRO:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodHYGRO_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodHYGRO_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodJSTK2:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodJSTK2_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodJSTK2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodJSTK:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodJSTK_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodJSTK_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodKYPD:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodKYPD_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodKYPD_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodMAXSONAR:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodMAXSONAR_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodMAXSONAR_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodMTDS:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodMTDS_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodMTDS_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodNAV:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodNAV_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodNAV_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodOLEDrgb:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/pmodOLEDrgb_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/pmodOLEDrgb_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodOLED:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodOLED_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodOLED_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodPIR:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodPIR_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodPIR_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodR2R:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodR2R_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodR2R_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodRTCC:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodRTCC_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodRTCC_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodSD:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodSD_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodSD_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodSF3:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodSF3_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodSF3_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodTC1:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodTC1_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodTC1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodTMP3:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodTMP3_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodTMP3_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodWIFI:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/PmodWIFI_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/PmodWIFI_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:pmod_bridge:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/Pmod_Bridge_v1_0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/Pmod_Bridge_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:pmod_bridge:1.1'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/Pmods/Pmod_Bridge_v1_1' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/Pmods/Pmod_Bridge_v1_1
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PWM:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/PWM_1.0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/PWM_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PWM:2.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/PWM_2.0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/PWM_2.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PWM_Analyzer:1.0'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/PWM_Analyzer_1.0' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/PWM_Analyzer_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2dvi:1.4'. The one found in IP location 'z:/DAT096/vivado-library-master/ip/rgb2dvi' will take precedence over the same IP in location z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/ip/rgb2dvi
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'digilentinc.com:interface:pmod:1.0'. The one found in location 'z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/if/pmod_v1_0/pmod.xml' will take precedence over the same Interface in location 'z:/DAT096/vivado-library-master/if/pmod_v1_0/pmod.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'digilentinc.com:interface:tmds:1.0'. The one found in location 'z:/DAT096/vivado-library-b0946605e3617c901635278b62d0f6a8e3942844/if/tmds_v1_0/tmds.xml' will take precedence over the same Interface in location 'z:/DAT096/vivado-library-master/if/tmds_v1_0/tmds.xml'
+update_ip_catalog: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 373.445 ; gain = 6.945
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is z:/DAT096/DAT096-krish/Embedded-System-Project-DAT096-krishna/Board_2/Board_2/Board_2.cache/ip 
+Command: synth_design -top design_2_vcsel_top_0_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18980
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1100.789 ; gain = 466.766
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_2_vcsel_top_0_0' [z:/DAT096/DAT096-krish/Embedded-System-Project-DAT096-krishna/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_vcsel_top_0_0/synth/design_2_vcsel_top_0_0.vhd:65]
+INFO: [Synth 8-3491] module 'vcsel_top' declared at 'Z:/DAT096/DAT096-krish/Embedded-System-Project-DAT096-krishna/Board_2/Board_2/Board_2.srcs/sources_1/new/vcsel_top.vhd:5' bound to instance 'U0' of component 'vcsel_top' [z:/DAT096/DAT096-krish/Embedded-System-Project-DAT096-krishna/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_vcsel_top_0_0/synth/design_2_vcsel_top_0_0.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'vcsel_top' [Z:/DAT096/DAT096-krish/Embedded-System-Project-DAT096-krishna/Board_2/Board_2/Board_2.srcs/sources_1/new/vcsel_top.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'voltage_to_current' [Z:/DAT096/DAT096-krish/Embedded-System-Project-DAT096-krishna/Board_2/Board_2/Board_2.srcs/sources_1/new/v_to_amp.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'voltage_to_current' (0#1) [Z:/DAT096/DAT096-krish/Embedded-System-Project-DAT096-krishna/Board_2/Board_2/Board_2.srcs/sources_1/new/v_to_amp.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'vcsel_rc' [Z:/DAT096/DAT096-krish/Embedded-System-Project-DAT096-krishna/Board_2/Board_2/Board_2.srcs/sources_1/new/vcsel_rc.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'vcsel_rc' (0#1) [Z:/DAT096/DAT096-krish/Embedded-System-Project-DAT096-krishna/Board_2/Board_2/Board_2.srcs/sources_1/new/vcsel_rc.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'vcsel_static' [Z:/DAT096/DAT096-krish/Embedded-System-Project-DAT096-krishna/Board_2/Board_2/Board_2.srcs/sources_1/new/vcsel_static.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'vcsel_static' (0#1) [Z:/DAT096/DAT096-krish/Embedded-System-Project-DAT096-krishna/Board_2/Board_2/Board_2.srcs/sources_1/new/vcsel_static.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'vcsel_iir' [Z:/DAT096/DAT096-krish/Embedded-System-Project-DAT096-krishna/Board_2/Board_2/Board_2.srcs/sources_1/new/vcsel_iir.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'vcsel_iir' (0#1) [Z:/DAT096/DAT096-krish/Embedded-System-Project-DAT096-krishna/Board_2/Board_2/Board_2.srcs/sources_1/new/vcsel_iir.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'vcsel_top' (0#1) [Z:/DAT096/DAT096-krish/Embedded-System-Project-DAT096-krishna/Board_2/Board_2/Board_2.srcs/sources_1/new/vcsel_top.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'design_2_vcsel_top_0_0' (0#1) [z:/DAT096/DAT096-krish/Embedded-System-Project-DAT096-krishna/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/ip/design_2_vcsel_top_0_0/synth/design_2_vcsel_top_0_0.vhd:65]
+WARNING: [Synth 8-6014] Unused sequential element y_out_reg was removed.  [Z:/DAT096/DAT096-krish/Embedded-System-Project-DAT096-krishna/Board_2/Board_2/Board_2.srcs/sources_1/new/vcsel_iir.vhd:68]
+WARNING: [Synth 8-7129] Port adc_data[3] in module voltage_to_current is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc_data[2] in module voltage_to_current is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc_data[1] in module voltage_to_current is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc_data[0] in module voltage_to_current is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1210.965 ; gain = 576.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1210.965 ; gain = 576.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1210.965 ; gain = 576.941
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1210.965 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1231.633 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1233.227 ; gain = 1.594
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1233.227 ; gain = 599.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1233.227 ; gain = 599.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1233.227 ; gain = 599.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1233.227 ; gain = 599.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input   64 Bit       Adders := 1     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               46 Bit    Registers := 1     
+	               32 Bit    Registers := 7     
+	               12 Bit    Registers := 1     
++---Multipliers : 
+	              14x32  Multipliers := 4     
+	              13x32  Multipliers := 2     
++---Muxes : 
+	   2 Input   18 Bit        Muxes := 1     
+	   4 Input   18 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 1     
+	   4 Input   13 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP U0/u_static/mult0, operation Mode is: A2*B.
+DSP Report: register U0/u_static/mult0 is absorbed into DSP U0/u_static/mult0.
+DSP Report: operator U0/u_static/mult0 is absorbed into DSP U0/u_static/mult0.
+DSP Report: operator U0/u_static/mult0 is absorbed into DSP U0/u_static/mult0.
+DSP Report: Generating DSP U0/u_static/mult_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register U0/u_static/I_diff_reg is absorbed into DSP U0/u_static/mult_reg.
+DSP Report: register U0/u_static/mult_reg is absorbed into DSP U0/u_static/mult_reg.
+DSP Report: operator U0/u_static/mult0 is absorbed into DSP U0/u_static/mult_reg.
+DSP Report: operator U0/u_static/mult0 is absorbed into DSP U0/u_static/mult_reg.
+WARNING: [Synth 8-7129] Port adc_data[3] in module design_2_vcsel_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc_data[2] in module design_2_vcsel_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc_data[1] in module design_2_vcsel_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc_data[0] in module design_2_vcsel_top_0_0 is either unconnected or has no load
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[47]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[46]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[45]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[44]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[43]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[42]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[41]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[40]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[39]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[38]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[37]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[36]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[35]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[34]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[33]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[32]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[31]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[30]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[29]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[28]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[27]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[26]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[25]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[24]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[23]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[22]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[21]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[20]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[19]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[18]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[17]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[13]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[12]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[11]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[10]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[9]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[8]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[7]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[6]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[5]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[4]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[3]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[2]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[1]) is unused and will be removed from module design_2_vcsel_top_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/u_static/mult_reg[0]) is unused and will be removed from module design_2_vcsel_top_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1241.406 ; gain = 607.383
+---------------------------------------------------------------------------------
+ Sort Area is  U0/u_static/mult0_0 : 0 0 : 2478 4870 : Used 1 time 0
+ Sort Area is  U0/u_static/mult0_0 : 0 1 : 2392 4870 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-----------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name            | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|design_2_vcsel_top_0_0 | A2*B            | 18     | 14     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|design_2_vcsel_top_0_0 | (PCIN>>17)+A2*B | 15     | 14     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
++-----------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1446.391 ; gain = 812.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1447.457 ; gain = 813.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1466.551 ; gain = 832.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1672.227 ; gain = 1038.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1672.227 ; gain = 1038.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1672.227 ; gain = 1038.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1672.227 ; gain = 1038.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1672.227 ; gain = 1038.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1672.227 ; gain = 1038.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-----------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name            | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|design_2_vcsel_top_0_0 | A'*B             | 17     | 13     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|design_2_vcsel_top_0_0 | (PCIN>>17+A'*B)' | 30     | 13     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
++-----------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |   225|
+|2     |DSP48E1 |     2|
+|4     |LUT1    |   116|
+|5     |LUT2    |   342|
+|6     |LUT3    |   304|
+|7     |LUT4    |   326|
+|8     |LUT5    |    16|
+|9     |LUT6    |     6|
+|10    |FDRE    |   271|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1672.227 ; gain = 1038.203
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1672.227 ; gain = 1015.941
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1672.227 ; gain = 1038.203
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1672.227 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 227 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_2_vcsel_top_0_0' is not ideal for floorplanning, since the cellview 'vcsel_iir' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1672.293 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: e51c443f
+INFO: [Common 17-83] Releasing license: Synthesis
+79 Infos, 76 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 1672.293 ; gain = 1266.141
+INFO: [Coretcl 2-1174] Renamed 5 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1672.293 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'Z:/DAT096/DAT096-krish/Embedded-System-Project-DAT096-krishna/Board_2/Board_2/Board_2.runs/design_2_vcsel_top_0_0_synth_1/design_2_vcsel_top_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_2_vcsel_top_0_0_utilization_synth.rpt -pb design_2_vcsel_top_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May 11 12:40:40 2026...

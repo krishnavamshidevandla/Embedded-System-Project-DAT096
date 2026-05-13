@@ -1,0 +1,61 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "design_2_AWGN_module_wrapper_0_2",
+    "cell_name": "AWGN_module_wrapper_0",
+    "component_reference": "chalmers.se:user:AWGN_module_wrapper:1.0",
+    "ip_revision": "17",
+    "gen_directory": "../../../../../../Board_2.gen/sources_1/bd/design_2/ip/design_2_AWGN_module_wrapper_0_2",
+    "parameters": {
+      "component_parameters": {
+        "Component_Name": [ { "value": "design_2_AWGN_module_wrapper_0_2", "resolve_type": "user", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "zynq" } ],
+        "BASE_BOARD_PART": [ { "value": "" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xc7z020" } ],
+        "PACKAGE": [ { "value": "clg484" } ],
+        "PREFHDL": [ { "value": "VHDL" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-1" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "17" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../Board_2.gen/sources_1/bd/design_2/ip/design_2_AWGN_module_wrapper_0_2" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2024.2" } ],
+        "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "awgn_im_dbg_0": [ { "direction": "out", "size_left": "25", "size_right": "0" } ],
+        "awgn_re_dbg_0": [ { "direction": "out", "size_left": "25", "size_right": "0" } ],
+        "clk_0": [ { "direction": "in" } ],
+        "reset_0": [ { "direction": "in" } ],
+        "valid_0": [ { "direction": "out" } ]
+      },
+      "interfaces": {
+        "reset_0": {
+          "vlnv": "xilinx.com:signal:reset:1.0",
+          "abstraction_type": "xilinx.com:signal:reset_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "POLARITY": [ { "value": "ACTIVE_LOW", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "RST": [ { "physical_name": "reset_0" } ]
+          }
+        }
+      }
+    }
+  }
+}
