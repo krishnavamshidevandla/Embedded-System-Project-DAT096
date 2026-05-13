@@ -2,7 +2,7 @@
 --Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
---Date        : Thu May  7 16:49:47 2026
+--Date        : Wed May 13 15:29:37 2026
 --Host        : FY-6302-12 running 64-bit major release  (build 9200)
 --Command     : generate_target design_2.bd
 --Design      : design_2
@@ -77,12 +77,12 @@ architecture STRUCTURE of design_2 is
     clk : in STD_LOGIC;
     probe0 : in STD_LOGIC_VECTOR ( 0 to 0 );
     probe1 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe2 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe2 : in STD_LOGIC_VECTOR ( 13 downto 0 );
     probe3 : in STD_LOGIC_VECTOR ( 13 downto 0 );
-    probe4 : in STD_LOGIC_VECTOR ( 13 downto 0 );
-    probe5 : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    probe4 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe5 : in STD_LOGIC_VECTOR ( 0 to 0 );
     probe6 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe7 : in STD_LOGIC_VECTOR ( 0 to 0 )
+    probe7 : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   end component design_2_ila_0_0;
   component design_2_adc_bit_decoder_0_0 is
@@ -244,16 +244,6 @@ architecture STRUCTURE of design_2 is
     clk_out1 : out STD_LOGIC
   );
   end component design_2_clk_wiz_0_0;
-  component design_2_prbs_axis_master_32_0_0 is
-  port (
-    clk : in STD_LOGIC;
-    rst : in STD_LOGIC;
-    m_axis_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    m_axis_tvalid : out STD_LOGIC;
-    m_axis_tready : in STD_LOGIC;
-    prbs_bit : out STD_LOGIC
-  );
-  end component design_2_prbs_axis_master_32_0_0;
   component design_2_proc_sys_reset_0_0 is
   port (
     slowest_sync_clk : in STD_LOGIC;
@@ -273,36 +263,49 @@ architecture STRUCTURE of design_2 is
     dout : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component design_2_xlconstant_2_0;
-  component design_2_delay_96_cycles_0_1 is
+  component design_2_pilot_tx_rx_0_0 is
   port (
     clk : in STD_LOGIC;
     rst : in STD_LOGIC;
-    din : in STD_LOGIC;
-    dout : out STD_LOGIC
+    tx_bit : out STD_LOGIC;
+    rx_bit : in STD_LOGIC;
+    tx_start : out STD_LOGIC;
+    match : out STD_LOGIC
   );
-  end component design_2_delay_96_cycles_0_1;
-  component design_2_comparator_0_1 is
+  end component design_2_pilot_tx_rx_0_0;
+  component design_2_bit_to_dac14_axi_0_0 is
   port (
     clk : in STD_LOGIC;
     rst : in STD_LOGIC;
-    initial_data : in STD_LOGIC;
-    final_data : in STD_LOGIC;
-    correct_bits : out STD_LOGIC_VECTOR ( 13 downto 0 );
-    whole_bits : out STD_LOGIC_VECTOR ( 13 downto 0 )
+    bit_in : in STD_LOGIC;
+    m_axis_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axis_tvalid : out STD_LOGIC;
+    m_axis_tready : in STD_LOGIC
   );
-  end component design_2_comparator_0_1;
+  end component design_2_bit_to_dac14_axi_0_0;
+  component design_2_delay_measure_0_0 is
+  port (
+    clk : in STD_LOGIC;
+    rst : in STD_LOGIC;
+    tx_start : in STD_LOGIC;
+    match : in STD_LOGIC;
+    start : out STD_LOGIC;
+    delay_cycles : out STD_LOGIC_VECTOR ( 31 downto 0 )
+  );
+  end component design_2_delay_measure_0_0;
   signal ZmodScopeController_0_cDataAxisTdata : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal ZmodScopeController_0_cDataAxisTvalid : STD_LOGIC;
   signal adc_bit_decoder_0_bit_out : STD_LOGIC;
   signal adc_bit_decoder_0_t_ready : STD_LOGIC;
+  signal bit_to_dac14_axi_0_m_axis_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal bit_to_dac14_axi_0_m_axis_TREADY : STD_LOGIC;
+  signal bit_to_dac14_axi_0_m_axis_TVALID : STD_LOGIC;
   signal clk_wiz_0_clk_out1 : STD_LOGIC;
-  signal comparator_0_correct_bits : STD_LOGIC_VECTOR ( 13 downto 0 );
-  signal comparator_0_whole_bits : STD_LOGIC_VECTOR ( 13 downto 0 );
-  signal delay_96_cycles_0_dout : STD_LOGIC;
-  signal prbs_axis_master_32_0_m_axis_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal prbs_axis_master_32_0_m_axis_TREADY : STD_LOGIC;
-  signal prbs_axis_master_32_0_m_axis_TVALID : STD_LOGIC;
-  signal prbs_axis_master_32_0_prbs_bit : STD_LOGIC;
+  signal delay_measure_0_delay_cycles : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal delay_measure_0_start : STD_LOGIC;
+  signal pilot_tx_rx_0_match : STD_LOGIC;
+  signal pilot_tx_rx_0_tx_bit : STD_LOGIC;
+  signal pilot_tx_rx_0_tx_start : STD_LOGIC;
   signal proc_sys_reset_0_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal processing_system7_0_FCLK_CLK0 : STD_LOGIC;
   signal processing_system7_0_FCLK_RESET0_N : STD_LOGIC;
@@ -396,9 +399,9 @@ ZmodAWGController_0: component design_2_ZmodAWGController_0_0
       ZmodDAC_ClkIO => ZmodDAC_ClkIO_0,
       ZmodDAC_ClkIn => ZmodDAC_ClkIn_0,
       aRst_n => processing_system7_0_FCLK_RESET0_N,
-      cDataAxisTdata(31 downto 0) => prbs_axis_master_32_0_m_axis_TDATA(31 downto 0),
-      cDataAxisTready => prbs_axis_master_32_0_m_axis_TREADY,
-      cDataAxisTvalid => prbs_axis_master_32_0_m_axis_TVALID,
+      cDataAxisTdata(31 downto 0) => bit_to_dac14_axi_0_m_axis_TDATA(31 downto 0),
+      cDataAxisTready => bit_to_dac14_axi_0_m_axis_TREADY,
+      cDataAxisTvalid => bit_to_dac14_axi_0_m_axis_TVALID,
       dZmodDAC_Data(13 downto 0) => dZmodDAC_Data_0(13 downto 0),
       sConfigError => NLW_ZmodAWGController_0_sConfigError_UNCONNECTED,
       sDAC_EnIn => xlconstant_3_dout(0),
@@ -456,47 +459,75 @@ adc_bit_decoder_0: component design_2_adc_bit_decoder_0_0
       t_ready => adc_bit_decoder_0_t_ready,
       t_valid => ZmodScopeController_0_cDataAxisTvalid
     );
+bit_to_dac14_axi_0: component design_2_bit_to_dac14_axi_0_0
+     port map (
+      bit_in => pilot_tx_rx_0_tx_bit,
+      clk => processing_system7_0_FCLK_CLK0,
+      m_axis_tdata(31 downto 0) => bit_to_dac14_axi_0_m_axis_TDATA(31 downto 0),
+      m_axis_tready => bit_to_dac14_axi_0_m_axis_TREADY,
+      m_axis_tvalid => bit_to_dac14_axi_0_m_axis_TVALID,
+      rst => proc_sys_reset_0_peripheral_aresetn(0)
+    );
 clk_wiz_0: component design_2_clk_wiz_0_0
      port map (
       clk_in1 => processing_system7_0_FCLK_CLK0,
       clk_out1 => clk_wiz_0_clk_out1
     );
-comparator_0: component design_2_comparator_0_1
+delay_measure_0: component design_2_delay_measure_0_0
      port map (
       clk => processing_system7_0_FCLK_CLK0,
-      correct_bits(13 downto 0) => comparator_0_correct_bits(13 downto 0),
-      final_data => adc_bit_decoder_0_bit_out,
-      initial_data => delay_96_cycles_0_dout,
+      delay_cycles(31 downto 0) => delay_measure_0_delay_cycles(31 downto 0),
+      match => pilot_tx_rx_0_match,
       rst => proc_sys_reset_0_peripheral_aresetn(0),
-      whole_bits(13 downto 0) => comparator_0_whole_bits(13 downto 0)
-    );
-delay_96_cycles_0: component design_2_delay_96_cycles_0_1
-     port map (
-      clk => processing_system7_0_FCLK_CLK0,
-      din => prbs_axis_master_32_0_prbs_bit,
-      dout => delay_96_cycles_0_dout,
-      rst => proc_sys_reset_0_peripheral_aresetn(0)
+      start => delay_measure_0_start,
+      tx_start => pilot_tx_rx_0_tx_start
     );
 ila_0: component design_2_ila_0_0
      port map (
       clk => processing_system7_0_FCLK_CLK0,
       probe0(0) => adc_bit_decoder_0_t_ready,
-      probe1(0) => adc_bit_decoder_0_bit_out,
-      probe2(0) => ZmodScopeController_0_cDataAxisTvalid,
-      probe3(13 downto 0) => xlslice_0_Dout(13 downto 0),
-      probe4(13 downto 0) => comparator_0_correct_bits(13 downto 0),
-      probe5(13 downto 0) => comparator_0_whole_bits(13 downto 0),
-      probe6(0) => delay_96_cycles_0_dout,
-      probe7(0) => adc_bit_decoder_0_bit_out
+      probe1(0) => ZmodScopeController_0_cDataAxisTvalid,
+      probe2(13) => pilot_tx_rx_0_tx_bit,
+      probe2(12) => pilot_tx_rx_0_tx_bit,
+      probe2(11) => pilot_tx_rx_0_tx_bit,
+      probe2(10) => pilot_tx_rx_0_tx_bit,
+      probe2(9) => pilot_tx_rx_0_tx_bit,
+      probe2(8) => pilot_tx_rx_0_tx_bit,
+      probe2(7) => pilot_tx_rx_0_tx_bit,
+      probe2(6) => pilot_tx_rx_0_tx_bit,
+      probe2(5) => pilot_tx_rx_0_tx_bit,
+      probe2(4) => pilot_tx_rx_0_tx_bit,
+      probe2(3) => pilot_tx_rx_0_tx_bit,
+      probe2(2) => pilot_tx_rx_0_tx_bit,
+      probe2(1) => pilot_tx_rx_0_tx_bit,
+      probe2(0) => pilot_tx_rx_0_tx_bit,
+      probe3(13) => adc_bit_decoder_0_bit_out,
+      probe3(12) => adc_bit_decoder_0_bit_out,
+      probe3(11) => adc_bit_decoder_0_bit_out,
+      probe3(10) => adc_bit_decoder_0_bit_out,
+      probe3(9) => adc_bit_decoder_0_bit_out,
+      probe3(8) => adc_bit_decoder_0_bit_out,
+      probe3(7) => adc_bit_decoder_0_bit_out,
+      probe3(6) => adc_bit_decoder_0_bit_out,
+      probe3(5) => adc_bit_decoder_0_bit_out,
+      probe3(4) => adc_bit_decoder_0_bit_out,
+      probe3(3) => adc_bit_decoder_0_bit_out,
+      probe3(2) => adc_bit_decoder_0_bit_out,
+      probe3(1) => adc_bit_decoder_0_bit_out,
+      probe3(0) => adc_bit_decoder_0_bit_out,
+      probe4(0) => pilot_tx_rx_0_tx_start,
+      probe5(0) => pilot_tx_rx_0_match,
+      probe6(0) => delay_measure_0_start,
+      probe7(31 downto 0) => delay_measure_0_delay_cycles(31 downto 0)
     );
-prbs_axis_master_32_0: component design_2_prbs_axis_master_32_0_0
+pilot_tx_rx_0: component design_2_pilot_tx_rx_0_0
      port map (
       clk => processing_system7_0_FCLK_CLK0,
-      m_axis_tdata(31 downto 0) => prbs_axis_master_32_0_m_axis_TDATA(31 downto 0),
-      m_axis_tready => prbs_axis_master_32_0_m_axis_TREADY,
-      m_axis_tvalid => prbs_axis_master_32_0_m_axis_TVALID,
-      prbs_bit => prbs_axis_master_32_0_prbs_bit,
-      rst => proc_sys_reset_0_peripheral_aresetn(0)
+      match => pilot_tx_rx_0_match,
+      rst => proc_sys_reset_0_peripheral_aresetn(0),
+      rx_bit => adc_bit_decoder_0_bit_out,
+      tx_bit => pilot_tx_rx_0_tx_bit,
+      tx_start => pilot_tx_rx_0_tx_start
     );
 proc_sys_reset_0: component design_2_proc_sys_reset_0_0
      port map (

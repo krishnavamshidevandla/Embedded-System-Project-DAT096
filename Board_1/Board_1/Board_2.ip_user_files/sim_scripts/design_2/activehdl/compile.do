@@ -110,9 +110,6 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../Board_2.gen/sources_1/bd/d
 "../../../bd/design_2/ip/design_2_clk_wiz_0_0/design_2_clk_wiz_0_0_clk_wiz.v" \
 "../../../bd/design_2/ip/design_2_clk_wiz_0_0/design_2_clk_wiz_0_0.v" \
 
-vcom -work xil_defaultlib -93  \
-"../../../bd/design_2/ip/design_2_prbs_axis_master_32_0_0/sim/design_2_prbs_axis_master_32_0_0.vhd" \
-
 vcom -work lib_cdc_v1_0_3 -93  \
 "../../../../Board_2.gen/sources_1/bd/design_2/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd" \
 
@@ -126,9 +123,10 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../Board_2.gen/sources_1/bd/d
 "../../../bd/design_2/ip/design_2_xlconstant_2_0/sim/design_2_xlconstant_2_0.v" \
 
 vcom -work xil_defaultlib -93  \
-"../../../bd/design_2/ip/design_2_delay_96_cycles_0_1/sim/design_2_delay_96_cycles_0_1.vhd" \
-"../../../bd/design_2/ip/design_2_comparator_0_1/sim/design_2_comparator_0_1.vhd" \
 "../../../bd/design_2/sim/design_2.vhd" \
+"../../../bd/design_2/ip/design_2_pilot_tx_rx_0_0/sim/design_2_pilot_tx_rx_0_0.vhd" \
+"../../../bd/design_2/ip/design_2_bit_to_dac14_axi_0_0/sim/design_2_bit_to_dac14_axi_0_0.vhd" \
+"../../../bd/design_2/ip/design_2_delay_measure_0_0/sim/design_2_delay_measure_0_0.vhd" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

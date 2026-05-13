@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "C:/Users/qianzha/Desktop/Board_2/Board_2/Board_2.runs/impl_1/design_2_wrapper.tcl"
+  variable script "C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2.runs/impl_1/design_2_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -108,7 +108,7 @@ set rc [catch {
   set_param chipscope.maxJobs 7
   set_param runs.launchOptions { -jobs 28  }
   open_checkpoint design_2_wrapper_routed.dcp
-  set_property webtalk.parent_dir C:/Users/qianzha/Desktop/Board_2/Board_2/Board_2.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2.cache/wt [current_project]
 set_property TOP design_2_wrapper [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

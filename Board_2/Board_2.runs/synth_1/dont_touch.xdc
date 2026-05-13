@@ -33,4 +33,4 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_Zm
 # IP: bd/design_2/ip/design_2_clk_wiz_0_0/design_2_clk_wiz_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_clk_wiz_0_0 || ORIG_REF_NAME==design_2_clk_wiz_0_0} -quiet] -quiet
 
-# XDC: c:/Users/qianzha/Desktop/Board_2/Board_2/Board_2.gen/sources_1/bd/design_2/design_2_ooc.xdc
+# XDC: c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_2/Board_2.gen/sources_1/bd/design_2/design_2_ooc.xdc

@@ -12,7 +12,7 @@
 						"TVALID": { "actual": "cDataAxisTvalid"}
 					}
 				},
-				"/prbs_axis_master_32_0/m_axis": {
+				"/bit_to_dac14_axi_0/m_axis": {
 					"interface": "xilinx.com:interface:axis:1.0",
 					"ports": {
 						"ACLK": { "actual": "clk"},

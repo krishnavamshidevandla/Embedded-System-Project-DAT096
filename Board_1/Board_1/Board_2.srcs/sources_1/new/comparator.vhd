@@ -62,17 +62,21 @@ begin
           sample_counter <= 0;
           counter <= (others => '0');
           correct <= (others => '0');
-       else 
-          if sample_counter = 19 then
-             sample_counter <= 0;
-             counter <= counter +1;
-          end if;
+       else
+          -- Compare data at sample 10
           if sample_counter = 10 then
             if initial_data = final_data then
-                correct <= correct +1;
+                correct <= correct + 1;
             end if;
           end if;
-         sample_counter <= sample_counter + 1;
+
+          -- Increment counters
+          if sample_counter = 19 then
+             sample_counter <= 0;
+             counter <= counter + 1;
+          else
+             sample_counter <= sample_counter + 1;
+          end if;
        end if;
     end if;
   end process;
