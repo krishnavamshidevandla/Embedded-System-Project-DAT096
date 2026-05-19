@@ -1,0 +1,6 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../Board_2.gen/sources_1/bd/design_2/ipshared/3cbc" \
+"design_2_wrapper_time_synth.v" \
+
+# Do not sort compile order
+nosort
