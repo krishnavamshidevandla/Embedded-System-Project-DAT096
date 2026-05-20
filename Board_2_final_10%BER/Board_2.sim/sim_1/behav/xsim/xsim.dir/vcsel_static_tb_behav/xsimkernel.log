@@ -1,0 +1,7 @@
+Running: xsim.dir/vcsel_static_tb_behav/xsimk.exe -simmode gui -wdb vcsel_static_tb_behav.wdb -simrunnum 0 -socket 65136
+Design successfully loaded
+Design Loading Memory Usage: 28796 KB (Peak: 28796 KB)
+Design Loading CPU Usage: 405 ms
+Simulation completed
+Simulation Memory Usage: 29656 KB (Peak: 29656 KB)
+Simulation CPU Usage: 436 ms

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Z:/DAT096/DAT096-Qian/Embedded-System-Project-DAT096-Qians-branch/Board_1/Board_1/Board_2.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="22,713"></ZoomStartTime>
+      <ZoomEndTime time="33,426"></ZoomEndTime>
+      <Cursor1Time time="30,846"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="338"></NameColumnWidth>
+      <ValueColumnWidth column_width="235"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wave_markers>
+      <marker time="473" label="" />
+      <marker time="353" label="" />
+      <marker time="2515" label="" />
+      <marker time="6240" label="" />
+   </wave_markers>
+   <wvobject fp_name="design_2_i/adc_bit_decoder_0_t_ready" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_2_i/adc_bit_decoder_0_t_ready</obj_property>
+      <obj_property name="ObjectShortName">adc_bit_decoder_0_t_ready</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_2_i/ZmodScopeController_0_cDataAxisTvalid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_2_i/ZmodScopeController_0_cDataAxisTvalid</obj_property>
+      <obj_property name="ObjectShortName">ZmodScopeController_0_cDataAxisTvalid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_2_i/adc_bit_decoder_0_bit_out" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_2_i/adc_bit_decoder_0_bit_out</obj_property>
+      <obj_property name="ObjectShortName">adc_bit_decoder_0_bit_out</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_2_i/delay_96_cycles_0_dout" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_2_i/delay_96_cycles_0_dout</obj_property>
+      <obj_property name="ObjectShortName">delay_96_cycles_0_dout</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_2_i/comparator_0_correct_bits" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_2_i/comparator_0_correct_bits[13:0]</obj_property>
+      <obj_property name="ObjectShortName">comparator_0_correct_bits[13:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_2_i/comparator_0_whole_bits" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_2_i/comparator_0_whole_bits[13:0]</obj_property>
+      <obj_property name="ObjectShortName">comparator_0_whole_bits[13:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+   </wvobject>
+</wave_config>
