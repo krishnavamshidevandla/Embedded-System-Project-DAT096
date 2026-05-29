@@ -1,0 +1,53 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_2/ip/design_2_ila_0_0/sim/design_2_ila_0_0.vhd" \
+"../../../bd/design_2/ipshared/c25f/src/PkgZmodADC.vhd" \
+"../../../bd/design_2/ipshared/c25f/src/ADI_SPI.vhd" \
+"../../../bd/design_2/ipshared/c25f/src/ConfigADC.vhd" \
+"../../../bd/design_2/ipshared/c25f/src/ConfigRelays.vhd" \
+"../../../bd/design_2/ipshared/c25f/src/SyncAsync.vhd" \
+"../../../bd/design_2/ipshared/c25f/src/ResetBridge.vhd" \
+"../../../bd/design_2/ipshared/c25f/src/DataPath.vhd" \
+"../../../bd/design_2/ipshared/c25f/src/GainOffsetCalib.vhd" \
+"../../../bd/design_2/ipshared/c25f/src/HandshakeData.vhd" \
+"../../../bd/design_2/ipshared/c25f/src/SyncBase.vhd" \
+"../../../bd/design_2/ipshared/c25f/src/ZmodScopeController.vhd" \
+"../../../bd/design_2/ip/design_2_ZmodScopeController_0_2/sim/design_2_ZmodScopeController_0_2.vhd" \
+"../../../bd/design_2/ipshared/9ebe/src/PkgZmodDAC.vhd" \
+"../../../bd/design_2/ipshared/9ebe/src/ADI_SPI.vhd" \
+"../../../bd/design_2/ipshared/9ebe/src/ConfigDAC.vhd" \
+"../../../bd/design_2/ipshared/9ebe/src/ZmodAWG_1411_Controller.vhd" \
+"../../../bd/design_2/ip/design_2_ZmodAWGController_0_0/sim/design_2_ZmodAWGController_0_0.vhd" \
+"../../../bd/design_2/ip/design_2_vcsel_top_0_0/sim/design_2_vcsel_top_0_0.vhd" \
+"../../../bd/design_2/ip/design_2_vio_0_0/sim/design_2_vio_0_0.vhd" \
+"../../../bd/design_2/ipshared/13b1/src/AWGNGenerator_pkg.vhd" \
+"../../../bd/design_2/ipshared/13b1/src/dBtoLinearConverter.vhd" \
+"../../../bd/design_2/ipshared/13b1/src/TausURNG1.vhd" \
+"../../../bd/design_2/ipshared/13b1/src/TausURNG2.vhd" \
+"../../../bd/design_2/ipshared/13b1/src/ConcatandExtract.vhd" \
+"../../../bd/design_2/ipshared/13b1/src/TausUniformRandGen.vhd" \
+"../../../bd/design_2/ipshared/13b1/src/leadingZeroDetector_block.vhd" \
+"../../../bd/design_2/ipshared/13b1/src/RangeReduction_block.vhd" \
+"../../../bd/design_2/ipshared/13b1/src/FunctionEvaluation_block.vhd" \
+"../../../bd/design_2/ipshared/13b1/src/RangeReconstruction_block.vhd" \
+"../../../bd/design_2/ipshared/13b1/src/log.vhd" \
+"../../../bd/design_2/ipshared/13b1/src/logImplementation.vhd" \
+"../../../bd/design_2/ipshared/13b1/src/leadingZeroDetector.vhd" \
+"../../../bd/design_2/ipshared/13b1/src/RangeReduction.vhd" \
+"../../../bd/design_2/ipshared/13b1/src/FunctionEvaluation.vhd" \
+"../../../bd/design_2/ipshared/13b1/src/RangeReconstruction.vhd" \
+"../../../bd/design_2/ipshared/13b1/src/SqrtEval.vhd" \
+"../../../bd/design_2/ipshared/13b1/src/SqrtImplementation.vhd" \
+"../../../bd/design_2/ipshared/13b1/src/Sine_HDL_Optimized.vhd" \
+"../../../bd/design_2/ipshared/13b1/src/Sine_HDL_Optimized1.vhd" \
+"../../../bd/design_2/ipshared/13b1/src/SinCos.vhd" \
+"../../../bd/design_2/ipshared/13b1/src/GaussianNoiseWithUnitVar.vhd" \
+"../../../bd/design_2/ipshared/13b1/src/GaussianNoiseWithReqVar.vhd" \
+"../../../bd/design_2/ipshared/13b1/src/AWGNGenerator.vhd" \
+"../../../bd/design_2/ipshared/13b1/src/top_awgn.vhd" \
+"../../../bd/design_2/ip/design_2_top_awgn_0_0/sim/design_2_top_awgn_0_0.vhd" \
+"../../../bd/design_2/ip/design_2_vio_1_0/sim/design_2_vio_1_0.vhd" \
+"../../../bd/design_2/ip/design_2_vcsel_conv_0_0/sim/design_2_vcsel_conv_0_0.vhd" \
+"../../../bd/design_2/sim/design_2.vhd" \
+
+# Do not sort compile order
+nosort
