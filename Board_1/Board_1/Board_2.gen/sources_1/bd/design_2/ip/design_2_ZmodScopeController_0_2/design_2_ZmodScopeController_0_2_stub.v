@@ -1,0 +1,63 @@
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+// Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+// --------------------------------------------------------------------------------
+// Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+// Date        : Thu May  7 13:58:48 2026
+// Host        : FY-6302-12 running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub
+//               c:/Users/qianzha/Desktop/Embedded-System-Project-DAT096/Board_1/Board_1/Board_2.gen/sources_1/bd/design_2/ip/design_2_ZmodScopeController_0_2/design_2_ZmodScopeController_0_2_stub.v
+// Design      : design_2_ZmodScopeController_0_2
+// Purpose     : Stub declaration of top-level module interface
+// Device      : xc7z020clg484-1
+// --------------------------------------------------------------------------------
+
+// This empty module with port declaration file causes synthesis tools to infer a black box for IP.
+// The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
+// Please paste the declaration into a Verilog source file or add the file as an additional source.
+(* CHECK_LICENSE_TYPE = "design_2_ZmodScopeController_0_2,ZmodScopeController,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "package_project" *) 
+(* x_core_info = "ZmodScopeController,Vivado 2024.2" *) 
+module design_2_ZmodScopeController_0_2(SysClk100, ADC_SamplingClk, ADC_InClk, aRst_n, 
+  sRstBusy, sInitDoneADC, sConfigError, sInitDoneRelay, sEnableAcquisition, sDataOverflow, 
+  cDataAxisTvalid, cDataAxisTready, cDataAxisTdata, sTestMode, ZmodAdcClkIn_p, 
+  ZmodAdcClkIn_n, iZmodSync, ZmodDcoClk, dZmodADC_Data, sZmodADC_SDIO, sZmodADC_CS, 
+  sZmodADC_Sclk, sZmodCh1CouplingH, sZmodCh1CouplingL, sZmodCh2CouplingH, 
+  sZmodCh2CouplingL, sZmodCh1GainH, sZmodCh1GainL, sZmodCh2GainH, sZmodCh2GainL, 
+  sZmodRelayComH, sZmodRelayComL)
+/* synthesis syn_black_box black_box_pad_pin="aRst_n,sRstBusy,sInitDoneADC,sConfigError,sInitDoneRelay,sEnableAcquisition,sDataOverflow,cDataAxisTvalid,cDataAxisTready,cDataAxisTdata[31:0],sTestMode,ZmodAdcClkIn_p,ZmodAdcClkIn_n,iZmodSync,dZmodADC_Data[13:0],sZmodADC_SDIO,sZmodADC_CS,sZmodADC_Sclk,sZmodCh1CouplingH,sZmodCh1CouplingL,sZmodCh2CouplingH,sZmodCh2CouplingL,sZmodCh1GainH,sZmodCh1GainL,sZmodCh2GainH,sZmodCh2GainL,sZmodRelayComH,sZmodRelayComL" */
+/* synthesis syn_force_seq_prim="SysClk100" */
+/* synthesis syn_force_seq_prim="ADC_SamplingClk" */
+/* synthesis syn_force_seq_prim="ADC_InClk" */
+/* synthesis syn_force_seq_prim="ZmodDcoClk" */;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 SysClk100 CLK" *) (* x_interface_mode = "slave SysClk100" *) (* x_interface_parameter = "XIL_INTERFACENAME SysClk100, ASSOCIATED_BUSIF SPI_IAP_TX:SPI_IAP_RX, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_2_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input SysClk100 /* synthesis syn_isclock = 1 */;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 ADC_SamplingClk CLK" *) (* x_interface_mode = "slave ADC_SamplingClk" *) (* x_interface_parameter = "XIL_INTERFACENAME ADC_SamplingClk, ASSOCIATED_BUSIF DataStream, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_2_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input ADC_SamplingClk /* synthesis syn_isclock = 1 */;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 ADC_InClk CLK" *) (* x_interface_mode = "slave ADC_InClk" *) (* x_interface_parameter = "XIL_INTERFACENAME ADC_InClk, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_2_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input ADC_InClk /* synthesis syn_isclock = 1 */;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 aRst_n RST" *) (* x_interface_mode = "slave aRst_n" *) (* x_interface_parameter = "XIL_INTERFACENAME aRst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input aRst_n;
+  output sRstBusy;
+  output sInitDoneADC;
+  output sConfigError;
+  output sInitDoneRelay;
+  input sEnableAcquisition;
+  output sDataOverflow;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 DataStream TVALID" *) (* x_interface_mode = "master DataStream" *) (* x_interface_parameter = "XIL_INTERFACENAME DataStream, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, PHASE 0.0, CLK_DOMAIN design_2_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output cDataAxisTvalid;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 DataStream TREADY" *) input cDataAxisTready;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 DataStream TDATA" *) output [31:0]cDataAxisTdata;
+  input sTestMode;
+  output ZmodAdcClkIn_p;
+  output ZmodAdcClkIn_n;
+  output iZmodSync;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 ZmodDcoClk CLK" *) (* x_interface_mode = "slave ZmodDcoClk" *) (* x_interface_parameter = "XIL_INTERFACENAME ZmodDcoClk, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_2_ZmodDcoClk_0, INSERT_VIP 0" *) input ZmodDcoClk /* synthesis syn_isclock = 1 */;
+  input [13:0]dZmodADC_Data;
+  inout sZmodADC_SDIO;
+  output sZmodADC_CS;
+  output sZmodADC_Sclk;
+  output sZmodCh1CouplingH;
+  output sZmodCh1CouplingL;
+  output sZmodCh2CouplingH;
+  output sZmodCh2CouplingL;
+  output sZmodCh1GainH;
+  output sZmodCh1GainL;
+  output sZmodCh2GainH;
+  output sZmodCh2GainL;
+  output sZmodRelayComH;
+  output sZmodRelayComL;
+endmodule
